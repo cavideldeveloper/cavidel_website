@@ -74,24 +74,20 @@
                     <div class="container-fluid">
                         <!-- Menu List -->                                
                         <ul class="list-unstyled s-header__nav-menu">
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider -is-active" href="index.html">Corporate</a></li>
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="index_app_landing.html">App Landing</a></li>
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="index_portfolio.html">Portfolio</a></li>
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="index_events.html">Events</a></li>
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="index_lawyer.html">Lawyer</a></li>
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="index_clinic.html">Clinic</a></li>
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="index_coming_soon.html">Coming Soon</a></li>
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider -is-active" href="{{ url('/') }}">Corporate</a></li>
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('portfolio') }}">Portfolio</a></li>
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('events') }}">Events</a></li>
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('products') }}">Our Products</a></li>
                         </ul>
                         <!-- End Menu List -->
 
                         <!-- Menu List -->                                
                         <ul class="list-unstyled s-header__nav-menu">
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="about.html">About</a></li>
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="team.html">Team</a></li>
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="services.html">Services</a></li>
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="events.html">Events</a></li>
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="faq.html">FAQ</a></li>
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="contacts.html">Contacts</a></li>
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('about') }}">About</a></li>
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('team') }}">Team</a></li>
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('services') }}">Services</a></li>
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('faq') }}">FAQ</a></li>
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('contact') }}">Contacts</a></li>
                         </ul>
                         <!-- End Menu List -->
                     </div>
@@ -457,8 +453,9 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-md-offset-1">
-                        <p class="g-font-size-18--xs">We aim high at being focused on building relationships with our clients and community. Using our creative gifts drives this foundation. The time has come to bring those ideas and plans to life. This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
-                        <p class="g-font-size-18--xs">Now that your brand is all dressed up and ready to party, it's time to release it to the world. By the way, let's celebrate already.</p>
+                        <p class="g-font-size-18--xs">Cavidel Limited is a process automation company that helps businesses to align/re-align their business units and overall strategies with operational processes and information technology to reduce cost, improve productivity and increase efficiency.
+We take great pride in our reputation for consistently delivering quality services. We use our ingenuity to save our clients time and money, reduce risks, increase efficiency and maximise sustainable outcomes. </p>
+                        <p class="g-font-size-18--xs">We do this through innovative thinking, international perspectives, local knowledge and the immense experience and technical know-how of our team.</p>
                     </div>
                 </div>
             </div>
@@ -515,7 +512,7 @@
                         <div class="swiper-slide g-padding-x-130--sm g-padding-x-150--lg">
                             <div class="g-padding-x-20--xs g-padding-x-50--lg">
                                 <div class="g-margin-b-40--xs">
-                                    <p class="g-font-size-22--xs g-font-size-28--sm g-color--white"><i>" I have purchased many great templates over the years but this product and this company have taken it to the next level. Exceptional customizability. "</i></p>
+                                    <p class="g-font-size-22--xs g-font-size-28--sm g-color--white"><i>" I have purchased many great software over the years but this product and this company have taken it to the next level. Exceptional customizability. "</i></p>
                                 </div>
                                 <div class="center-block g-hor-divider__solid--white-opacity-lightest g-width-100--xs g-margin-b-30--xs"></div>
                                 <h4 class="g-font-size-15--xs g-font-size-18--sm g-color--white-opacity-light g-margin-b-5--xs">Jake Richardson / Google</h4>
@@ -524,7 +521,7 @@
                         <div class="swiper-slide g-padding-x-130--sm g-padding-x-150--lg">
                             <div class="g-padding-x-20--xs g-padding-x-50--lg">
                                 <div class="g-margin-b-40--xs">
-                                    <p class="g-font-size-22--xs g-font-size-28--sm g-color--white"><i>" I have purchased many great templates over the years but this product and this company have taken it to the next level. Exceptional customizability. "</i></p>
+                                    <p class="g-font-size-22--xs g-font-size-28--sm g-color--white"><i>" Process Automations requires a lot of understanding and technique and sometimes the workflow process is complicated and tasks overwhelming, Cavidel Limited help resolved this by building a software called OfficeMate "</i></p>
                                 </div>
                                 <div class="center-block g-hor-divider__solid--white-opacity-lightest g-width-100--xs g-margin-b-30--xs"></div>
                                 <h4 class="g-font-size-15--xs g-font-size-18--sm g-color--white-opacity-light g-margin-b-5--xs">Jake Richardson / Google</h4>
@@ -533,7 +530,7 @@
                         <div class="swiper-slide g-padding-x-130--sm g-padding-x-150--lg">
                             <div class="g-padding-x-20--xs g-padding-x-50--lg">
                                 <div class="g-margin-b-40--xs">
-                                    <p class="g-font-size-22--xs g-font-size-28--sm g-color--white"><i>" I have purchased many great templates over the years but this product and this company have taken it to the next level. Exceptional customizability. "</i></p>
+                                    <p class="g-font-size-22--xs g-font-size-28--sm g-color--white"><i>" I try, Cavidel Limited OfficeMate Software 30days for free, and i ended up subscribing. "</i></p>
                                 </div>
                                 <div class="center-block g-hor-divider__solid--white-opacity-lightest g-width-100--xs g-margin-b-30--xs"></div>
                                 <h4 class="g-font-size-15--xs g-font-size-18--sm g-color--white-opacity-light g-margin-b-5--xs">Jake Richardson / Google</h4>
@@ -648,12 +645,12 @@
                                 <span class="g-font-size-40--xs g-color--white">k</span>
                             </div>
                             <div class="center-block g-hor-divider__solid--white g-width-40--xs g-margin-b-25--xs"></div>
-                            <h4 class="g-font-size-18--xs g-color--white">Lines of Code</h4>
+                            <h4 class="g-font-size-18--xs g-color--white">Visitors</h4>
                         </div>
                     </div>
                     <div class="col-md-3 col-xs-6 g-full-width--xs g-margin-b-70--xs g-margin-b-0--lg">
                         <div class="g-text-center--xs">
-                            <figure class="g-display-block--xs g-font-size-70--xs g-color--white g-margin-b-10--xs js__counter">5</figure>
+                            <figure class="g-display-block--xs g-font-size-70--xs g-color--white g-margin-b-10--xs js__counter">3</figure>
                             <div class="center-block g-hor-divider__solid--white g-width-40--xs g-margin-b-25--xs"></div>
                             <h4 class="g-font-size-18--xs g-color--white">Award Winners</h4>
                         </div>
@@ -662,7 +659,7 @@
                         <div class="g-text-center--xs">
                             <figure class="g-display-block--xs g-font-size-70--xs g-color--white g-margin-b-10--xs js__counter">15</figure>
                             <div class="center-block g-hor-divider__solid--white g-width-40--xs g-margin-b-25--xs"></div>
-                            <h4 class="g-font-size-18--xs g-color--white">Multiple Pages</h4>
+                            <h4 class="g-font-size-18--xs g-color--white">Deployed Software</h4>
                         </div>
                     </div>
                     <div class="col-md-3 col-xs-6 g-full-width--xs">
