@@ -167,11 +167,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        Cavidel\Providers\AppServiceProvider::class,
+        Cavidel\Providers\AuthServiceProvider::class,
+        // Cavidel\Providers\BroadcastServiceProvider::class,
+        Cavidel\Providers\EventServiceProvider::class,
+        Cavidel\Providers\RouteServiceProvider::class,
 
     ],
 

@@ -28,8 +28,8 @@
         <link href="css/global/global.css" rel="stylesheet" type="text/css"/>
 
         <!-- Favicon -->
-        <link rel="shortcut icon" href="img/cavidel-white-logo.png" type="image/x-icon">
-        <link rel="apple-touch-icon" href="img/cavidel-white-logo.png">
+        <link rel="shortcut icon" href="img/cavidel-logo-white.png" type="image/x-icon">
+        <link rel="apple-touch-icon" href="img/cavidel-logo-white.png">
     </head>
     <!-- End Head -->
 
