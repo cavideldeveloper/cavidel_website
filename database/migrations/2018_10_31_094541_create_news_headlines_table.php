@@ -15,6 +15,11 @@ class CreateNewsHeadlinesTable extends Migration
     {
         Schema::create('news_headlines', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('author');
+            $table->string('title');
+            $table->text('description');
+            $table->string('image');
+            $table->string('status');
             $table->timestamps();
         });
     }

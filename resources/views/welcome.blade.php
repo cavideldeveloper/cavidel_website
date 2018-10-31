@@ -35,6 +35,7 @@
 
     <!-- Body -->
     <body>
+        <input type="hidden" value="{{ csrf_token() }}" id="token">
 
         <!--========== HEADER ==========-->
         <header class="navbar-fixed-top s-header js__header-sticky js__header-overlay">
@@ -475,8 +476,8 @@ We take great pride in our reputation for consistently delivering quality servic
                 </div>
                 <div class="row">
                     <div class="col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
-                        <form class="input-group">
-                            <input type="email" class="form-control s-form-v1__input g-radius--left-50" name="email" placeholder="Enter your email">
+                        <form class="input-group subscribe-form" onsubmit="return subscribeClient()">
+                            <input type="email" id="s-email" class="form-control s-form-v1__input g-radius--left-50" name="email" placeholder="Enter your email">
                             <span class="input-group-btn">
                                 <button type="submit" class="s-btn s-btn-icon--md s-btn-icon--white-brd s-btn--white-brd g-radius--right-50"><i class="ti-arrow-right"></i></button>
                             </span>
@@ -594,44 +595,7 @@ We take great pride in our reputation for consistently delivering quality servic
                 <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-25--xs">Blog</p>
                 <h2 class="g-font-size-32--xs g-font-size-36--md">Latest News</h2>
             </div>
-            <div class="row">
-                <div class="col-sm-4 g-margin-b-30--xs g-margin-b-0--md">
-                    <!-- News -->
-                    <article>
-                        <img class="img-responsive" src="img/970x970/01.jpg" alt="Image">
-                        <div class="g-bg-color--white g-box-shadow__dark-lightest-v2 g-text-center--xs g-padding-x-40--xs g-padding-y-40--xs">
-                            <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2">News</p>
-                            <h3 class="g-font-size-22--xs g-letter-spacing--1"><a href="http://keenthemes.com/">Create Something Great.</a></h3>
-                            <p>The time has come to bring those ideas and plans to life.</p>
-                        </div>
-                    </article>
-                    <!-- End News -->
-                </div>
-                <div class="col-sm-4 g-margin-b-30--xs g-margin-b-0--md">
-                    <!-- News -->
-                    <article>
-                        <img class="img-responsive" src="img/970x970/02.jpg" alt="Image">
-                        <div class="g-bg-color--white g-box-shadow__dark-lightest-v2 g-text-center--xs g-padding-x-40--xs g-padding-y-40--xs">
-                            <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2">News</p>
-                            <h3 class="g-font-size-22--xs g-letter-spacing--1"><a href="http://keenthemes.com/">Jacks of All. Experts in All.</a></h3>
-                            <p>The time has come to bring those ideas and plans to life.</p>
-                        </div>
-                    </article>
-                    <!-- End News -->
-                </div>
-                <div class="col-sm-4">
-                    <!-- News -->
-                    <article>
-                        <img class="img-responsive" src="img/970x970/03.jpg" alt="Image">
-                        <div class="g-bg-color--white g-box-shadow__dark-lightest-v2 g-text-center--xs g-padding-x-40--xs g-padding-y-40--xs">
-                            <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2">News</p>
-                            <h3 class="g-font-size-22--xs g-letter-spacing--1"><a href="http://keenthemes.com/">Finding your Perfect Place.</a></h3>
-                            <p>The time has come to bring those ideas and plans to life.</p>
-                        </div>
-                    </article>
-                    <!-- End News -->
-                </div>
-            </div>
+            <div class="row display-news"></div>
         </div>
         <!-- End News -->
 
@@ -685,19 +649,19 @@ We take great pride in our reputation for consistently delivering quality servic
                     <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-25--xs">Feedback</p>
                     <h2 class="g-font-size-32--xs g-font-size-36--md">Send us a note</h2>
                 </div>
-                <form>
+                <form method="post" class="contact-form" onsubmit="return contactSupport()">
                     <div class="row g-margin-b-40--xs">
                         <div class="col-sm-6 g-margin-b-20--xs g-margin-b-0--md">
                             <div class="g-margin-b-20--xs">
-                                <input type="text" class="form-control s-form-v2__input g-radius--50" placeholder="* Name">
+                                <input type="text" id="c-name" class="form-control s-form-v2__input g-radius--50" placeholder="* Name">
                             </div>
                             <div class="g-margin-b-20--xs">
-                                <input type="email" class="form-control s-form-v2__input g-radius--50" placeholder="* Email">
+                                <input type="email" id="c-email" class="form-control s-form-v2__input g-radius--50" placeholder="* Email">
                             </div>
-                            <input type="text" class="form-control s-form-v2__input g-radius--50" placeholder="* Phone">
+                            <input type="text" id="c-phone" class="form-control s-form-v2__input g-radius--50" placeholder="* Phone">
                         </div>
                         <div class="col-sm-6">
-                            <textarea class="form-control s-form-v2__input g-radius--10 g-padding-y-20--xs" rows="8" placeholder="* Your message"></textarea>
+                            <textarea id="c-message" class="form-control s-form-v2__input g-radius--10 g-padding-y-20--xs" rows="8" placeholder="* Your message"></textarea>
                         </div>
                     </div>
                     <div class="g-text-center--xs">
@@ -788,7 +752,7 @@ We take great pride in our reputation for consistently delivering quality servic
         <script type="text/javascript" src="vendor/counterup.min.js"></script>
         <script type="text/javascript" src="vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
         <script type="text/javascript" src="vendor/jquery.parallax.min.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsXUGTFS09pLVdsYEE9YrO2y4IAncAO2U"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkrja0K9YTRtwpiI61uMaWxyNuE9By8qQ"></script>
         <script type="text/javascript" src="vendor/jquery.wow.min.js"></script>
 
         <!-- General Components and Settings -->
@@ -802,7 +766,123 @@ We take great pride in our reputation for consistently delivering quality servic
         <script type="text/javascript" src="js/components/parallax.min.js"></script>
         <script type="text/javascript" src="js/components/google-map.min.js"></script>
         <script type="text/javascript" src="js/components/wow.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.11/dist/sweetalert2.all.min.js"></script>
         <!--========== END JAVASCRIPTS ==========-->
+
+        <script type="text/javascript">
+            // load global news
+            function loadGlobalNews() {
+                $.get('{{ url('load/global/news') }}', function(data) {
+                    $(".display-news").html("");
+                    var sn = 0;
+                    $.each(data, function(index, val) {
+                        sn++;
+                        $(".display-news").append(`
+                            <div class="col-sm-4 g-margin-b-30--xs g-margin-b-0--md">
+                                <!-- News -->
+                                <article>
+                                    <img class="img-responsive" src="${val.urlToImage}" alt="Image">
+                                    <div class="g-bg-color--white g-box-shadow__dark-lightest-v2 g-text-center--xs g-padding-x-40--xs g-padding-y-40--xs">
+                                        <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2">${val.title}</p>
+                                        <h3 class="g-font-size-22--xs g-letter-spacing--1"><h3>
+                                        <p>${val.description}</p>
+                                    </div>
+                                </article>
+                                <!-- End News -->
+                            </div>
+
+                        `);
+
+                        if(sn > 2){
+                            // void loop
+                            return false;
+                        }
+                    });
+                });
+            }
+
+            // subscribe client
+            function subscribeClient() {
+                var token = $("#token").val();
+                var email = $("#s-email").val();
+
+                var params = {
+                    _token: token,
+                    email: email,
+                    client_ip: "none",
+                    client_browser: "none",
+                    client_device: "none"
+                };
+
+                $.post('{{ url('client/subscribe/email') }}', params, function(data, textStatus, xhr) {
+                    if(data.status == "success"){
+                        swal(
+                            "subscribed",
+                            data.message,
+                            data.status
+                        );
+
+                        // reset form
+                        $(".subscribe-form")[0].reset();
+                    }else{
+                        swal(
+                            "oops",
+                            data.message,
+                            data.status
+                        );
+                    }
+                });
+
+                // return
+                return false;
+            }
+
+            // contact site
+            function contactSupport() {
+                var token   = $("#token").val();
+                var name    = $("#c-name").val();
+                var email   = $("#c-email").val();
+                var phone   = $("#c-phone").val();
+                var message = $("#c-message").val();
+
+                var params = {
+                    _token: token,
+                    email: email,
+                    name: name,
+                    phone: phone,
+                    message: message,
+                    client_ip: "none",
+                    client_browser: "none",
+                    client_device: "none"
+                };
+
+                $.post('{{ url('client/contact/support') }}', params, function(data, textStatus, xhr) {
+                    if(data.status == "success"){
+                        swal(
+                            "Sent!",
+                            data.message,
+                            data.status
+                        );
+
+                        // reset form
+                        $(".contact-form")[0].reset();
+
+                    }else{
+                        swal(
+                            "oops",
+                            data.message,
+                            data.status
+                        );
+                    }
+                });
+
+                // return
+                return false;
+            }
+
+            // display global news
+            loadGlobalNews();
+        </script>
 
     </body>
     <!-- End Body -->

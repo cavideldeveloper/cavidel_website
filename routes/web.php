@@ -22,4 +22,7 @@ Route::get('/', function () {
 |---------------------------------------------------------------------------------------------------------
 |
 */
-Route::get('/load/global/news', 	'ClientJsonResponseController@loadNews')->name('global_news');
+Route::get('/load/global/news', 			'ClientJsonResponseController@loadNews')->name('global_news');
+Route::post('/client/subscribe/email',		'ClientJsonResponseController@subscribeEmail')->name('subscribe');
+Route::post('/client/contact/support',		'ClientJsonResponseController@contactSupport')->name('contact_us');
+

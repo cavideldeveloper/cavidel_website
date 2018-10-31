@@ -4,6 +4,8 @@ namespace Cavidel\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Cavidel\NewsHeadline;
+use Cavidel\ClientSubscription;
+use Cavidel\SiteContact;
 
 class ClientJsonResponseController extends Controller
 {
@@ -19,4 +21,31 @@ class ClientJsonResponseController extends Controller
     	// return response
     	return response()->json($data);
     }
+
+    /*
+    |---------------------------------------------
+    | SUBSCRIBE CLIENT EMAIL
+    |---------------------------------------------
+    */
+    public function subscribeEmail(Request $request){
+        $subscription   = new ClientSubscription();
+        $data           = $subscription->subscribeMail($request);
+
+        // return response
+        return response()->json($data);
+    }
+
+    /*
+    |---------------------------------------------
+    | CONTACT SUPPORT
+    |---------------------------------------------
+    */
+    public function contactSupport(Request $request){
+        $contact   = new SiteContact();
+        $data      = $contact->contactUs($request);
+
+        // return response
+        return response()->json($data);
+    }
+
 }
