@@ -45,9 +45,9 @@
                         <div class="s-header__navbar-row-col">
                             <!-- Logo -->
                             <div class="s-header__logo">
-                                <a href="index.html" class="s-header__logo-link">
-                                    <img class="s-header__logo-img s-header__logo-img-default" width="84" height="auto" src="img/cavidel-white-logo.png" alt="{{env("APP_NAME") }} Logo">
-                                    <img class="s-header__logo-img s-header__logo-img-shrink" width="84" height="auto" src="img/cavidel-white-logo.png" alt="{{env("APP_NAME") }} Logo">
+                                <a href="{{ url('/') }}" class="s-header__logo-link">
+                                    <img class="s-header__logo-img s-header__logo-img-default" width="94" height="auto" src="img/cavidel-logo-white.png" alt="{{env("APP_NAME") }} Logo">
+                                    <img class="s-header__logo-img s-header__logo-img-shrink" width="84" height="auto" src="img/cavidel-logo.png" alt="{{env("APP_NAME") }} Logo">
                                 </a>
                             </div>
                             <!-- End Logo -->
@@ -77,6 +77,7 @@
                             <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider -is-active" href="{{ url('/') }}">Corporate</a></li>
                             <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('portfolio') }}">Portfolio</a></li>
                             <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('events') }}">Events</a></li>
+                            
                             <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('products') }}">Our Products</a></li>
                         </ul>
                         <!-- End Menu List -->
@@ -757,7 +758,7 @@ We take great pride in our reputation for consistently delivering quality servic
                 <div class="row">
                     <div class="col-xs-6">
                         <a href="{{ url('/') }}">
-                            <img src="img/cavidel-logo.png" width="64" height="auto" alt="Cavidel Logo">
+                            <img src="img/cavidel-logo-white.png" width="64" height="auto" alt="Cavidel Logo">
                         </a>
                     </div>
                     <div class="col-xs-6 g-text-right--xs">
