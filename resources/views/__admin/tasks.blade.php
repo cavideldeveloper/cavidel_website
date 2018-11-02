@@ -19,7 +19,7 @@
     </div>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-12 col-md-12">
+        <div class="col-lg-9 col-md-12">
           <div class="card">
             <div class="card-heading">
               <div class="card-title">
@@ -27,7 +27,8 @@
               </div>
             </div>
             <div class="card-body text-center pt0">
-              <div class="easypie-chart block-center" id="dashboard-easypiechartTask" data-percent="85"><small class="percentage">Goal</small></div>
+              <div class="easypie-chart block-center" id="dashboard-easypiechartTask" data-percent="85">
+                <small class="percentage">Goal</small></div>
               <p class="mv">85% productivity</p>
             </div>
             <div class="list-group m0">
@@ -54,6 +55,18 @@
             <div class="flot-chart flot-chart-sm" id="flot-task-chart" data-height="90"></div>
           </div>
         </div>
+        <div class="col-lg-3 col-md-12">
+          <div class="card">
+            <div class="card-heading">
+              <div class="card-title">
+                Progress
+              </div>
+            </div>
+            <div class="card-body text-center pt0">
+              
+            </div>
+          </div>
+        </di6
       </div>
     </div>
   </section>

@@ -7,7 +7,17 @@
     <ul class="hidden-xs">
       <li><a class="menu-link menu-link-slide" id="offcanvas-toggler" href=""><span><em></em></span></a></li>
     </ul>
-    <h2 class="header-title">Dashboard</h2>
+
+    @if(Request::url() == env("APP_URL").'/admin/dashboard')
+      <h2 class="header-title">Dashboard</h2>
+    @elseif(Request::url() == env("APP_URL").'/admin/tasks')
+      <h2 class="header-title">Tasks Manager</h2>
+    @elseif(Request::url() == env("APP_URL").'/admin/issues')
+      <h2 class="header-title">Issues Resolution Center (IRC)</h2>
+    @elseif(Request::url() == env("APP_URL").'/admin/projects')
+      <h2 class="header-title">Projects & Softwares</h2>
+    @endif
+
     <ul class="pull-right">
       <li><a class="ripple" id="header-search" href=""><em class="ion-ios-search-strong"></em></a></li>
       <li class="dropdown"><a class="dropdown-toggle has-badge ripple" href="" data-toggle="dropdown"><em class="ion-person"></em><sup class="badge bg-danger">3</sup></a>
