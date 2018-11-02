@@ -741,6 +741,7 @@ We take great pride in our reputation for consistently delivering quality servic
 
         <!--========== JAVASCRIPTS (Load javascripts at bottom, this will reduce page load time) ==========-->
         <!-- Vendor -->
+        <script src="{{ asset('js/app.js') }}"></script>
         <script type="text/javascript" src="vendor/jquery.min.js"></script>
         <script type="text/javascript" src="vendor/jquery.migrate.min.js"></script>
         <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -768,7 +769,7 @@ We take great pride in our reputation for consistently delivering quality servic
         <script type="text/javascript" src="js/components/google-map.min.js"></script>
         <script type="text/javascript" src="js/components/wow.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.11/dist/sweetalert2.all.min.js"></script>
-        <script src="{{ asset('js/app.js') }}"></script>
+        
         <!--========== END JAVASCRIPTS ==========-->
 
         <script type="text/javascript">

@@ -12,7 +12,6 @@ class SiteVisitor extends Model
     |---------------------------------------------
     */
     public function addVisitor($payload){
-
     	$new_visitor 					= new SiteVisitor();
     	$new_visitor->visitor_ip	 	= $payload->visitor_ip;
     	$new_visitor->visitor_browser 	= $payload->visitor_browser;

@@ -18,6 +18,26 @@ Route::get('/', function () {
 
 /*
 |---------------------------------------------------------------------------------------------------------
+| ADMIN AUTHENTICATION & PAGES ROUTES
+|---------------------------------------------------------------------------------------------------------
+*/
+Route::get('/admin/login',					'AdminAuthenticationController@showLogin');
+Route::get('/admin/dashboard',				'AdminPagesController@dashboard');
+Route::get('/admin/issues',					'AdminPagesController@issues');
+Route::get('/admin/projects',				'AdminPagesController@projects');
+Route::get('/admin/tasks',					'AdminPagesController@tasks');
+
+
+/*
+|---------------------------------------------------------------------------------------------------------
+| ADMIN JSON RESPONSE ROUTES
+|---------------------------------------------------------------------------------------------------------
+*/
+Route::get('/admin/load/software/issues',	'AdminJsonResponseController@loadIssues');
+
+
+/*
+|---------------------------------------------------------------------------------------------------------
 | LOAD GLOBAL NEWS
 |---------------------------------------------------------------------------------------------------------
 |
