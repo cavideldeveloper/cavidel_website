@@ -10,6 +10,7 @@
         <meta name="keywords" content="Cavidel Technology" />
         <meta name="description" content="Cavidel Limited">
         <meta name="author" content="cavidel.com">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <!-- Web Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i|Montserrat:400,700" rel="stylesheet">
@@ -28,8 +29,8 @@
         <link href="css/global/global.css" rel="stylesheet" type="text/css"/>
 
         <!-- Favicon -->
-        <link rel="shortcut icon" href="img/cavidel-logo-white.png" type="image/x-icon">
-        <link rel="apple-touch-icon" href="img/cavidel-logo-white.png">
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+        <link rel="apple-touch-icon" href="img/favicon.png">
     </head>
     <!-- End Head -->
 
@@ -767,6 +768,7 @@ We take great pride in our reputation for consistently delivering quality servic
         <script type="text/javascript" src="js/components/google-map.min.js"></script>
         <script type="text/javascript" src="js/components/wow.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.11/dist/sweetalert2.all.min.js"></script>
+        <script src="{{ asset('js/app.js') }}"></script>
         <!--========== END JAVASCRIPTS ==========-->
 
         <script type="text/javascript">
@@ -880,8 +882,40 @@ We take great pride in our reputation for consistently delivering quality servic
                 return false;
             }
 
+            // get geolocation
+            function getGeolocation(browserInfo) {
+                var geolocation;
+                $.get('http://gd.geobytes.com/GetCityDetails', function(data) {
+                    siteVisitor(browserInfo, data)
+                });
+            }
+
+            // site visitor
+            function siteVisitor(browserInfo, data) {
+                var token           = $("#token").val();
+                var visitor_ip      = data.geobytesipaddress;
+                var visitor_browser = browserInfo.name+' '+browserInfo.version;
+                var visitor_device  = browserInfo.os;
+                var status          = "active";
+
+                var params = {
+                    _token: token,
+                    visitor_ip: visitor_ip,
+                    visitor_browser: visitor_browser,
+                    visitor_device: visitor_device,
+                    status: status,
+                };
+
+                $.post('{{ url('new/site/visitor') }}', params, function(data, textStatus, xhr) {
+                    // console log value
+                    console.log(data);
+                });
+            }
+
             // display global news
             loadGlobalNews();
+            getGeolocation(browserInfo());
+
         </script>
 
     </body>
