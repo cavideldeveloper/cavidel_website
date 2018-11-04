@@ -3,6 +3,8 @@
 namespace Cavidel\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Cavidel\Project;
+use Cavidel\Documentation;
 
 class AdminPagesController extends Controller
 {
@@ -31,6 +33,17 @@ class AdminPagesController extends Controller
     */
     public function projects(){
     	return view('__admin.projects');
+    }
+
+    /*
+    |---------------------------------------------
+    | SHOW SINGLE PROJECT
+    |---------------------------------------------
+    */
+    public function viewProject($id){
+        $project    = Project::where("id", $id)->first();
+        $docs       = Documentation::getDocs($id);
+        return view('__admin.view-project', compact('id', 'project', 'docs'));
     }
 
     /*

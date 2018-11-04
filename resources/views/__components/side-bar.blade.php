@@ -21,7 +21,9 @@
         <li>
           <a class="ripple" href="{{ url('/admin/issues') }}">
             <span class="pull-right nav-label">
-              <span class="badge bg-success">23</span>
+              <span class="badge bg-success">
+                <span class="issues_counts"></span>
+              </span>
             </span>
             <span class="nav-icon">
               <img class="hidden" src="{{ asset('admin-assets/img/icons/aperture.svg') }}" alt="MenuItem">

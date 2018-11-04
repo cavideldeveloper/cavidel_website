@@ -18,13 +18,22 @@ Route::get('/', function () {
 
 /*
 |---------------------------------------------------------------------------------------------------------
-| ADMIN AUTHENTICATION & PAGES ROUTES
+| ADMIN AUTHENTICATION
 |---------------------------------------------------------------------------------------------------------
 */
 Route::get('/admin/login',					'AdminAuthenticationController@showLogin');
+Route::post('/admin/login',					'AdminAuthenticationController@doLogin');
+
+
+/*
+|---------------------------------------------------------------------------------------------------------
+| ADMIN PAGES ROUTES
+|---------------------------------------------------------------------------------------------------------
+*/
 Route::get('/admin/dashboard',				'AdminPagesController@dashboard');
 Route::get('/admin/issues',					'AdminPagesController@issues');
 Route::get('/admin/projects',				'AdminPagesController@projects');
+Route::get('/admin/view/project/{id}',		'AdminPagesController@viewProject');
 Route::get('/admin/tasks',					'AdminPagesController@tasks');
 
 
@@ -34,6 +43,10 @@ Route::get('/admin/tasks',					'AdminPagesController@tasks');
 |---------------------------------------------------------------------------------------------------------
 */
 Route::get('/admin/load/software/issues',	'AdminJsonResponseController@loadIssues');
+Route::post('/admin/add/project',			'AdminJsonResponseController@addNewProject');
+Route::get('/admin/load/projects',			'AdminJsonResponseController@loadProject');
+Route::get('/admin/load/single/project/{id}','AdminJsonResponseController@loadOneProject');
+Route::get('/admin/count/all/issues',		'AdminJsonResponseController@countIssues');
 
 
 /*

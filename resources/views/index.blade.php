@@ -300,7 +300,7 @@
                                             <li><span>Tags:</span> Farmers, Services Providers, Rice Farming, Poultry, Fish Farming</li>
                                         </ul>
 
-                                        <a href="http://www.yeelda.ng" target="_blank" class="btn">LAUNCH NOW</a>
+                                        <a href="http://www.yeelda.com" target="_blank" class="btn">LAUNCH NOW</a>
                                     </div>
                                 </div>
                             </div>

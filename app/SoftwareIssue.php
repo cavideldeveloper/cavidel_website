@@ -48,4 +48,17 @@ class SoftwareIssue extends Model
         // return
         return $software_issue;
     }
+
+    /*
+    |-----------------------------------------
+    | COUNT ALL SOFTWARE ISSUES
+    |-----------------------------------------
+    */
+    public function countAllSoftwareIssues(){
+        // body
+        $software_issues = SoftwareIssue::count();
+
+        // return
+        return $software_issues;
+    }
 }
