@@ -4,7 +4,7 @@ jQuery(document).ready(function($){
   //set your google maps parameters
   var latitude = 41.850,
       longitude = -73.961,
-      map_zoom = 6;
+      map_zoom = 200;
 
   //google map custom marker icon - .png fallback for IE11
   var is_internetExplorer11= navigator.userAgent.toLowerCase().indexOf('trident') > -1;
@@ -14,189 +14,17 @@ jQuery(document).ready(function($){
   var main_color = '#f7f8fa',
     saturation_value= -70,
     brightness_value= 40;
-
-  //we define here the style of the map
-  var style= [ 
-    {
-      //set saturation for the labels on the map
-      elementType: 'labels',
-      stylers: [
-        {saturation: saturation_value}
-      ]
-    },  
-      { //poi stands for point of interest - don't show these lables on the map 
-      featureType: 'poi',
-      elementType: 'labels',
-      stylers: [
-        {visibility: 'off'}
-      ]
-    },
-    {
-      //don't show highways lables on the map
-          featureType: 'road.highway',
-          elementType: 'labels',
-          stylers: [
-              {visibility: 'off'}
-          ]
-      }, 
-    {   
-      //don't show local road lables on the map
-      featureType: 'road.local', 
-      elementType: 'labels.icon', 
-      stylers: [
-        {visibility: 'off'} 
-      ] 
-    },
-    { 
-      //don't show arterial road lables on the map
-      featureType: 'road.arterial', 
-      elementType: 'labels.icon', 
-      stylers: [
-        {visibility: 'off'}
-      ] 
-    },
-    {
-      //don't show road lables on the map
-      featureType: 'road',
-      elementType: 'geometry.stroke',
-      stylers: [
-        {visibility: 'off'}
-      ]
-    }, 
-    //style different elements on the map
-    { 
-      featureType: 'transit', 
-      elementType: 'geometry.fill', 
-      stylers: [
-        { hue: main_color },
-        { visibility: 'on' }, 
-        { lightness: brightness_value }, 
-        { saturation: saturation_value }
-      ]
-    }, 
-    {
-      featureType: 'poi',
-      elementType: 'geometry.fill',
-      stylers: [
-        { hue: main_color },
-        { visibility: 'on' }, 
-        { lightness: brightness_value }, 
-        { saturation: saturation_value }
-      ]
-    },
-    {
-      featureType: 'poi.government',
-      elementType: 'geometry.fill',
-      stylers: [
-        { hue: main_color },
-        { visibility: 'on' }, 
-        { lightness: brightness_value }, 
-        { saturation: saturation_value }
-      ]
-    },
-    {
-      featureType: 'poi.sport_complex',
-      elementType: 'geometry.fill',
-      stylers: [
-        { hue: main_color },
-        { visibility: 'on' }, 
-        { lightness: brightness_value }, 
-        { saturation: saturation_value }
-      ]
-    },
-    {
-      featureType: 'poi.attraction',
-      elementType: 'geometry.fill',
-      stylers: [
-        { hue: main_color },
-        { visibility: 'on' }, 
-        { lightness: brightness_value }, 
-        { saturation: saturation_value }
-      ]
-    },
-    {
-      featureType: 'poi.business',
-      elementType: 'geometry.fill',
-      stylers: [
-        { hue: main_color },
-        { visibility: 'on' }, 
-        { lightness: brightness_value }, 
-        { saturation: saturation_value }
-      ]
-    },
-    {
-      featureType: 'transit',
-      elementType: 'geometry.fill',
-      stylers: [
-        { hue: main_color },
-        { visibility: 'on' }, 
-        { lightness: brightness_value }, 
-        { saturation: saturation_value }
-      ]
-    },
-    {
-      featureType: 'transit.station',
-      elementType: 'geometry.fill',
-      stylers: [
-        { hue: main_color },
-        { visibility: 'on' }, 
-        { lightness: brightness_value }, 
-        { saturation: saturation_value }
-      ]
-    },
-    {
-      featureType: 'landscape',
-      stylers: [
-        { hue: main_color },
-        { visibility: 'on' }, 
-        { lightness: brightness_value }, 
-        { saturation: saturation_value }
-      ]
-      
-    },
-    {
-      featureType: 'road',
-      elementType: 'geometry.fill',
-      stylers: [
-        { hue: main_color },
-        { visibility: 'on' }, 
-        { lightness: brightness_value }, 
-        { saturation: saturation_value }
-      ]
-    },
-    {
-      featureType: 'road.highway',
-      elementType: 'geometry.fill',
-      stylers: [
-        { hue: main_color },
-        { visibility: 'on' }, 
-        { lightness: brightness_value }, 
-        { saturation: saturation_value }
-      ]
-    }, 
-    {
-      featureType: 'water',
-      elementType: 'geometry',
-      stylers: [
-        { hue: main_color },
-        { visibility: 'on' }, 
-        { lightness: brightness_value }, 
-        { saturation: saturation_value }
-      ]
-    }
-  ];
     
   //set google map options
   var map_options = {
     center: new google.maps.LatLng(latitude, longitude),
     zoom: map_zoom,
-    panControl: false,
-    zoomControl: false,
+    panControl: true,
+    zoomControl: true,
     mapTypeControl: false,
     streetViewControl: false,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
-    scrollwheel: false,
-    styles: style,
+    scrollwheel: true
   }
 
   //inizialize the map
@@ -205,9 +33,9 @@ jQuery(document).ready(function($){
   var contentString = '<div id="content">'+
     '<div id="siteNotice">'+
     '</div>'+
-    '<h2 id="firstHeading" class="firstHeading">Brooklyn</h2>'+
+    '<h2 id="firstHeading" class="firstHeading">Victoria Island</h2>'+
     '<div id="bodyContent">'+
-    '<p>277 Bedford Avenue, <br> Brooklyn, NY 11211, <br> New York, USA</p>'+
+    '<p>1004 Housing Estate, <br> Victoria Island, Block B12 flat 8402, <br> Lagos, Nigeria</p>'+
     '</div>'+
     '</div>';
 

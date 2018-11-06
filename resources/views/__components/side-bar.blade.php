@@ -40,6 +40,24 @@
         </li>
 
         <li>
+          <a class="ripple" href="{{ url('/admin/subscriptions') }}">
+            <span class="nav-icon">
+              <img class="hidden" src="{{ asset('admin-assets/img/icons/aperture.svg') }}" alt="MenuItem">
+            </span>
+            <span>Software Subscriptions</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="ripple" href="{{ url('/admin/builder') }}">
+            <span class="nav-icon">
+              <img class="hidden" src="{{ asset('admin-assets/img/icons/aperture.svg') }}" alt="MenuItem">
+            </span>
+            <span>CMS (Builder)</span>
+          </a>
+        </li>
+
+        <li>
           <a class="ripple" href="{{ url('/admin/tasks') }}">
             <span class="nav-icon">
               <img class="hidden" src="{{ asset('admin-assets/img/icons/aperture.svg') }}" alt="MenuItem">
