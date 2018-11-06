@@ -35,6 +35,25 @@ class AdminPagesController extends Controller
     	return view('__admin.projects');
     }
 
+
+    /*
+    |---------------------------------------------
+    | SHOW BUILDER 
+    |---------------------------------------------
+    */
+    public function cms(){
+        return view('__admin.cms');
+    }
+
+    /*
+    |---------------------------------------------
+    | SHOW SUBSCRIPTIONS
+    |---------------------------------------------
+    */
+    public function subscriptions(){
+        return view('__admin.subscriptions');
+    }
+
     /*
     |---------------------------------------------
     | SHOW SINGLE PROJECT

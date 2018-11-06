@@ -33,8 +33,10 @@ Route::post('/admin/login',					'AdminAuthenticationController@doLogin');
 Route::get('/admin/dashboard',				'AdminPagesController@dashboard');
 Route::get('/admin/issues',					'AdminPagesController@issues');
 Route::get('/admin/projects',				'AdminPagesController@projects');
+Route::get('/admin/subscriptions',			'AdminPagesController@subscriptions');
 Route::get('/admin/view/project/{id}',		'AdminPagesController@viewProject');
 Route::get('/admin/tasks',					'AdminPagesController@tasks');
+Route::get('/admin/builder',				'AdminPagesController@cms');
 
 
 /*
@@ -47,6 +49,9 @@ Route::post('/admin/add/project',			'AdminJsonResponseController@addNewProject')
 Route::get('/admin/load/projects',			'AdminJsonResponseController@loadProject');
 Route::get('/admin/load/single/project/{id}','AdminJsonResponseController@loadOneProject');
 Route::get('/admin/count/all/issues',		'AdminJsonResponseController@countIssues');
+
+Route::post('/admin/add/components',		'AdminJsonResponseController@addNewComponent');
+Route::get('/admin/all/components',			'AdminJsonResponseController@getAllComponent');
 
 
 /*

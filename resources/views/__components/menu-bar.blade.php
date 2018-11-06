@@ -16,6 +16,10 @@
       <h2 class="header-title">Issues Resolution Center (IRC)</h2>
     @elseif(strpos(Request::url(), '/admin/projects') == true)
       <h2 class="header-title">Projects & Softwares</h2>
+    @elseif(strpos(Request::url(), '/admin/subscriptions') == true)
+      <h2 class="header-title">Software Subscription</h2>
+    @elseif(strpos(Request::url(), '/admin/builder') == true)
+      <h2 class="header-title">CMS Builder</h2>
     @endif
 
     <ul class="pull-right">

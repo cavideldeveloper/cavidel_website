@@ -45,6 +45,10 @@
         $("#add-software").modal("show");
       });
 
+      $("#add-category-btn").click(function (e){
+        $("#add-category").modal("show");
+      });
+
       // add software
       function addSoftware() {
         var token   = $("#token").val();

@@ -46,7 +46,7 @@
             <span class="nav-icon">
               <img class="hidden" src="{{ asset('admin-assets/img/icons/aperture.svg') }}" alt="MenuItem">
             </span>
-            <span>Software Subscriptions</span>
+            <span>Subscriptions</span>
           </a>
         </li>
 

@@ -270,3 +270,56 @@
     </div>
   </div>
 </div>
+
+<!-- Add Software modal-->
+<div class="modal fade" id="add-category" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p>Add new component</p>
+      </div>
+      <div class="modal-body">
+        <form method="post" onsubmit="return addComponent()">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Component name?</label>
+                <input type="text" id="com_name" class="form-control" placeholder="Enter project name.." name="">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>What page can we find this component?</label>
+                <select class="form-control" id="com_page">
+                  <option value="none">--none--</option>
+                  <option value="about">About Page</option>
+                  <option value="team">Team Page</option>
+                  <option value="faq">Faq Page</option>
+                  <option value="services">Services Page</option>
+                  <option value="contact">Contact Page</option>
+                  <option value="corperate">Corperate Page</option>
+                  <option value="portfolio">Portfolio Page</option>
+                  <option value="events">Events Page</option>
+                  <option value="products">Products Page</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <button class="btn btn-primary">
+              Add Components
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <div class="pull-left">
+          <button class="btn btn-flat" type="button" data-dismiss="modal">
+            <em class="ion-arrow-left-c icon-24"></em>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

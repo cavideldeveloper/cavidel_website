@@ -4,6 +4,7 @@ namespace Cavidel\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Cavidel\SoftwareIssue;
+use Cavidel\Component;
 use Cavidel\Project;
 
 class AdminJsonResponseController extends Controller
@@ -71,6 +72,32 @@ class AdminJsonResponseController extends Controller
     public function loadOneProject($id){
         $new_project    = new Project();
         $data           = $new_project->getOneProject($id);
+
+        // return response
+        return response()->json($data);
+    }
+
+    /*
+    |---------------------------------------------
+    | ADD COMPONENT
+    |---------------------------------------------
+    */
+    public function addNewComponent(Request $request){
+        $component  = new Component();
+        $data       = $component->addNewCompoent($request);
+
+        // return response
+        return response()->json($data);
+    }
+
+    /*
+    |---------------------------------------------
+    | GET COMPONENT
+    |---------------------------------------------
+    */
+    public function getAllComponent(Request $request){
+        $component  = new Component();
+        $data       = $component->getAllComponent($request);
 
         // return response
         return response()->json($data);
