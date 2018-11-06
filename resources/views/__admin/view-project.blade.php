@@ -17,14 +17,37 @@
     </div>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6">
           <div class="card">
             <div class="card-body">
               <h5 class="mt0">{{ $project->name }}</h5>
               <p class="mb-lg">{{ $project->company }}</p>
+              <br /><br />
             </div>
           </div>
         </div>
+
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <table class="table">
+                <tr>
+                  <td>Application Key</td>
+                  <td>
+                    *********** 
+                      <a href="javascript:void(0);" class="pull-right link">
+                        <i class="ion-eye"></i>  Show</a>
+                      </td>
+                </tr>
+                <tr>
+                  <td>Project Phase</td>
+                  <td>{{ ucfirst($project->project_stage) }}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <div class="row">

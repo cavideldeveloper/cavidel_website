@@ -61,15 +61,15 @@
           company: company
         };
 
-        $.post('{{url('admin/add/project')}}', params, function(data, textStatus, xhr) {
+        $.post('{{url('admin/add/projects')}}', params, function(data, textStatus, xhr) {
           if(data.status == "success"){
             swal(
               "Ok",
               data.message,
               data.status
             );
-
             $("#add-software").modal("hide");
+            window.location.href = '{{ url("admin/projects") }}';
           }else{
             swal(
               "oops",
