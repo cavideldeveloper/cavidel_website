@@ -8,13 +8,13 @@
       <li><a class="menu-link menu-link-slide" id="offcanvas-toggler" href=""><span><em></em></span></a></li>
     </ul>
 
-    @if(Request::url() == env("APP_URL").'/admin/dashboard')
+    @if(strpos(Request::url(), '/admin/dashboard') == true)
       <h2 class="header-title">Dashboard</h2>
-    @elseif(Request::url() == env("APP_URL").'/admin/tasks')
+    @elseif(strpos(Request::url(), '/admin/tasks') == true)
       <h2 class="header-title">Tasks Manager</h2>
-    @elseif(Request::url() == env("APP_URL").'/admin/issues')
+    @elseif(strpos(Request::url(), '/admin/issues') == true)
       <h2 class="header-title">Issues Resolution Center (IRC)</h2>
-    @elseif(Request::url() == env("APP_URL").'/admin/projects')
+    @elseif(strpos(Request::url(), '/admin/projects') == true)
       <h2 class="header-title">Projects & Softwares</h2>
     @endif
 

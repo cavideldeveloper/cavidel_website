@@ -39,15 +39,52 @@
 
 @section('scripts')
 	<script type="text/javascript">
-		function loginAdmin() {
-			var password = $("#password").val();
-			var email = $("#email").val();
-			if(password == "" && email == ""){
-				return false;
-			}else{
-				window.location.href = "{{ url('admin/dashboard') }}";
-			}
-			return false;
-		}
+    // login admin
+    function loginAdmin(){
+      // body...
+      var token = '{{ csrf_token() }}';
+      var username = $("#email").val();
+      var password = $("#password").val();
+
+      // data to json
+      var data = {
+        _token:token,
+        username:username,
+        password:password
+      }
+
+      // ajax query
+      $.ajax({
+        url: '/admin/login',
+        type: 'POST',
+        dataType: 'json',
+        data: data,
+        success: function(data){
+          // on success
+          if(data.status == 'success'){
+            window.location.href = '/admin/dashboard';
+          }
+          // on error
+          if(data.status == 'error'){
+            swal(
+              "error",
+              data.message,
+              data.status
+            );
+          }
+        },
+        error: function(data){
+          swal(
+            "oops",
+            "Error sending request..",
+            "error"
+          );
+          $("#loading").hide();
+        }
+      });
+
+      // prevent form action from loading 
+      return false;
+    }
 	</script>
 @endsection
