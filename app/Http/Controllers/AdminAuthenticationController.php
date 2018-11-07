@@ -4,6 +4,7 @@ namespace Cavidel\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Cavidel\Admin;
+use Auth;
 
 class AdminAuthenticationController extends Controller
 {

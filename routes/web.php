@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/about',						'ExternalPagesController@about');
+
 
 /*
 |---------------------------------------------------------------------------------------------------------
@@ -38,6 +40,9 @@ Route::get('/admin/view/project/{id}',		'AdminPagesController@viewProject');
 Route::get('/admin/tasks',					'AdminPagesController@tasks');
 Route::get('/admin/builder',				'AdminPagesController@cms');
 
+Route::get('admin/view/page/{page}',		'AdminPagesController@viewCmsPage');
+Route::get('admin/view/component/{id}',		'AdminPagesController@viewComponent');
+
 
 /*
 |---------------------------------------------------------------------------------------------------------
@@ -52,6 +57,9 @@ Route::get('/admin/count/all/issues',		'AdminJsonResponseController@countIssues'
 
 Route::post('/admin/add/components',		'AdminJsonResponseController@addNewComponent');
 Route::get('/admin/all/components',			'AdminJsonResponseController@getAllComponent');
+Route::get('/admin/all/pages',				'AdminJsonResponseController@showAllPages');
+Route::get('/admin/page/components/{page}',	'AdminJsonResponseController@pageComponent');
+Route::get('/admin/load/components/{id}',	'AdminJsonResponseController@componentChild');
 
 
 /*

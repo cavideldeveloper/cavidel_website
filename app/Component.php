@@ -38,10 +38,29 @@ class Component extends Model
     |---------------------------------------------
     */
     public function getAllComponent(){
-    	$component = Component::all();
+    	
+        $all_pages = $this->allPages();
+        if(count($all_pages) > 0){
+            $total = count($all_pages);
+            $compo_box = [];
+            for($i = 0; $i < $total; $i++) {
+                # code...
+                $components = Component::where("page", $all_pages[$i])->get();
+
+                $data = [
+                    'page'          => ucfirst($all_pages[$i]),
+                    'components'    => $components
+                ];
+
+                array_push($compo_box, $data);
+
+            }
+        }else{
+            $compo_box = [];
+        }
 
     	// return
-    	return $component;
+    	return $compo_box;
     }
 
     /*
@@ -50,7 +69,7 @@ class Component extends Model
     |---------------------------------------------
     */
     public function getPageComponent($page){
-    	$component = Component::where("page", $page)->get();
+    	$component = Component::where("page", strtolower($page))->get();
 
     	// return
     	return $component;
@@ -85,5 +104,38 @@ class Component extends Model
 
     	// return
     	return $component;
+    }
+
+    /*
+    |---------------------------------------------
+    | ALL SITE PAGES
+    |---------------------------------------------
+    */
+    public function allPages(){
+        $pages = [
+            'about',
+            'team',
+            'faq',
+            'services',
+            'contact',
+            'corperate',
+            'portfolio',
+            'events',
+            'products',
+        ];
+
+        // return
+        return collect($pages);
+    }
+
+    /*
+    |---------------------------------------------
+    | GET COMPONENT CONTENTS
+    |---------------------------------------------
+    */
+    public function getContents($id){
+
+        // return
+        return $data = [];
     }
 }

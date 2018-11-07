@@ -102,4 +102,45 @@ class AdminJsonResponseController extends Controller
         // return response
         return response()->json($data);
     }
+
+
+    /*
+    |---------------------------------------------
+    | SHOW ALL PAGES
+    |---------------------------------------------
+    */
+    public function showAllPages(){
+        $component  = new Component();
+        $data       = $component->allPages();
+
+        // return response
+        return response()->json($data);
+    }
+
+    /*
+    |---------------------------------------------
+    | GET SINGLE PAGE WITH ALL COMPONENTS
+    |---------------------------------------------
+    */
+    public function pageComponent($page){
+        $component  = new Component();
+        $data       = $component->getPageComponent($page);
+
+        // return response
+        return response()->json($data);
+    }
+
+    /*
+    |---------------------------------------------
+    | GET COMPONENT CONTENTS
+    |---------------------------------------------
+    */
+    public function componentChild($id){
+        $component  = new Component();
+        $data       = $component->getContents($id);
+
+        // return response
+        return response()->json($data);
+    }
+
 }

@@ -20,6 +20,8 @@
 
     <script src="{{ asset('admin-assets/js/vendor-user.js') }}"></script>
     <script src="{{ asset('admin-assets/js/app.js') }}"></script>
+    <!-- Sweet-Alert  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.26.28/dist/sweetalert2.all.min.js"></script>
     @yield('scripts')
   </body>
 </html>

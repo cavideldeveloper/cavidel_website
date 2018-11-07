@@ -20,7 +20,8 @@
         <div class="col-lg-12 col-md-12">
           <div class="card">
             <div class="card-body">
-              <div class="row site-components"></div>
+              <div class="row site-components">
+              </div>
             </div>
           </div>
         </div>
@@ -78,11 +79,13 @@
         $.each(data, function(index, val) {
           $(".site-components").append(`
             <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <i class="fa fa-plus fa-2x"></i> ${val.page}
+              <a href="{{url('admin/view/page')}}/${val.page}" style="text-decoration:none;">
+                <div class="card">
+                  <div class="card-body">
+                    <i class="fa fa-plus fa-2x"></i> ${val.page}
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           `);
         });

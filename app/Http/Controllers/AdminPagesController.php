@@ -67,6 +67,24 @@ class AdminPagesController extends Controller
 
     /*
     |---------------------------------------------
+    | SHOW SINGLE PROJECT
+    |---------------------------------------------
+    */
+    public function viewCmsPage($page){
+        return view('__admin.view-cms-page', compact('page'));
+    }
+
+    /*
+    |---------------------------------------------
+    | ADMIN VIEW COMPONENT
+    |---------------------------------------------
+    */
+    public function viewComponent($id){
+        return view('__admin.view-page-component', compact('id'));
+    }
+
+    /*
+    |---------------------------------------------
     | SHOW TASK
     |---------------------------------------------
     */
