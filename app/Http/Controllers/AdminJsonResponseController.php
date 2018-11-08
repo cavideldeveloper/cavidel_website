@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Cavidel\SoftwareIssue;
 use Cavidel\Component;
 use Cavidel\Project;
+use Cavidel\SiteVisitor;
 
 class AdminJsonResponseController extends Controller
 {
@@ -140,6 +141,21 @@ class AdminJsonResponseController extends Controller
         $data       = $component->getContents($id);
 
         // return response
+        return response()->json($data);
+    }
+
+
+    /*
+    |-----------------------------------------
+    | GET SITE VISITORS
+    |-----------------------------------------
+    */
+    public function getVisitorsCount(){
+        // body
+        $site_visitor   = new SiteVisitor();
+        $data           = $site_visitor->totalVisitor();
+        
+        // return response.
         return response()->json($data);
     }
 

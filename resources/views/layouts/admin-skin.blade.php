@@ -40,6 +40,7 @@
     <script type="text/javascript">
       {{-- get issues count --}}
       getIssuesCount();
+      getTotalVisit();
 
       $("#add-software-btn").click(function (e){
         $("#add-software").modal("show");
@@ -91,6 +92,13 @@
       function getIssuesCount() {
         $.get('{{url('admin/count/all/issues')}}', function(data) {
           $(".issues_counts").html(data);
+        });
+      }
+
+      // get total site visitor
+      function getTotalVisit() {
+        $.get('{{url('admin/get/total/visitor')}}', function(data) {
+          $(".total-visit").html(data);
         });
       }
     </script>

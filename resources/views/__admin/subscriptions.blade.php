@@ -7,14 +7,6 @@
 @section('contents')
   <!-- Page content-->
   <section>
-    <div class="content-heading bg-white">
-      <div class="row">
-        <div class="col-sm-9">
-          <h4 class="m0 text-thin">Welcome to Cavidel dashboard</h4><small>Make it count, Make it real.</small>
-        </div>
-        @include('__components.add-software')
-      </div>
-    </div>
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-12 col-md-12">
@@ -27,9 +19,10 @@
                     <thead>
                       <tr>
                         <th>Software</th>
-                        <th>Duration</th>
+                        <th>Expires on</th>
                         <th>Status</th>
-                        <th>Action</th>
+                        <th>Stage</th>
+                        <th>More</th>
                       </tr>
                     </thead>
                     <tbody class="display-software-subscriptions"></tbody>
@@ -55,20 +48,21 @@
 
     // load software issues
     function loadSoftwareSubscription() {
-      $.get('{{ url('admin/load/software/subscription') }}', function(data) {
+      $.get('{{ url('admin/load/projects') }}', function(data) {
         $(".display-software-subscriptions").val();
         $.each(data, function(index, val) {
           $(".display-software-subscriptions").append(`
             <tr>
               <td>
-                <p class="m0">${val.software_name}<br>
-                  <small class="text-thin">${val.software_client}</small>
+                <p class="m0">${val.name}<br>
+                  <small class="text-thin">${val.client}</small>
                 </p>
               </td>
-              <td class="va-middle">${val.software_duration}</td>
-              <td><em class="ion-arrow-graph-up-right text-success"></em> ${val.software_status}</td>
+              <td class="va-middle">${moment(val.duration).format("lll")}</td>
+              <td><em class="ion-ios-circle-outline text-success"></em> ${val.status}</td>
+              <td><em class="ion-arrow-graph-up-right text-success"></em> ${val.project_stage}</td>
               <td class="va-middle">
-                <a href="javascript:void(0);" class="small">Resolve</a>
+                <a href="{{url('admin/view/project')}}/${val.id}" class="small">view</a>
               </td>
             </tr>
           `);

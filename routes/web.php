@@ -55,6 +55,7 @@ Route::get('/admin/all/components',			'AdminJsonResponseController@getAllCompone
 Route::get('/admin/all/pages',				'AdminJsonResponseController@showAllPages');
 Route::get('/admin/page/components/{page}',	'AdminJsonResponseController@pageComponent');
 Route::get('/admin/load/components/{id}',	'AdminJsonResponseController@componentChild');
+Route::get('/admin/get/total/visitor',		'AdminJsonResponseController@getVisitorsCount');
 
 
 /*

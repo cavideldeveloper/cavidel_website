@@ -32,4 +32,17 @@ class SiteVisitor extends Model
 	    // return 
 	    return $data;
     }
+
+    /*
+    |-----------------------------------------
+    | COUNT TOTAL VISITOR
+    |-----------------------------------------
+    */
+    public function totalVisitor(){
+        // body
+        $total_visitor = SiteVisitor::count();
+
+        // return
+        return number_format($total_visitor);
+    }
 }

@@ -20,3 +20,4 @@ use Illuminate\Http\Request;
 
 Route::post('report/issue', 			'IssueReportController@reportIssue');
 Route::post('verify/key',				'IssueReportController@verifyKey');
+Route::post('verify/software',			'IssueReportController@verifySoftwareKey');

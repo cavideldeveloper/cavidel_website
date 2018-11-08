@@ -184,9 +184,10 @@
 
             // get geolocation
             function getGeolocation(browserInfo) {
-                var geolocation;
                 $.get('http://gd.geobytes.com/GetCityDetails', function(data) {
                     siteVisitor(browserInfo, data)
+                }).fail(function (err){
+                    siteVisitor(browserInfo, {geobytesipaddress: "0.0.0.0"})
                 });
             }
 
