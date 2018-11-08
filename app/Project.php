@@ -17,7 +17,7 @@ class Project extends Model
 
     	$days_default = 90;
 
-    	$payload->api_key 		= "C-".rand(000,999).rand(000,999).rand(000,999);
+    	$api_key 		        = "C-".rand(0000000000, 99999999999);
     	$payload->status 		= "active";
     	$payload->duration 		= Carbon::now()->addDays($days_default);
     	$payload->last_update 	= "none";
@@ -29,7 +29,7 @@ class Project extends Model
     	$new_project->sector 		= $payload->sector;
     	$new_project->client 		= $payload->clients;
     	$new_project->company 		= $payload->company;
-    	$new_project->app_key 		= $payload->app_key;
+    	$new_project->app_key 		= $api_key;
     	$new_project->status 		= $payload->status;
     	$new_project->duration 		= $payload->duration;
 		$new_project->last_update 	= $payload->last_update;

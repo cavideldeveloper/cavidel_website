@@ -6,6 +6,16 @@ use Illuminate\Http\Request;
 
 class ExternalPagesController extends Controller
 {
+
+	/*
+	|---------------------------------------------
+	| SHOW INDEX (ENTRY POINT)
+	|---------------------------------------------
+	*/
+	public function index(){
+		return view('index');
+	}
+
     /*
     |---------------------------------------------
     | SHOW ABOUT US
@@ -17,7 +27,16 @@ class ExternalPagesController extends Controller
 
     /*
     |---------------------------------------------
-    | SHOW ABOUT US
+    | SHOW TEAM
+    |---------------------------------------------
+    */
+    public function team(){
+    	return view('pages.team');
+    }
+
+    /*
+    |---------------------------------------------
+    | SHOW PORTFOLIO
     |---------------------------------------------
     */
     public function portfolio(){
@@ -26,7 +45,7 @@ class ExternalPagesController extends Controller
 
     /*
     |---------------------------------------------
-    | SHOW ABOUT US
+    | SHOW PROJECTS
     |---------------------------------------------
     */
     public function projects(){

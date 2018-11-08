@@ -50,7 +50,6 @@
 
 @section('scripts')
   <script type="text/javascript">
-
     loadSoftwareIssues();
 
     // load software issues
@@ -61,11 +60,11 @@
           $(".display-software-issues").append(`
             <tr>
               <td>
-                <p class="m0">OfficeMate<br>
+                <p class="m0">${val.project_info.name}<br>
                   <small class="text-thin">${val.software_issue}</small>
                 </p>
               </td>
-              <td class="va-middle">Lekki Gardens</td>
+              <td class="va-middle">${val.project_info.company}</td>
               <td><em class="ion-arrow-graph-up-right text-success"></em> Normal</td>
               <td class="va-middle">
                 <a href="javascript:void(0);" class="small">Resolve</a>

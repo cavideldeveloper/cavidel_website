@@ -1,21 +1,16 @@
 <?php
 
 /*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
+|---------------------------------------------------------------------------------------------------------
+| APPLICATION ENTRY POINT
+|---------------------------------------------------------------------------------------------------------
 |
 */
-
-Route::get('/', function () {
-    return view('index');
-});
-
+Route::get('/',								'ExternalPagesController@index');
 Route::get('/about',						'ExternalPagesController@about');
+Route::get('/contact',						'ExternalPagesController@contact');
+Route::get('/team',							'ExternalPagesController@team');
+
 
 
 /*
@@ -50,7 +45,7 @@ Route::get('admin/view/component/{id}',		'AdminPagesController@viewComponent');
 |---------------------------------------------------------------------------------------------------------
 */
 Route::get('/admin/load/software/issues',	'AdminJsonResponseController@loadIssues');
-Route::post('/admin/add/project',			'AdminJsonResponseController@addNewProject');
+Route::post('/admin/add/projects',			'AdminJsonResponseController@addNewProject');
 Route::get('/admin/load/projects',			'AdminJsonResponseController@loadProject');
 Route::get('/admin/load/single/project/{id}','AdminJsonResponseController@loadOneProject');
 Route::get('/admin/count/all/issues',		'AdminJsonResponseController@countIssues');

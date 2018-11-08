@@ -34,10 +34,18 @@
                 <tr>
                   <td>Application Key</td>
                   <td>
-                    *********** 
+
+                    @if($project->app_key == null)
+                      *********** 
                       <a href="javascript:void(0);" class="pull-right link">
                         <i class="ion-eye"></i>  Show</a>
                       </td>
+                    @else
+                      {{ $project->app_key }}
+                      <a href="javascript:void(0);" class="pull-right link">
+                        <i class="ion-eye"></i>  Hide</a>
+                      </td>
+                    @endif
                 </tr>
                 <tr>
                   <td>Project Phase</td>
