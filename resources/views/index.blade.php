@@ -2,7 +2,7 @@
 
 {{--  title --}}
 @section('title')
-    {{ env("APP_NAME") }} | About
+    {{ env("APP_NAME") }} | Welcome
 @endsection
 
 {{--  contents --}}

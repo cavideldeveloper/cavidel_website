@@ -67,6 +67,33 @@ class ExternalPagesController extends Controller
     |---------------------------------------------
     */
     public function events(){
-    	return view('pages.events');
+        return view('pages.events');
+    }
+
+    /*
+    |---------------------------------------------
+    | SHOW EVENT
+    |---------------------------------------------
+    */
+    public function services(){
+        return view('pages.services');
+    }
+
+    /*
+    |---------------------------------------------
+    | SHOW EVENT
+    |---------------------------------------------
+    */
+    public function faq(){
+        return view('pages.faq');
+    }
+
+    /*
+    |---------------------------------------------
+    | SHOW EVENT
+    |---------------------------------------------
+    */
+    public function corporate(){
+        return view('pages.corporate');
     }
 }

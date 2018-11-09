@@ -10,6 +10,10 @@ Route::get('/',								'ExternalPagesController@index');
 Route::get('/about',						'ExternalPagesController@about');
 Route::get('/contact',						'ExternalPagesController@contact');
 Route::get('/team',							'ExternalPagesController@team');
+Route::get('/events',						'ExternalPagesController@events');
+Route::get('/services',						'ExternalPagesController@services');
+Route::get('/faq',							'ExternalPagesController@faq');
+Route::get('/portfolio',					'ExternalPagesController@portfolio');
 
 
 

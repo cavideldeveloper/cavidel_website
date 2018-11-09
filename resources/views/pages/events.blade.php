@@ -22,21 +22,6 @@
     <!-- Speakers -->
     <div class="container g-padding-y-80--xs g-padding-y-125--sm">
         <div class="row g-overflow--hidden">
-            
-            <div class="col-xs-12 g-full-width--xs">
-                <!-- Speaker -->
-                <div class="center-block g-box-shadow__dark-lightest-v1 g-width-100-percent--xs g-width-400--lg">
-                    <img class="img-responsive g-width-100-percent--xs" src="img/400x400/01.jpg" alt="Image">
-                    <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-margin-t-o-60--xs">
-                        <div class="g-bg-color--primary g-padding-x-15--xs g-padding-y-10--xs g-margin-b-20--xs">
-                            <h4 class="g-font-size-22--xs g-font-size-26--sm g-color--white g-margin-b-0--xs">Dipo Odeyemi</h4>
-                        </div>
-                        <p class="g-font-weight--700">CEO/Founder</p>
-                        <p>Dipo’s twenty-three (23) years work experience cuts across diverse industry sectors, including Financial Markets, Banking, Consulting and Technology Services.</p>
-                    </div>
-                </div>
-                <!-- End Speaker -->
-            </div>
             <div class="col-xs-6 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
                 <!-- Speaker -->
                 <div class="center-block g-box-shadow__dark-lightest-v1 g-width-100-percent--xs g-width-400--lg">
@@ -45,21 +30,21 @@
                         <div class="g-bg-color--primary g-padding-x-15--xs g-padding-y-10--xs g-margin-b-20--xs">
                             <h4 class="g-font-size-22--xs g-font-size-26--sm g-color--white g-margin-b-0--xs">Anna Kusaikina</h4>
                         </div>
-                        <p class="g-font-weight--700">Consultant</p>
+                        <p class="g-font-weight--700">Founder</p>
                         <p>Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.</p>
                     </div>
                 </div>
                 <!-- End Speaker -->
             </div>
-            <div class="col-xs-6 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
+            <div class="col-xs-6 g-full-width--xs">
                 <!-- Speaker -->
                 <div class="center-block g-box-shadow__dark-lightest-v1 g-width-100-percent--xs g-width-400--lg">
-                    <img class="img-responsive g-width-100-percent--xs" src="img/400x400/02.jpg" alt="Image">
+                    <img class="img-responsive g-width-100-percent--xs" src="img/400x400/01.jpg" alt="Image">
                     <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-margin-t-o-60--xs">
                         <div class="g-bg-color--primary g-padding-x-15--xs g-padding-y-10--xs g-margin-b-20--xs">
-                            <h4 class="g-font-size-22--xs g-font-size-26--sm g-color--white g-margin-b-0--xs">Frances Obiezu</h4>
+                            <h4 class="g-font-size-22--xs g-font-size-26--sm g-color--white g-margin-b-0--xs">Lucas Richardson</h4>
                         </div>
-                        <p class="g-font-weight--700">Senior Consultant/Process Analyst</p>
+                        <p class="g-font-weight--700">CEO</p>
                         <p>Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.</p>
                     </div>
                 </div>
