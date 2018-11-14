@@ -22,7 +22,7 @@
             <div class="card-body pv">
               <div class="clearfix">
                 <div class="pull-left">
-                  <h4 class="m0 text-thin">350</h4><small class="m0 text-muted"><em class="mr-sm ion-arrow-up-b"></em>New visitors</small>
+                  <h4 class="m0 text-thin total-visit"></h4><small class="m0 text-muted"><em class="mr-sm ion-arrow-up-b"></em>New visitors</small>
                 </div>
                 <div class="pull-right mt-lg">
                   <div class="sparkline" id="sparkline2" data-line-color="#4caf50"></div>
@@ -36,7 +36,7 @@
             <div class="card-body pv">
               <div class="clearfix">
                 <div class="pull-left">
-                  <h4 class="m0 text-thin">10,200</h4><small class="m0 text-muted"><em class="mr-sm ion-arrow-down-b"></em>Page views</small>
+                  <h4 class="m0 text-thin total-visit"></h4><small class="m0 text-muted"><em class="mr-sm ion-arrow-down-b"></em>Page views</small>
                 </div>
                 <div class="pull-right mt-lg">
                   <div class="sparkline" id="sparkline1" data-line-color="#03A9F4"></div>
@@ -50,7 +50,7 @@
             <div class="card-body pv">
               <div class="clearfix">
                 <div class="pull-left">
-                  <h4 class="m0 text-thin">880</h4><small class="m0 text-muted"><em class="mr-sm ion-arrow-up-b"></em>Last income</small>
+                  <h4 class="m0 text-thin active-software"></h4><small class="m0 text-muted"><em class="mr-sm ion-arrow-up-b"></em>Active Software</small>
                 </div>
                 <div class="pull-right mt-lg">
                   <div class="sparkline" id="sparkline3" data-line-color="#ab47bc"></div>
@@ -64,7 +64,7 @@
             <div class="card-body pv">
               <div class="clearfix">
                 <div class="pull-left">
-                  <h4 class="m0 text-thin">780</h4><small class="m0 text-muted"><em class="mr-sm ion-arrow-up-b"></em>Reservations</small>
+                  <h4 class="m0 text-thin expired-software"></h4><small class="m0 text-muted"><em class="mr-sm ion-arrow-up-b"></em>Expired Software</small>
                 </div>
                 <div class="pull-right mt-lg">
                   <div class="sparkline" id="sparkline4" data-line-color="#e91e63"></div>
@@ -84,62 +84,14 @@
                   <table class="table">
                     <thead>
                       <tr>
-                        <th>#</th>
-                        <th>Project</th>
-                        <th>Completion</th>
-                        <th class="text-right">Trend</th>
+                        <th>Software</th>
+                        <th>Expires on</th>
+                        <th>Status</th>
+                        <th>Stage</th>
+                        <th>More</th>
                       </tr>
                     </thead>
-                    <tbody>
-                      <tr>
-                        <td class="va-middle"><span class="badge bg-pink-500">1</span></td>
-                        <td>
-                          <p class="m0">OfficeMate (Lekki Gardens)<br>
-                            <small class="text-thin">Nunc posuere eleifend lobortis.</small>
-                          </p>
-                        </td>
-                        <td class="va-middle">50%</td>
-                        <td class="text-right va-middle"><em class="ion-arrow-graph-up-right text-success"></em></td>
-                      </tr>
-                      <tr>
-                        <td class="va-middle"><span class="badge bg-purple-400">2</span></td>
-                        <td>
-                          <p class="m0">OfficeMate (Vision Capital)<br>
-                            <small class="text-thin">Nunc posuere eleifend lobortis.</small>
-                          </p>
-                        </td>
-                        <td class="va-middle">30%</td>
-                        <td class="text-right va-middle"><em class="ion-arrow-graph-down-right text-warning"></em></td>
-                      </tr>
-                      <tr>
-                        <td class="va-middle"><span class="badge bg-indigo-500">3</span></td>
-                        <td>
-                          <p class="m0">CATSS (FMDQ)<br>
-                            <small class="text-thin">Nunc posuere eleifend lobortis.</small>
-                          </p>
-                        </td>
-                        <td class="va-middle">80%</td>
-                        <td class="text-right va-middle"><em class="ion-arrow-graph-up-right text-success"></em></td>
-                      </tr>
-                      <tr>
-                        <td class="va-middle"><span class="badge bg-indigo-500">4</span></td>
-                        <td>
-                          <p class="m0">CATSS (FDHL)<br>
-                            <small class="text-thin">Nunc posuere eleifend lobortis.</small>
-                          </p>
-                        </td>
-                        <td class="va-middle">80%</td>
-                        <td class="text-right va-middle"><em class="ion-arrow-graph-up-right text-success"></em></td>
-                      </tr>
-                      <tr>
-                        <td class="va-middle"><span class="badge bg-info">5</span></td>
-                        <td>
-                          <p class="m0">YEELDA (Gbolaha Opeodu)<br><small class="text-thin">Nunc posuere eleifend lobortis.</small></p>
-                        </td>
-                        <td class="va-middle">70%</td>
-                        <td class="text-right va-middle"><em class="ion-arrow-graph-down-right text-warning"></em></td>
-                      </tr>
-                    </tbody>
+                    <tbody class="display-software-subscriptions"></tbody>
                   </table>
                 </div>
                 <!-- END table-responsive-->
@@ -251,6 +203,46 @@
 
 @section('scripts')
   <script type="text/javascript">
-    
+    loadSoftwareSubscription();
+
+    // load software issues
+    function loadSoftwareSubscription() {
+      $.get('{{ url('admin/load/projects') }}', function(data) {
+        $(".display-software-subscriptions").val();
+        var sn = 0;
+        var total_active = 0;
+        var total_expired = 0;
+
+        $.each(data, function(index, val) {
+          sn++;
+
+          if(val.status == "active"){
+            total_active++;
+          }
+
+          if(val.status == "expired"){
+            total_expired++;
+          }
+
+          $(".display-software-subscriptions").append(`
+            <tr>
+              <td>
+                <p class="m0">${val.name}<br>
+                  <small class="text-thin">${val.client}</small>
+                </p>
+              </td>
+              <td class="va-middle">${moment(val.duration).format("lll")}</td>
+              <td><em class="ion-ios-circle-outline text-success"></em> ${val.status}</td>
+              <td><em class="ion-arrow-graph-up-right text-success"></em> ${val.project_stage}</td>
+              <td class="va-middle">
+                <a href="{{url('admin/view/project')}}/${val.id}" class="small">view</a>
+              </td>
+            </tr>
+          `);
+        });
+        $(".active-software").html(total_active);
+        $(".expired-software").html(total_expired);
+      });
+    }
   </script>
 @endsection

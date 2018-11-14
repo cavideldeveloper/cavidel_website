@@ -52,4 +52,29 @@ class IssueReportController extends Controller
         // return response
         return response()->json($data);
     }
+
+    /*
+    |-----------------------------------------
+    | VERIFY SOFWARE KEY FROM LARAVEL PACKAGE
+    |-----------------------------------------
+    */
+    public function verifySoftwareKey(Request $request){
+        // body
+        $software_key = "C-".$request->software_key;
+        $verify_project = Project::where("app_key", $software_key)->first();
+        if($verify_project !== null){
+            $data = [
+                'status'    => true,
+                'message'   => 'Key is valid',
+            ];
+        }else{
+            $data = [
+                'status'    => false,
+                'message'   => 'Key is invalid',
+            ];
+        }
+
+        // return response.
+        return response()->json($data);
+    }
 }

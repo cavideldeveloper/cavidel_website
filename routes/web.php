@@ -10,6 +10,10 @@ Route::get('/',								'ExternalPagesController@index');
 Route::get('/about',						'ExternalPagesController@about');
 Route::get('/contact',						'ExternalPagesController@contact');
 Route::get('/team',							'ExternalPagesController@team');
+Route::get('/events',						'ExternalPagesController@events');
+Route::get('/services',						'ExternalPagesController@services');
+Route::get('/faq',							'ExternalPagesController@faq');
+Route::get('/portfolio',					'ExternalPagesController@portfolio');
 
 
 
@@ -55,6 +59,7 @@ Route::get('/admin/all/components',			'AdminJsonResponseController@getAllCompone
 Route::get('/admin/all/pages',				'AdminJsonResponseController@showAllPages');
 Route::get('/admin/page/components/{page}',	'AdminJsonResponseController@pageComponent');
 Route::get('/admin/load/components/{id}',	'AdminJsonResponseController@componentChild');
+Route::get('/admin/get/total/visitor',		'AdminJsonResponseController@getVisitorsCount');
 
 
 /*
