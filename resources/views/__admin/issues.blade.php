@@ -52,7 +52,7 @@
   <script type="text/javascript">
     loadSoftwareIssues();
 
-    // load software issues
+    // load software issues'
     function loadSoftwareIssues() {
       $.get('{{ url('admin/load/software/issues') }}', function(data) {
         $(".display-software-issues").val();
