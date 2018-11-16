@@ -4,9 +4,48 @@
         <div class="col-sm-12">
             <div class="text-center">
                 <h1>Our Projects</h1>
-                <div style="height: 50px;"></div>
             </div>
+            <div class="main_service_area">
+                <div class="main_service_content">
+                    <div class="service_tabe">
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="webdesign">
+                                <div class="single_service_tab">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="single_tab_content">
+                                                <div class="head_title">
+                                                    <h3>OfficeMate </h3>
+                                                    <div class="separator"></div>
+                                                </div>
+                                                <p>Officemate contents here..
+                                                </p>
 
+                                                <a href="https://cavidel.officemate.ng" target="_blank" class="btn btn-primary">GET 30 DAYS FREE TRIAL</a>
+
+                                                <a href="https://cavidel.officemate.ng" target="_blank" class="btn btn-primary">PURCHASE 1 YEAR LICENCE</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-12">
+                                            <div class="single_tab_img">
+                                                <img src="assets/images/stab0.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="height: 120px;"></div>
+    <div class="row">
+        <div class="col-sm-12">
             <div class="main_service_area">
                 <div class="main_service_content">
                     <div class="service_tabe">
@@ -78,7 +117,6 @@
                                     </div>
                                 </div>
                             </div>
-                            
                         </div>
                     </div>
                 </div>
@@ -238,4 +276,4 @@
         </div>
     </div>s
 </div>
-<!-- End Features -->
+<!-- End Features
