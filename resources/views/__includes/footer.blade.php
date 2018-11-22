@@ -41,7 +41,7 @@
         <div class="row">
             <div class="col-xs-6">
                 <a href="{{ url('/') }}">
-                    <img src="img/cavidel-logo-white.png" width="64" height="auto" alt="Cavidel Logo">
+                    <img src="img/cavidel-logo-white.png" width="120" height="auto" alt="Cavidel Logo">
                 </a>
             </div>
             <div class="col-xs-6 g-text-right--xs">

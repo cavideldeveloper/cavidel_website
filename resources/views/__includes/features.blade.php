@@ -272,6 +272,6 @@
                 </div>
             </div>
         </div>
-    </div>s
+    </div>
 </div>
 <!-- End Features
