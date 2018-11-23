@@ -14,13 +14,13 @@ class Team extends Model
     public function addNewMemeber($payload){
     	// body
     	$new_member 			= new Team();
-    	$new_member->firstname 	= $payload->firstname;
-    	$new_member->lastname 	= $payload->lastname;
-    	$new_member->position 	= $payload->position;
+    	$new_member->firstname 	= $payload->first_name;
+    	$new_member->lastname 	= $payload->last_name;
+    	$new_member->position 	= $payload->job_role;
     	$new_member->email 		= $payload->email;
     	$new_member->description = $payload->description;
     	$new_member->avatar 	= $payload->avatar;
-    	$new_member->status 	= $payload->status;
+    	$new_member->status 	= 'active';
 
     	if($new_member->save()){
     		$data = [
@@ -45,14 +45,14 @@ class Team extends Model
     */
     public function updateMemberInfo($payload){
     	// body
-    	$new_member 				= Team::find($payload->team_id);
-    	$new_member->firstname 		= $payload->firstname;
-    	$new_member->lastname 		= $payload->lastname;
-    	$new_member->position 		= $payload->position;
+    	$new_member 				= Team::find($payload->member_id);
+    	$new_member->firstname 		= $payload->first_name;
+    	$new_member->lastname 		= $payload->last_name;
+    	$new_member->position 		= $payload->job_role;
     	$new_member->email 			= $payload->email;
     	$new_member->description 	= $payload->description;
     	$new_member->avatar 		= $payload->avatar;
-    	$new_member->status 		= $payload->status;
+    	$new_member->status 		= 'active';
     	if($new_member->update()){
     		$data = [
     			'status' 	=> 'success',
@@ -74,9 +74,9 @@ class Team extends Model
     | DELETE TEAM MEMBER
     |-----------------------------------------
     */
-    public function deleteMember($team_id){
+    public function deleteMember($payload){
     	// body
-    	$member = Team::find($team_id);
+    	$member = Team::find($payload->member_id);
     	if($member !== null){
     		$member->status = 'inactive';
     		if($member->update()){
@@ -140,9 +140,16 @@ class Team extends Model
     */
     public function getAllTeam(){
     	// body
-    	$team = Team::orderBy('id', 'created_at')->get();
+        return Team::where('status', 'active')->orderBy('id', 'created_at')->get();
+    }
 
-    	// return
-    	return $team;
+    /*
+    |---------------------------------------------
+    | GET ONE MEMBER
+    |---------------------------------------------
+    */
+    public function getOneMember($payload){
+        // body
+        return Team::where("id", $payload->member_id)->first();
     }
 }

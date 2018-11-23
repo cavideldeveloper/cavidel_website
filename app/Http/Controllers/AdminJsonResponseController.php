@@ -159,4 +159,31 @@ class AdminJsonResponseController extends Controller
         return response()->json($data);
     }
 
+    /*
+    |---------------------------------------------
+    | UNLOCK PROJECT
+    |---------------------------------------------
+    */
+    public function unlockProject(Request $request){
+        // body
+        $project    = new Project();
+        $data       = $project->unlockProjectSubscription($request);
+
+        // return response
+        return response()->json($data);
+    }
+
+    /*
+    |---------------------------------------------
+    | LOCK PROJECT
+    |---------------------------------------------
+    */
+    public function lockProject(Request $request){
+        // body
+        $project    = new Project();
+        $data       = $project->lockProjectSubscription($request);
+
+        // return response
+        return response()->json($data);
+    }
 }

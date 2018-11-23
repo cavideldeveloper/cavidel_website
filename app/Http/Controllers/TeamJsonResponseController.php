@@ -3,6 +3,7 @@
 namespace Cavidel\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Cavidel\Team;
 
 class TeamJsonResponseController extends Controller
 {
@@ -39,10 +40,10 @@ class TeamJsonResponseController extends Controller
     | ADD NEW TEAM MEMBER
     |-----------------------------------------
     */
-    public function delete($team_id){
+    public function deleteOne(Request $request){
     	// body
     	$team = new Team();
-    	$data = $team->deleteMember($team_id);
+    	$data = $team->deleteMember($request);
 
     	// return response.
     	return response()->json($data);
@@ -74,5 +75,20 @@ class TeamJsonResponseController extends Controller
 
     	// return response.
     	return response()->json($data);
+    }
+
+
+    /*
+    |---------------------------------------------
+    | LOAD ONE SINGLE MEMBER
+    |---------------------------------------------
+    */
+    public function loadOne(Request $request){
+        // body
+        $team = new Team();
+        $data = $team->getOneMember($request);
+
+        // return response.
+        return response()->json($data);
     }
 }

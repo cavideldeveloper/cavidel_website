@@ -38,7 +38,6 @@ Route::get('/admin/subscriptions',			'AdminPagesController@subscriptions');
 Route::get('/admin/view/project/{id}',		'AdminPagesController@viewProject');
 Route::get('/admin/tasks',					'AdminPagesController@tasks');
 Route::get('/admin/builder',				'AdminPagesController@cms');
-
 Route::get('admin/view/page/{page}',		'AdminPagesController@viewCmsPage');
 Route::get('admin/view/component/{id}',		'AdminPagesController@viewComponent');
 
@@ -53,7 +52,6 @@ Route::post('/admin/add/projects',			'AdminJsonResponseController@addNewProject'
 Route::get('/admin/load/projects',			'AdminJsonResponseController@loadProject');
 Route::get('/admin/load/single/project/{id}','AdminJsonResponseController@loadOneProject');
 Route::get('/admin/count/all/issues',		'AdminJsonResponseController@countIssues');
-
 Route::post('/admin/add/components',		'AdminJsonResponseController@addNewComponent');
 Route::get('/admin/all/components',			'AdminJsonResponseController@getAllComponent');
 Route::get('/admin/all/pages',				'AdminJsonResponseController@showAllPages');
@@ -63,13 +61,22 @@ Route::get('/admin/get/total/visitor',		'AdminJsonResponseController@getVisitors
 
 
 
+Route::post('/admin/unlock/subscription',	'AdminJsonResponseController@unlockProject');
+Route::post('/admin/lock/subscription',		'AdminJsonResponseController@lockProject');
+
+
+
 /*
 |---------------------------------------------------------------------------------------------------------
 | TEAM URI ROUTE CONTROLLER
 |---------------------------------------------------------------------------------------------------------
 |
 */
-Route::post('/admin/create/member',			'TeamJsonResponseController@addNewTeamMember');
+Route::post('/admin/create/member',			'TeamJsonResponseController@store');
+Route::get('/admin/get/team/members',		'TeamJsonResponseController@load');
+Route::get('/admin/get/one/member',			'TeamJsonResponseController@loadOne');
+Route::post('/admin/update/member',			'TeamJsonResponseController@update');
+Route::post('/admin/delete/team/member',	'TeamJsonResponseController@deleteOne');
 
 
 

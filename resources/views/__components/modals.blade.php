@@ -284,7 +284,7 @@
             <div class="col-md-6">
               <div class="form-group">
                 <label>Component name?</label>
-                <input type="text" id="com_name" class="form-control" placeholder="Enter project name.." name="">
+                <input type="text" id="com_name" class="form-control" placeholder="Enter component name.." name="">
               </div>
             </div>
             <div class="col-md-6">

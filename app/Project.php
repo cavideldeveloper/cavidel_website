@@ -81,4 +81,67 @@ class Project extends Model
     	// return
     	return $data;
     }
+
+    /*
+    |---------------------------------------------
+    | LOCK PROJECT SUBSCRIPTION
+    |---------------------------------------------
+    */
+    public function unlockProjectSubscription($payload){
+        $project = Project::find($payload->project_id);
+        if($project !== null){
+            $project->status = 'active';
+            if($project->update()){
+                $data = [
+                    'status'    => 'success',
+                    'message'   => 'Project unlock!',
+                ];
+            }else{
+                $data = [
+                    'status'    => 'error',
+                    'message'   => 'Failed to unlock!',
+                ];
+            }
+        }else{
+            $data = [
+                'status'    => 'error',
+                'message'   => 'Could not find project',
+            ];
+        }
+
+        // return 
+        return $data;
+    }
+
+    /*
+    |---------------------------------------------
+    | LOCK PROJECT SUBSCRIPTION
+    |---------------------------------------------
+    */
+    public function lockProjectSubscription($payload){
+        $project = Project::find($payload->project_id);
+        if($project !== null){
+            $project->status = 'inactive';
+            if($project->update()){
+                $data = [
+                    'status'    => 'success',
+                    'message'   => 'Project locked!',
+                ];
+            }else{
+                $data = [
+                    'status'    => 'error',
+                    'message'   => 'Failed to lock!',
+                ];
+            }
+        }else{
+            $data = [
+                'status' => 'error',
+                'message' => 'Could not find project',
+            ];
+        }
+
+        // return 
+        return $data;
+    }
+
 }
