@@ -12,7 +12,6 @@
     @include('__includes.swipper')
 
     <!--========== PAGE CONTENT ==========-->
-
     @include('__includes.features')
 
     @include('__includes.parallax')
