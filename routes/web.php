@@ -62,6 +62,17 @@ Route::get('/admin/load/components/{id}',	'AdminJsonResponseController@component
 Route::get('/admin/get/total/visitor',		'AdminJsonResponseController@getVisitorsCount');
 
 
+
+/*
+|---------------------------------------------------------------------------------------------------------
+| TEAM URI ROUTE CONTROLLER
+|---------------------------------------------------------------------------------------------------------
+|
+*/
+Route::post('/admin/create/member',			'TeamJsonResponseController@addNewTeamMember');
+
+
+
 /*
 |---------------------------------------------------------------------------------------------------------
 | LOAD GLOBAL NEWS
