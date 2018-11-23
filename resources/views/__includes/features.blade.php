@@ -30,7 +30,7 @@
 
                                         <div class="col-sm-12">
                                             <div class="single_tab_img">
-                                                <img src="assets/images/stab0.jpg" alt="" />
+                                                <img src="assets/images/stab0.png" alt="" />
                                             </div>
                                         </div>
                                     </div>
@@ -272,6 +272,6 @@
                 </div>
             </div>
         </div>
-    </div>s
+    </div>
 </div>
 <!-- End Features
