@@ -24,7 +24,7 @@
 
     <ul class="pull-right">
       <li><a class="ripple" id="header-search" href=""><em class="ion-ios-search-strong"></em></a></li>
-      <li class="dropdown"><a class="dropdown-toggle has-badge ripple" href="" data-toggle="dropdown"><em class="ion-person"></em><sup class="badge bg-danger">3</sup></a>
+      <li class="dropdown"><a class="dropdown-toggle has-badge ripple" href="" data-toggle="dropdown"><em class="ion-person"></em><sup class="badge bg-danger issues_counts"></sup></a>
         <ul class="dropdown-menu dropdown-menu-right md-dropdown-menu">
           <li><a href="profile.html"><em class="ion-home icon-fw"></em>Profile</a></li>
           <li><a href="messages.html"><em class="ion-gear-a icon-fw"></em>Messages</a></li>

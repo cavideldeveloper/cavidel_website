@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="text-center">
-                <h1>Our Projects</h1>
+                <h1>Our Solutions</h1>
             </div>
             <div class="main_service_area">
                 <div class="main_service_content">
@@ -22,9 +22,9 @@
                                                 <p>Officemate contents here..
                                                 </p>
 
-                                                <a href="https://cavidel.officemate.ng" target="_blank" class="btn btn-primary">GET 30 DAYS FREE TRIAL</a>
+                                                {{-- <a href="https://cavidel.officemate.ng" target="_blank" class="btn btn-primary">GET 30 DAYS FREE TRIAL</a>
 
-                                                <a href="https://cavidel.officemate.ng" target="_blank" class="btn btn-primary">PURCHASE 1 YEAR LICENCE</a>
+                                                <a href="https://cavidel.officemate.ng" target="_blank" class="btn btn-primary">PURCHASE 1 YEAR LICENCE</a> --}}
                                             </div>
                                         </div>
 

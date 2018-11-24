@@ -1,5 +1,5 @@
 <!-- Testimonials -->
-<div class="js__parallax-window" style="background: url(img/1920x1080/04.jpg) 50% 0 no-repeat fixed;">
+<div class="js__parallax-window" style="background: url(img/1920x1080/16.jpg) 50% 0 no-repeat fixed;">
     <div class="container g-text-center--xs g-padding-y-80--xs g-padding-y-125--sm">
         <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--white-opacity g-letter-spacing--2 g-margin-b-50--xs">Testimonials</p>
         <div class="s-swiper js__swiper-testimonials">
@@ -11,7 +11,7 @@
                             <p class="g-font-size-22--xs g-font-size-28--sm g-color--white"><i>" I have purchased many great software over the years but this product and this company have taken it to the next level. Exceptional customizability. "</i></p>
                         </div>
                         <div class="center-block g-hor-divider__solid--white-opacity-lightest g-width-100--xs g-margin-b-30--xs"></div>
-                        <h4 class="g-font-size-15--xs g-font-size-18--sm g-color--white-opacity-light g-margin-b-5--xs">Jake Richardson / Google</h4>
+                        <h4 class="g-font-size-15--xs g-font-size-18--sm g-color--white-opacity-light g-margin-b-5--xs">Samuel O. / Lekki Gardens</h4>
                     </div>
                 </div>
                 <div class="swiper-slide g-padding-x-130--sm g-padding-x-150--lg">
@@ -20,16 +20,17 @@
                             <p class="g-font-size-22--xs g-font-size-28--sm g-color--white"><i>" Process Automations requires a lot of understanding and technique and sometimes the workflow process is complicated and tasks overwhelming, Cavidel Limited help resolved this by building a software called OfficeMate "</i></p>
                         </div>
                         <div class="center-block g-hor-divider__solid--white-opacity-lightest g-width-100--xs g-margin-b-30--xs"></div>
-                        <h4 class="g-font-size-15--xs g-font-size-18--sm g-color--white-opacity-light g-margin-b-5--xs">Jake Richardson / Google</h4>
+                        <h4 class="g-font-size-15--xs g-font-size-18--sm g-color--white-opacity-light g-margin-b-5--xs">
+                        Segun B. / FMDQ </h4>
                     </div>
                 </div>
                 <div class="swiper-slide g-padding-x-130--sm g-padding-x-150--lg">
                     <div class="g-padding-x-20--xs g-padding-x-50--lg">
                         <div class="g-margin-b-40--xs">
-                            <p class="g-font-size-22--xs g-font-size-28--sm g-color--white"><i>" I try, Cavidel Limited OfficeMate Software 30days for free, and i ended up subscribing. "</i></p>
+                            <p class="g-font-size-22--xs g-font-size-28--sm g-color--white"><i>" I try, OfficeMate Hospital Software 30days for free, It is user-friendly, flexible and fun to use. "</i></p>
                         </div>
                         <div class="center-block g-hor-divider__solid--white-opacity-lightest g-width-100--xs g-margin-b-30--xs"></div>
-                        <h4 class="g-font-size-15--xs g-font-size-18--sm g-color--white-opacity-light g-margin-b-5--xs">Jake Richardson / Google</h4>
+                        <h4 class="g-font-size-15--xs g-font-size-18--sm g-color--white-opacity-light g-margin-b-5--xs">Kate Anierobi / Vision Capital</h4>
                     </div>
                 </div>
             </div>

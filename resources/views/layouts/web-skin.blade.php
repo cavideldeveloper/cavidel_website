@@ -31,6 +31,9 @@
         <!-- Favicon -->
         <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
         <link rel="apple-touch-icon" href="img/favicon.png">
+
+        <!-- Slick slider-->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>        
     </head>
     <!-- End Head -->
 
@@ -68,6 +71,8 @@
         <script type="text/javascript" src="js/components/google-map.min.js"></script>
         <script type="text/javascript" src="js/components/wow.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.11/dist/sweetalert2.all.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        
         
         <!--========== END JAVASCRIPTS ==========-->
 

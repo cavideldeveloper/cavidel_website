@@ -20,11 +20,9 @@
 
     @include('__includes.subscribe')
 
-    @include('__includes.portfolio')
+    @include('__includes.clients')
 
     @include('__includes.testimonials')
-
-    @include('__includes.clients')
 
     @include('__includes.news')
 
@@ -32,12 +30,21 @@
 
     @include('__includes.feedback')
 
-    @include('__includes.maps')
+    {{-- @include('__includes.maps') --}}
 
     @include('__includes.footer')
 @endsection
 
 {{--  scripts --}}
 @section('scripts')
-    
+    <script type="text/javascript">
+        $('.autoplay').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        });
+        $(".slick-prev").hide();
+        $(".slick-next").hide();
+    </script>
 @endsection
