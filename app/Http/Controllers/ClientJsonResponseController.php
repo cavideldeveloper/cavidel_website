@@ -8,6 +8,7 @@ use Cavidel\ClientSubscription;
 use Cavidel\SiteContact;
 use Cavidel\SiteVisitor;
 use Cavidel\Mail\NewApplicationMail;
+use Cavidel\Team;
 use Mail;
 
 class ClientJsonResponseController extends Controller
@@ -112,6 +113,21 @@ class ClientJsonResponseController extends Controller
             $msg = 'We have received your mail, we will get back to you as soon as possible.';
             return redirect()->back()->with('success', $msg);
         }
+    }
+
+    /*
+    |---------------------------------------------
+    | GET TEAM MEMERS
+    |---------------------------------------------
+    */
+    public function getTeamMembers(){
+        // body
+        $team = new Team();
+        $data = $team->getAllTeamByGroup();
+
+        // return response.
+        return response()->json($data);
+
     }
 
 }

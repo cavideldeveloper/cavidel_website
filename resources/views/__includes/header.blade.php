@@ -24,6 +24,13 @@
                         </svg>
                     </a>
                     <!-- End Trigger -->
+
+                    <a class="s-header__nav-menu-link g-color--white s-header__logo-img-default" href="{{ url('about') }}">About</a>
+                    <a class="s-header__nav-menu-link g-color--white s-header__logo-img-default" href="{{ url('services') }}">Services</a>
+                    <a class="s-header__nav-menu-link g-color--white s-header__logo-img-default" href="{{ url('portfolio') }}">Portfolio</a>
+                    <a class="s-header__nav-menu-link g-color--white s-header__logo-img-default" href="{{ url('team') }}">Team</a>
+                    <a class="s-header__nav-menu-link g-color--white s-header__logo-img-default" href="{{ url('contact') }}">Contact Us</a>
+                    <a class="s-header__nav-menu-link g-color--white s-header__logo-img-default" href="{{ url('career') }}">Career</a>
                 </div>
             </div>
         </div>

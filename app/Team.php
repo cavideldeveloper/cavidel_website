@@ -144,6 +144,38 @@ class Team extends Model
     }
 
     /*
+    |-----------------------------------------
+    | GET ALL TEAM
+    |-----------------------------------------
+    */
+    public function getAllTeamByGroup(){
+        // body
+        $all_teams = Team::where('status', 'active')->orderBy('id', 'created_at')->get();
+        if(count($all_teams) > 0){
+            $team_box = [];
+            foreach ($all_teams as $tl) {
+                $data = [
+                    'firstname'     => $tl->firstname,
+                    'lastname'      => $tl->lastname,
+                    'position'      => $tl->position,
+                    'email'         => $tl->email,
+                    'description'   => $tl->description,
+                    'avatar'        => $tl->avatar,
+                    'status'        => $tl->status,
+                ];
+
+
+                array_push($team_box, $data);
+            }
+        }else{
+            $team_box = [];
+        }
+
+        // return
+        return $team_box;
+    }
+
+    /*
     |---------------------------------------------
     | GET ONE MEMBER
     |---------------------------------------------

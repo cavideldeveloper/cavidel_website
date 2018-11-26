@@ -22,159 +22,18 @@
     <!-- Speakers -->
     <div class="container g-padding-y-80--xs g-padding-y-125--sm">
         <div class="row g-overflow--hidden">
-            
-            <div class="col-xs-12 g-full-width--xs">
-                <!-- Speaker -->
-                <div class="center-block g-box-shadow__dark-lightest-v1 g-width-100-percent--xs g-width-400--lg">
-                    <img class="img-responsive g-width-100-percent--xs" src="img/400x400/01.jpg" alt="Image">
-                    <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-margin-t-o-60--xs">
-                        <div class="g-bg-color--primary g-padding-x-15--xs g-padding-y-10--xs g-margin-b-20--xs">
-                            <h4 class="g-font-size-22--xs g-font-size-26--sm g-color--white g-margin-b-0--xs">Dipo Odeyemi</h4>
-                        </div>
-                        <p class="g-font-weight--700">CEO/Founder</p>
-                        <p>Dipo’s twenty-three (23) years work experience cuts across diverse industry sectors, including Financial Markets, Banking, Consulting and Technology Services.</p>
-                    </div>
-                </div>
-                <!-- End Speaker -->
+            <div class="col-xs-12 g-full-width--xs ceo-card">
             </div>
-            <div class="col-xs-6 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
-                <!-- Speaker -->
-                <div class="center-block g-box-shadow__dark-lightest-v1 g-width-100-percent--xs g-width-400--lg">
-                    <img class="img-responsive g-width-100-percent--xs" src="img/400x400/02.jpg" alt="Image">
-                    <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-margin-t-o-60--xs">
-                        <div class="g-bg-color--primary g-padding-x-15--xs g-padding-y-10--xs g-margin-b-20--xs">
-                            <h4 class="g-font-size-22--xs g-font-size-26--sm g-color--white g-margin-b-0--xs">Anna Kusaikina</h4>
-                        </div>
-                        <p class="g-font-weight--700">Consultant</p>
-                        <p>Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.</p>
-                    </div>
-                </div>
-                <!-- End Speaker -->
-            </div>
-            <div class="col-xs-6 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
-                <!-- Speaker -->
-                <div class="center-block g-box-shadow__dark-lightest-v1 g-width-100-percent--xs g-width-400--lg">
-                    <img class="img-responsive g-width-100-percent--xs" src="img/400x400/02.jpg" alt="Image">
-                    <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-margin-t-o-60--xs">
-                        <div class="g-bg-color--primary g-padding-x-15--xs g-padding-y-10--xs g-margin-b-20--xs">
-                            <h4 class="g-font-size-22--xs g-font-size-26--sm g-color--white g-margin-b-0--xs">Frances Obiezu</h4>
-                        </div>
-                        <p class="g-font-weight--700">Senior Consultant/Process Analyst</p>
-                        <p>Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.</p>
-                    </div>
-                </div>
-                <!-- End Speaker -->
+
+            <div class="top-level">
             </div>
         </div>
     </div>
     <!-- End Speakers -->
 
     <!-- Team -->
-    <div class="row g-row-col--0">
-        <div class="col-md-3 col-xs-6 g-full-width--xs">
-            <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
-                <!-- Team -->
-                <div class="s-team-v1">
-                    <img class="img-responsive g-width-100-percent--xs" src="img/400x400/05.jpg" alt="Image">
-                    <div class="g-text-center--xs g-bg-color--white g-padding-x-30--xs g-padding-y-40--xs">
-                        <h2 class="g-font-size-18--xs g-margin-b-5--xs">Shola Fayiga</h2>
-                        <span class="g-font-size-15--xs g-color--text"><i>Software Developer</i></span>
-                    </div>
-                </div>
-                <!-- End Team -->
-            </div>
-        </div>
-        <div class="col-md-3 col-xs-6 g-full-width--xs">
-            <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".2s">
-                <!-- Team -->
-                <div class="s-team-v1">
-                    <img class="img-responsive g-width-100-percent--xs" src="img/400x400/04.jpg" alt="Image">
-                    <div class="g-text-center--xs g-bg-color--white g-padding-x-30--xs g-padding-y-40--xs">
-                        <h3 class="g-font-size-18--xs g-margin-b-5--xs">Ife Akinsiende</h3>
-                        <span class="g-font-size-15--xs g-color--text"><i>HR</i></span>
-                    </div>
-                </div>
-                <!-- End Team -->
-            </div>
-        </div>
-        <div class="col-md-3 col-xs-6 g-full-width--xs">
-            <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".3s">
-                <!-- Team -->
-                <div class="s-team-v1">
-                    <img class="img-responsive g-width-100-percent--xs" src="img/400x400/05.jpg" alt="Image">
-                    <div class="g-text-center--xs g-bg-color--white g-padding-x-30--xs g-padding-y-40--xs">
-                        <h4 class="g-font-size-18--xs g-margin-b-5--xs">Rilwan Balogun</h4>
-                        <span class="g-font-size-15--xs g-color--text"><i>Software Developer</i></span>
-                    </div>
-                </div>
-                <!-- End Team -->
-            </div>
-        </div>
-        <div class="col-md-3 col-xs-6 g-full-width--xs">
-            <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".4s">
-                <!-- Team -->
-                <div class="s-team-v1">
-                    <img class="img-responsive g-width-100-percent--xs" src="img/400x400/06.jpg" alt="Image">
-                    <div class="g-text-center--xs g-bg-color--white g-padding-x-30--xs g-padding-y-40--xs">
-                        <h4 class="g-font-size-18--xs g-margin-b-5--xs">Yinka Sulieman</h4>
-                        <span class="g-font-size-15--xs g-color--text"><i>Software Analyst</i></span>
-                    </div>
-                </div>
-                <!-- End Team -->
-            </div>
-        </div>
-        <div class="col-md-3 col-xs-6 g-full-width--xs">
-            <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
-                <!-- Team -->
-                <div class="s-team-v1">
-                    <img class="img-responsive g-width-100-percent--xs" src="img/400x400/05.jpg" alt="Image">
-                    <div class="g-text-center--xs g-bg-color--white g-padding-x-30--xs g-padding-y-40--xs">
-                        <h2 class="g-font-size-18--xs g-margin-b-5--xs">Ekpoto Bernard</h2>
-                        <span class="g-font-size-15--xs g-color--text"><i>Software Developer</i></span>
-                    </div>
-                </div>
-                <!-- End Team -->
-            </div>
-        </div>
-        <div class="col-md-3 col-xs-6 g-full-width--xs">
-            <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".2s">
-                <!-- Team -->
-                <div class="s-team-v1">
-                    <img class="img-responsive g-width-100-percent--xs" src="img/400x400/05.jpg" alt="Image">
-                    <div class="g-text-center--xs g-bg-color--white g-padding-x-30--xs g-padding-y-40--xs">
-                        <h3 class="g-font-size-18--xs g-margin-b-5--xs">Stanley Umehanoeze</h3>
-                        <span class="g-font-size-15--xs g-color--text"><i>Software Developer</i></span>
-                    </div>
-                </div>
-                <!-- End Team -->
-            </div>
-        </div>
-        <div class="col-md-3 col-xs-6 g-full-width--xs">
-            <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".3s">
-                <!-- Team -->
-                <div class="s-team-v1">
-                    <img class="img-responsive g-width-100-percent--xs" src="img/400x400/05.jpg" alt="Image">
-                    <div class="g-text-center--xs g-bg-color--white g-padding-x-30--xs g-padding-y-40--xs">
-                        <h4 class="g-font-size-18--xs g-margin-b-5--xs">Tejumola David</h4>
-                        <span class="g-font-size-15--xs g-color--text"><i>Software Developer</i></span>
-                    </div>
-                </div>
-                <!-- End Team -->
-            </div>
-        </div>
-        <div class="col-md-3 col-xs-6 g-full-width--xs">
-            <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".4s">
-                <!-- Team -->
-                <div class="s-team-v1">
-                    <img class="img-responsive g-width-100-percent--xs" src="img/400x400/05.jpg" alt="Image">
-                    <div class="g-text-center--xs g-bg-color--white g-padding-x-30--xs g-padding-y-40--xs">
-                        <h4 class="g-font-size-18--xs g-margin-b-5--xs">Temidayo Onifade</h4>
-                        <span class="g-font-size-15--xs g-color--text"><i>Software Developer</i></span>
-                    </div>
-                </div>
-                <!-- End Team -->
-            </div>
-        </div>
+    <div class="row g-row-col--0 all-developers">
+
     </div>
     <!-- End Team -->
 
@@ -239,7 +98,143 @@
 {{--  scripts --}}
 @section('scripts')
 	<script type="text/javascript">
-		// send contact message
+		// load modules
+        loadTeamMembers();
 
+        // load team members
+        function loadTeamMembers() {
+            $.get('{{ url('get/all/team/member') }}', function(data) {
+                $(".all-developers").html("");
+                $(".ceo-card").html("");
+                $(".top-level").html("");
+                $.each(data, function(index, val) {
+                    
+                    if(val.position == 'HR'){
+                        $(".all-developers").append(`
+                            <div class="col-md-3 col-xs-6 g-full-width--xs">
+                                <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
+                                    <!-- Team -->
+                                    <div class="s-team-v1">
+                                        <img class="img-responsive g-width-100-percent--xs" src="${val.avatar}" alt="Image">
+                                        <div class="g-text-center--xs g-bg-color--white g-padding-x-30--xs g-padding-y-40--xs">
+                                            <h2 class="g-font-size-18--xs g-margin-b-5--xs">${val.firstname} ${val.lastname}</h2>
+                                            <span class="g-font-size-15--xs g-color--text"><i> ${val.position}</i></span>
+                                        </div>
+                                    </div>
+                                    <!-- End Team -->
+                                </div>
+                            </div>
+                        `);
+                    }
+
+                    if(val.position == 'Software Developer'){
+                        $(".all-developers").append(`
+                            <div class="col-md-3 col-xs-6 g-full-width--xs">
+                                <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
+                                    <!-- Team -->
+                                    <div class="s-team-v1">
+                                        <img class="img-responsive g-width-100-percent--xs" src="${val.avatar}" alt="Image">
+                                        <div class="g-text-center--xs g-bg-color--white g-padding-x-30--xs g-padding-y-40--xs">
+                                            <h2 class="g-font-size-18--xs g-margin-b-5--xs">${val.firstname} ${val.lastname}</h2>
+                                            <span class="g-font-size-15--xs g-color--text"><i> ${val.position}</i></span>
+                                        </div>
+                                    </div>
+                                    <!-- End Team -->
+                                </div>
+                            </div>
+                        `);
+                    }
+
+                    if(val.position == 'Software Analyst'){
+                        $(".all-developers").append(`
+                            <div class="col-md-3 col-xs-6 g-full-width--xs">
+                                <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
+                                    <!-- Team -->
+                                    <div class="s-team-v1">
+                                        <img class="img-responsive g-width-100-percent--xs" src="${val.avatar}" alt="Image">
+                                        <div class="g-text-center--xs g-bg-color--white g-padding-x-30--xs g-padding-y-40--xs">
+                                            <h2 class="g-font-size-18--xs g-margin-b-5--xs">${val.firstname} ${val.lastname}</h2>
+                                            <span class="g-font-size-15--xs g-color--text"><i> ${val.position}</i></span>
+                                        </div>
+                                    </div>
+                                    <!-- End Team -->
+                                </div>
+                            </div>
+                        `);
+                    }
+
+                    if(val.position == 'Software Engineer'){
+                        $(".all-developers").append(`
+                            <div class="col-md-3 col-xs-6 g-full-width--xs">
+                                <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
+                                    <!-- Team -->
+                                    <div class="s-team-v1">
+                                        <img class="img-responsive g-width-100-percent--xs" src="${val.avatar}" alt="Image">
+                                        <div class="g-text-center--xs g-bg-color--white g-padding-x-30--xs g-padding-y-40--xs">
+                                            <h2 class="g-font-size-18--xs g-margin-b-5--xs">${val.firstname} ${val.lastname}</h2>
+                                            <span class="g-font-size-15--xs g-color--text"><i> ${val.position}</i></span>
+                                        </div>
+                                    </div>
+                                    <!-- End Team -->
+                                </div>
+                            </div>
+                        `);
+                    }
+
+                    if(val.position == 'CEO/Founder'){
+                        $(".ceo-card").append(`
+                            <div class="center-block g-box-shadow__dark-lightest-v1 g-width-100-percent--xs g-width-400--lg">
+                                <img class="img-responsive g-width-100-percent--xs" src="${val.avatar}" alt="Image">
+                                <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-margin-t-o-60--xs">
+                                    <div class="g-bg-color--primary g-padding-x-15--xs g-padding-y-10--xs g-margin-b-20--xs">
+                                        <h4 class="g-font-size-22--xs g-font-size-26--sm g-color--white g-margin-b-0--xs">${val.firstname} ${val.lastname}</h4>
+                                    </div>
+                                    <p class="g-font-weight--700">${val.position}</p>
+                                    <p>${val.description}</p>
+                                </div>
+                            </div>
+                        `)
+                    }
+
+                    if(val.position == 'Business Manager'){
+                        $(".top-level").append(`
+                            <div class="col-xs-6 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
+                                <!-- Speaker -->
+                                <div class="center-block g-box-shadow__dark-lightest-v1 g-width-100-percent--xs g-width-400--lg">
+                                    <img class="img-responsive g-width-100-percent--xs" src="${val.avatar}" alt="Image">
+                                    <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-margin-t-o-60--xs">
+                                        <div class="g-bg-color--primary g-padding-x-15--xs g-padding-y-10--xs g-margin-b-20--xs">
+                                            <h4 class="g-font-size-22--xs g-font-size-26--sm g-color--white g-margin-b-0--xs">${val.firstname} ${val.lastname}</h4>
+                                        </div>
+                                        <p class="g-font-weight--700">${val.position}</p>
+                                        <p>${val.description}</p>
+                                    </div>
+                                </div>
+                                <!-- End Speaker -->
+                            </div>
+                        `);
+                    }
+
+                    if(val.position == 'Senior Consultant/Process Analyst'){
+                        $(".top-level").append(`
+                            <div class="col-xs-6 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
+                                <!-- Speaker -->
+                                <div class="center-block g-box-shadow__dark-lightest-v1 g-width-100-percent--xs g-width-400--lg">
+                                    <img class="img-responsive g-width-100-percent--xs" src="${val.avatar}" alt="Image">
+                                    <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-margin-t-o-60--xs">
+                                        <div class="g-bg-color--primary g-padding-x-15--xs g-padding-y-10--xs g-margin-b-20--xs">
+                                            <h4 class="g-font-size-22--xs g-font-size-26--sm g-color--white g-margin-b-0--xs">${val.firstname} ${val.lastname}</h4>
+                                        </div>
+                                        <p class="g-font-weight--700">${val.position}</p>
+                                        <p>${val.description}</p>
+                                    </div>
+                                </div>
+                                <!-- End Speaker -->
+                            </div>
+                        `);
+                    }
+                });
+            }); 
+        }
 	</script>
 @endsection

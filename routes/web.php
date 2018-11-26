@@ -91,4 +91,5 @@ Route::post('/client/subscribe/email',		'ClientJsonResponseController@subscribeE
 Route::post('/client/contact/support',		'ClientJsonResponseController@contactSupport')->name('contact_us');
 Route::post('/new/site/visitor',			'ClientJsonResponseController@newSiteVisitor')->name('new_visitor');
 Route::post('/send/application/form',		'ClientJsonResponseController@applicationLetter')->name('apply_now');
+Route::get('/get/all/team/member',			'ClientJsonResponseController@getTeamMembers')->name('team_member');
 
