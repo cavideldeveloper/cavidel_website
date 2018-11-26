@@ -98,15 +98,17 @@ class ClientJsonResponseController extends Controller
             $path_to_resume = public_path('uploads').'/'.$new_resume_name;
 
             $mail_data = [
-                'firstname' => $firstname,
-                'lastname'  => $lastname,
-                'email'     => $email,
-                'mobile'    => $mobile,
-                'letter'    => $path_to_letter,
-                'resume'    => $path_to_resume,
+                'firstname'   => $firstname,
+                'lastname'    => $lastname,
+                'email'       => $email,
+                'mobile'      => $mobile,
+                'description' => $description,
+                'address'     => $address,
+                'letter'      => $path_to_letter,
+                'resume'      => $path_to_resume,
             ];
 
-            Mail::to('consultant@cavidel.com')->send(new NewApplicationMail($mail_data));
+            Mail::to('support@cavidel.com')->send(new NewApplicationMail($mail_data));
             $msg = 'We have received your mail, we will get back to you as soon as possible.';
             return redirect()->back()->with('success', $msg);
         }

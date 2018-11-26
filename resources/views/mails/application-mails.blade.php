@@ -45,6 +45,12 @@
 						<br />
 					</div>
 				</div>
+				<hr />
+				<h3>Here is a little description about {{ ucfirst($data['firstname']) }}</h3>
+				<p>{{ $data['description'] }}</p> <br />
+
+				<h3>Here is {{ ucfirst($data['firstname']) }} current address</h3>
+				<p>{{ $data['address'] }}</p>
 			</p>
 			<p>In this mail You will find attached files, I think You should have a look.</p>
 			<br />
