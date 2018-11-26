@@ -37,9 +37,9 @@
             <div class="container-fluid">
                 <!-- Menu List -->                                
                 <ul class="list-unstyled s-header__nav-menu">
-                    <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider -is-active" href="{{ url('/') }}">Corporate</a></li>
+                    {{-- <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider -is-active" href="{{ url('/') }}">Corporate</a></li> --}}
                     <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('portfolio') }}">Portfolio</a></li>
-                    <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('events') }}">Events</a></li>
+                    <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('career') }}">Career</a></li>
                 </ul>
                 <!-- End Menu List -->
 

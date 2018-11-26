@@ -16,7 +16,8 @@
                                                     <h3>OfficeMate </h3>
                                                     <div class="separator"></div>
                                                 </div>
-                                                <p>Officemate contents here..
+                                                <p>
+                                                    An enterprise resource planning (ERP) solution with core functionality to automate business operations through capturing, processing and reporting on customer/employee information, billing, inventory & fleet management, staff appraisal, employee survey, training & learning management, payroll, employee self-service, leave, loans, statutory remittances, compliance tracking, document management etc.
                                                 </p>
 
                                                 {{-- <a href="https://cavidel.officemate.ng" target="_blank" class="btn btn-primary">GET 30 DAYS FREE TRIAL</a>

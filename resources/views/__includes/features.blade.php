@@ -19,7 +19,8 @@
                                                     <h3>OfficeMate </h3>
                                                     <div class="separator"></div>
                                                 </div>
-                                                <p>Officemate contents here..
+                                                <p>
+                                                    An enterprise resource planning (ERP) solution with core functionality to automate business operations through capturing, processing and reporting on customer/employee information, billing, inventory & fleet management, staff appraisal, employee survey, training & learning management, payroll, employee self-service, leave, loans, statutory remittances, compliance tracking, document management etc. 
                                                 </p>
 
                                                 {{-- <a href="https://cavidel.officemate.ng" target="_blank" class="btn btn-primary">GET 30 DAYS FREE TRIAL</a>
@@ -177,7 +178,7 @@
                                                 <p>Yeelda is a start-up Agric-business seeking to create an ecosystem that brings together farmers, off-takers and input/service providers with a view to connecting the demand and suppy for agricultural produce and resources. This application is build with the cutting edge techonlogy, Offline-data capturing application with data synchronisation to cloud application, application features also includes; Location maps, farmers market place, services providers hiring system.
                                                 </p>
 
-                                                <div class="row">
+                                                {{-- <div class="row">
                                                     <!-- apple store button -->
                                                     <div class="col-xs-12">
                                                         <p>Application is also available on !</p>
@@ -188,7 +189,7 @@
                                                     <div class="col-xs-3">
                                                         <img src="assets/images/apple-store.png" width="100%" height="100%">
                                                     </div>
-                                                </div>
+                                                </div> --}}
 
                                                 <br />
                                                 <a href="https://www.yeelda.com" target="_blank" class="btn">LAUNCH NOW</a>

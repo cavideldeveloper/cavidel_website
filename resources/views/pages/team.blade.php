@@ -123,11 +123,6 @@
                 <!-- End Team -->
             </div>
         </div>
-    </div>
-    <!-- End Team -->
-
-    <!-- Team -->
-    <div class="row g-row-col--0">
         <div class="col-md-3 col-xs-6 g-full-width--xs">
             <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
                 <!-- Team -->

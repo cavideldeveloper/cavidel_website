@@ -63,11 +63,11 @@ class ExternalPagesController extends Controller
 
     /*
     |---------------------------------------------
-    | SHOW EVENT
+    | CAREER 
     |---------------------------------------------
     */
-    public function events(){
-        return view('pages.events');
+    public function career(){
+        return view('pages.career');
     }
 
     /*

@@ -10,7 +10,7 @@ Route::get('/',								'ExternalPagesController@index');
 Route::get('/about',						'ExternalPagesController@about');
 Route::get('/contact',						'ExternalPagesController@contact');
 Route::get('/team',							'ExternalPagesController@team');
-Route::get('/events',						'ExternalPagesController@events');
+Route::get('/career',						'ExternalPagesController@career');
 Route::get('/services',						'ExternalPagesController@services');
 Route::get('/faq',							'ExternalPagesController@faq');
 Route::get('/portfolio',					'ExternalPagesController@portfolio');
@@ -90,4 +90,5 @@ Route::get('/load/global/news', 			'ClientJsonResponseController@loadNews')->nam
 Route::post('/client/subscribe/email',		'ClientJsonResponseController@subscribeEmail')->name('subscribe');
 Route::post('/client/contact/support',		'ClientJsonResponseController@contactSupport')->name('contact_us');
 Route::post('/new/site/visitor',			'ClientJsonResponseController@newSiteVisitor')->name('new_visitor');
+Route::post('/send/application/form',		'ClientJsonResponseController@applicationLetter')->name('apply_now');
 
