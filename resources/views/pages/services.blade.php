@@ -30,7 +30,7 @@
                         <div class="s-plan-v1 g-text-center--xs g-bg-color--white g-padding-y-100--xs">
                             <i class="g-display-block--xs g-font-size-40--xs g-color--primary g-margin-b-30--xs ti-archive"></i>
                             <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs"> Support Services</h3>
-                            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs">
+                            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-90--xs">
                                 <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Diagnostic Review</li>
                                 <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Selection Assistance</li>
                                 <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Research & Reviews</li>
@@ -51,7 +51,7 @@
                         <div class="s-plan-v1 g-text-center--xs g-bg-color--white g-padding-y-100--xs">
                             <i class="g-display-block--xs g-font-size-40--xs g-color--primary g-margin-b-30--xs ti-book"></i>
                             <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs"> Consultancy & Training</h3>
-                            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs">
+                            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-90--xs">
                                 <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Learning Management System
                                 </li>
@@ -62,11 +62,9 @@
                                     Onsite Training Programme
                                 </li>
                                 <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
-                                    HR
+                                    HR Training
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
-
-                                </li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -79,7 +77,7 @@
                         <div class="s-plan-v1 g-text-center--xs g-bg-color--white g-padding-y-100--xs">
                             <i class="g-display-block--xs g-font-size-40--xs g-color--primary g-margin-b-30--xs ti-key"></i>
                             <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs">Business Analysis</h3>
-                            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs">
+                            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-90--xs">
                                 <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Performance Improvement plan</li>
                                 <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Policies Documentation</li>
                                 <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Implementation of IT Strategy</li>
@@ -103,7 +101,7 @@
                         <div class="s-plan-v1 g-text-center--xs g-bg-color--white g-padding-y-100--xs">
                             <i class="g-display-block--xs g-font-size-40--xs g-color--primary g-margin-b-30--xs ti-desktop"></i>
                             <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs">Software Development</h3>
-                            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs">
+                            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-90--xs">
                                 <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Mobile-Optimized Website</li>
                                 <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                 Powerful Documentation</li>
@@ -124,8 +122,8 @@
                     <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".3s">
                         <div class="s-plan-v1 g-text-center--xs g-bg-color--white g-padding-y-100--xs">
                             <i class="g-display-block--xs g-font-size-40--xs g-color--primary g-margin-b-30--xs ti-dashboard"></i>
-                            <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs">Software Customization</h3>
-                            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs">
+                            <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs ">Software Customization</h3>
+                            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-90--xs">
                                 <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Mobile-Optimized Website</li>
                                 <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                 Powerful Documentation</li>
@@ -147,7 +145,7 @@
                         <div class="s-plan-v1 g-text-center--xs g-bg-color--white g-padding-y-100--xs">
                             <i class="g-display-block--xs g-font-size-40--xs g-color--primary g-margin-b-30--xs ti-settings"></i>
                             <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs">Process Engineering</h3>
-                            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs">
+                            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-90--xs">
                                 <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Mobile-Optimized Website</li>
                                 <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                 Powerful Documentation</li>
@@ -255,7 +253,7 @@
                         <div class="s-plan-v1 g-text-center--xs g-bg-color--white g-padding-y-100--xs">
                             <i class="g-display-block--xs g-font-size-40--xs g-color--primary g-margin-b-30--xs ti-user"></i>
                             <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs"> Demo</h3>
-                            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs">
+                            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-90--xs">
                                 <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> OfficeMate Basic</li>
                             </ul>
 
@@ -273,7 +271,7 @@
                             <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs">
                                 Starter Pack
                             </h3>
-                            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs">
+                            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-90--xs">
                                 <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     OfficeMate Lite
                                 </li>
@@ -302,7 +300,7 @@
                             <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs">
                                 Enterprise
                             </h3>
-                            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs">
+                            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-90--xs">
                                 <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     OfficeMate for Bank
                                 </li>
