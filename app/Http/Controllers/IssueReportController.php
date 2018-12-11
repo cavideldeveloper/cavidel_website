@@ -63,18 +63,30 @@ class IssueReportController extends Controller
         $software_key = "C-".$request->software_key;
         $verify_project = Project::where("app_key", $software_key)->first();
         if($verify_project !== null){
-            $data = [
-                'status'    => true,
-                'message'   => 'Key is valid',
-            ];
+
+            if($verify_project->status == "active"){
+                $data = [
+                    'status'    => true,
+                    'message'   => 'Key is valid',
+                ];
+                $status = 200;
+            }else{
+                $data = [
+                    'status'    => false,
+                    'message'   => 'Software expired!',
+                ];
+                $status = 401;
+            }
+                
         }else{
             $data = [
                 'status'    => false,
                 'message'   => 'Key is invalid',
             ];
+            $status = 401;
         }
 
         // return response.
-        return response()->json($data);
+        return response()->json($data, $status);
     }
 }

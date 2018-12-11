@@ -18,20 +18,16 @@
     <!--========== END PROMO BLOCK ==========-->
      <section class="background-11">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="overflow-hidden g-text-left--xs g-margin-t-50--xs g-margin-b-80--xs" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+            <br />
+            <div class="row p-2">
+                <div class="col-lg-8" style="box-shadow: 1px 1px 4px 1px #CCC;">
+                    <div class="overflow-hidden g-text-left--xs g-margin-t-20--xs g-margin-b-20--xs" data-zanim-timeline="{}" data-zanim-trigger="scroll">
                         <h4 data-zanim='{"delay":0.1}'>Apply Today</h4>
                     </div>
-                </div>
-                <div class="col-lg-8">
                     <div class="row">
                         <div class="col-md-12">
-                            <img class="radius-tr-secondary radius-tl-secondary img-responsive" src="{{ asset('img/career/c-02.jpg')}}" alt="">
-                        </div>
-                        <div class="col-md-12">
                             <div class="background-white p-5 radius-secondary">
-                                <h1 class="lead">Join our Innovative Team Today</h1>
+                                <h1 class="lead">Join our Innovative Team</h1>
                                 <h3 class="g-text-center--xs g-margin-t-10--xs g-margin-b-10--xs">Application Form</h3>
                                 <form method="post" action="{{ url('send/application/form') }}" enctype="multipart/form-data">
                                     {{ csrf_field() }}
@@ -110,9 +106,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 text-center ml-auto mt-5 mt-lg-0">
-                    <div class="row mt-5 px-2">
-                        <div class="col">
+                <div class="col-lg-4 text-center">
+                    <div class="row">
+                        <div class="col-md-12">
                             <h5 class="mb-3">Related Articles</h5>
                             <div class="background-white pb-7 radius-secondary">
                                 <div class="owl-carousel owl-theme owl-nav-outer owl-dot-round mt-4" data-options='{"items":1}'>
@@ -130,18 +126,18 @@
                         </div>
                     </div>
                     <div class="row px-2 mt-5">
-                        <div class="col">
+                        <div class="col-md-12">
                             <div class="background-white p-5 radius-secondary">
                                 <h5>Tags</h5>
                                 <ul class="nav tags mt-3 fs--1">
-                                    <li><a class="btn btn-sm btn-outline-primary m-1 p-2" href="javascript:void(0);">Advisory</a></li>
-                                    <li><a class="btn btn-sm btn-outline-primary m-1 p-2" href="javascript:void(0);">Finance</a></li>
-                                    <li><a class="btn btn-sm btn-outline-primary m-1 p-2" href="javascript:void(0);">Ideas</a></li>
-                                    <li><a class="btn btn-sm btn-outline-primary m-1 p-2" href="javascript:void(0);">Data</a></li>
-                                    <li><a class="btn btn-sm btn-outline-primary m-1 p-2" href="javascript:void(0);">Market</a></li>
-                                    <li><a class="btn btn-sm btn-outline-primary m-1 p-2" href="javascript:void(0);">Tax</a></li>
-                                    <li><a class="btn btn-sm btn-outline-primary m-1 p-2" href="javascript:void(0);">Consulting</a></li>
-                                    <li><a class="btn btn-sm btn-outline-primary m-1 p-2" href="javascript:void(0);">Accounting</a></li>
+                                    <li style="float: left;" class="btn btn-default btn-sm"><a class="btn btn-sm btn-outline-primary m-1 p-2" href="javascript:void(0);">Advisory</a></li>
+                                    <li style="float: left;" class="btn btn-default btn-sm"><a class="btn btn-sm btn-outline-primary m-1 p-2" href="javascript:void(0);">Finance</a></li>
+                                    <li style="float: left;" class="btn btn-default btn-sm"><a class="btn btn-sm btn-outline-primary m-1 p-2" href="javascript:void(0);">Ideas</a></li>
+                                    <li style="float: left;" class="btn btn-default btn-sm"><a class="btn btn-sm btn-outline-primary m-1 p-2" href="javascript:void(0);">Data</a></li>
+                                    <li style="float: left;" class="btn btn-default btn-sm"><a class="btn btn-sm btn-outline-primary m-1 p-2" href="javascript:void(0);">Market</a></li>
+                                    <li style="float: left;" class="btn btn-default btn-sm"><a class="btn btn-sm btn-outline-primary m-1 p-2" href="javascript:void(0);">Tax</a></li>
+                                    <li style="float: left;" class="btn btn-default btn-sm"><a class="btn btn-sm btn-outline-primary m-1 p-2" href="javascript:void(0);">Consulting</a></li>
+                                    <li style="float: left;" class="btn btn-default btn-sm"><a class="btn btn-sm btn-outline-primary m-1 p-2" href="javascript:void(0);">Accounting</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -152,6 +148,7 @@
         </div>
         <!--/.container-->
     </section>
+    <br />
 
     <!-- Feedback Form -->
     <div class="g-position--relative g-bg-color--dark-light">

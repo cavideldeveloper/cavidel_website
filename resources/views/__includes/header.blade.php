@@ -9,8 +9,8 @@
                     <!-- Logo -->
                     <div class="s-header__logo">
                         <a href="{{ url('/') }}" class="s-header__logo-link">
-                            <img class="s-header__logo-img s-header__logo-img-default" width="94" height="auto" src="img/cavidel-logo-white.png" alt="{{env("APP_NAME") }} Logo">
-                            <img class="s-header__logo-img s-header__logo-img-shrink" width="84" height="auto" src="img/cavidel-logo.png" alt="{{env("APP_NAME") }} Logo">
+                            <img class="s-header__logo-img s-header__logo-img-default" style="position: absolute;left: 0;top: -3rem;" width="120" height="auto" src="img/cavidel-logo-white.png" alt="{{env("APP_NAME") }} Logo">
+                            <img class="s-header__logo-img s-header__logo-img-shrink" width="100" height="auto" src="img/cavidel-logo.png" alt="{{env("APP_NAME") }} Logo">
                         </a>
                     </div>
                     <!-- End Logo -->
@@ -25,12 +25,13 @@
                     </a>
                     <!-- End Trigger -->
 
-                    <a class="s-header__nav-menu-link g-color--white s-header__logo-img-default" href="{{ url('about') }}">About</a>
-                    <a class="s-header__nav-menu-link g-color--white s-header__logo-img-default" href="{{ url('services') }}">Services</a>
+                   {{--  <a class="s-header__nav-menu-link g-color--white s-header__logo-img-default" href="{{ url('/') }}">Home</a>
+                    <a class="s-header__nav-menu-link g-color--white s-header__logo-img-default" href="{{ url('about') }}">About Us</a>
+                    <a class="s-header__nav-menu-link g-color--white s-header__logo-img-default" href="{{ url('services') }}">Our Business</a>
                     <a class="s-header__nav-menu-link g-color--white s-header__logo-img-default" href="{{ url('portfolio') }}">Portfolio</a>
                     <a class="s-header__nav-menu-link g-color--white s-header__logo-img-default" href="{{ url('team') }}">Team</a>
                     <a class="s-header__nav-menu-link g-color--white s-header__logo-img-default" href="{{ url('contact') }}">Contact Us</a>
-                    <a class="s-header__nav-menu-link g-color--white s-header__logo-img-default" href="{{ url('career') }}">Career</a>
+                    <a class="s-header__nav-menu-link g-color--white s-header__logo-img-default" href="{{ url('career') }}">Career</a> --}}
                 </div>
             </div>
         </div>

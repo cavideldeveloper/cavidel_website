@@ -1139,13 +1139,13 @@ fieldset[disabled] .s-btn {
 .s-header__container {
   width: 100%;
   height: auto;
-  display: table;
-  padding: .75rem 1.875rem;
+  /*display: table;*/
+  padding: 2.75rem 1.975rem;
 }
 
 .s-header__container:before, .s-header__container:after {
   content: " ";
-  display: table;
+  /*display: table;*/
 }
 
 .s-header__container:after {
@@ -1161,13 +1161,13 @@ fieldset[disabled] .s-btn {
 ------------------------------ */
 .s-header__navbar-row {
   position: relative;
-  display: table-row;
+  /*display: table-row;*/
   clear: both;
 }
 
 .s-header__navbar-row-col {
   width: 50%;
-  display: table-cell;
+  /*display: table-cell;*/
   vertical-align: middle;
 }
 
@@ -1183,7 +1183,7 @@ fieldset[disabled] .s-btn {
 
 .s-header__logo-link {
   display: inline-block;
-  padding: 1rem 0;
+  /*padding: 1rem 0;*/
 }
 
 .s-header__logo-link:focus, .s-header__logo-link:hover {
@@ -1203,7 +1203,7 @@ fieldset[disabled] .s-btn {
 
 .s-header__logo-img-shrink {
   position: absolute;
-  top: 1rem;
+  top: -1.8rem;
   left: 0;
   opacity: 0;
 }
@@ -1219,11 +1219,12 @@ fieldset[disabled] .s-btn {
 /* Trigger
 ------------------------------ */
 .s-header__trigger {
-  position: relative;
+  position: absolute;
   z-index: 9999;
   width: 3.125rem;
   height: 3.125rem;
-  float: right;
+  right: 0;
+  top: -1rem;
   overflow: hidden;
   transition-duration: 500ms;
   transition-property: all;
@@ -1641,7 +1642,7 @@ fieldset[disabled] .s-btn {
 .s-header-v2__navbar {
   position: relative;
   z-index: 1000;
-  min-height: 3.125rem;
+  min-height: 1.125rem;
   border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.3);
   transition-duration: 300ms;
   transition-property: all;
