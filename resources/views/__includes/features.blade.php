@@ -15,7 +15,7 @@
                                     <div class="row">
                                         <div class="col-sm-12">
                                             <div class="single_tab_content">
-                                                <div class="head_title">
+                                                <div class="head_title g-margin-b-20--xs">
                                                     <img src="{{asset('img/products/officemate.png')}}" width="auto" height="50">
                                                     <div class="separator"></div>
                                                 </div>
@@ -31,7 +31,7 @@
 
                                         <div class="col-sm-12">
                                             <div class="single_tab_img">
-                                                {{-- <img src="assets/images/stab0.png" alt="" /> --}}
+                                                <img src="assets/images/stab0.png" width="100%" alt="" />
                                             </div>
                                         </div>
                                     </div>
@@ -44,66 +44,27 @@
             </div>
         </div>
     </div>
+
     <div style="height: 120px;"></div>
     <div class="row">
         <div class="col-sm-12">
             <div class="main_service_area">
                 <div class="main_service_content">
                     <div class="service_tabe">
-                        <!-- Tab panes -->
-                        <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane active" id="webdesign">
-                                <div class="single_service_tab">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="single_tab_content">
-                                                <div class="head_title">
-                                                    <h3>TradeFi Release</h3>
-                                                    <div class="separator"></div>
-                                                </div>
-                                                <p class="text-justify">It is a long established fact that dealers in the Financial Market have trouble evaluating trade data and the market statistic; TradeFi is here for the rescue. Cavidel Limited has brought financial trading & Instruments simulation system for various securities such as Bonds, Treasury Bills and Other relating Money Market Instrument, Equities is built into a single Trading and Simulation interface. Think TradeFi when it comes to investing in Bonds & Treasury Bills, Do the necessary research, study and analyse the financial market before making any investment decisions. 
-                                                </p>
-
-                                                <a href="https://www.tradefi.ng" target="_blank" class="btn btn-primary">LEARN MORE</a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-sm-6">
-                                            <div class="single_tab_img">
-                                                <img src="assets/images/stab1.png" alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div style="height: 100px;"></div>
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="main_service_area">
-                <div class="main_service_content">
-                    <div class="service_tabe">
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane active" id="webdesign">
                                 <div class="single_service_tab">
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <div class="single_tab_img">
-                                                <img src="assets/images/stab3.png" width="80%" height="auto" alt="" />
+                                                <img src="assets/images/stab3.png" width="100%" height="auto" alt="" />
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="single_tab_content">
                                                 <div class="head_title">
-                                                    <h3>CATSS (Cavidel Automated Trading and Simulation Software)</h3>
+                                                    {{-- <h3>CATSS (Cavidel Automated Trading and Simulation Software)</h3> --}}
+                                                    <img src="{{asset('img/products/catss.png')}}" width="auto" height="110">
                                                     <div class="separator"></div>
                                                 </div>
                                                 <p>CATSS provide users a secure trading environment for all kinds of Equities. A trading and simulation software, secure and safe accross the Financial Market, Also CATSS provide users with updates on daily price list. CATSS Revaluate both holding & market securities at every new price discovery.
@@ -151,7 +112,7 @@
 
                                         <div class="col-sm-6">
                                             <div class="single_tab_img">
-                                                <img src="assets/images/stab4.png" width="80%" height="auto" alt="" />
+                                                <img src="assets/images/stab4.png" width="100%" height="auto" alt="" />
                                             </div>
                                         </div>
                                     </div>
@@ -165,39 +126,44 @@
         </div>
     </div>
 
+
     <div style="height: 120px;"></div>
     <div class="row">
         <div class="col-sm-12">
-            <div class="main_features_area sections">
-                <div class="head_title">
-                    <div class="separator"></div>
-                </div>
-                <div class="row">
-                    <div class="main_features_content">
-                        <div class="col-sm-6">
-                            <div class="single_features_slide">
-                                <div class="single_ft_s_item">
-                                    <img src="assets/images/yeelda-frame.png" alt="" />
+            <div class="main_service_area">
+                <div class="main_service_content">
+                    <div class="service_tabe">
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="webdesign">
+                                <div class="single_service_tab">
+                                    <div class="row">
+                                        <div class="col-sm-6" style="background: url(https://minutehack.com/public/images/articles/2017/09/fintech.jpg); padding: 20px; height: 400px;border-top-right-radius: 25px; border-bottom-left-radius: 25px;">
+                                            <div class="single_tab_content">
+                                                <div class="head_title">
+                                                    <img src="{{asset('img/products/tims.png')}}" width="auto" height="50">
+                                                    <div class="separator"></div>
+                                                </div>
+                                                <p class="text-justify" style="color: #fff;font-weight: 300;">It is a long established fact that dealers in the Financial Market have trouble evaluating trade data and the market statistic; TradeFi is here for the rescue. Cavidel Limited has brought financial trading & Instruments simulation system for various securities such as Bonds, Treasury Bills and Other relating Money Market Instrument, Equities is built into a single Trading and Simulation interface. Think TradeFi when it comes to investing in Bonds & Treasury Bills, Do the necessary research, study and analyse the financial market before making any investment decisions. 
+                                                </p>
+
+                                                <a href="https://www.tradefi.ng" target="_blank" class="btn btn-primary">LEARN MORE</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <div class="single_tab_img">
+                                                <img src="assets/images/stab1.png" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="single_features_text">
-                                <h4>YEELDA #1 FARMERS AND BUYERS HUB</h4>
-                                <p>Agricultural based trading platform connecting the agricultural value chain through technology.</p>
-
-                                <ul>
-                                    <li><span>Client:</span> Gbolahan OPEODU</li>
-                                    <li><span>Launch Date:</span> Saturday, 15 March, 2018</li>
-                                    <li><span>Tags:</span> Farmers, Services Providers, Rice Farming, Poultry, Fish Farming</li>
-                                </ul>
-
-                                <a href="http://www.yeelda.com" target="_blank" class="btn">LAUNCH NOW</a>
-                            </div>
-                        </div>
-                        
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
     </div>

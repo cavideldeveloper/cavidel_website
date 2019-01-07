@@ -12,6 +12,8 @@ Route::get('/contact',						'ExternalPagesController@contact');
 Route::get('/team',							'ExternalPagesController@team');
 Route::get('/career',						'ExternalPagesController@career');
 Route::get('/services',						'ExternalPagesController@services');
+Route::get('/products',						'ExternalPagesController@products');
+Route::get('/blog',							'ExternalPagesController@blog');
 Route::get('/faq',							'ExternalPagesController@faq');
 Route::get('/portfolio',					'ExternalPagesController@portfolio');
 

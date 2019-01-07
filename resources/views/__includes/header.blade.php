@@ -25,13 +25,80 @@
                     </a>
                     <!-- End Trigger -->
 
-                   {{--  <a class="s-header__nav-menu-link g-color--white s-header__logo-img-default" href="{{ url('/') }}">Home</a>
-                    <a class="s-header__nav-menu-link g-color--white s-header__logo-img-default" href="{{ url('about') }}">About Us</a>
-                    <a class="s-header__nav-menu-link g-color--white s-header__logo-img-default" href="{{ url('services') }}">Our Business</a>
-                    <a class="s-header__nav-menu-link g-color--white s-header__logo-img-default" href="{{ url('portfolio') }}">Portfolio</a>
-                    <a class="s-header__nav-menu-link g-color--white s-header__logo-img-default" href="{{ url('team') }}">Team</a>
-                    <a class="s-header__nav-menu-link g-color--white s-header__logo-img-default" href="{{ url('contact') }}">Contact Us</a>
-                    <a class="s-header__nav-menu-link g-color--white s-header__logo-img-default" href="{{ url('career') }}">Career</a> --}}
+                    <ul class="new-menu-bar">
+                        <li class="new-menu-link"><a href="{{ url('blog') }}">Blog</a></li>
+                        <li class="new-menu-link"><a href="{{ url('contact') }}">Contact Us</a></li>
+                        
+                        <li class="new-menu-link dropdown">
+                            <a href="javascript:void(0);">
+                                Our Business
+                                <div class="container dropdown-menu">
+                                    <div class="row">
+                                        <!-- Plan -->
+                                        <div class="col-md-12">
+                                            <div class="row g-margin-l-5--sm  g-margin-b-10--sm">
+                                                <div class="col-sm-6">
+                                                    <h5 style="font-size: 14px; font-weight: 500;margin-top: 10px;">
+                                                        Services
+                                                    </h5>
+                                                    <ul class="list-unstyled g-margin-l-0--sm">
+                                                        <li class="small"><a href="{{ url('services') }}">Business Analysis</a></li>
+                                                        <li class="small"><a href="{{ url('services') }}">Software Development</a></li>
+                                                        <li class="small"><a href="{{ url('services') }}">Software Customization</a></li>
+                                                        <li class="small"><a href="{{ url('services') }}">Process Engineering Software</a></li> 
+                                                        
+                                                        <li class="small"><a href="{{ url('services') }}">Consultancy & Training</a></li>
+                                                        <li class="small"><a href="{{ url('services') }}">Support Services</a></li> 
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <h5 style="font-size: 14px; font-weight: 500;margin-top: 10px;">
+                                                        Products
+                                                    </h5> 
+                                                    <ul class="list-unstyled g-margin-l-0--sm">
+                                                        <li class="small"><a href="{{ url('products') }}">HR Software (ARP)</a></li>
+                                                        <li class="small"><a href="{{ url('products') }}">Hospital Software</a></li>
+                                                        <li class="small"><a href="{{ url('products') }}">Trading Simulation Software</a></li>  
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="new-menu-link dropdown">
+                            <a href="javascript:void(0);">
+                                About Us
+                                <div class="container dropdown-menu">
+                                    <div class="row">
+                                        <!-- Plan -->
+                                        <div class="col-md-12">
+                                            <div class="row g-margin-l-5--sm  g-margin-b-10--sm">
+                                                <div class="col-sm-6">
+                                                    <h5 style="font-size: 14px; font-weight: 500;margin-top: 10px;">About Cavidel</h5>
+                                                    <ul class="list-unstyled g-margin-l-0--sm">
+                                                        <li class="small"><a href="{{ url('services') }}">Our Team</a></li>  
+                                                        <li class="small"><a href="{{ url('services') }}">Our Core Values</a></li>  
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <h5 style="font-size: 14px; font-weight: 500;margin-top: 10px;">Our Solutions</h5>
+                                                    <ul class="list-unstyled g-margin-l-0--sm">
+                                                        <li><a href="{{ url('products') }}"></a></li>
+                                                        <li class="small"><a href="{{ url('products') }}">Office Automation</a></li>
+                                                        <li class="small"><a href="{{ url('products') }}">Web Development</a></li>
+                                                        <li class="small"><a href="{{ url('products') }}">Payment Integration</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="new-menu-link"><a href="{{ url('/') }}">Home</a></li>
+                    </ul>
                 </div>
             </div>
         </div>

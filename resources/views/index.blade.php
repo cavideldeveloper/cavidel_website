@@ -24,11 +24,9 @@
 
     @include('__includes.testimonials')
 
-    @include('__includes.news')
+    {{-- @include('__includes.counter') --}}
 
-    @include('__includes.counter')
-
-    @include('__includes.feedback')
+    {{-- @include('__includes.feedback') --}}
 
     {{-- @include('__includes.maps') --}}
 

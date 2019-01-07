@@ -104,7 +104,7 @@ li {
 
 em > a,
 li > a {
-  color: #242424;
+  color: #2883F5;
 }
 
 em > a:hover,
@@ -2373,4 +2373,50 @@ fieldset[disabled] .s-btn {
 
 .s-swiper__pagination-v1--dark .swiper-pagination-bullet-active {
   background: #13b1cd;
+}
+
+.new-menu-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 100px;
+  margin-top: -15px;
+  z-index: 9999;
+}
+
+.new-menu-bar .new-menu-link {
+  padding: 0.8em;
+  float: right;
+  list-style: none;
+}
+
+.new-menu-bar .new-menu-link a{
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.new-menu-link .dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  /*float: left;*/
+  width: 400px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,.15);
+  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
 }

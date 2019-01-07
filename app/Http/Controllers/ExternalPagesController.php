@@ -54,6 +54,24 @@ class ExternalPagesController extends Controller
 
     /*
     |---------------------------------------------
+    | SHOW PRODUCT
+    |---------------------------------------------
+    */
+    public function products(){
+        return view('pages.products');
+    }
+
+    /*
+    |---------------------------------------------
+    | SHOW BLOG
+    |---------------------------------------------
+    */
+    public function blog(){
+        return view('pages.blog');
+    }
+
+    /*
+    |---------------------------------------------
     | SHOW CONTACT US
     |---------------------------------------------
     */

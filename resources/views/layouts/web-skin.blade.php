@@ -73,41 +73,8 @@
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.11/dist/sweetalert2.all.min.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         
-        
         <!--========== END JAVASCRIPTS ==========-->
-
         <script type="text/javascript">
-            // load global news
-            function loadGlobalNews() {
-                $.get('{{ url('load/global/news') }}', function(data) {
-                    $(".display-news").html("");
-                    var sn = 0;
-                    $.each(data, function(index, val) {
-                        sn++;
-                        $(".display-news").append(`
-                            <div class="col-sm-4 g-margin-b-30--xs g-margin-b-0--md">
-                                <!-- News -->
-                                <article>
-                                    <img class="img-responsive" src="${val.urlToImage}" alt="Image">
-                                    <div class="g-bg-color--white g-box-shadow__dark-lightest-v2 g-text-center--xs g-padding-x-40--xs g-padding-y-40--xs">
-                                        <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2">${val.title}</p>
-                                        <h3 class="g-font-size-22--xs g-letter-spacing--1"><h3>
-                                        <p>${val.description}</p>
-                                    </div>
-                                </article>
-                                <!-- End News -->
-                            </div>
-
-                        `);
-
-                        if(sn > 2){
-                            // void loop
-                            return false;
-                        }
-                    });
-                });
-            }
-
             // subscribe client
             function subscribeClient() {
                 var token = $("#token").val();
@@ -218,9 +185,14 @@
                 });
             }
 
-            // display global news
-            loadGlobalNews();
+            // get geolocation info
             getGeolocation(browserInfo());
+
+            $('.new-menu-bar .new-menu-link.dropdown').hover(function() {
+              $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+            }, function() {
+              $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+            });
         </script>
 
         @yield('scripts')

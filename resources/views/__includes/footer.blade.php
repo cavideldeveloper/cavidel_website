@@ -8,7 +8,7 @@
                     <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
                         <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Home</a></li>
                         <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">About</a></li>
-                        <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Work</a></li>
+                        <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">FAQ</a></li>
                         <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Contact</a></li>
                     </ul>
                 </div>
