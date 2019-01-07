@@ -18,6 +18,11 @@ Route::get('/faq',							'ExternalPagesController@faq');
 Route::get('/portfolio',					'ExternalPagesController@portfolio');
 
 
+Route::get('/live-chat', 					function(){
+	return view('cavichat.index');
+});
+
+
 
 /*
 |---------------------------------------------------------------------------------------------------------

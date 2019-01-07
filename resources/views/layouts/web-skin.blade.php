@@ -33,13 +33,62 @@
         <link rel="apple-touch-icon" href="img/favicon.png">
 
         <!-- Slick slider-->
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>        
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> 
+
+        {{-- Material Icon Fonts  --}}
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     </head>
     <!-- End Head -->
 
     <!-- Body -->
     <body>
+        <style type="text/css">
+            .cavi-area {
+                resize: none;
+                border-radius: 0px;
+            }
+
+            .cavi-btn {
+                border-radius: 0px;
+                padding: 0.3em;
+                border: 1px solid #ccc;
+                background-color: #fff;
+                width: 100%;
+                text-align: center;
+            }
+        </style>
         @yield('contents')
+
+        {{-- Modals --}}
+        <!-- Search template-->
+        <div id="query-chat" class="modal modal-center fade" tabindex="-1" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="pull-right">
+                      <a href="javascript:void(0);" class="btn btn-flat" type="button" data-dismiss="modal">hide</a>
+                    </div>
+                    <div class="pull-left">
+                      CaviChat Live
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <form class="cavi-chat-form" onsubmit="return sendCaviChatMessage()">
+                        <div class="form-group">
+                            <textarea cols="1" rows="3" placeholder="Type a message..." class="form-control cavi-area"></textarea>
+                        </div>
+                        <div class="form-group">
+                            {{-- <i class="material-icons">attach_file</i> --}}
+                            <button type="submit" class="cavi-btn">
+                                Send
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Search template-->
 
         <!--========== JAVASCRIPTS (Load javascripts at bottom, this will reduce page load time) ==========-->
         <!-- Vendor -->
@@ -193,6 +242,30 @@
             }, function() {
               $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
             });
+
+
+            // send cavi chat message
+            function sendCaviChatMessage(argument) {
+                // body...
+                // check if already session 
+                // retrieve session name and email
+                // check if already anwser 
+                // retrieve communication respondant
+                // send message
+            }
+
+            // start direct chat
+            function startLiveChat() {
+                // open chat interface
+
+                // check chat instance
+
+                // fire event
+                // show response
+                $("#query-chat").modal({
+                    backdrop: true
+                });
+            }
         </script>
 
         @yield('scripts')
