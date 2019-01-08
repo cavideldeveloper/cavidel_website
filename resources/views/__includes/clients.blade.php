@@ -10,10 +10,19 @@
                 <img src="{{ asset('img/partners/client2.jpg') }}">
             </div>
             <div>
+                <img src="{{ asset('img/partners/client8.jpg') }}">
+            </div>
+            <div>
                 <img src="{{ asset('img/partners/client3.jpg') }}">
             </div>
             <div>
+                <img src="{{ asset('img/partners/client10.jpg') }}">
+            </div>
+            <div>
                 <img src="{{ asset('img/partners/client4.jpg') }}">
+            </div>
+            <div>
+                <img src="{{ asset('img/partners/client9.jpg') }}">
             </div>
             <div>
                 <img src="{{ asset('img/partners/client5.jpg') }}">
