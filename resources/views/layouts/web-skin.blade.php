@@ -56,11 +56,57 @@
                 width: 100%;
                 text-align: center;
             }
+
+            .chat-messages {
+                height: 200px;
+                border-radius: 0px;
+                padding: 0.3em;
+                border: 1px solid #ccc;
+                background-color: #fff;
+                width: 100%;
+                overflow: auto;
+            }
         </style>
         @yield('contents')
 
+        <!-- Share template-->
+        <div id="tell-a-friend" class="modal modal-center fade" tabindex="-1" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="pull-right">
+                      <a href="javascript:void(0);" class="btn btn-flat" type="button" data-dismiss="modal">close</a>
+                    </div>
+                    <div class="pull-left">
+                      Tell your friends about cavidel
+                    </div>
+                </div>
+                <div class="modal-body text-center p-4">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="javascript:void(0);">
+                                <i class="fa fa-facebook">facebook</i> <br /> Share on Facebook
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="javascript:void(0);">
+                                <i class="fa fa-google">google</i> <br /> Share on Google
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="javascript:void(0);">
+                                <i class="fa fa-twitter">twitter</i> <br /> Share on Twitter
+                            </a>
+                        </div>
+                    </div>
+                    <br />
+                </div>
+            </div>
+          </div>
+        </div>
+
         {{-- Modals --}}
-        <!-- Search template-->
+        <!-- Chat template-->
         <div id="query-chat" class="modal modal-center fade" tabindex="-1" role="dialog">
           <div class="modal-dialog">
             <div class="modal-content">
@@ -69,13 +115,14 @@
                       <a href="javascript:void(0);" class="btn btn-flat" type="button" data-dismiss="modal">hide</a>
                     </div>
                     <div class="pull-left">
-                      CaviChat Live
+                      Connect Live with Cavidel's Team
                     </div>
                 </div>
                 <div class="modal-body">
+                    <div class="chat-messages"></div>
                     <form class="cavi-chat-form" onsubmit="return sendCaviChatMessage()">
                         <div class="form-group">
-                            <textarea cols="1" rows="3" placeholder="Type a message..." class="form-control cavi-area"></textarea>
+                            <textarea id="input-chat-message" cols="1" rows="3" placeholder="Type a message..." class="form-control cavi-area"></textarea>
                         </div>
                         <div class="form-group">
                             {{-- <i class="material-icons">attach_file</i> --}}
@@ -88,6 +135,10 @@
             </div>
           </div>
         </div>
+
+        <input type="hidden" id="visitor_name" name="">
+        <input type="hidden" id="visitor_email" name="">
+        <input type="hidden" id="visitor_subject" name="">
         <!-- End Search template-->
 
         <!--========== JAVASCRIPTS (Load javascripts at bottom, this will reduce page load time) ==========-->
@@ -243,26 +294,140 @@
               $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
             });
 
-
             // send cavi chat message
-            function sendCaviChatMessage(argument) {
+            function sendCaviChatMessage() {
+                // get user name
+                var g_name      = $("#visitor_name").val();
+                var g_email     = $("#visitor_email").val();
+                var g_subject   = $("#visitor_subject").val();
+
                 // body...
-                // check if already session 
-                // retrieve session name and email
-                // check if already anwser 
-                // retrieve communication respondant
-                // send message
+                var message = $("#input-chat-message").val();
+                var token   = $("#token").val();
+
+                var params = {
+                    _token: token,
+                    g_name: g_name,
+                    g_email: g_email,
+                    g_subject: g_subject,
+                    g_message: message
+                }
+
+                $.ajax({
+                    url: '{{ url("send-chat/message") }}',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: params,
+                }).done(function() {
+                    // console.log("success");
+                    $('.chat-messages').append(`
+                        <div class="small alert alert-info" style="text-align: right;">
+                            <h5>${g_name}</h5>
+                            <p>${message}</p>
+                        </div>
+                    `);
+
+                    $(".cavi-chat-form")[0].reset();
+                    console.log("success");
+                }).fail(function() {
+                    console.log("error");
+                }).always(function() {
+                    console.log("complete");
+                });
+
+                // return
+                return false;
             }
 
             // start direct chat
-            function startLiveChat() {
-                // open chat interface
+            function startLiveChat(){
+                var g_name = $("#visitor_name").val();
 
-                // check chat instance
+                if(g_name == ""){
+                    // get user email
+                    Swal.mixin({
+                      input: 'text',
+                      confirmButtonText: 'Next &rarr;',
+                      showCancelButton: true,
+                      progressSteps: ['1', '2', '3']
+                    }).queue([
+                      {
+                        title: 'Hi',
+                        text: 'Cavidel will like to know your name'
+                      },
+                      {
+                        title: 'We can talk more',
+                        text: 'Cavidel will to have your email address'
+                      },
+                      {
+                        title: 'How can we help?',
+                        text: 'Help us find your solution'
+                      }
+                    ]).then((result) => {
+                      if (result.value) {
+                        // console.log(result.value);
+                        var g_name      = result.value[0];
+                        var g_email     = result.value[1];
+                        var g_subject   = result.value[2];
 
+                        $("#visitor_name").val(g_name);
+                        $("#visitor_email").val(g_email);
+                        $("#visitor_subject").val(g_subject);
+
+                        // body...
+                        var message = $("#input-chat-message").val();
+                        var token   = $("#token").val();
+                        var params = {
+                            _token: token,
+                            g_name: g_name,
+                            g_email: g_email,
+                            g_subject: g_subject,
+                            g_message: g_name + ' wants to chat with Cavidel Support Team'
+                        };
+
+                        $.ajax({
+                            url: '{{ url("send-chat/request") }}',
+                            type: 'POST',
+                            dataType: 'json',
+                            data: params,
+                        }).done(function() {
+                            // console.log("success");
+                            $('.chat-messages').append(`
+                                <div class="small alert alert-info" style="text-align: right;">
+                                    <h5>${g_name}</h5>
+                                    <p>${g_subject}</p>
+                                </div>
+                            `);
+                            $('.chat-messages').append(`
+                                <div class="small alert alert-success">
+                                    <h5>Cavidel</h5>
+                                    <p>Our Support Team will be with you shortly...</p>
+                                </div>
+                            `);
+                        }).fail(function() {
+                            console.log("error");
+                        }).always(function() {
+                            console.log("complete");
+                        });
+
+                        // fire event
+                        $("#query-chat").modal({
+                            backdrop: true
+                        });
+                      }
+                    });
+                }else{
+                    // fire event
+                    $("#query-chat").modal({
+                        backdrop: true
+                    });
+                }
+            }
+
+            // tell a friend
+            function shareCaviLink() {
                 // fire event
-                // show response
-                $("#query-chat").modal({
+                $("#tell-a-friend").modal({
                     backdrop: true
                 });
             }

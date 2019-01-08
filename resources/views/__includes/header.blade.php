@@ -113,7 +113,7 @@
                 <!-- Menu List -->                                
                 <ul class="list-unstyled s-header__nav-menu">
                     <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="javascript:void(0);" onclick="startLiveChat()">Live Chat</a></li>
-                    <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('services') }}">Tell a Friend</a></li>
+                    <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="javascript:void(0);" onclick="shareCaviLink()">Tell a Friend</a></li>
                     <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('faq') }}">FAQ</a></li>
                     <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('contact') }}">Help?</a></li>
                 </ul>

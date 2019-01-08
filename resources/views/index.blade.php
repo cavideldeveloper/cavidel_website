@@ -12,11 +12,11 @@
     @include('__includes.swipper')
 
     <!--========== PAGE CONTENT ==========-->
-    @include('__includes.features')
+    @include('__includes.culture')
 
     @include('__includes.parallax')
 
-    @include('__includes.culture')
+    @include('__includes.features')
 
     @include('__includes.subscribe')
 

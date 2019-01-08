@@ -80,42 +80,6 @@
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div style="height: 160px;"></div>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="single_tab_content">
-                                                <div class="head_title">
-                                                    <h3>ONE CLICK TRADE</h3>
-                                                    <div class="separator"></div>
-                                                </div>
-                                                <p>A System to enable clients to bid or ask, high & low with a single click and regulate the Stock Market remotely, This feature allow users to negotiate trade online at hand, multiple users can decide the future of a given comodity, this will show the future value of the stock and also the average worth of the stock over a given period of time.
-                                                </p>
-
-                                                <div class="row">
-                                                    <!-- apple store button -->
-                                                    <div class="col-xs-12">
-                                                        <p>Application is also available on !</p>
-                                                    </div>
-                                                    <div class="col-xs-3">
-                                                        <img src="assets/images/google-store.png" width="100%" height="100%">
-                                                    </div>
-                                                    <div class="col-xs-3">
-                                                        <!-- <img src="assets/images/apple-store.png" width="100%" height="100%"> -->
-                                                    </div>
-                                                </div>
-
-                                                <br />
-                                                <a href="http://www.equitites.catss.ng" class="btn btn-primary">LEARN MORE</a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-sm-6">
-                                            <div class="single_tab_img">
-                                                <img src="assets/images/stab4.png" width="100%" height="auto" alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                             
@@ -138,13 +102,13 @@
                             <div role="tabpanel" class="tab-pane active" id="webdesign">
                                 <div class="single_service_tab">
                                     <div class="row">
-                                        <div class="col-sm-6" style="background: url(https://minutehack.com/public/images/articles/2017/09/fintech.jpg); padding: 20px; height: 400px;border-top-right-radius: 25px; border-bottom-left-radius: 25px;">
+                                        <div class="col-sm-6">
                                             <div class="single_tab_content">
                                                 <div class="head_title">
-                                                    <img src="{{asset('img/products/tims.png')}}" width="auto" height="50">
+                                                    <img src="{{asset('img/products/tradefi.jpg')}}" width="auto" height="50">
                                                     <div class="separator"></div>
                                                 </div>
-                                                <p class="text-justify" style="color: #fff;font-weight: 300;">It is a long established fact that dealers in the Financial Market have trouble evaluating trade data and the market statistic; TradeFi is here for the rescue. Cavidel Limited has brought financial trading & Instruments simulation system for various securities such as Bonds, Treasury Bills and Other relating Money Market Instrument, Equities is built into a single Trading and Simulation interface. Think TradeFi when it comes to investing in Bonds & Treasury Bills, Do the necessary research, study and analyse the financial market before making any investment decisions. 
+                                                <p class="text-justify">It is a long established fact that dealers in the Financial Market have trouble evaluating trade data and the market statistic; TradeFi is here for the rescue. Cavidel Limited has brought financial trading & Instruments simulation system for various securities such as Bonds, Treasury Bills and Other relating Money Market Instrument, Equities is built into a single Trading and Simulation interface. Think TradeFi when it comes to investing in Bonds & Treasury Bills, Do the necessary research, study and analyse the financial market before making any investment decisions. 
                                                 </p>
 
                                                 <a href="https://www.tradefi.ng" target="_blank" class="btn btn-primary">LEARN MORE</a>

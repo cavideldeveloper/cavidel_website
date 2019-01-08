@@ -18,9 +18,14 @@ Route::get('/faq',							'ExternalPagesController@faq');
 Route::get('/portfolio',					'ExternalPagesController@portfolio');
 
 
-Route::get('/live-chat', 					function(){
-	return view('cavichat.index');
-});
+/*
+|---------------------------------------------------------------------------------------------------------
+| LIVE CHAT ENTRY POINT
+|---------------------------------------------------------------------------------------------------------
+|
+*/
+Route::post('/send-chat/message',	 		'LiveChatController@sendMessageToSlack');
+Route::post('/send-chat/request',			'LiveChatController@requestChat');
 
 
 
