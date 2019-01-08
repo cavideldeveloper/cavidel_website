@@ -28,6 +28,9 @@
                 <img src="{{ asset('img/partners/client5.jpg') }}">
             </div>
             <div>
+                <img src="{{ asset('img/partners/client11.jpg') }}">
+            </div>
+            <div>
                 <img src="{{ asset('img/partners/client6.jpg') }}">
             </div>
             <div>
