@@ -26,7 +26,7 @@
                     <!-- End Trigger -->
 
                     <ul class="new-menu-bar">
-                        <li class="new-menu-link"><a href="{{ url('blog') }}">Blog</a></li>
+                        {{-- <li class="new-menu-link"><a href="{{ url('blog') }}">Blog</a></li> --}}
                         <li class="new-menu-link"><a href="{{ url('contact') }}">Contact Us</a></li>
                         
                         <li class="new-menu-link dropdown">
@@ -78,17 +78,17 @@
                                                 <div class="col-sm-6">
                                                     <h5 style="font-size: 14px; font-weight: 500;margin-top: 10px;">About Cavidel</h5>
                                                     <ul class="list-unstyled g-margin-l-0--sm">
-                                                        <li class="small"><a href="{{ url('services') }}">Our Team</a></li>  
-                                                        <li class="small"><a href="{{ url('services') }}">Our Core Values</a></li>  
+                                                        <li class="small"><a href="{{ url('team') }}">Our Team</a></li>
+                                                        <li class="small"><a href="{{ url('team') }}">Our Core Values</a></li>  
                                                     </ul>
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <h5 style="font-size: 14px; font-weight: 500;margin-top: 10px;">Our Solutions</h5>
                                                     <ul class="list-unstyled g-margin-l-0--sm">
                                                         <li><a href="{{ url('products') }}"></a></li>
-                                                        <li class="small"><a href="{{ url('products') }}">Office Automation</a></li>
-                                                        <li class="small"><a href="{{ url('products') }}">Web Development</a></li>
-                                                        <li class="small"><a href="{{ url('products') }}">Payment Integration</a></li>
+                                                        <li class="small"><a href="{{ url('services') }}">Office Automation</a></li>
+                                                        <li class="small"><a href="{{ url('services') }}">Web Development</a></li>
+                                                        <li class="small"><a href="{{ url('services') }}">Payment Integration</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -113,7 +113,7 @@
                 <!-- Menu List -->                                
                 <ul class="list-unstyled s-header__nav-menu">
                     <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="javascript:void(0);" onclick="startLiveChat()">Live Chat</a></li>
-                    <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="javascript:void(0);" onclick="shareCaviLink()">Tell a Friend</a></li>
+                    {{-- <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="javascript:void(0);" onclick="shareCaviLink()">Tell a Friend</a></li> --}}
                     <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('faq') }}">FAQ</a></li>
                     <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('contact') }}">Help?</a></li>
                 </ul>

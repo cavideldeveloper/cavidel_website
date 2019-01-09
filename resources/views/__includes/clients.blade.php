@@ -22,6 +22,9 @@
                 <img src="{{ asset('img/partners/client4.jpg') }}">
             </div>
             <div>
+                <img src="{{ asset('img/partners/client12.jpg') }}">
+            </div>
+            <div>
                 <img src="{{ asset('img/partners/client9.jpg') }}">
             </div>
             <div>
@@ -32,6 +35,9 @@
             </div>
             <div>
                 <img src="{{ asset('img/partners/client6.jpg') }}">
+            </div>
+            <div>
+                <img src="{{ asset('img/partners/client13.jpg') }}">
             </div>
             <div>
                 <img src="{{ asset('img/partners/client7.jpg') }}">
