@@ -2,6 +2,7 @@
 <!--========== HEADER ==========-->
 <header class="navbar-fixed-top s-header js__header-sticky js__header-overlay">
     <!-- Navbar -->
+    <div id="particles-js"></div>
     <div class="s-header__navbar">
         <div class="s-header__container">
             <div class="s-header__navbar-row">
@@ -153,5 +154,6 @@
         <!-- End Action -->
     </div>
     <!-- End Overlay -->
+
 </header>
 <!--========== END HEADER ==========-->

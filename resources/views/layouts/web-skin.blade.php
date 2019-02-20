@@ -172,6 +172,7 @@
         <script type="text/javascript" src="js/components/wow.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.11/dist/sweetalert2.all.min.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="{{asset('js/particles.min.js')}}"></script>
         
         <!--========== END JAVASCRIPTS ==========-->
         <script type="text/javascript">

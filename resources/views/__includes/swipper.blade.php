@@ -6,8 +6,8 @@
             <div class="container g-text-center--xs g-ver-center--xs">
                 <div class="g-margin-b-30--xs">
                     <h1 class="g-font-size-35--xs g-font-size-45--sm g-font-size-55--md g-color--white"> Experience Technology in<br> Office Automation</h1>
+                    <!-- particles.js container -->
                 </div>
-                
             </div>
         </div>
         <div class="g-fullheight--xs g-bg-position--center swiper-slide" style="background: url('img/1920x1080/01.jpg');">
