@@ -17,49 +17,45 @@
                     <!-- End Logo -->
                 </div>
                 <div class="s-header__navbar-row-col">
-                    <!-- Trigger -->
-                    <a href="javascript:void(0);" class="s-header__trigger js__trigger">
-                        <span class="s-header__trigger-icon"></span>
-                        <svg x="0rem" y="0rem" width="3.125rem" height="3.125rem" viewbox="0 0 54 54">
-                            <circle fill="transparent" stroke="#fff" stroke-width="1" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
-                        </svg>
-                    </a>
-                    <!-- End Trigger -->
-
                     <ul class="new-menu-bar">
                         {{-- <li class="new-menu-link"><a href="{{ url('blog') }}">Blog</a></li> --}}
-                        <li class="new-menu-link"><a href="{{ url('contact') }}">Contact Us</a></li>
-                        
+                        <li class="new-menu-link"><a href="{{ url('contact') }}" class="g-font-weight--500">CONTACT</a></li>
                         <li class="new-menu-link dropdown">
-                            <a href="javascript:void(0);">
-                                Our Business
+                            <a href="javascript:void(0);" class="g-font-weight--500">
+                                OUR BUSINESS
                                 <div class="container dropdown-menu">
                                     <div class="row">
                                         <!-- Plan -->
                                         <div class="col-md-12">
                                             <div class="row g-margin-l-5--sm  g-margin-b-10--sm">
                                                 <div class="col-sm-6">
-                                                    <h5 style="font-size: 14px; font-weight: 500;margin-top: 10px;">
-                                                        Services
+                                                    <h5 class="g-font-size-16--xs g-font-weight--700 g-margin-t-10--sm">
+                                                        SERVICES
                                                     </h5>
                                                     <ul class="list-unstyled g-margin-l-0--sm">
-                                                        <li class="small"><a href="{{ url('services') }}">Business Analysis</a></li>
-                                                        <li class="small"><a href="{{ url('services') }}">Software Development</a></li>
-                                                        <li class="small"><a href="{{ url('services') }}">Software Customization</a></li>
-                                                        <li class="small"><a href="{{ url('services') }}">Process Engineering Software</a></li> 
+                                                        <li class="g-margin-b-20--sm">
+                                                            <a href="{{ url('services') }}">Business Analysis</a></li>
+                                                        <li class="g-margin-b-20--sm">
+                                                            <a href="{{ url('services') }}">Software Development</a></li>
+                                                        <li class="g-margin-b-20--sm">
+                                                            <a href="{{ url('services') }}">Software Customization</a></li>
+                                                        <li class="g-margin-b-20--sm">
+                                                            <a href="{{ url('services') }}">Process Engineering Software</a></li> 
                                                         
-                                                        <li class="small"><a href="{{ url('services') }}">Consultancy & Training</a></li>
-                                                        <li class="small"><a href="{{ url('services') }}">Support Services</a></li> 
+                                                        <li class="g-margin-b-20--sm">
+                                                            <a href="{{ url('services') }}">Consultancy & Training</a></li>
+                                                        <li class="g-margin-b-20--sm">
+                                                            <a href="{{ url('services') }}">Support Services</a></li> 
                                                     </ul>
                                                 </div>
                                                 <div class="col-sm-6">
-                                                    <h5 style="font-size: 14px; font-weight: 500;margin-top: 10px;">
-                                                        Products
+                                                    <h5 class="g-font-size-16--xs g-font-weight--700 g-margin-t-10--sm">
+                                                        PRODUCTS
                                                     </h5> 
                                                     <ul class="list-unstyled g-margin-l-0--sm">
-                                                        <li class="small"><a href="{{ url('products') }}">HR Software (ARP)</a></li>
-                                                        <li class="small"><a href="{{ url('products') }}">Hospital Software</a></li>
-                                                        <li class="small"><a href="{{ url('products') }}">Trading Simulation Software</a></li>  
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('products') }}">HR Software (ARP)</a></li>
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('products') }}">Hospital Software</a></li>
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('products') }}">Trading Simulation Software</a></li>  
                                                     </ul>
                                                 </div>
                                             </div>
@@ -69,27 +65,31 @@
                             </a>
                         </li>
                         <li class="new-menu-link dropdown">
-                            <a href="javascript:void(0);">
-                                About Us
+                            <a href="javascript:void(0);" class="g-font-weight--500">
+                                ABOUT US
                                 <div class="container dropdown-menu">
                                     <div class="row">
                                         <!-- Plan -->
                                         <div class="col-md-12">
                                             <div class="row g-margin-l-5--sm  g-margin-b-10--sm">
                                                 <div class="col-sm-6">
-                                                    <h5 style="font-size: 14px; font-weight: 500;margin-top: 10px;">About Cavidel</h5>
+                                                    <h5 class="g-font-size-16--xs g-font-weight--700 g-margin-t-10--sm">
+                                                        ABOUT CAVIDEL
+                                                    </h5>
                                                     <ul class="list-unstyled g-margin-l-0--sm">
-                                                        <li class="small"><a href="{{ url('team') }}">Our Team</a></li>
-                                                        <li class="small"><a href="{{ url('team') }}">Our Core Values</a></li>  
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('team') }}">Our Team</a></li>
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('team') }}">Our Core Values</a></li>  
                                                     </ul>
                                                 </div>
                                                 <div class="col-sm-6">
-                                                    <h5 style="font-size: 14px; font-weight: 500;margin-top: 10px;">Our Solutions</h5>
+                                                    <h5 class="g-font-size-16--xs g-font-weight--700 g-margin-t-10--sm">
+                                                        OUR SOLUTION
+                                                    </h5>
                                                     <ul class="list-unstyled g-margin-l-0--sm">
                                                         <li><a href="{{ url('products') }}"></a></li>
-                                                        <li class="small"><a href="{{ url('services') }}">Office Automation</a></li>
-                                                        <li class="small"><a href="{{ url('services') }}">Web Development</a></li>
-                                                        <li class="small"><a href="{{ url('services') }}">Payment Integration</a></li>
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('services') }}">Office Automation</a></li>
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('services') }}">Web Development</a></li>
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('services') }}">Payment Integration</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -98,7 +98,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="new-menu-link"><a href="{{ url('/') }}">Home</a></li>
+                        <li class="new-menu-link"><a href="{{ url('/') }}" class="g-font-weight--500">HOME</a></li>
                     </ul>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 <!-- Clients -->
 <div>
-    <div class="g-container--md g-padding-y-80--xs g-padding-y-125--sm">
+    <div class="g-container--md g-padding-y-20--xs g-padding-y-40--sm">
         <!-- Swiper Clients -->
         <div class="slider autoplay">
             <div>
