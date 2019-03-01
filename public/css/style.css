@@ -2449,12 +2449,13 @@ canvas {
 #particles-js {
   position: absolute;
   width: 100%;
-  height: 30vh;
+  height: 90vh;
   background-color: transparent !important;
   background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center !important;
+  z-index: 900;
 }
 
 /* ---- stats.js ---- */
@@ -2472,6 +2473,7 @@ canvas {
   padding-bottom: 2px;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
+  z-index: 900;
 }
 
 .js-count-particles{

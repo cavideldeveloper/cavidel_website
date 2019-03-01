@@ -2,8 +2,9 @@
 <div id="js__scroll-to-section" class="container g-padding-y-80--xs g-padding-y-125--sm">
     <div class="row">
         <div class="col-sm-12">
-            <div class="text-center">
-                <h1>Our Solutions</h1>
+            <div class="text-center wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
+                <h1 class="g-font-size-45--xs g-font-weight--700 g-padding-y-25--sm">Our Solutions</h1>
+                <br />
             </div>
             <div class="main_service_area">
                 <div class="main_service_content">
@@ -13,7 +14,7 @@
                             <div role="tabpanel" class="tab-pane active" id="webdesign">
                                 <div class="single_service_tab">
                                     <div class="row">
-                                        <div class="col-sm-12">
+                                        <div class="col-sm-6">
                                             <div class="single_tab_content">
                                                 <div class="head_title g-margin-b-20--xs">
                                                     <img src="{{asset('img/products/officemate.png')}}" width="auto" height="50">
@@ -29,7 +30,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-sm-12">
+                                        <div class="col-sm-6">
                                             <div class="single_tab_img">
                                                 <img src="assets/images/stab0.png" width="100%" alt="" />
                                             </div>
@@ -45,7 +46,7 @@
         </div>
     </div>
 
-    <div style="height: 120px;"></div>
+    <div style="height: 200px;"></div>
     <div class="row">
         <div class="col-sm-12">
             <div class="main_service_area">
@@ -70,11 +71,6 @@
                                                 <p>CATSS provide users a secure trading environment for all kinds of Equities. A trading and simulation software, secure and safe accross the Financial Market, Also CATSS provide users with updates on daily price list. CATSS Revaluate both holding & market securities at every new price discovery.
                                                 </p>
 
-                                                <ul>
-                                                    <li><span>Client:</span> CATSS</li>
-                                                    <li><span>Launch Date:</span> Saturday, 1 February, 2018</li>
-                                                    <li><span>Tags:</span>Equities, Stocks and Revaluation</li>
-                                                </ul>
                                                 <br />                               
                                                 <a href="http://www.equitites.catss.ng" class="btn btn-primary">LEARN MORE</a>
                                             </div>
@@ -91,7 +87,7 @@
     </div>
 
 
-    <div style="height: 120px;"></div>
+    <div style="height: 200px;"></div>
     <div class="row">
         <div class="col-sm-12">
             <div class="main_service_area">

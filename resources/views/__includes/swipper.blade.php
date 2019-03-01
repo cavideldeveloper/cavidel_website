@@ -1,4 +1,5 @@
  <!--========== SWIPER SLIDER ==========-->
+<div id="particles-js"></div>
 <div class="s-swiper js__swiper-one-item">
     <!-- Swiper Wrapper -->
     <div class="swiper-wrapper">
