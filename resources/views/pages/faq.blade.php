@@ -13,7 +13,7 @@
     <div class="js__parallax-window" style="background: url(img/1920x1080/16.jpg) 50% 0 no-repeat fixed;height: 250px;">
         <div class="g-container--md g-text-center--xs g-padding-y-150--xs">
             <div class="g-margin-b-60--xs">
-                <h1 class="g-font-size-40--xs g-font-size-50--sm g-font-size-70--md g-color--white g-letter-spacing--1 g-margin-b-30--xs">FAQ</h1>
+                <h1 class="g-font-size-40--xs g-font-size-50--sm g-font-size-70--md g-color--white g-letter-spacing--1 g-margin-b-30--xs g-font-weight--700 animated bounceInDown">FAQ</h1>
                 <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--white-opacity g-letter-spacing--2">Your Questions. Answered.</p>
             </div>
             <a href="#js__scroll-to-section">

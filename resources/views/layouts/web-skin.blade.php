@@ -42,6 +42,11 @@
 
     <!-- Body -->
     <body>
+        {{-- <div class="preloader-wrapper">
+            <div class="preloader">
+                <img src="{{asset('img/loader.gif')}}" alt="loading...">
+            </div>
+        </div> --}}
         <style type="text/css">
             .cavi-area {
                 resize: none;
@@ -172,6 +177,7 @@
         <script type="text/javascript" src="js/components/wow.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.11/dist/sweetalert2.all.min.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="{{asset('js/preloader.js')}}"></script>
         <script src="{{asset('js/particles.min.js')}}"></script>
         
         <!--========== END JAVASCRIPTS ==========-->
@@ -432,6 +438,28 @@
                     backdrop: true
                 });
             }
+
+            // Scroll function courtesy of Scott Dowding; http://stackoverflow.com/questions/487073/check-if-element-is-visible-after-scrolling
+            $(document).ready(function() {
+              // Check if element is scrolled into view
+              function isScrolledIntoView(elem) {
+                var docViewTop = $(window).scrollTop();
+                var docViewBottom = docViewTop + $(window).height();
+
+                var elemTop = $(elem).offset().top;
+                var elemBottom = elemTop + $(elem).height();
+
+                return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+              }
+              // If element is scrolled into view, fade it in
+              $(window).scroll(function() {
+                $('.animated').each(function() {
+                  if (isScrolledIntoView(this) === true) {
+                    $(this).addClass('fadeInLeft');
+                  }
+                });
+              });
+            });
         </script>
 
         @yield('scripts')

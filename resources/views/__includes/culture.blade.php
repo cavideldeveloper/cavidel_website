@@ -15,10 +15,10 @@
 
                 {{-- <img src="{{asset('img/process/3.gif')}}" width="auto" height="400"> --}}
             </div>
-            <div class="col-md-4 col-md-offset-1">
-                <p class="g-font-size-18--xs">Cavidel Limited is a process automation company that helps businesses to align/re-align their business units and overall strategies with operational processes and information technology to reduce cost, improve productivity and increase efficiency.
+            <div class="col-md-5">
+                <p class="g-font-size-18--xs g-font-weight--600">Cavidel Limited is a process automation company that helps businesses to align/re-align their business units and overall strategies with operational processes and information technology to reduce cost, improve productivity and increase efficiency.
                 We take great pride in our reputation for consistently delivering quality services. We use our ingenuity to save our clients time and money, reduce risks, increase efficiency and maximise sustainable outcomes. </p>
-                <p class="g-font-size-18--xs">We do this through innovative thinking, international perspectives, local knowledge and the immense experience and technical know-how of our team.</p>
+                <p class="g-font-size-18--xs g-font-weight--600">We do this through innovative thinking, international perspectives, local knowledge and the immense experience and technical know-how of our team.</p>
             </div>
         </div>
     </div>

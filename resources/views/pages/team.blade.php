@@ -13,7 +13,7 @@
     <div class="g-bg-position--center js__parallax-window" style="background: url(img/1920x1080/09.jpg) 50% 0 no-repeat fixed;">
         <div class="g-container--md g-text-center--xs g-padding-y-150--xs">
             <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--white-opacity g-letter-spacing--2 g-margin-b-25--xs">15 years experience</p>
-            <h1 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--white g-letter-spacing--1">Cavidel Team</h1>
+            <h1 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--white g-letter-spacing--1 g-font-weight--700 animated bounceInDown">Cavidel Team</h1>
         </div>
     </div>
     <!--========== END PROMO BLOCK ==========-->
@@ -36,6 +36,43 @@
 
     </div>
     <!-- End Team -->
+
+     <!-- Plan -->
+    <div class="g-bg-color--sky-light">
+        <div class="container g-padding-y-80--xs g-padding-y-125--xsm">
+            <div class="g-margin-b-60--xs">
+                
+            </div>
+            <div class="row g-margin-b-80--lg">
+                <!-- Plan -->
+                <div class="col-md-6 g-margin-b-10--xs g-margin-b-0--lg s-plan-v1">
+                    <p class="text-uppercase g-text-center--xs g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-15--xs g-color--primary">Our core values</p>
+                    <p>Core values contents here...</p>
+                </div>
+                <!-- End Plan -->
+                <!-- Plan -->
+                <div class="col-md-6 g-margin-b-10--xs g-margin-b-0--lg s-plan-v1">
+                    {{-- <p>Core values contents here...</p> --}}
+                </div>
+                <!-- End Plan -->
+            </div>
+
+            <div class="row g-margin-b-20--lg">
+                <!-- Plan -->
+                <div class="col-md-6 g-margin-b-10--xs g-margin-b-0--lg s-plan-v1">
+                    {{-- <p>Core values contents here...</p> --}}
+                </div>
+                <!-- End Plan -->
+                <!-- Plan -->
+                <div class="col-md-6 g-margin-b-10--xs g-margin-b-0--lg s-plan-v1">
+                    <p class="text-uppercase g-text-center--xs g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-15--xs g-color--primary">Our Vision</p>
+                    <p>Core values contents here...</p>
+                </div>
+                <!-- End Plan -->
+            </div>
+        </div>
+    </div>
+    <!-- End Plan -->
 
     <!-- Feedback Form -->
     <div class="g-position--relative g-bg-color--dark-light">

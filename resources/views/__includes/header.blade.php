@@ -39,7 +39,7 @@
                                                         <li class="g-margin-b-20--sm">
                                                             <a href="{{ url('services') }}">Software Customization</a></li>
                                                         <li class="g-margin-b-20--sm">
-                                                            <a href="{{ url('services') }}">Process Engineering Software</a></li> 
+                                                            <a href="{{ url('services') }}">Process Engineering</a></li> 
                                                         
                                                         <li class="g-margin-b-20--sm">
                                                             <a href="{{ url('services') }}">Consultancy & Training</a></li>
@@ -78,17 +78,19 @@
                                                     <ul class="list-unstyled g-margin-l-0--sm">
                                                         <li class="g-margin-b-20--sm"><a href="{{ url('team') }}">Our Team</a></li>
                                                         <li class="g-margin-b-20--sm"><a href="{{ url('team') }}">Our Core Values</a></li>  
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('team') }}">Our Vision</a></li>  
                                                     </ul>
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <h5 class="g-font-size-16--xs g-font-weight--700 g-margin-t-10--sm">
-                                                        OUR SOLUTION
+                                                        OUR SOLUTIONS
                                                     </h5>
                                                     <ul class="list-unstyled g-margin-l-0--sm">
                                                         <li><a href="{{ url('products') }}"></a></li>
-                                                        <li class="g-margin-b-20--sm"><a href="{{ url('services') }}">Office Automation</a></li>
-                                                        <li class="g-margin-b-20--sm"><a href="{{ url('services') }}">Web Development</a></li>
-                                                        <li class="g-margin-b-20--sm"><a href="{{ url('services') }}">Payment Integration</a></li>
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('solutions') }}">Office Automation</a></li>
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('solutions#web') }}">Web Development</a></li>
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('solutions#mobile') }}">Mobile Development</a></li>
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('solutions#payment') }}">Payment Integration</a></li>
                                                     </ul>
                                                 </div>
                                             </div>

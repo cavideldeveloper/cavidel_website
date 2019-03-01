@@ -58,7 +58,16 @@ class ExternalPagesController extends Controller
     |---------------------------------------------
     */
     public function products(){
-        return view('pages.services');
+        return view('pages.products');
+    }
+
+    /*
+    |---------------------------------------------
+    | SHOW SOLUTIONS
+    |---------------------------------------------
+    */
+    public function solutions(){
+        return view('pages.solutions');
     }
 
     /*

@@ -14,8 +14,8 @@
     <div class="g-position--relative g-bg-color--dark-light">
         <div class="g-container--md g-padding-y-125--xs">
             <div class="g-text-center--xs g-margin-t-50--xs g-margin-b-80--xs">
-                <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--white-opacity g-letter-spacing--2 g-margin-b-25--xs">Contact Us</p>
-                <h2 class="g-font-size-32--xs g-font-size-36--sm g-color--white">Get in Touch</h2>
+                <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--white-opacity g-letter-spacing--2 g-margin-b-25--xs g-font-weight--700 animated bounceInDown">Contact Us</p>
+                <h2 class="g-font-size-32--xs g-font-size-36--sm g-color--white animated bounceInUp">Get in Touch</h2>
             </div>
             <div class="row g-row-col--5 g-margin-b-80--xs">
                 <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
