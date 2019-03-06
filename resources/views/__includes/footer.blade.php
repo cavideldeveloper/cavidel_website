@@ -7,9 +7,9 @@
                 <div class="col-sm-2 g-margin-b-20--xs g-margin-b-0--md">
                     <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
                         <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Home</a></li>
-                        <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">About</a></li>
-                        <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">FAQ</a></li>
-                        <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Contact</a></li>
+                        <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/team') }}">About</a></li>
+                        <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/faq') }}">FAQ</a></li>
+                        <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/contact') }}">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-2 g-margin-b-20--xs g-margin-b-0--md">
@@ -17,7 +17,7 @@
                         <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Twitter</a></li>
                         <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Facebook</a></li>
                         <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Instagram</a></li>
-                        <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">YouTube</a></li>
+                        {{-- <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">YouTube</a></li> --}}
                     </ul>
                 </div>
                 <div class="col-sm-2 g-margin-b-40--xs g-margin-b-0--md">

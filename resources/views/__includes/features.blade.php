@@ -69,7 +69,7 @@
                                                     <img src="{{asset('img/products/catss.png')}}" width="auto" height="110">
                                                     <div class="separator"></div>
                                                 </div>
-                                                <p class="text-justify animated bounceInRight g-font-weight--500">CATSS provide users a secure trading environment for all kinds of Equities. A trading and simulation software, secure and safe accross the Financial Market, Also CATSS provide users with updates on daily price list. CATSS Revaluate both holding & market securities at every new price discovery.
+                                                <p class="text-justify animated bounceInRight g-font-weight--500">CATSS provide users a secure trading environment for all kinds of Equities. A trading and simulation software, secure and safe accross the Financial Market, Also CATSS provide users with updates on daily price list. CATSS Revaluate both holding & market securities at every new price discovery.  Equities is built into a single Trading and Simulation interface.
                                                 </p>
 
                                                 <br />                               
@@ -105,7 +105,7 @@
                                                     <img src="{{asset('img/products/tradefi.jpg')}}" width="auto" height="50">
                                                     <div class="separator"></div>
                                                 </div>
-                                                <p class="text-justify animated bounceInLeft g-font-weight--500">It is a long established fact that dealers in the Financial Market have trouble evaluating trade data and the market statistic; TradeFi is here for the rescue. Cavidel Limited has brought financial trading & Instruments simulation system for various securities such as Bonds, Treasury Bills and Other relating Money Market Instrument, Equities is built into a single Trading and Simulation interface. Think TradeFi when it comes to investing in Bonds & Treasury Bills, Do the necessary research, study and analyse the financial market before making any investment decisions. 
+                                                <p class="text-justify animated bounceInLeft g-font-weight--500">It is a long established fact that dealers in the Financial Market have trouble evaluating trade data and the market statistic using various software; TradeFi is here for the rescue. Commercio Partners Hired Cavidel Limited to built a software which has brought financial trading & Instruments simulation system for securities such as Bonds, Treasury Bills and Other relating Money Market Instrument. Think TradeFi when it comes to investing in Bonds & Treasury Bills, Do the necessary research, study and analyse the financial market before making any investment decisions. 
                                                 </p>
 
                                                 <a href="https://www.tradefi.ng" target="_blank" class="btn btn-primary">LEARN MORE</a>

@@ -52,7 +52,7 @@
                                                         PRODUCTS
                                                     </h5> 
                                                     <ul class="list-unstyled g-margin-l-0--sm">
-                                                        <li class="g-margin-b-20--sm"><a href="{{ url('products') }}">HR Software (ARP)</a></li>
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('products') }}">HR Software (ERP)</a></li>
                                                         <li class="g-margin-b-20--sm"><a href="{{ url('products') }}">Hospital Software</a></li>
                                                         <li class="g-margin-b-20--sm"><a href="{{ url('products') }}">Trading Simulation Software</a></li>  
                                                     </ul>

@@ -161,7 +161,7 @@
         <script type="text/javascript" src="vendor/counterup.min.js"></script>
         <script type="text/javascript" src="vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
         <script type="text/javascript" src="vendor/jquery.parallax.min.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkrja0K9YTRtwpiI61uMaWxyNuE9By8qQ"></script>
+        {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkrja0K9YTRtwpiI61uMaWxyNuE9By8qQ"></script> --}}
         <script type="text/javascript" src="vendor/jquery.wow.min.js"></script>
 
         <!-- General Components and Settings -->
@@ -173,7 +173,7 @@
         <script type="text/javascript" src="js/components/counter.min.js"></script>
         <script type="text/javascript" src="js/components/portfolio-3-col.min.js"></script>
         <script type="text/javascript" src="js/components/parallax.min.js"></script>
-        <script type="text/javascript" src="js/components/google-map.min.js"></script>
+        {{-- <script type="text/javascript" src="js/components/google-map.min.js"></script> --}}
         <script type="text/javascript" src="js/components/wow.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.11/dist/sweetalert2.all.min.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

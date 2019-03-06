@@ -32,16 +32,16 @@
                 <!-- Plan -->
                 <div class="col-md-6 g-margin-b-10--xs g-margin-b-20--lg">
                     <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
-                        <div class="g-bg-color--white g-padding-y-100--xs">
-                            <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs g-margin-l-20--xs"> Office Automation</h3>
+                        <div class="g-bg-color--white g-padding-y-20--xs">
+                            <h3 class="g-font-size-28--xs g-font-weight--700 g-color--primary g-margin-b-30--xs g-margin-l-20--xs"> Office Automation</h3>
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-20--xs">
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i> Support Services</li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i> Consultancy & Training</li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i> Business Analysis</li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i> Software Development</li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i>
+                                <li class="g-font-size-18--xs g-font-weight--400"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i> Support Services</li>
+                                <li class="g-font-size-18--xs g-font-weight--400"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i> Consultancy & Training</li>
+                                <li class="g-font-size-18--xs g-font-weight--400"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i> Business Analysis</li>
+                                <li class="g-font-size-18--xs g-font-weight--400"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i> Software Development</li>
+                                <li class="g-font-size-18--xs g-font-weight--400"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i>
                                 Software Customization</li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i>
+                                <li class="g-font-size-18--xs g-font-weight--400"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i>
                                 Process Engineering
                                 </li>
                             </ul>
@@ -52,6 +52,8 @@
         </div>
     </div>
 
+    @include('__includes.parallax-office')
+
     <!-- Plan -->
     <div class="g-bg-color--sky-light" id="web">
         <div class="container g-padding-y-80--xs g-padding-y-125--xsm">
@@ -59,17 +61,17 @@
                 <!-- Plan -->
                 <div class="col-md-6 g-margin-b-10--xs g-margin-b-20--lg">
                     <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
-                        <div class="g-bg-color--white g-padding-y-100--xs">
-                            <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs g-margin-l-20--xs"> Web Development</h3>
+                        <div class="g-bg-color--white g-padding-y-20--xs">
+                            <h3 class="g-font-size-28--xs g-font-weight--700 g-color--primary g-margin-b-30--xs g-margin-l-20--xs"> Web Development</h3>
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-20--xs">
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i> eCommerce</li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i>
+                                <li class="g-font-size-18--xs g-font-weight--400"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i> eCommerce</li>
+                                <li class="g-font-size-18--xs g-font-weight--400"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i>
                                 Blogs and Personal</li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i> Informational</li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i> Online Community</li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i>
+                                <li class="g-font-size-18--xs g-font-weight--400"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i> Informational</li>
+                                <li class="g-font-size-18--xs g-font-weight--400"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i> Online Community</li>
+                                <li class="g-font-size-18--xs g-font-weight--400"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i>
                                 Business Directory</li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i>
+                                <li class="g-font-size-18--xs g-font-weight--400"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i>
                                 APIs & Third-party Software Integration
                                 </li>
                             </ul>
@@ -85,7 +87,9 @@
         </div>
     </div>
 
-     <!-- Plan -->
+    @include('__includes.parallax-web')
+
+    <!-- Plan -->
     <div class="g-bg-color--sky-light" id="mobile">
         <div class="container g-padding-y-80--xs g-padding-y-125--xsm">
             <div class="row">
@@ -97,12 +101,12 @@
                 <!-- Plan -->
                 <div class="col-md-6 g-margin-b-10--xs g-margin-b-20--lg">
                     <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
-                        <div class="g-bg-color--white g-padding-y-100--xs">
-                            <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs g-margin-l-20--xs"> Mobile Development</h3>
+                        <div class="g-bg-color--white g-padding-y-20--xs">
+                            <h3 class="g-font-size-28--xs g-font-weight--700 g-color--primary g-margin-b-30--xs g-margin-l-20--xs"> Mobile Development</h3>
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-20--xs">
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i>iOS  Application</li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i>Android Application</li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i> iOS and Android PWA (Progressive Web Application)</li>
+                                <li class="g-font-size-18--xs g-font-weight--400"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i>iOS  Application</li>
+                                <li class="g-font-size-18--xs g-font-weight--400"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i>Android Application</li>
+                                <li class="g-font-size-18--xs g-font-weight--400"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i> iOS and Android PWA (Progressive Web Application)</li>
                             </ul>
                         </div>
                     </div>
@@ -111,6 +115,8 @@
         </div>
     </div>
 
+    @include('__includes.parallax-mobile')
+
     <!-- Plan -->
     <div class="g-bg-color--sky-light" id="payment">
         <div class="container g-padding-y-80--xs g-padding-y-125--xsm">
@@ -118,22 +124,22 @@
                 <!-- Plan -->
                 <div class="col-md-6 g-margin-b-10--xs g-margin-b-20--lg">
                     <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
-                        <div class="g-bg-color--white g-padding-y-100--xs">
-                            <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs g-margin-l-20--xs"> Payment Integration</h3>
+                        <div class="g-bg-color--white g-padding-y-20--xs">
+                            <h3 class="g-font-size-28--xs g-font-weight--700 g-color--primary g-margin-b-30--xs g-margin-l-20--xs"> Payment Integration</h3>
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-20--xs">
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i>
+                                <li class="g-font-size-18--xs g-font-weight--400"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i>
                                     Nibss Payment Integration
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i>
+                                <li class="g-font-size-18--xs g-font-weight--400"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i>
                                     Interswitch Payment Integration
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i>
+                                <li class="g-font-size-18--xs g-font-weight--400"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i>
                                     Remitta Payment Integration
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i>
+                                <li class="g-font-size-18--xs g-font-weight--400"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i>
                                     Paystack Payment Integration
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i>
+                                <li class="g-font-size-18--xs g-font-weight--400"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i>
                                     Flutterwave Payment Integration
                                 </li>
                             </ul>
