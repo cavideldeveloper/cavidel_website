@@ -105,7 +105,7 @@
                                                     <img src="{{asset('img/products/tradefi.jpg')}}" width="auto" height="50">
                                                     <div class="separator"></div>
                                                 </div>
-                                                <p class="text-justify animated bounceInLeft g-font-weight--500">It is a long established fact that dealers in the Financial Market have trouble evaluating trade data and the market statistic using various software; TradeFi is here for the rescue. Commercio Partners Hired Cavidel Limited to built a software which has brought financial trading & Instruments simulation system for securities such as Bonds, Treasury Bills and Other relating Money Market Instrument. Think TradeFi when it comes to investing in Bonds & Treasury Bills, Do the necessary research, study and analyse the financial market before making any investment decisions. 
+                                                <p class="text-justify animated bounceInLeft g-font-weight--500">It is a long established fact that dealers in the Financial Market have trouble evaluating trade data and the market statistic using various software; TradeFi is a trading & investment software for securities such as Bonds, Treasury Bills and Other relating Money Market Instrument. Think TradeFi when it comes to investing in Bonds & Treasury Bills, Do the necessary research, study and analyse the financial market before making any investment decisions.
                                                 </p>
 
                                                 <a href="https://www.tradefi.ng" target="_blank" class="btn btn-primary">LEARN MORE</a>
