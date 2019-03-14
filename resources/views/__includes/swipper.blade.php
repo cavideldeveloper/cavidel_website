@@ -9,7 +9,7 @@
                     <h1 class="g-font-size-35--xs g-font-weight--700 g-font-size-45--sm g-font-size-55--md g-color--white animated bounceInDown">
                         Experience Technology in<br> Office Automation
                     </h1>
-                    <p class="g-font-size-12--xs g-font-weight--300 g-font-size-24--sm g-font-size-24--md g-color--white animated bounceInUp">
+                    <p class="g-font-size-12--xs g-font-weight--300 g-font-size-24--sm g-font-size-20--md g-color--white animated bounceInUp">
                         We provide a Customizable, Flexible and User-friendly automation software, <br />
                         our ARP solutions are easily Customizable, Ready-to-use, Feature Rich and Suitable to all sizes and Industries
                     </p>
@@ -23,7 +23,7 @@
                         <h2 class="g-font-size-35--xs g-font-weight--700 g-font-size-45--sm g-font-size-55--md g-color--white animated bounceInDown">
                             Limitless Fintech Solutions<br> IFRS Standard
                         </h2>
-                        <p class="g-font-size-12--xs g-font-weight--300 g-font-size-24--sm g-font-size-24--md g-color--white animated bounceInDown">
+                        <p class="g-font-size-12--xs g-font-weight--300 g-font-size-24--sm g-font-size-20--md g-color--white animated bounceInDown">
                             Our financial technology solutions are limitless to business in Nigeria, <br /> Our solutions also involve Consultation, Business analysis and Research to fuel and improve our financial services delivery and empowered our client's to speedily increase business growth
                         </p>
                     </div>
@@ -37,7 +37,7 @@
                         <h2 class="g-font-size-35--xs g-font-weight--700 g-font-size-45--sm g-font-size-55--md g-color--white animated bounceInDown">
                             Trading & Investment Management<br> Systems.
                         </h2>
-                        <p class="g-font-size-12--xs g-font-weight--300 g-font-size-24--sm g-font-size-24--md g-color--white animated bounceInDown">
+                        <p class="g-font-size-12--xs g-font-weight--300 g-font-size-24--sm g-font-size-20--md g-color--white animated bounceInDown">
                             We provide Trading, Investment and Management solution to businesses in the Financial Market, <br />Our solutions also enhance our client's trading & investment experience <br /> with fast secured and reliable trading interface.
                         </p>
                     </div>
