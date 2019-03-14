@@ -42,7 +42,7 @@
                                 <li class="g-font-size-18--xs g-font-weight--400"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i>
                                 Software Customization</li>
                                 <li class="g-font-size-18--xs g-font-weight--400"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i>
-                                Process Engineering
+                                Process Reengineering
                                 </li>
                             </ul>
                         </div>

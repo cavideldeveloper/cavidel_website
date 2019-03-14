@@ -72,6 +72,15 @@ class ExternalPagesController extends Controller
 
     /*
     |---------------------------------------------
+    | SHOW PROCESS
+    |---------------------------------------------
+    */
+    public function process(){
+        return view('pages.process');
+    }
+
+    /*
+    |---------------------------------------------
     | SHOW BLOG
     |---------------------------------------------
     */

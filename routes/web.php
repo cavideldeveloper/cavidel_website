@@ -12,6 +12,7 @@ Route::get('/contact',						'ExternalPagesController@contact');
 Route::get('/team',							'ExternalPagesController@team');
 Route::get('/career',						'ExternalPagesController@career');
 Route::get('/services',						'ExternalPagesController@services');
+Route::get('/process',						'ExternalPagesController@process');
 Route::get('/products',						'ExternalPagesController@products');
 Route::get('/solutions',					'ExternalPagesController@solutions');
 Route::get('/blog',							'ExternalPagesController@blog');

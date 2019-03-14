@@ -53,8 +53,8 @@
                                                     </h5> 
                                                     <ul class="list-unstyled g-margin-l-0--sm">
                                                         <li class="g-margin-b-20--sm"><a href="{{ url('products') }}">OfficeMate (ERP)</a></li>
-                                                        <li class="g-margin-b-20--sm"><a href="{{ url('products') }}">TIMS</a></li>
-                                                        <li class="g-margin-b-20--sm"><a href="{{ url('products') }}">CATSS</a></li>  
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('products') }}#product-2">TIMS</a></li>
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('products') }}#product-3">CATSS</a></li>  
                                                     </ul>
                                                 </div>
                                             </div>
