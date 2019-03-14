@@ -22,11 +22,13 @@
                                             <div class="single_tab_content">
                                                 <div class="head_title g-margin-b-20--xs">
                                                     <img src="{{asset('img/products/officemate.png')}}" width="auto" height="50">
-                                                    <div class="separator"></div>
+                                                    <div class="separator g-padding-y-5--sm"></div>
                                                 </div>
                                                 <p class="text-justify animated bounceInLeft g-font-weight--500">
-                                                    Officemate is an enterprise resource planning (ERP) solution with core functionality to automate business operations through capturing, processing and reporting on customer/employee information, billing, inventory & fleet management, staff appraisal, employee survey, training & learning management, payroll, employee self-service, leave, loans, statutory remittances, compliance tracking, document management etc. 
+                                                    An enterprise resource planning (ERP) solution with core functionality to automate business operations through capturing, processing and reporting on customer/employee information, billing, inventory & fleet management, staff appraisal, employee survey, training & learning management, payroll, employee self-service, leave, loans, statutory remittances, compliance tracking, document management etc.
                                                 </p>
+                                                <br />                               
+                                                <a href="http://www.equitites.catss.ng" class="btn btn-primary">FEATURES</a>
                                             </div>
                                         </div>
 
@@ -67,13 +69,14 @@
                                                 <div class="head_title">
                                                     {{-- <h3>CATSS (Cavidel Automated Trading and Simulation Software)</h3> --}}
                                                     <img src="{{asset('img/products/catss.png')}}" width="auto" height="110">
-                                                    <div class="separator"></div>
+                                                    <div class="separator g-padding-y-5--sm"></div>
                                                 </div>
-                                                <p class="text-justify animated bounceInRight g-font-weight--500">CATSS provide users a secure trading environment for all kinds of Equities. A trading and simulation software, secure and safe accross the Financial Market, Also CATSS provide users with updates on daily price list. CATSS Revaluate both holding & market securities at every new price discovery.  Equities is built into a single Trading and Simulation interface.
+                                                <p class="text-justify animated bounceInRight g-font-weight--500">
+                                                    The CAVIDEL automated trade simulation system (CATSS) is aimed at promoting financial literacy both on a global and micro scale. The system features self-service functionalities that can enable individuals or groups trade virtual financial market instruments, while monitoring performance in terms of trade volumes and profitability. It also provides capabilities to store and manage live portfolios with daily revaluation using real life prices. 
                                                 </p>
 
                                                 <br />                               
-                                                <a href="http://www.equitites.catss.ng" class="btn btn-primary">LEARN MORE</a>
+                                                <a href="http://www.equitites.catss.ng" class="btn btn-primary">FEATURES</a>
                                             </div>
                                         </div>
                                     </div>
@@ -103,7 +106,7 @@
                                             <div class="single_tab_content">
                                                 <div class="head_title">
                                                     <img src="{{asset('img/products/tradefi.jpg')}}" width="auto" height="50">
-                                                    <div class="separator"></div>
+                                                    <div class="separator g-padding-y-5--sm"></div>
                                                 </div>
                                                 <p class="text-justify animated bounceInLeft g-font-weight--500">It is a long established fact that dealers in the Financial Market have trouble evaluating trade data and the market statistic using various software; TradeFi is a trading & investment software for securities such as Bonds, Treasury Bills and Other relating Money Market Instrument. Think TradeFi when it comes to investing in Bonds & Treasury Bills, Do the necessary research, study and analyse the financial market before making any investment decisions.
                                                 </p>

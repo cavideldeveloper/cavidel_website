@@ -40,9 +40,9 @@
     <div class="container g-padding-y-50--xs">
         <div class="row">
             <div class="col-xs-6">
-                <a href="{{ url('/') }}">
+                {{-- <a href="{{ url('/') }}">
                     <img src="img/cavidel-logo-white.png" width="120" height="auto" alt="Cavidel Logo">
-                </a>
+                </a> --}}
             </div>
             <div class="col-xs-6 g-text-right--xs">
                 <p class="g-font-size-14--xs g-margin-b-0--xs g-color--white-opacity-light">Cavidel &copy;  {{ Date("Y") }}

@@ -3,7 +3,6 @@
     <div class="container g-padding-y-80--xs g-padding-y-125--sm">
         <div class="row">
             <div class="col-md-4 g-margin-t-15--xs g-margin-b-60--xs g-margin-b-0--lg">
-                <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-25--xs">Culture</p>
                 <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
                     <h2 class="g-font-size-40--xs g-font-weight--700 g-font-size-50--sm g-font-size-60--md">About</h2>
                 </div>
@@ -16,9 +15,13 @@
                 {{-- <img src="{{asset('img/process/3.gif')}}" width="auto" height="400"> --}}
             </div>
             <div class="col-md-5">
-                <p class="g-font-size-18--xs g-font-weight--600">Cavidel Limited is a process automation company that helps businesses to align/re-align their business units and overall strategies with operational processes and information technology to reduce cost, improve productivity and increase efficiency.
+                <p class="g-font-size-18--xs g-font-weight--400">Cavidel Limited is a process automation company that helps businesses to align/re-align their business units and overall strategies with operational processes and information technology to reduce cost, improve productivity and increase efficiency.
                 We take great pride in our reputation for consistently delivering quality services. We use our ingenuity to save our clients time and money, reduce risks, increase efficiency and maximise sustainable outcomes. </p>
-                <p class="g-font-size-18--xs g-font-weight--600">We do this through innovative thinking, international perspectives, local knowledge and the immense experience and technical know-how of our team.</p>
+                <p class="g-font-size-18--xs g-font-weight--400">
+                    <button class="s-btn s-btn-icon--md s-btn-icon--primary-brd s-btn--primary-brd g-radius--right-50">
+                        Learn More
+                    </button>
+                </p>
             </div>
         </div>
     </div>

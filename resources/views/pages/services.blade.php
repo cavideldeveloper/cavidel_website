@@ -152,7 +152,7 @@
                     <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".3s">
                         <div class="s-plan-v1 g-text-center--xs g-bg-color--white g-padding-y-100--xs">
                             <i class="g-display-block--xs g-font-size-40--xs g-color--primary g-margin-b-30--xs ti-settings"></i>
-                            <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs">Process Engineering</h3>
+                            <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs">Process Reengineering</h3>
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-60--xs">
                                 <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Mobile-Optimized Website</li>
                                 <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
@@ -247,93 +247,6 @@
         </div>
     </div>
     <!-- End Process -->
-
-    <!-- Plan -->
-    <div class="g-bg-color--sky-light">
-        <div class="container g-padding-y-80--xs g-padding-y-125--xsm">
-            <div class="g-margin-b-60--xs">
-                <p class="text-uppercase g-text-center--xs g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-15--xs g-color--primary">Office Automation</p>
-            </div>
-            <div class="row g-row-col--5">
-                <!-- Plan -->
-                <div class="col-md-4 g-margin-b-10--xs g-margin-b-0--lg">
-                    <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
-                        <div class="s-plan-v1 g-text-center--xs g-bg-color--white g-padding-y-100--xs">
-                            <i class="g-display-block--xs g-font-size-40--xs g-color--primary g-margin-b-30--xs ti-user"></i>
-                            <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs"> Demo</h3>
-                            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-90--xs">
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> OfficeMate Basic</li>
-                            </ul>
-
-                            <button type="submit" class="text-uppercase s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Request a Demo</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Plan -->
-
-                <!-- Plan -->
-                <div class="col-md-4 g-margin-b-10--xs g-margin-b-0--lg">
-                    <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".2s">
-                        <div class="s-plan-v1 g-text-center--xs g-bg-color--white g-padding-y-100--xs">
-                            <i class="g-display-block--xs g-font-size-40--xs g-color--primary g-margin-b-30--xs ti-cloud"></i>
-                            <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs">
-                                Starter Pack
-                            </h3>
-                            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-90--xs">
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
-                                    OfficeMate Lite
-                                </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
-                                    OfficeMate Advance
-                                </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
-                                    OfficeMate Unlimited
-                                </li>
-                            </ul>
-
-                            <button type="submit" class="text-uppercase s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Order Now</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Plan -->
-                
-                <!-- Plan -->
-                <div class="col-md-4">
-                    <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".3s">
-                        <div class="s-plan-v1 g-text-center--xs g-bg-color--white g-padding-y-100--xs">
-                            <i class="g-display-block--xs g-font-size-40--xs g-color--primary g-margin-b-30--xs ti-cloud-up"></i>
-                            <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs">
-                                Enterprise
-                            </h3>
-                            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-90--xs">
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
-                                    OfficeMate for Bank
-                                </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
-                                    OfficeMate for Hospital 
-                                </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
-                                    OfficeMate for Real-Estate
-                                </li>
-
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
-                                    OfficeMate for Power Management 
-                                </li>
-
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
-                                    OfficeMate Unlimited
-                                </li>
-                            </ul>
-
-                            <button type="submit" class="text-uppercase s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Order Now</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Plan -->
-            </div>
-        </div>
-    </div>
-    <!-- End Plan -->
 
     @include('__includes.footer')
 @endsection

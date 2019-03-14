@@ -21,7 +21,7 @@
                 <div class="g-margin-b-30--xs">
                     <div class="g-margin-b-30--xs">
                         <h2 class="g-font-size-35--xs g-font-weight--700 g-font-size-45--sm g-font-size-55--md g-color--white animated bounceInDown">
-                            Limitless Fintech Solutions<br>IAS Standard
+                            Limitless Fintech Solutions<br> IFRS Standard
                         </h2>
                         <p class="g-font-size-12--xs g-font-weight--300 g-font-size-24--sm g-font-size-24--md g-color--white animated bounceInDown">
                             Our financial technology solutions are limitless to business in Nigeria, <br /> Our solutions also involve Consultation, Business analysis and Research to fuel and improve our financial services delivery and empowered our client's to speedily increase business growth
