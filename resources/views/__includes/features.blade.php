@@ -73,7 +73,7 @@
                                                     <div class="separator g-padding-y-5--sm"></div>
                                                 </div>
                                                 <p class="text-justify animated bounceInRight g-font-weight--500">
-                                                    The CAVIDEL automated trade simulation system (CATSS) is aimed at promoting financial literacy both on a global and micro scale. The system features self-service functionalities that can enable individuals or groups trade virtual financial market instruments, while monitoring performance in terms of trade volumes and profitability. It also provides capabilities to store and manage live portfolios with daily revaluation using real life prices. 
+                                                    Middle and back-office trading & investment management system (TIMS) with capabilities to manage customer’s KYC information, general ledger accounting, customer deposits and withdrawals, loan origination and asset management for multiple financial instruments (fixed income, equities, money market and derivatives) as well as foreign exchange trade management and valuation.
                                                 </p>
 
                                                 <br />                               
