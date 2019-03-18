@@ -26,3 +26,14 @@ Route::post('verify/software',				'IssueReportController@verifySoftwareKey');
 
 // handle slack message controller
 Route::post('receive/slack/message', 	'HandleSlackMessageController@showMessage');
+
+/*
+|--------------------------------------------------------------------------
+| Backend Auto-Deployment Webhook
+|--------------------------------------------------------------------------
+*/
+Route::post('/auto-deploy', function (){
+	Artisan::call('git:deploy');
+	// return 
+	return response()->json(['status' => 'success']);
+});
