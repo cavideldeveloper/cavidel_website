@@ -19,7 +19,7 @@
                 We take great pride in our reputation for consistently delivering quality services. We use our ingenuity to save our clients time and money, reduce risks, increase efficiency and maximise sustainable outcomes. </p>
                 <p class="g-font-size-18--xs g-font-weight--400">
                     <button class="s-btn s-btn-icon--md s-btn-icon--primary-brd s-btn--primary-brd g-radius--right-50">
-                        Learn More
+                        <a href="{{ url('about') }}">Learn More</a>
                     </button>
                 </p>
             </div>

@@ -76,7 +76,7 @@
                                                         ABOUT CAVIDEL
                                                     </h5>
                                                     <ul class="list-unstyled g-margin-l-0--sm">
-                                                        <li class="g-margin-b-20--sm"><a href="{{ url('team') }}">Our Company</a></li>
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('about') }}">Our Company</a></li>
                                                         <li class="g-margin-b-20--sm"><a href="{{ url('team') }}">Our People</a></li>  
                                                         <li class="g-margin-b-20--sm"><a href="{{ url('team') }}">Our Approach</a></li>  
                                                     </ul>
