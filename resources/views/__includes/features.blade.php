@@ -9,7 +9,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-12 s-plan-v1 g-text-left--xs g-bg-color--white g-padding-y-80--xs">
+        <div class="col-md-12 g-text-left--xs g-bg-color--white g-padding-y-80--xs">
             <div class="main_service_area">
                 <div class="main_service_content">
                     <div class="service_tabe">
@@ -94,7 +94,7 @@
 
 <div class="container g-padding-y-50--xs g-padding-y-60--sm">
     <div class="row">
-        <div class="col-md-12 s-plan-v1 g-text-left--xs g-bg-color--white g-padding-y-80--xs">
+        <div class="col-md-12 g-text-left--xs g-bg-color--white g-padding-y-80--xs">
             <div class="main_service_area">
                 <div class="main_service_content">
                     <div class="service_tabe">
