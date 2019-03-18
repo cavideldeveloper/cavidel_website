@@ -22,10 +22,10 @@
 
     <!-- Plan -->
     <div class="g-bg-color--sky-light">
-        <div class="container g-padding-y-80--xs g-padding-y-125--xsm">
+        <div class="container g-padding-y-60--xs g-padding-y-80--xsm">
             <div class="row">
                 <!-- Plan -->
-                <div class="col-md-4 g-margin-b-10--xs g-margin-b-20--lg">
+                <div class="col-md-4 g-margin-b-10--xs g-margin-b-0--lg">
                     <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
                         <div class="s-plan-v1 g-text-center--xs g-bg-color--white g-padding-y-100--xs">
                             <i class="g-display-block--xs g-font-size-40--xs g-color--primary g-margin-b-30--xs ti-archive"></i>
@@ -106,7 +106,7 @@
 
     <!-- Plan -->
     <div class="g-bg-color--sky-light">
-        <div class="container g-padding-y-80--xs g-padding-y-125--xsm">
+        <div class="container g-padding-y-40--xs g-padding-y-60--xsm">
             <div class="row">
                 <!-- Plan -->
                 <div class="col-md-4 g-margin-b-10--xs g-margin-b-0--lg">
@@ -264,8 +264,8 @@
                 <div class="col-md-12 g-margin-b-10--xs g-margin-b-20--lg g-padding-y-40--xs">
                     <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
                         <h3 class="g-font-size-28--xs g-font-weight--700 g-text-center--xs g-color--primary g-margin-b-30--xs">Business Support Services</h3>
-                        <div class="s-plan-v1 g-bg-color--primary g-padding-y-100--xs g-padding-x-100--xs">
-                            <p class="g-font-size-16--xs g-color--white g-margin-b-30--xs g-padding-x-100--xs">
+                        <div class="s-plan-v1 g-bg-color--primary g-padding-y-80--xs g-padding-x-100--xs">
+                            <p class="g-font-size-16--md g-color--white g-font-weight--500 text-justify g-margin-b-30--xs g-padding-x-100--xs">
                                 At Cavidel Limited we provide 'End to End' IT Support services. 
                                 Whether you are new or an existing business, we allow you to focus 
                                 on your core business doing what you are good at while we deal 
@@ -308,7 +308,7 @@
                 <div class="col-md-8 g-margin-b-10--xs g-margin-b-20--lg">
                     <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
                         <div class="s-plan-v1 g-text-left--xs g-bg-color--white g-padding-y-80--xs">
-                            <p class="g-font-size-16--xs g-color--dark g-margin-b-30--xs g-padding-x-100--xs">
+                            <p class="g-font-size-16--md g-font-weight--500 text-justify g-margin-b-30--xs g-padding-x-100--xs">
                                 Our team of professionals work with your organization to 
                                 understand your company’s strategic and competitive business priorities. 
                                 Using these priorities, an appraisal of your current business planning processes 
@@ -335,9 +335,12 @@
             <div class="row">
                 <!-- Plan -->
                 <div class="col-md-8 g-margin-b-10--xs g-margin-b-20--lg">
+                    <div class="cavi-circle">
+                        <img src="{{ asset('img/cavi-icon.png') }}" width="90" style="margin-left: 0.1rem;margin-top: 1.3rem;" height="auto">
+                    </div>
                     <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
                         <div class="s-plan-v1 g-text-left--xs g-bg-color--white g-padding-y-80--xs">
-                            <p class="g-font-size-16--xs g-color--dark g-margin-b-30--xs g-padding-x-100--xs">
+                            <p class="g-font-size-16--md g-font-weight--500 text-justify g-margin-b-30--xs g-padding-x-100--xs">
                                 We assist clients to make the best of judgement in selecting critical 
                                 office automation assets among multiple vendors by adopting leading 
                                 practices in vendor evaluation, product assessment and delivery. 
@@ -388,7 +391,7 @@
                 <div class="col-md-8 g-margin-b-10--xs g-margin-b-20--lg">
                     <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
                         <div class="s-plan-v1 g-text-left--xs g-bg-color--white g-padding-y-80--xs">
-                            <p class="g-font-size-16--xs g-color--dark g-margin-b-30--xs g-padding-x-100--xs">
+                            <p class="g-font-size-16--md g-font-weight--500 text-justify g-margin-b-30--xs g-padding-x-100--xs">
                                 Provides support for managing strategy implementation through structured follow up, detailed implementation planning and feedback mechanism.
                             </p>
                         </div>
@@ -404,9 +407,12 @@
             <div class="row">
                 <!-- Plan -->
                 <div class="col-md-8 g-margin-b-10--xs g-margin-b-20--lg">
+                    <div class="cavi-circle">
+                        <img src="{{ asset('img/cavi-icon.png') }}" width="90" style="margin-left: 0.1rem;margin-top: 1.3rem;" height="auto">
+                    </div>
                     <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
                         <div class="s-plan-v1 g-text-left--xs g-bg-color--white g-padding-y-80--xs">
-                            <p class="g-font-size-16--xs g-color--dark g-margin-b-30--xs g-padding-x-100--xs">
+                            <p class="g-font-size-16--md g-font-weight--500 text-justify g-margin-b-30--xs g-padding-x-100--xs">
                                 Using tested methodology, technology and staff, we assume the responsibility of an ombudsman among various business functions to ensure they do not work in silos by providing advice and insight into how each function operates and coordinate inter-departmental activities to increase competitive advantage. Our project management and project management office assistance focuses on the operational project management activities that support a timely, in scope and cost effective delivery.
                             </p>
                         </div>
