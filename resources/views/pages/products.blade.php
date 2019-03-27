@@ -37,37 +37,37 @@
                             <i class="g-display-block--xs g-font-size-40--xs g-color--primary g-margin-b-30--xs ti-user"></i>
                             <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs"> Starter Pack</h3>
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-90--xs">
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Staff management & Payroll
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Training & Recruitment
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Messaging & Bulletin board
                                 </li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Billing & Accounting
                                 </li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Project & Task management
                                 </li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
                                     Workflow & Request mgt
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
                                     Asset/Fleet management
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
                                     Risk management
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
                                     Event scheduling
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
                                     Document management
                                 </li>
                             </ul>
@@ -87,37 +87,37 @@
                                 Economy Pack
                             </h3>
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-90--xs">
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Staff management & Payroll
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Training & Recruitment
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Messaging & Bulletin board
                                 </li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Billing & Accounting
                                 </li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Project & Task management
                                 </li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Workflow & Request mgt
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Asset/Fleet management
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
                                     Risk management
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
                                     Event scheduling
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
                                     Document management
                                 </li>
                             </ul>
@@ -137,37 +137,37 @@
                                 Premium
                             </h3>
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-90--xs">
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Staff management & Payroll
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Training & Recruitment
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Messaging & Bulletin board
                                 </li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Billing & Accounting
                                 </li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Project & Task management
                                 </li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Workflow & Request mgt
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Asset/Fleet management
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Risk management
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Event scheduling
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Document management
                                 </li>
                             </ul>
@@ -200,37 +200,37 @@
                             <i class="g-display-block--xs g-font-size-40--xs g-color--primary g-margin-b-30--xs ti-user"></i>
                             <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs"> Starter Pack</h3>
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-90--xs">
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Trading and Simulation
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Reporting
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Portfolio P/L tracking
                                 </li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Settlement tracking
                                 </li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Portfolio valuation
                                 </li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
                                     Asset Allocation
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
                                     Historical price list
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
                                     Securities management
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
                                     General ledger accounting
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
                                     Cash funding management
                                 </li>
                             </ul>
@@ -250,37 +250,37 @@
                                 Economy Pack
                             </h3>
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-90--xs">
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Trading and Simulation
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Reporting
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Portfolio P/L tracking
                                 </li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Settlement tracking
                                 </li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Portfolio valuation
                                 </li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Asset Allocation
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Historical price list
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
                                     Securities management
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
                                     General ledger accounting
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
                                     Cash funding management
                                 </li>
 
@@ -301,37 +301,37 @@
                                 Premium
                             </h3>
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-90--xs">
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Trading and Simulation
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Reporting
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Portfolio P/L tracking
                                 </li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Settlement tracking
                                 </li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Portfolio valuation
                                 </li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Asset Allocation
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Historical price list
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Securities management
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     General ledger accounting
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Cash funding management
                                 </li>
                             </ul>
@@ -363,37 +363,37 @@
                             <i class="g-display-block--xs g-font-size-40--xs g-color--primary g-margin-b-30--xs ti-user"></i>
                             <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs"> Starter Pack</h3>
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-90--xs">
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Trading and Simulation
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Random price discovery
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     News feeds
                                 </li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Portfolio valuation
                                 </li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Group Trading
                                 </li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
                                     Discussion forum
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
                                     Winners board
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
                                     Limit, Market & Stop Orders
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
                                     Price graph
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
                                     Market price ticker
                                 </li>
                             </ul>
@@ -413,37 +413,37 @@
                                 Economy Pack
                             </h3>
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-90--xs">
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Trading and Simulation
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Random price discovery
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     News feeds
                                 </li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Portfolio valuation
                                 </li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Group Trading
                                 </li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Discussion forum
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Winners board
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Limit, Market & Stop Orders
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
                                     Price graph
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-minus"></i>
                                     Market price ticker
                                 </li>
                             </ul>
@@ -463,37 +463,37 @@
                                 Premium
                             </h3>
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-90--xs">
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Trading and Simulation
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Random price discovery
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     News feeds
                                 </li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Portfolio valuation
                                 </li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Group Trading
                                 </li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Discussion forum
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Winners board
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Limit, Market & Stop Orders
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Price graph
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Market price ticker
                                 </li>
                             </ul>
