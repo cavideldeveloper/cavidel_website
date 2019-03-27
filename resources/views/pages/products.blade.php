@@ -508,6 +508,118 @@
     </div>
     <!-- End Plan -->
 
+    @include('__includes.parallax-process')
+
+    <div class="g-bg-color--sky-light">
+        <div class="container g-padding-y-40--xs g-padding-y-100--xsm">
+            <div class="row">
+                <!-- Plan -->
+                <div class="col-md-4 g-margin-b-10--xs g-margin-b-0--lg">
+                    <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".2s">
+                        <div class="s-plan-v1 g-text-center--xs g-bg-color--white g-padding-y-20--xs">
+                            <i class="g-display-block--xs g-font-size-40--xs g-color--primary g-margin-b-30--xs ti-shopping-cart"></i>
+                            <p class="g-font-size-12--xs g-color--primary g-margin-b-30--xs">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Plan -->
+
+                <!-- Plan -->
+                <div class="col-md-8 g-margin-b-10--xs g-margin-b-20--lg">
+                    <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
+                        <div class="s-plan-v1 g-text-left--xs g-bg-color--white g-padding-y-5--xs g-padding-x-30--xs">
+                            <p class="g-font-size-14--xs g-color--dark g-margin-b-30--xs g-padding-x-100--xs">
+                                <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs">E-Commerce</h3>
+                                <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs">
+                                    <li class="g-color--dark g-font-weight--500">
+                                        Our e-commerce solution provides an add-on to enhance our client’s web presence with a platform that links buyers and sellers of multiple products and facilitates payments for products and services.
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Plan -->
+            </div>
+        </div>
+    </div>
+
+    <div class="g-bg-color--sky-light">
+        <div class="container g-padding-y-40--xs g-padding-y-100--xsm">
+            <div class="row">
+                <!-- Plan -->
+                <div class="col-md-8 g-margin-b-10--xs g-margin-b-20--lg">
+                    <div class="cavi-circle">
+                        <img src="{{ asset('img/cavi-icon.png') }}" width="90" style="margin-left: 0.1rem;margin-top: 1.3rem;" height="auto">
+                    </div>
+                    <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
+                        <div class="s-plan-v1 g-text-left--xs g-bg-color--white g-padding-y-5--xs g-padding-x-30--xs">
+                            <p class="g-font-size-16--xs g-color--primary g-margin-b-30--xs g-padding-x-100--xs">
+                                <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs">Web Design & Development</h3>
+                                <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs">
+                                    <li class="g-color--dark g-font-weight--500">
+                                        Adopting multiple web technologies, our team of website developers are able to provide website solutions, be it static or dynamic, that will enhance the visibility of your business with a very short period. 
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Plan -->
+
+                <!-- Plan -->
+                <div class="col-md-4 g-margin-b-10--xs g-margin-b-0--lg">
+                    <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".2s">
+                        <div class="s-plan-v1 g-text-center--xs g-bg-color--white g-padding-y-20--xs">
+                            <i class="g-display-block--xs g-font-size-40--xs g-color--primary g-margin-b-30--xs ti-server"></i>
+                            <p class="g-font-size-12--xs g-color--primary g-margin-b-30--xs">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Plan -->
+            </div>
+        </div>
+    </div>
+
+    <div class="g-bg-color--sky-light">
+        <div class="container g-padding-y-40--xs g-padding-y-100--xsm">
+            <div class="row">
+                <!-- Plan -->
+                <div class="col-md-4 g-margin-b-10--xs g-margin-b-0--lg">
+                    <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".2s">
+                        <div class="s-plan-v1 g-text-center--xs g-bg-color--white g-padding-y-20--xs">
+                            <i class="g-display-block--xs g-font-size-40--xs g-color--primary g-margin-b-30--xs ti-notepad"></i>
+                            <p class="g-font-size-12--xs g-color--primary g-margin-b-30--xs">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Plan -->
+
+                <!-- Plan -->
+                <div class="col-md-8 g-margin-b-10--xs g-margin-b-20--lg">
+                    <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
+                        <div class="s-plan-v1 g-text-left--xs g-bg-color--white g-padding-y-5--xs g-padding-x-30--xs">
+                            <p class="g-font-size-14--xs g-color--dark g-margin-b-30--xs g-padding-x-100--xs">
+                                <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs">
+                                    Task Management
+                                </h3>
+                                <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs">
+                                    <li class="g-color--dark g-font-weight--500">
+                                        Our Task management system assist clients to manage a task through its life cycle. It provides tools for planning, testing, tracking and reporting on tasks. The solution can help either individuals achieve goals, or groups of individuals collaborate and share knowledge for the accomplishment of collective goals. Tasks are also differentiated by complexity, from low to high.
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Plan -->
+            </div>
+        </div>
+    </div>
+
     @include('__includes.footer')
 @endsection
 

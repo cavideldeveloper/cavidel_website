@@ -31,12 +31,12 @@
                             <i class="g-display-block--xs g-font-size-40--xs g-color--primary g-margin-b-30--xs ti-archive"></i>
                             <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs"> Support Services</h3>
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-60--xs">
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Diagnostic Review</li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Selection Assistance</li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Research & Reviews</li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Strategy Implementation</li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Project Management</li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Diagnostic Review</li>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Selection Assistance</li>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Research & Reviews</li>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Strategy Implementation</li>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Project Management</li>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                 Data outsourcing
                                 </li>
                             </ul>
@@ -52,22 +52,22 @@
                             <i class="g-display-block--xs g-font-size-40--xs g-color--primary g-margin-b-30--xs ti-book"></i>
                             <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs"> Consultancy & Training</h3>
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-60--xs">
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Data Research & Mining
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Learning Management System
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Design Pattern & Workflow 
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Practical Training Guide (PTG)
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     Remote Training Programme
                                 </li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                     HR Training
                                 </li>
                                 
@@ -84,15 +84,15 @@
                             <i class="g-display-block--xs g-font-size-40--xs g-color--primary g-margin-b-30--xs ti-key"></i>
                             <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs">Business Analysis</h3>
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-60--xs">
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Performance Improvement plan</li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Policies Documentation</li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Implementation of IT Strategy</li>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Performance Improvement plan</li>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Policies Documentation</li>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Implementation of IT Strategy</li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Key performance indicators (KPIs)</li>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Key performance indicators (KPIs)</li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Data Analysis</li>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Data Analysis</li>
 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                 Building Automation Tools
                                 </li>
                             </ul>
@@ -115,15 +115,15 @@
                             <i class="g-display-block--xs g-font-size-40--xs g-color--primary g-margin-b-30--xs ti-desktop"></i>
                             <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs">Software Development</h3>
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-60--xs">
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Mobile-Optimized Website</li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Mobile-Optimized Website</li>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                 Powerful Documentation</li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> IT Service Management</li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Information Systems Audit</li>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> IT Service Management</li>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Information Systems Audit</li>
                                 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Systems Integration</li>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Systems Integration</li>
                                 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> 24/7 Customer Support</li>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> 24/7 Customer Support</li>
                             </ul>
                         </div>
                     </div>
@@ -137,15 +137,15 @@
                             <i class="g-display-block--xs g-font-size-40--xs g-color--primary g-margin-b-30--xs ti-dashboard"></i>
                             <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs ">Software Customization</h3>
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-60--xs">
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Mobile-Optimized Website</li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Mobile-Optimized Website</li>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                 Powerful Documentation</li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> IT Service Management</li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Information Systems Audit</li>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> IT Service Management</li>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Information Systems Audit</li>
                                 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Systems Integration</li>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Systems Integration</li>
                                 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> 24/7 Customer Support</li>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> 24/7 Customer Support</li>
                             </ul>
                         </div>
                     </div>
@@ -159,15 +159,15 @@
                             <i class="g-display-block--xs g-font-size-40--xs g-color--primary g-margin-b-30--xs ti-settings"></i>
                             <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs">Process Reengineering</h3>
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-60--xs">
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Mobile-Optimized Website</li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Mobile-Optimized Website</li>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
                                 Powerful Documentation</li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> IT Service Management</li>
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Information Systems Audit</li>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> IT Service Management</li>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Information Systems Audit</li>
                                 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Systems Integration</li>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Systems Integration</li>
                                 
-                                <li><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> 24/7 Customer Support</li>
+                                <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> 24/7 Customer Support</li>
                             </ul>
                         </div>
                     </div>
@@ -195,7 +195,7 @@
                         </div>
                         <div class="g-padding-x-20--xs">
                             <h3 class="g-font-size-18--xs g-color--white">Consult</h3>
-                            <p class="g-color--white-opacity">This is where we sit down, grab a cup of coffee and dial in the details.</p>
+                            <p class="g-color--white-opacity g-font-weight--500">This is where we sit down, grab a cup of coffee and dial in the details.</p>
                         </div>
                     </div>
                 </li>
@@ -211,7 +211,7 @@
                         </div>
                         <div class="g-padding-x-20--xs">
                             <h3 class="g-font-size-18--xs g-color--white">Create</h3>
-                            <p class="g-color--white-opacity">The time has come to bring those ideas and plans to life.</p>
+                            <p class="g-color--white-opacity g-font-weight--500">The time has come to bring those ideas and plans to life.</p>
                         </div>
                     </div>
                 </li>
@@ -227,7 +227,7 @@
                         </div>
                         <div class="g-padding-x-20--xs">
                             <h3 class="g-font-size-18--xs g-color--white">Develop</h3>
-                            <p class="g-color--white-opacity">Whether through commerce or just an experience to tell your brand.</p>
+                            <p class="g-color--white-opacity g-font-weight--500">Whether through commerce or just an experience to tell your brand.</p>
                         </div>
                     </div>
                 </li>
@@ -243,7 +243,7 @@
                         </div>
                         <div class="g-padding-x-20--xs">
                             <h3 class="g-font-size-18--xs g-color--white">Release</h3>
-                            <p class="g-color--white-opacity">Now that your brand is all dressed up and ready to party.</p>
+                            <p class="g-color--white-opacity g-font-weight--500">Now that your brand is all dressed up and ready to party.</p>
                         </div>
                     </div>
                 </li>
