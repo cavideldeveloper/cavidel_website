@@ -135,7 +135,7 @@
                     <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".3s">
                         <div class="s-plan-v1 g-text-center--xs g-bg-color--white g-padding-y-100--xs">
                             <i class="g-display-block--xs g-font-size-40--xs g-color--primary g-margin-b-30--xs ti-dashboard"></i>
-                            <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs ">Software Customization</h3>
+                            <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs "> Software Customization</h3>
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-60--xs">
                                 <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i> Mobile-Optimized Website</li>
                                 <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
@@ -182,7 +182,7 @@
     <div class="g-bg-color--dark-light">
         <div class="container g-padding-y-80--xs g-padding-y-125--sm">
             <div class="g-text-center--xs g-margin-b-50--xs">
-                <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-15--xs g-color--white">Process Re-engineering</p>
+                <p class="text-uppercase g-font-size-32--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-15--xs g-color--white">Process Re-engineering</p>
             </div>
             <ul class="list-inline row">
                 <!-- Process -->
