@@ -92,6 +92,27 @@
     <!-- End Feedback Form -->
     <!--========== END PAGE CONTENT ==========-->
 
+    <!-- SHOW MORE INFORMATION MODAL -->
+    <div class="modal fade" id="show-more-modal" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          {{-- <div class="modal-header">
+            <h4>About [name]</h4>
+          </div> --}}
+          <div class="modal-body">
+            <div class="ceo-card-review"></div>
+          </div>
+          {{-- <div class="modal-footer">
+            <div class="pull-right">
+              <button class="btn btn-flat" type="button" data-dismiss="modal">
+                close
+              </button>
+            </div>
+          </div>     --}}
+        </div>
+      </div>
+    </div>
+
     @include('__includes.footer')
 @endsection
 
@@ -190,7 +211,35 @@
                                         <h4 class="g-font-size-22--xs g-font-size-26--sm g-color--white g-margin-b-0--xs">${val.firstname} ${val.lastname}</h4>
                                     </div>
                                     <p class="g-font-weight--700">${val.position}</p>
-                                    <p>${val.description}</p>
+                                    <a href="javascript:void(0);" onclick="showMoreModal()" style="text-decoration:none;">
+                                        <p>${val.description}</p>
+                                    </a>
+                                </div>
+                            </div>
+                        `)
+                        $(".ceo-card-review").append(`
+                            <div class="center-block g-box-shadow__dark-lightest-v1">
+                                <img class="img-responsive g-width-50-percent--xs" src="${val.avatar}" alt="Image">
+                                <div class="g-position--overlay g-padding-x-10--xs g-padding-y-30--xs g-margin-t-o-40--xs">
+                                    <div class="g-bg-color--primary g-padding-x-15--xs g-padding-y-10--xs g-margin-b-20--xs">
+                                        <h4 class="g-font-size-22--xs g-font-size-26--sm g-color--white g-margin-b-0--xs">${val.firstname} ${val.lastname}</h4>
+                                    </div>
+                                    <p class="g-font-weight--700">${val.position}</p>
+                                    <p class="g-font-weight--500">
+                                        Dipo Odeyemi is the Founder & Chief Executive Officer of CAVIDEL Limited. Prior to his role in CAVIDEL, he was one of the pioneering staff of Nigeria’s foremost Debt Capital Market Securities Exchange (FMDQ OTC Securities Exchange) where he was responsible to build the Market Operations & Technology Division as a Senior Vice President (SVP). 
+
+                                         <br /><br />
+                                         He holds an Executive Masters in Business Administration (MBA) and a Bachelor’s degree in Computer Engineering, both from the Obafemi Awolowo University, Ile-Ife, Nigeria. <br /><br />He is a Certified Information System Auditor (CISA), a Certified Information Security Manager (CISM), Certified in the Governance of Enterprise IT (CGEIT) and Certified in Risk and Information Systems Control (CRISC) from the Information Systems Audit and Control Association (ISACA), USA. <br /><br />He is also a certified PRINCE2 (Project Management) Practitioner and certified by the British Computer Society on the use of best practice methodologies in Information Technology Service Management. <br /><br /> He is an alumnus of the Lagos Business School, where he attended the Senior Management Program (SMP 37) and was elected as the president of his class. He attended international conferences in Amsterdam and Kenya where he provided insights as a panellist on securing the inter-bank market using over-the-counter securities exchange structure.
+ <br /><br />
+Dipo’s twenty-five (25) years work experience cuts across diverse industry sectors, including Financial Markets, Banking, Consulting and Technology Services.
+ 
+Dipo’s experience extended to the National level when he worked as the pioneer project manager with other stakeholders in the Nigerian banking industry to implement an industry-wide Biometric Verification Number (BVN) system. During his service at FMDQ, he developed and implemented the first secure OTC derivatives trading and clearing system in Nigeria (FMDQ Futures Trading & Reporting System – FFTRS) used by the Central Bank of Nigeria (CBN) to activate the Naira-settled OTC FX Futures market. He also developed the pension dealing and surveillance system (PenDealer) to enhance collaboration between FMDQ, the Pension Commission and its Members (mostly Pension Fund Administrators). 
+
+<br /><br />He project managed and championed the issuance of a clearing and settlement license for the fixed income market in Nigeria.
+
+His exploits in CAVIDEL include leading and directing a team of developers to develop and integrate bespoke software solutions with payment systems in Nigeria (such as the Nigeria Interbank Settlement System, Interswitch and Paystack) to deliver real-time transfer of funds and settlement of bills within a secure portal for clients of CAVIDEL
+
+                                    </p>
                                 </div>
                             </div>
                         `)
@@ -235,6 +284,11 @@
                     }
                 });
             }); 
+        }
+
+        // show more modal
+        function showMoreModal() {
+           $("#show-more-modal").modal(); 
         }
 	</script>
 @endsection
