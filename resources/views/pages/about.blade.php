@@ -143,13 +143,15 @@
                 	<div class="cavi-circle">
                 		<img src="{{ asset('img/cavi-icon.png') }}" width="90" style="margin-left: 0.1rem;margin-top: 1.3rem;" height="auto">
                 	</div>
-                    <p class="text-uppercase g-text-center--xs g-font-size-16--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-15--xs g-color--primary">Why You Should Partner with Us</p>
+                    <p class="text-uppercase g-text-center--xs g-font-size-16--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-15--xs g-color--primary">Our People</p>
                     <p class="g-font-size-16--sm text-justify g-font-weight--500">
-                    	Our people have great passion for process improvement to reduce wastages in the workplace. 
-                    	Our team consists of experienced, talented young individuals with fresh minds that always come
-                    	up with new and innovative ideas that can help your business in its pursuit for growth. 
-                    	Our work experience had centred around continuous process review and automation across 
-                    	various industries.
+                    	With a combined experience of over 38 years in finance and consulting services, 
+                        our people are well informed to provide quality service and support assistance
+                        for any project we are engaged in. Cavidel Limited prides itself with staff that have work
+                        experience that cuts across five different Nigerian banks, international professional
+                        consulting firms, securities exchange, conglomerates and a real estate companies. 
+                        Our people possess professional certifications to back up their experiences which made 
+                        them well sought after within the industry they worked.
 					</p>
                 </div>
                 <!-- End Plan -->

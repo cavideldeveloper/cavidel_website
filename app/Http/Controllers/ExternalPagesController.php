@@ -63,6 +63,33 @@ class ExternalPagesController extends Controller
 
     /*
     |---------------------------------------------
+    | SHOW PRODUCT
+    |---------------------------------------------
+    */
+    public function officemate(){
+        return view('pages.officemate');
+    }
+
+    /*
+    |---------------------------------------------
+    | SHOW PRODUCT
+    |---------------------------------------------
+    */
+    public function catss(){
+        return view('pages.catss');
+    }
+
+    /*
+    |---------------------------------------------
+    | SHOW PRODUCT
+    |---------------------------------------------
+    */
+    public function tims(){
+        return view('pages.tims');
+    }
+
+    /*
+    |---------------------------------------------
     | SHOW SOLUTIONS
     |---------------------------------------------
     */
