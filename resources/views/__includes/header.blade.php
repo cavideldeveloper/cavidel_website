@@ -77,8 +77,7 @@
                                                     </h5>
                                                     <ul class="list-unstyled g-margin-l-0--sm">
                                                         <li class="g-margin-b-20--sm"><a href="{{ url('about') }}">Our Company</a></li>
-                                                        <li class="g-margin-b-20--sm"><a href="{{ url('team') }}">Our People</a></li>  
-                                                        <li class="g-margin-b-20--sm"><a href="{{ url('team') }}">Our Approach</a></li>  
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('team') }}">Our Team</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="col-sm-6">
@@ -87,10 +86,10 @@
                                                     </h5>
                                                     <ul class="list-unstyled g-margin-l-0--sm">
                                                         <li><a href="{{ url('products') }}"></a></li>
-                                                        <li class="g-margin-b-20--sm"><a href="{{ url('solutions') }}">Office Automation</a></li>
-                                                        <li class="g-margin-b-20--sm"><a href="{{ url('solutions#web') }}">Web Development</a></li>
-                                                        <li class="g-margin-b-20--sm"><a href="{{ url('solutions#mobile') }}">Mobile Development</a></li>
-                                                        <li class="g-margin-b-20--sm"><a href="{{ url('solutions#payment') }}">Payment Integration</a></li>
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('officemate-automation') }}">Office Automation</a></li>
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('web-development') }}">Web Development</a></li>
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('mobile-development') }}">Mobile Development</a></li>
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('payment-integration') }}">Payment Integration</a></li>
                                                     </ul>
                                                 </div>
                                             </div>

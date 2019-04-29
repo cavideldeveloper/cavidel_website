@@ -62,8 +62,48 @@ class ExternalPagesController extends Controller
     }
 
     /*
+    |-----------------------------------------
+    | SHOW OFFICE AUTOMATION
+    |-----------------------------------------
+    */
+    public function officeAutomation(){
+        // body
+        return view('pages.office-automation');
+    }
+
+    /*
+    |-----------------------------------------
+    | SHOW WEB DEVELOPMENT
+    |-----------------------------------------
+    */
+    public function webDevelopment(){
+        // body
+        return view('pages.web-development');
+    }
+
+    /*
+    |-----------------------------------------
+    | SHOW MOBILE DEVELOPMENT
+    |-----------------------------------------
+    */
+    public function mobileDevelopment(){
+        // body
+        return view('pages.mobile-development');
+    }
+
+    /*
+    |-----------------------------------------
+    | SHOW PAYMENT INTEGRATION
+    |-----------------------------------------
+    */
+    public function paymentIntegration(){
+        // body
+        return view('pages.payment-integration');
+    }
+
+    /*
     |---------------------------------------------
-    | SHOW PRODUCT
+    | SHOW OFFICEMATE
     |---------------------------------------------
     */
     public function officemate(){
@@ -72,7 +112,7 @@ class ExternalPagesController extends Controller
 
     /*
     |---------------------------------------------
-    | SHOW PRODUCT
+    | SHOW CATSS
     |---------------------------------------------
     */
     public function catss(){
@@ -81,7 +121,7 @@ class ExternalPagesController extends Controller
 
     /*
     |---------------------------------------------
-    | SHOW PRODUCT
+    | SHOW TIMS
     |---------------------------------------------
     */
     public function tims(){

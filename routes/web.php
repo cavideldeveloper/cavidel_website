@@ -17,6 +17,12 @@ Route::get('/products',						'ExternalPagesController@products');
 Route::get('/tims',							'ExternalPagesController@tims');
 Route::get('/catss',						'ExternalPagesController@catss');
 Route::get('/officemate',					'ExternalPagesController@officemate');
+
+Route::get('/officemate-automation',		'ExternalPagesController@officeAutomation');
+Route::get('/web-development',				'ExternalPagesController@webDevelopment');
+Route::get('/mobile-development',			'ExternalPagesController@mobileDevelopment');
+Route::get('/payment-integration',			'ExternalPagesController@paymentIntegration');
+
 Route::get('/solutions',					'ExternalPagesController@solutions');
 Route::get('/blog',							'ExternalPagesController@blog');
 Route::get('/faq',							'ExternalPagesController@faq');
