@@ -16,7 +16,7 @@
         <div class="container g-padding-y-80--xs g-padding-y-125--xsm">
             <div class="g-margin-b-60--xs">
                 <p class="text-uppercase g-text-center--xs g-font-size-28--xs g-font-weight--700 g-color--primary g-margin-b-30--xs g-margin-l-20--xs">
-                    <img src="{{asset('img/products/tims.png')}}" width="auto" height="80">
+                    <img src="{{asset('img/products/tims-2.png')}}" style="border-radius: 2px;" width="auto" height="80">
                 </p>
             </div>
             <div class="row g-row-col--5">
