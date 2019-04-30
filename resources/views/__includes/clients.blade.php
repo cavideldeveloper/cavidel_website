@@ -43,6 +43,12 @@
             </div>
         </div>
         <div class="row">
+            
+
+            <div class="col-md-2">
+                <img width="100%" height="auto" class="g-padding-y-10--sm" src="{{ asset('img/partners/client21.jpg') }}">
+            </div>
+
             <div class="col-md-2">
                 <img width="100%" height="auto" class="g-padding-y-10--sm" src="{{ asset('img/partners/client17.jpg') }}">
             </div>
