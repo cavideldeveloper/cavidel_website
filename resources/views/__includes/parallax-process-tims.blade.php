@@ -6,7 +6,7 @@
             	TIMS
             </h2>
             <p class="g-text-center--xs g-font-size-20--xs g-font-weight--700 g-font-size-20--sm g-font-size-30--md g-color--white">
-                Middle and back-office trading & investment management system (TIMS) with capabilities to manage customer’s KYC information, general ledger accounting
+                Middle and back-office trading & investment management system (TIMS).
             </p>
         </div>
         <a href="#more-services" class="text-uppercase g-font-weight--700 s-btn s-btn--md s-btn--white-brd g-radius--50">Learn More</a>
