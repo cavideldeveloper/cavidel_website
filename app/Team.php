@@ -150,16 +150,18 @@ class Team extends Model
     */
     public function getAllTeamByGroup(){
         // body
-        $all_teams = Team::where('status', 'active')->orderBy('id', 'created_at')->get();
+        $all_teams = Team::where('status', 'active')->orderBy('created_at', 'ASC')->get();
         if(count($all_teams) > 0){
             $team_box = [];
             foreach ($all_teams as $tl) {
                 $data = [
+                    'id'            => $tl->id,
                     'firstname'     => $tl->firstname,
                     'lastname'      => $tl->lastname,
                     'position'      => $tl->position,
                     'email'         => $tl->email,
-                    'description'   => $tl->description,
+                    'sub_description' => str_limit($tl->description, $limit = 100, $end = '...'),
+                    'description'   => str_replace(". He", ".<br /><br /> He", $tl->description),
                     'avatar'        => $tl->avatar,
                     'status'        => $tl->status,
                 ];

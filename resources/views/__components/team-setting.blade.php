@@ -54,13 +54,16 @@
               <div class="form-group">
                 <label>Job Role?</label>
                 <select class="form-control" id="job_role">
-                  <option value="CEO/Founder"> CEO/Founder</option>
+                  <option value="Founder/CEO">Founder/CEO</option>
+                  <option value="Senior Consultant">Senior Consultant</option>
                   <option value="Business Manager">Business Manager</option>
-                  <option value="Senior Consultant/Process Analyst">Senior Consultant/Process Analyst</option>
+                  <option value="Data Analyst">Data Analyst</option>
+                  <option value="Research Analyst">Data Analyst</option>
                   <option value="HR">HR (Human Resource)</option>
+                  <option value="Experienced Programmer">Experienced Programmer</option>
                   <option value="Software Developer">Software Developer</option>
                   <option value="Software Engineer">Software Engineer</option>
-                  <option value="Software Analyst">Software Analyst</option>
+                  <option value="Information Security Analyst">Information Security Analyst</option>
                 </select>
               </div>
             </div>
@@ -137,13 +140,16 @@
               <div class="form-group">
                 <label>Job Role?</label>
                 <select class="form-control" id="edit_job_role">
-                  <option value="CEO/Founder"> CEO/Founder</option>
+                  <option value="Founder/CEO">Founder/CEO</option>
+                  <option value="Senior Consultant">Senior Consultant</option>
                   <option value="Business Manager">Business Manager</option>
-                  <option value="Senior Consultant/Process Analyst">Senior Consultant/Process Analyst</option>
+                  <option value="Data Analyst">Data Analyst</option>
+                  <option value="Research Analyst">Data Analyst</option>
                   <option value="HR">HR (Human Resource)</option>
+                  <option value="Experienced Programmer">Experienced Programmer</option>
                   <option value="Software Developer">Software Developer</option>
                   <option value="Software Engineer">Software Engineer</option>
-                  <option value="Software Analyst">Software Analyst</option>
+                  <option value="Information Security Analyst">Information Security Analyst</option>
                 </select>
               </div>
             </div>

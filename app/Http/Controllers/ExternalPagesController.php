@@ -3,6 +3,7 @@
 namespace Cavidel\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Cavidel\Team;
 
 class ExternalPagesController extends Controller
 {
@@ -31,7 +32,10 @@ class ExternalPagesController extends Controller
     |---------------------------------------------
     */
     public function team(){
-    	return view('pages.team');
+        $team = new Team();
+        $data = $team->getAllTeamByGroup();
+
+    	return view('pages.team', compact('team'));
     }
 
     /*
