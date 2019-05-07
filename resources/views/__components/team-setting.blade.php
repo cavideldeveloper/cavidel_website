@@ -60,6 +60,7 @@
                   <option value="Data Analyst">Data Analyst</option>
                   <option value="Research Analyst">Data Analyst</option>
                   <option value="HR">HR (Human Resource)</option>
+                  <option value="Senior Programmer">Senior Programmer</option>
                   <option value="Trainee Programmer">Trainee Programmer</option>
                   <option value="Experienced Programmer">Experienced Programmer</option>
                   <option value="Software Developer">Software Developer</option>
@@ -143,6 +144,7 @@
                 <select class="form-control" id="edit_job_role">
                   <option value="Founder/CEO">Founder/CEO</option>
                   <option value="Senior Consultant">Senior Consultant</option>
+                  <option value="Senior Programmer">Senior Programmer</option>
                   <option value="Business Manager">Business Manager</option>
                   <option value="Data Analyst">Data Analyst</option>
                   <option value="Research Analyst">Data Analyst</option>
