@@ -4,7 +4,7 @@
         <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--dark-opacity g-letter-spacing--2 g-margin-b-50--xs">Our Clients</p>
 
         <!-- Swiper Clients -->
-        <div class="row">
+        <div class="row client-list">
             <div class="col-md-2">
                 <img width="100%" height="auto" class="g-padding-y-10--sm" src="{{ asset('img/partners/client10.jpg') }}">
             </div>
@@ -42,7 +42,7 @@
                 <img width="100%" height="auto" class="g-padding-y-10--sm" src="{{ asset('img/partners/client5.jpg') }}">
             </div>
         </div>
-        <div class="row">
+        <div class="row client-list">
             
 
             <div class="col-md-2">

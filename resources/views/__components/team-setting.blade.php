@@ -60,6 +60,7 @@
                   <option value="Data Analyst">Data Analyst</option>
                   <option value="Research Analyst">Data Analyst</option>
                   <option value="HR">HR (Human Resource)</option>
+                  <option value="Trainee Programmer">Trainee Programmer</option>
                   <option value="Experienced Programmer">Experienced Programmer</option>
                   <option value="Software Developer">Software Developer</option>
                   <option value="Software Engineer">Software Engineer</option>
@@ -146,6 +147,7 @@
                   <option value="Data Analyst">Data Analyst</option>
                   <option value="Research Analyst">Data Analyst</option>
                   <option value="HR">HR (Human Resource)</option>
+                  <option value="Trainee Programmer">Trainee Programmer</option>
                   <option value="Experienced Programmer">Experienced Programmer</option>
                   <option value="Software Developer">Software Developer</option>
                   <option value="Software Engineer">Software Engineer</option>

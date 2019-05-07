@@ -100,11 +100,21 @@
                         </li>
                         <li class="new-menu-link"><a href="{{ url('/') }}" class="g-font-weight--500">HOME</a></li>
                     </ul>
+
+                    <!-- Trigger -->
+                    <a href="javascript:void(0);" class="s-header__trigger js__trigger">
+                        <span class="s-header__trigger-icon"></span>
+                        <svg x="0rem" y="0rem" width="3.125rem" height="3.125rem" viewbox="0 0 54 54">
+                            <circle fill="transparent" stroke="#fff" stroke-width="1" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+                        </svg>
+                    </a>
+                    <!-- End Trigger -->
                 </div>
             </div>
         </div>
     </div>
     <!-- End Navbar -->
+
 
     <!-- Overlay -->
     <div class="s-header-bg-overlay js__bg-overlay">
@@ -113,12 +123,24 @@
             <div class="container-fluid">
                 <!-- Menu List -->                                
                 <ul class="list-unstyled s-header__nav-menu">
-                    <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="javascript:void(0);" onclick="startLiveChat()">Live Chat</a></li>
-                    {{-- <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="javascript:void(0);" onclick="shareCaviLink()">Tell a Friend</a></li> --}}
-                    <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('faq') }}">FAQ</a></li>
-                    <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('contact') }}">Help?</a></li>
+                    <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('/') }}">Home</a></li>
+                    <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('team') }}">Our Team</a></li>
+                    <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('about') }}">Our Company</a></li>
+                    <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('services') }}">Our Services</a></li>
+                    <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('products') }}">Our Products</a></li>
+                    <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('contact') }}">Contact Us</a></li>
+
+
                 </ul>
                 <!-- End Menu List -->
+{{-- 
+                <!-- Menu List -->                                
+                <ul class="list-unstyled s-header__nav-menu">
+                    <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider -is-active" href="{{ url('services') }}">Our Services</a></li>
+                    <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="index_app_landing.html">Our Products</a></li>
+                    <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="index_portfolio.html">Portfolio</a></li>
+                </ul>
+                <!-- End Menu List --> --}}
             </div>
         </nav>
         <!-- End Nav -->
@@ -154,6 +176,7 @@
         <!-- End Action -->
     </div>
     <!-- End Overlay -->
+
 
 </header>
 <!--========== END HEADER ==========-->

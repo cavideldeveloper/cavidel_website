@@ -71,6 +71,24 @@
                 width: 100%;
                 overflow: auto;
             }
+            .js__trigger {
+            display: none;
+        }
+        @media screen and (max-width: 768px) {
+            .client-list img {
+                width: 40px;
+                height: 40px;
+                float: left;
+            }
+
+            .new-menu-bar {
+                display: none;
+            }
+
+            .js__trigger {
+                display: inline-block;
+            }
+        }
         </style>
         @yield('contents')
 

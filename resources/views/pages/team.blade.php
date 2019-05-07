@@ -14,6 +14,14 @@
             height: auto;
             margin-left: 30px;
         }
+
+        .cavi-card {
+            transition: 0.3s;
+        }
+
+        .cavi-card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
     </style>
 	@include('__includes.header')
 
@@ -28,11 +36,16 @@
     <!--========== PAGE CONTENT ==========-->
     <!-- Speakers -->
     <div class="container g-padding-y-80--xs g-padding-y-20--sm">
-        <div class="row g-overflow--hidden top-level">
+        <div class="row g-overflow--hidden">
         </div>
     </div>
     <!-- End Speakers -->
 
+    <!-- Team -->
+    <div class="row g-row-col--0 top-level">
+
+    </div>
+    <!-- End Team -->
     <!-- Team -->
     <div class="row g-row-col--0 middle-level">
 
@@ -213,7 +226,7 @@
 
                     if(val.position == 'Founder/CEO' || val.position == "Senior Consultant" || val.position == "Senior Programmer"){
 
-                        $(".middle-level").append(`
+                        $(".top-level").append(`
 
                             <input type="hidden" id="avatar_${val.id}" value="${val.avatar}">
                             <input type="hidden" id="firstname_${val.id}" value="${val.firstname}">
@@ -224,7 +237,7 @@
 
                             <div class="col-md-3">
                                 <!-- Speaker -->
-                                <div class="center-block g-box-shadow__dark-lightest-v1 g-width-50-percent--xs g-width-400--lg">
+                                <div class="center-block g-box-shadow__dark-lightest-v1 g-width-50-percent--xs g-width-400--lg cavi-card">
                                     <img class="img-responsive g-width-50-percent--xs" src="${val.avatar}" alt="Image">
                                     <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-margin-t-o-60--xs">
                                         <div class="g-bg-color--primary g-padding-x-10--xs g-padding-y-10--xs g-margin-b-20--xs">
@@ -238,9 +251,6 @@
                                 </div>
                                 <!-- End Speaker -->
                             </div>
-
-
-
                         `);
                     }
                 });

@@ -118,7 +118,7 @@
 
                                         <div class="col-sm-6">
                                             <div class="single_tab_img">
-                                                <img src="assets/images/stab1.png" alt="" />
+                                                <img src="assets/images/stab1.png" class="img-responsive" alt="" />
                                             </div>
                                         </div>
                                     </div>

@@ -7,6 +7,14 @@
 
 {{--  contents --}}
 @section('contents')
+    <style type="text/css">
+        @media screen and (max-width: 768px) {
+          .g-padding-x-100--xs {
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+          }
+        }
+    </style>
 	@include('__includes.header')
     <!--========== PROMO BLOCK ==========-->
     <div class="js__parallax-window" style="background: url(img/1920x1080/07.jpg) 5% 0 no-repeat fixed; height: 280px;">
