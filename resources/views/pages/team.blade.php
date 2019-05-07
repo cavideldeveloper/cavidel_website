@@ -7,6 +7,14 @@
 
 {{--  contents --}}
 @section('contents')
+    <style type="text/css">
+        .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin-left: 30px;
+        }
+    </style>
 	@include('__includes.header')
 
 	<!--========== PROMO BLOCK ==========-->
@@ -19,11 +27,8 @@
 
     <!--========== PAGE CONTENT ==========-->
     <!-- Speakers -->
-    <div class="container g-padding-y-80--xs g-padding-y-125--sm">
-        <div class="row g-overflow--hidden">
-            <div class="col-md-12 g-full-width--md ceo-card">
-            </div>
-            <div class="top-level"></div>
+    <div class="container g-padding-y-80--xs g-padding-y-20--sm">
+        <div class="row g-overflow--hidden top-level">
         </div>
     </div>
     <!-- End Speakers -->
@@ -208,7 +213,7 @@
 
                     if(val.position == 'Founder/CEO' || val.position == "Senior Consultant" || val.position == "Senior Programmer"){
 
-                        $(".top-level").append(`
+                        $(".middle-level").append(`
 
                             <input type="hidden" id="avatar_${val.id}" value="${val.avatar}">
                             <input type="hidden" id="firstname_${val.id}" value="${val.firstname}">
@@ -217,12 +222,12 @@
                             <input type="hidden" id="description_${val.id}" value="${val.description}">
                             <input type="hidden" id="sub_description_${val.id}" value="${val.sub_description}">
 
-                            <div class="col-xs-6 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
+                            <div class="col-md-3">
                                 <!-- Speaker -->
-                                <div class="center-block g-box-shadow__dark-lightest-v1 g-width-100-percent--xs g-width-400--lg">
-                                    <img class="img-responsive g-width-100-percent--xs" src="${val.avatar}" alt="Image">
+                                <div class="center-block g-box-shadow__dark-lightest-v1 g-width-50-percent--xs g-width-400--lg">
+                                    <img class="img-responsive g-width-50-percent--xs" src="${val.avatar}" alt="Image">
                                     <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-margin-t-o-60--xs">
-                                        <div class="g-bg-color--primary g-padding-x-15--xs g-padding-y-10--xs g-margin-b-20--xs">
+                                        <div class="g-bg-color--primary g-padding-x-10--xs g-padding-y-10--xs g-margin-b-20--xs">
                                             <h4 class="g-font-size-22--xs g-font-size-26--sm g-color--white g-margin-b-0--xs">${val.firstname} ${val.lastname}</h4>
                                         </div>
                                         <p class="g-font-weight--700">${val.position}</p>
@@ -234,44 +239,8 @@
                                 <!-- End Speaker -->
                             </div>
 
-                        `);
-                    }
 
-                    if(val.position == 'Business Manager'){
-                        $(".top-level").append(`
-                            <div class="col-xs-6 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
-                                <!-- Speaker -->
-                                <div class="center-block g-box-shadow__dark-lightest-v1 g-width-100-percent--xs g-width-400--lg">
-                                    <img class="img-responsive g-width-100-percent--xs" src="${val.avatar}" alt="Image">
-                                    <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-margin-t-o-60--xs">
-                                        <div class="g-bg-color--primary g-padding-x-15--xs g-padding-y-10--xs g-margin-b-20--xs">
-                                            <h4 class="g-font-size-22--xs g-font-size-26--sm g-color--white g-margin-b-0--xs">${val.firstname} ${val.lastname}</h4>
-                                        </div>
-                                        <p class="g-font-weight--700">${val.position}</p>
-                                        <p>${val.description}</p>
-                                    </div>
-                                </div>
-                                <!-- End Speaker -->
-                            </div>
-                        `);
-                    }
 
-                    if(val.position == 'Senior Consultant/Process Analyst'){
-                        $(".top-level").append(`
-                            <div class="col-xs-6 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
-                                <!-- Speaker -->
-                                <div class="center-block g-box-shadow__dark-lightest-v1 g-width-100-percent--xs g-width-400--lg">
-                                    <img class="img-responsive g-width-100-percent--xs" src="${val.avatar}" alt="Image">
-                                    <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-margin-t-o-60--xs">
-                                        <div class="g-bg-color--primary g-padding-x-15--xs g-padding-y-10--xs g-margin-b-20--xs">
-                                            <h4 class="g-font-size-22--xs g-font-size-26--sm g-color--white g-margin-b-0--xs">${val.firstname} ${val.lastname}</h4>
-                                        </div>
-                                        <p class="g-font-weight--700">${val.position}</p>
-                                        <p>${val.description}</p>
-                                    </div>
-                                </div>
-                                <!-- End Speaker -->
-                            </div>
                         `);
                     }
                 });
