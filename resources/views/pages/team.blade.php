@@ -207,16 +207,27 @@
                     }
 
                     if(val.position == 'Software Engineer'){
-                        $(".all-developers").append(`
+                        $(".middle-level").append(`
+                            <input type="hidden" id="avatar_${val.id}" value="${val.avatar}">
+                            <input type="hidden" id="firstname_${val.id}" value="${val.firstname}">
+                            <input type="hidden" id="lastname_${val.id}" value="${val.lastname}">
+                            <input type="hidden" id="position_${val.id}" value="${val.position}">
+                            <input type="hidden" id="description_${val.id}" value="${val.description}">
+                            <input type="hidden" id="sub_description_${val.id}" value="${val.sub_description}">
+
                             <div class="col-md-3 col-xs-6 g-full-width--xs">
                                 <div class="" data-wow-duration=".3" data-wow-delay=".1s">
                                     <!-- Team -->
                                     <div class="s-team-v1">
-                                        <img class="img-responsive g-width-100-percent--xs" src="${val.avatar}" alt="Image">
+                                    
+                                        <img class="img-responsive g-width-80-percent--xs" src="${val.avatar}" alt="Image">
                                         <div class="g-text-center--xs g-bg-color--white g-padding-x-30--xs g-padding-y-40--xs">
+                                        <a href="javascript:void(0);" onclick="showMoreModal(${val.id})">
                                             <h2 class="g-font-size-18--xs g-margin-b-5--xs">${val.firstname} ${val.lastname}</h2>
                                             <span class="g-font-size-15--xs g-color--text"><i> ${val.position}</i></span>
+                                        </a>
                                         </div>
+                                    
                                     </div>
                                     <!-- End Team -->
                                 </div>
