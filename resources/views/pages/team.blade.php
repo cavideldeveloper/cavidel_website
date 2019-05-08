@@ -171,7 +171,7 @@
                     }
 
                     if(val.position == 'Software Developer'){
-                        $(".all-developers").append(`
+                        $(".middle-level").append(`
                             <div class="col-md-3 col-xs-6 g-full-width--xs">
                                 <div class="" data-wow-duration=".3" data-wow-delay=".1s">
                                     <!-- Team -->
@@ -189,7 +189,7 @@
                     }
 
                     if(val.position == 'Software Analyst'){
-                        $(".all-developers").append(`
+                        $(".middle-level").append(`
                             <div class="col-md-3 col-xs-6 g-full-width--xs">
                                 <div class="" data-wow-duration=".3" data-wow-delay=".1s">
                                     <!-- Team -->
