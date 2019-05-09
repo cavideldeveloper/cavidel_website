@@ -248,9 +248,9 @@
 
                             <div class="col-md-3">
                                 <!-- Speaker -->
-                                <div class="center-block g-box-shadow__dark-lightest-v1 g-width-50-percent--xs g-width-400--lg cavi-card">
-                                    <img class="img-responsive g-width-50-percent--xs" src="${val.avatar}" alt="Image">
-                                    <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-margin-t-o-60--xs">
+                                <div class="center-block g-box-shadow__dark-lightest-v1 g-width-50-percent--xs g-width-300--lg cavi-card">
+                                    <img style="width: 90%;margin-left: 12px;" src="${val.avatar}" alt="Image">
+                                    <div class="g-position--overlay g-padding-x-20--xs g-padding-y-30--xs g-margin-t-o-60--xs">
                                         <div class="g-bg-color--primary g-padding-x-10--xs g-padding-y-10--xs g-margin-b-20--xs">
                                             <h4 class="g-font-size-22--xs g-font-size-26--sm g-color--white g-margin-b-0--xs">${val.firstname} ${val.lastname}</h4>
                                         </div>
