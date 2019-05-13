@@ -119,13 +119,11 @@
                                         <div class="col-sm-6">
                                             <div class="single_tab_img">
                                                 <img src="assets/images/tims-frame.png" width="100%" height="auto" alt="" />
-                                                <br />
+                                                <br /><br />
                                                 <a href="{{ url('tims') }}" target="_blank" class="btn btn-primary">LEARN MORE</a>
                                             </div>
                                         </div>
                                     </div>
-                                    
-                                    
                                 </div>
                             </div>
                         </div>
@@ -252,7 +250,7 @@
                                             <div class="single_tab_img">
                                                 <img src="assets/images/stab3.png" width="100%" height="auto" alt="" />
                                                 {{-- <img src="{{asset('img/process/4.gif')}}" width="auto" height="auto"> --}}
-                                                <br />                               
+                                                <br /><br />                            
                                                 <a href="{{ url('catss') }}" class="btn btn-primary">FEATURES</a>
                                             </div>
                                         </div>
