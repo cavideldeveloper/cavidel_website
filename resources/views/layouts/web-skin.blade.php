@@ -89,6 +89,12 @@
                 display: inline-block;
             }
         }
+
+        @media screen and (max-width: 768px) {
+            #mobile-menu {
+                height: 450px;
+            }
+        }
         </style>
         @yield('contents')
 

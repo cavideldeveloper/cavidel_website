@@ -33,9 +33,18 @@ class SiteContact extends Model
     			'message' 	=> 'could not save subscription at the moment!',
     		];
 		}
-    	
 
     	// return 
     	return $data;
+    }
+
+    /*
+    |-----------------------------------------
+    | DISPATCH QUEUE
+    |-----------------------------------------
+    */
+    public function clearQueueMails(){
+        // body
+        
     }
 }

@@ -120,7 +120,7 @@
     <div class="s-header-bg-overlay js__bg-overlay">
         <!-- Nav -->
         <nav class="s-header__nav js__scrollbar">
-            <div class="container-fluid">
+            <div class="container-fluid" id="mobile-menu">
                 <!-- Menu List -->                                
                 <ul class="list-unstyled s-header__nav-menu">
                     <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('/') }}">Home</a></li>
