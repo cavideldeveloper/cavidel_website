@@ -72,29 +72,45 @@
                 overflow: auto;
             }
             .js__trigger {
-            display: none;
-        }
-        @media screen and (max-width: 768px) {
-            .client-list img {
-                width: 40px;
-                height: 40px;
-                float: left;
+                display: none;
             }
-
-            .new-menu-bar {
+            #mobile-version-slider {
                 display: none;
             }
 
-            .js__trigger {
-                display: inline-block;
-            }
-        }
+            @media screen and (max-width: 768px) {
+                .client-list img {
+                    width: 40px;
+                    height: 40px;
+                    float: left;
+                }
 
-        @media screen and (max-width: 768px) {
-            #mobile-menu {
-                height: 450px;
+                .new-menu-bar {
+                    display: none;
+                }
+
+                .all-clients-list {
+                    display: none;
+                }
+
+                .client-list {
+                    display: none;
+                }
+
+                .js__trigger {
+                    display: inline-block;
+                }
             }
-        }
+
+            @media screen and (max-width: 768px) {
+                #mobile-menu {
+                    height: 450px;
+                }
+
+                #mobile-version-slider {
+                    display: block;
+                }
+            }
         </style>
         @yield('contents')
 
@@ -284,7 +300,7 @@
                 // return
                 return false;
             }
-
+ 
             // get geolocation
             function getGeolocation(browserInfo) {
                 $.get('http://gd.geobytes.com/GetCityDetails', function(data) {
@@ -463,26 +479,27 @@
                 });
             }
 
-            // Scroll function courtesy of Scott Dowding; http://stackoverflow.com/questions/487073/check-if-element-is-visible-after-scrolling
+            // scoll animate
             $(document).ready(function() {
-              // Check if element is scrolled into view
-              function isScrolledIntoView(elem) {
-                var docViewTop = $(window).scrollTop();
-                var docViewBottom = docViewTop + $(window).height();
+                // Check if element is scrolled into view
+                function isScrolledIntoView(elem) {
+                    var docViewTop = $(window).scrollTop();
+                    var docViewBottom = docViewTop + $(window).height();
 
-                var elemTop = $(elem).offset().top;
-                var elemBottom = elemTop + $(elem).height();
+                    var elemTop = $(elem).offset().top;
+                    var elemBottom = elemTop + $(elem).height();
 
-                return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-              }
-              // If element is scrolled into view, fade it in
-              $(window).scroll(function() {
-                $('.animated').each(function() {
-                  if (isScrolledIntoView(this) === true) {
-                    $(this).addClass('fadeInLeft');
-                  }
+                    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+                }
+                
+                // If element is scrolled into view, fade it in
+                $(window).scroll(function() {
+                    $('.animated').each(function() {
+                      if (isScrolledIntoView(this) === true) {
+                        $(this).addClass('fadeInLeft');
+                      }
+                    });
                 });
-              });
             });
         </script>
 
