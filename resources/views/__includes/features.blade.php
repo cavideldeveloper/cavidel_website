@@ -28,7 +28,7 @@
                                                     An enterprise resource planning (ERP) solution with core functionality to automate business operations through capturing, processing and reporting on customer/employee information, billing, inventory & fleet management, staff appraisal, employee survey, training & learning management, payroll, employee self-service, leave, loans, statutory remittances, compliance tracking, document management etc.
                                                 </p>
                                                 <br />                               
-                                                <a href="{{ url('products') }}" class="btn btn-primary">FEATURES</a>
+                                                <a href="{{ url('officemate') }}" class="btn btn-primary">FEATURES</a>
                                             </div>
                                         </div>
 
@@ -77,13 +77,12 @@
                                                 </p>
 
                                                 <br />                               
-                                                <a href="{{ url('products') }}" class="btn btn-primary">FEATURES</a>
+                                                <a href="{{ url('tims') }}" class="btn btn-primary">FEATURES</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            
                         </div>
                     </div>
                 </div>
@@ -162,7 +161,7 @@
                                                 </p>
 
                                                 <br />                               
-                                                <a href="{{ url('products#product-3') }}" class="btn btn-primary">FEATURES</a>
+                                                <a href="{{ url('catss') }}" class="btn btn-primary">FEATURES</a>
                                             </div>
                                         </div>
                                     </div>
