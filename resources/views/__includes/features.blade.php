@@ -112,13 +112,15 @@
                                                 <p class="text-justify animated bounceInLeft g-font-weight--500">Middle and back-office trading & investment management system (TIMS) with capabilities to manage customer’s KYC information, general ledger accounting, customer deposits and withdrawals, loan origination and asset management for multiple financial instruments (fixed income, equities, money market and derivatives) as well as foreign exchange trade management and valuation.
                                                 </p>
 
-                                                <a href="{{ url('tims') }}" target="_blank" class="btn btn-primary">LEARN MORE</a>
+                                                
                                             </div>
                                         </div>
 
                                         <div class="col-sm-6">
                                             <div class="single_tab_img">
                                                 <img src="assets/images/tims-frame.png" width="100%" height="auto" alt="" />
+                                                <br />
+                                                <a href="{{ url('tims') }}" target="_blank" class="btn btn-primary">LEARN MORE</a>
                                             </div>
                                         </div>
                                     </div>
@@ -243,14 +245,15 @@
                                                     The CAVIDEL automated trade simulation system (CATSS) is aimed at promoting financial literacy both on a global and micro scale. The system features self-service functionalities that can enable individuals or groups trade virtual financial market instruments, while monitoring performance in terms of trade volumes and profitability. It also provides capabilities to store and manage live portfolios with daily revaluation using real life prices. 
                                                 </p>
 
-                                                <br />                               
-                                                <a href="{{ url('catss') }}" class="btn btn-primary">FEATURES</a>
+                                                
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="single_tab_img">
                                                 <img src="assets/images/stab3.png" width="100%" height="auto" alt="" />
                                                 {{-- <img src="{{asset('img/process/4.gif')}}" width="auto" height="auto"> --}}
+                                                <br />                               
+                                                <a href="{{ url('catss') }}" class="btn btn-primary">FEATURES</a>
                                             </div>
                                         </div>
                                     </div>
