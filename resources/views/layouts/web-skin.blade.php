@@ -78,6 +78,14 @@
                 display: none;
             }
 
+            #tims-mobile-view {
+                display: none;
+            }
+
+            #catss-mobile-view {
+                display: none;
+            }
+
             @media screen and (max-width: 768px) {
                 .client-list img {
                     width: 40px;
@@ -99,6 +107,22 @@
 
                 .js__trigger {
                     display: inline-block;
+                }
+
+                #tims-mobile-view {
+                    display: inline-block;
+                }
+
+                #tims-web-view {
+                    display: none;
+                }
+
+                #catss-mobile-view {
+                    display: inline-block;
+                }
+
+                #catss-web-view {
+                    display: none;
                 }
             }
 
