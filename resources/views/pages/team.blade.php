@@ -153,7 +153,7 @@
                     var sub_description = $("#sub_description").val(val.sub_description);
                     
                     if(val.position == 'HR'){
-                        $(".all-developers").append(`
+                        $(".middle-level").append(`
                             <div class="col-md-3 col-xs-6 g-full-width--xs">
                                 <div class="" data-wow-duration=".3" data-wow-delay=".1s">
                                     <!-- Team -->
@@ -170,7 +170,7 @@
                         `);
                     }
 
-                    if(val.position == 'Software Developer'){
+                    if(val.position == 'Software Developer' || val.position == "Data Analyst" || val.position == "Research Analyst" ){
                         $(".middle-level").append(`
                             <div class="col-md-3 col-xs-6 g-full-width--xs">
                                 <div class="" data-wow-duration=".3" data-wow-delay=".1s">
