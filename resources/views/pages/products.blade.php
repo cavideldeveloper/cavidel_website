@@ -72,7 +72,7 @@
                                 </li>
                             </ul>
 
-                            <button type="submit" class="text-uppercase s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Request a Demo</button>
+                            <button type="submit" onsubmit="showOrderModal()" class="text-uppercase s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Request a Demo</button>
                         </div>
                     </div>
                 </div>
@@ -732,13 +732,62 @@
         </div>
     </div>
 
+    <!-- Show request software form -->
+    <div class="modal fade" id="show-request-form" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Send a request, We are always available to take your order.</h4>
+          </div>
+          <div class="modal-body">
+            <hr />
+            <form method="POST" onsubmit="return sendNewRequest()">
+                @csrf_field()
+                <div class="form-group">
+                    <label for="names">Enter Name</label>
+                    <input type="text" id="names" name="names" class="form-control" placeholder="Enter names here" required="">
+                </div>
+                <div class="form-group">
+                    <label for="software">Select Software Category</label>
+                    <select class="form-control" name="software" id="software"></select>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <textarea class="form-control" placeholder="Type a message" rows="2" cols="8"></textarea>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-info">Send Request</button>
+                </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <div class="pull-right">
+              <button class="btn btn-flat" type="button" data-dismiss="modal">
+                close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     @include('__includes.footer')
 @endsection
 
 {{--  scripts --}}
 @section('scripts')
 	<script type="text/javascript">
-		// send contact message
+        // place new order
+        function showOrderModal() {
+            $("#show-request-form").modal();
+        }
 
+		// send contact message
+        function sendNewRequest() {
+
+
+            // void form
+            return false;
+        }
 	</script>
 @endsection

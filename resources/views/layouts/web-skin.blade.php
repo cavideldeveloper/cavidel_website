@@ -27,6 +27,7 @@
         <!-- Theme Styles -->
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <link href="css/global/global.css" rel="stylesheet" type="text/css"/>
+        <link href="css/select2.min.css" rel="stylesheet" type="text/css"/>
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
@@ -213,36 +214,37 @@
         <!--========== JAVASCRIPTS (Load javascripts at bottom, this will reduce page load time) ==========-->
         <!-- Vendor -->
         <script src="{{ asset('js/app.js') }}"></script>
-        <script type="text/javascript" src="vendor/jquery.min.js"></script>
-        <script type="text/javascript" src="vendor/jquery.migrate.min.js"></script>
-        <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="vendor/jquery.smooth-scroll.min.js"></script>
-        <script type="text/javascript" src="vendor/jquery.back-to-top.min.js"></script>
-        <script type="text/javascript" src="vendor/scrollbar/jquery.scrollbar.min.js"></script>
-        <script type="text/javascript" src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-        <script type="text/javascript" src="vendor/swiper/swiper.jquery.min.js"></script>
-        <script type="text/javascript" src="vendor/waypoint.min.js"></script>
-        <script type="text/javascript" src="vendor/counterup.min.js"></script>
-        <script type="text/javascript" src="vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
-        <script type="text/javascript" src="vendor/jquery.parallax.min.js"></script>
+        <script src="vendor/jquery.min.js"></script>
+        <script src="vendor/jquery.migrate.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="vendor/jquery.smooth-scroll.min.js"></script>
+        <script src="vendor/jquery.back-to-top.min.js"></script>
+        <script src="vendor/scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script src="vendor/swiper/swiper.jquery.min.js"></script>
+        <script src="vendor/waypoint.min.js"></script>
+        <script src="vendor/counterup.min.js"></script>
+        <script src="vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+        <script src="vendor/jquery.parallax.min.js"></script>
         {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkrja0K9YTRtwpiI61uMaWxyNuE9By8qQ"></script> --}}
         <script type="text/javascript" src="vendor/jquery.wow.min.js"></script>
 
         <!-- General Components and Settings -->
-        <script type="text/javascript" src="js/global.min.js"></script>
-        <script type="text/javascript" src="js/components/header-sticky.min.js"></script>
-        <script type="text/javascript" src="js/components/scrollbar.min.js"></script>
-        <script type="text/javascript" src="js/components/magnific-popup.min.js"></script>
-        <script type="text/javascript" src="js/components/swiper.min.js"></script>
-        <script type="text/javascript" src="js/components/counter.min.js"></script>
-        <script type="text/javascript" src="js/components/portfolio-3-col.min.js"></script>
-        <script type="text/javascript" src="js/components/parallax.min.js"></script>
+        <script src="js/global.min.js"></script>
+        <script src="js/components/header-sticky.min.js"></script>
+        <script src="js/components/scrollbar.min.js"></script>
+        <script src="js/components/magnific-popup.min.js"></script>
+        <script src="js/components/swiper.min.js"></script>
+        <script src="js/components/counter.min.js"></script>
+        <script src="js/components/portfolio-3-col.min.js"></script>
+        <script src="js/components/parallax.min.js"></script>
         {{-- <script type="text/javascript" src="js/components/google-map.min.js"></script> --}}
-        <script type="text/javascript" src="js/components/wow.min.js"></script>
+        <script src="js/components/wow.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.11/dist/sweetalert2.all.min.js"></script>
-        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="{{asset('js/preloader.js')}}"></script>
         <script src="{{asset('js/particles.min.js')}}"></script>
+        <script src="{{asset('js/select2.min.js')}}"></script>
         
         <!--========== END JAVASCRIPTS ==========-->
         <script type="text/javascript">

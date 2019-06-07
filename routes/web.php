@@ -115,4 +115,6 @@ Route::post('/client/contact/support',		'ClientJsonResponseController@contactSup
 Route::post('/new/site/visitor',			'ClientJsonResponseController@newSiteVisitor')->name('new_visitor');
 Route::post('/send/application/form',		'ClientJsonResponseController@applicationLetter')->name('apply_now');
 Route::get('/get/all/team/member',			'ClientJsonResponseController@getTeamMembers')->name('team_member');
+Route::post('/send/order/request',		    'ClientJsonResponseController@placeNewOrder')->name('order_request');
+Route::get('/fetch/all/products',			'ClientJsonResponseController@fetchProducts')->name('fetch_products');
 

@@ -9,6 +9,8 @@ use Cavidel\SiteContact;
 use Cavidel\SiteVisitor;
 use Cavidel\Mail\NewApplicationMail;
 use Cavidel\Team;
+use Cavidel\Order;
+use Cavidel\Product;
 use Mail;
 
 class ClientJsonResponseController extends Controller
@@ -127,7 +129,33 @@ class ClientJsonResponseController extends Controller
 
         // return response.
         return response()->json($data);
-
     }
 
+    /*
+    |-----------------------------------------
+    | PLACE NEW ORDER
+    |-----------------------------------------
+    */
+    public function placeNewOrder(Request $request){
+        // body
+        $team = new Order();
+        $data = $team->placeOrder($request);
+
+        // return response.
+        return response()->json($data);
+    }
+
+    /*
+    |-----------------------------------------
+    | FETCH CAVIDEL PRODUCTS
+    |-----------------------------------------
+    */
+    public function fetchProducts(Request $request){
+        // body
+        $all_products = new Product();
+        $data         = $all_products->getAllProducts();
+
+        // return response.
+        return response()->json($data);
+    }
 }

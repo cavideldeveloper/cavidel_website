@@ -62,7 +62,7 @@
                                     </li>
                                 </ul>
 
-                                <button type="submit" class="text-uppercase s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Request a Demo</button>
+                                <button type="submit" onclick="showOrderModal()" class="text-uppercase s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Request a Demo</button>
                             </div>
                         </div>
                     </div>
@@ -133,7 +133,7 @@
                                     </li>
                                 </ul>
 
-                                <button type="submit" class="text-uppercase s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Request a Demo</button>
+                                <button type="submit" onclick="showOrderModal()" class="text-uppercase s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Request a Demo</button>
                             </div>
                         </div>
                     </div>
@@ -205,7 +205,7 @@
                                     </li>
                                 </ul>
 
-                                <button type="submit" class="text-uppercase s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Order Now</button>
+                                <button type="submit" onclick="showOrderModal()" class="text-uppercase s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Order Now</button>
                             </div>
                         </div>
                     </div>
@@ -216,117 +216,47 @@
     </section>
     <!-- End Plan -->
 
-    
-
-    {{-- <div class="g-bg-color--sky-light">
-        <div class="container g-padding-y-40--xs g-padding-y-100--xsm">
-            <div class="row">
-                <!-- Plan -->
-                <div class="col-md-4 g-margin-b-10--xs g-margin-b-0--lg">
-                    <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".2s">
-                        <div class="s-plan-v1 g-text-center--xs g-bg-color--white g-padding-y-20--xs">
-                            <i class="g-display-block--xs g-font-size-40--xs g-color--primary g-margin-b-30--xs ti-shopping-cart"></i>
-                            <p class="g-font-size-12--xs g-color--primary g-margin-b-30--xs">
-                            </p>
-                        </div>
-                    </div>
+    <!-- Show request software form -->
+    <div class="modal fade" id="show-request-form" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Send a request, We are always available to take your order.</h4>
+          </div>
+          <div class="modal-body">
+            <form method="POST" onsubmit="return sendNewRequest()">
+                {{ @csrf_field() }}
+                <div class="form-group">
+                    <label for="names">Enter Name</label>
+                    <input type="text" id="names" name="names" class="form-control" placeholder="Enter names here" required="">
                 </div>
-                <!-- End Plan -->
-
-                <!-- Plan -->
-                <div class="col-md-8 g-margin-b-10--xs g-margin-b-20--lg">
-                    <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
-                        <div class="s-plan-v1 g-text-left--xs g-bg-color--white g-padding-y-5--xs g-padding-x-30--xs">
-                            <p class="g-font-size-14--xs g-color--dark g-margin-b-30--xs g-padding-x-100--xs">
-                                <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs">E-Commerce</h3>
-                                <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs">
-                                    <li class="g-color--dark g-font-weight--500">
-                                        Our e-commerce solution provides an add-on to enhance our client’s web presence with a platform that links buyers and sellers of multiple products and facilitates payments for products and services.
-                                    </li>
-                                </ul>
-                            </p>
-                        </div>
-                    </div>
+                <div class="form-group">
+                    <label for="software">Select Software Category</label>
+                    <select class="form-control select-2" style="width: 100%;" name="software[]" id="software" multiple="multiple"></select>
                 </div>
-                <!-- End Plan -->
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input class="form-control" name="email" id="email" placeholder="Enter a contact email">
+                </div>
+                <div class="form-group">
+                    <label for="email">Type a message</label>
+                    <textarea class="form-control" name="message" id="message" placeholder="Type a message..." rows="2" cols="8"></textarea>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-info">Send Request</button>
+                </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <div class="pull-right">
+              <button class="btn btn-flat" type="button" data-dismiss="modal">
+                close
+              </button>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-
-    <div class="g-bg-color--sky-light">
-        <div class="container g-padding-y-40--xs g-padding-y-100--xsm">
-            <div class="row">
-                <!-- Plan -->
-                <div class="col-md-8 g-margin-b-10--xs g-margin-b-20--lg">
-                    <div class="cavi-circle">
-                        <img src="{{ asset('img/cavi-icon.png') }}" width="90" style="margin-left: 0.1rem;margin-top: 1.3rem;" height="auto">
-                    </div>
-                    <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
-                        <div class="s-plan-v1 g-text-left--xs g-bg-color--white g-padding-y-5--xs g-padding-x-30--xs">
-                            <p class="g-font-size-16--xs g-color--primary g-margin-b-30--xs g-padding-x-100--xs">
-                                <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs">Web Design & Development</h3>
-                                <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs">
-                                    <li class="g-color--dark g-font-weight--500">
-                                        Adopting multiple web technologies, our team of website developers are able to provide website solutions, be it static or dynamic, that will enhance the visibility of your business with a very short period. 
-                                    </li>
-                                </ul>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Plan -->
-
-                <!-- Plan -->
-                <div class="col-md-4 g-margin-b-10--xs g-margin-b-0--lg">
-                    <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".2s">
-                        <div class="s-plan-v1 g-text-center--xs g-bg-color--white g-padding-y-20--xs">
-                            <i class="g-display-block--xs g-font-size-40--xs g-color--primary g-margin-b-30--xs ti-server"></i>
-                            <p class="g-font-size-12--xs g-color--primary g-margin-b-30--xs">
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Plan -->
-            </div>
-        </div>
-    </div>
-
-    <div class="g-bg-color--sky-light">
-        <div class="container g-padding-y-40--xs g-padding-y-100--xsm">
-            <div class="row">
-                <!-- Plan -->
-                <div class="col-md-4 g-margin-b-10--xs g-margin-b-0--lg">
-                    <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".2s">
-                        <div class="s-plan-v1 g-text-center--xs g-bg-color--white g-padding-y-20--xs">
-                            <i class="g-display-block--xs g-font-size-40--xs g-color--primary g-margin-b-30--xs ti-notepad"></i>
-                            <p class="g-font-size-12--xs g-color--primary g-margin-b-30--xs">
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Plan -->
-
-                <!-- Plan -->
-                <div class="col-md-8 g-margin-b-10--xs g-margin-b-20--lg">
-                    <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
-                        <div class="s-plan-v1 g-text-left--xs g-bg-color--white g-padding-y-5--xs g-padding-x-30--xs">
-                            <p class="g-font-size-14--xs g-color--dark g-margin-b-30--xs g-padding-x-100--xs">
-                                <h3 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs">
-                                    Task Management
-                                </h3>
-                                <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs">
-                                    <li class="g-color--dark g-font-weight--500">
-                                        Our Task management system assist clients to manage a task through its life cycle. It provides tools for planning, testing, tracking and reporting on tasks. The solution can help either individuals achieve goals, or groups of individuals collaborate and share knowledge for the accomplishment of collective goals. Tasks are also differentiated by complexity, from low to high.
-                                    </li>
-                                </ul>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Plan -->
-            </div>
-        </div>
-    </div> --}}
 
     @include('__includes.footer')
 @endsection
@@ -334,7 +264,71 @@
 {{--  scripts --}}
 @section('scripts')
 	<script type="text/javascript">
-		// send contact message
+        // display products
+        fetchProducts();
 
+        // place new order
+        function showOrderModal() {
+            // modal
+            $("#show-request-form").modal();
+        }
+
+        // load products
+        function fetchProducts() {
+            fetch("{{url('/fetch/all/products')}}", {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            }).then(r => {
+                return r.json();
+            }).then(data => {
+                $("#software").html("");
+                $.each(data, function(index, val) {
+                    // console.log(val);
+                    $("#software").append(`
+                        <option value="${val.id}"> ${val.name} </option>
+                    `);
+                });
+
+                // init select 2
+                $(".select-2").select2();
+            }).catch(err => {
+                console.log(JSON.stringify(err));
+            })
+        }
+
+        // send contact message
+        function sendNewRequest() {
+            var _token      = $("input[name=_token]").val();
+            var names       = $("#names").val();
+            var software    = $("#software").val();
+            var email       = $("#email").val();
+            var message     = $("#message").val();
+
+            fetch("{{url('send/order/request')}}", {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({_token, names, software, email, message})
+            }).then(r => {
+                return r.json();
+            }).then(val => {
+                if(val.status == "success"){
+                    swal(
+                        "Ok",
+                        val.message,
+                        val.status
+                    );
+                    $("#show-request-form").modal("hide");
+                }
+            }).catch(err => {
+                console.log(JSON.stringify(err));
+            })
+
+            // void form
+            return false;
+        }
 	</script>
 @endsection
