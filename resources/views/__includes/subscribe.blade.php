@@ -1,5 +1,5 @@
 <!-- Subscribe -->
-<div class="js__parallax-window" style="background: url(img/1920x1080/24.jpg) 50% 0 no-repeat fixed;">
+<div class="js__parallax-window" style="background: url(img/1920x1080/29.jpg) 50% 0 no-repeat fixed;">
     <div class="g-container--sm g-text-center--xs g-padding-y-60--xs g-padding-y-100--sm">
         <div class="g-margin-b-80--xs">
             <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--white-opacity g-letter-spacing--2 g-margin-b-25--xs">Subscribe</p>
