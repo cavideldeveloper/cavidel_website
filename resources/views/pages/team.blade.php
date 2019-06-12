@@ -170,7 +170,7 @@
                         `);
                     }
 
-                    if(val.position == 'Software Developer' || val.position == "Data Analyst" || val.position == "Research Analyst" ){
+                    if(val.position == 'Software Developer' || val.position == "Data Analyst" || val.position == "Research Analyst" || val.position == "Consulting and Research"){
                         $(".middle-level").append(`
                             <div class="col-md-3 col-xs-6 g-full-width--xs">
                                 <div class="" data-wow-duration=".3" data-wow-delay=".1s">
@@ -235,7 +235,7 @@
                         `);
                     }
 
-                    if(val.position == 'Founder/CEO' || val.position == "Senior Consultant" || val.position == "Senior Programmer"){
+                    if(val.position == 'Founder/CEO' || val.position == "Senior Consultant" || val.position == "Senior Programmer" || val.position == "Director"){
 
                         $(".top-level").append(`
 
