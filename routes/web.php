@@ -29,6 +29,12 @@ Route::get('/faq',							'ExternalPagesController@faq');
 Route::get('/portfolio',					'ExternalPagesController@portfolio');
 
 
+Route::get('/software-development',			'ExternalPagesController@softwareDevelopment');
+Route::get('/business-process',				'ExternalPagesController@businessProcess');
+Route::get('/technology',					'ExternalPagesController@technology');
+Route::get('/consulting',					'ExternalPagesController@consulting');
+
+
 /*
 |---------------------------------------------------------------------------------------------------------
 | LIVE CHAT ENTRY POINT

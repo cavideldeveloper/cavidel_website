@@ -4,22 +4,25 @@
 
 html {
   overflow-x: hidden;
+  font-family: 'Google+Sans', sans-serif;
 }
 
 html,
 html a,
 body {
+  font-family: 'Google+SansGoogle+Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 html {
   font-size: 16px;
+  font-family: 'Google+Sans', sans-serif;
   -webkit-tap-highlight-color: transparent;
 }
 
 body {
   font-size: 1rem;
-  font-family: Lato, sans-serif;
+  font-family: 'Google+Sans', sans-serif;
   color: #222324;
   line-height: 1.6;
   background-color: #fff;
@@ -34,7 +37,7 @@ h4,
 h5,
 h6 {
   font-weight: 400;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Google+Sans', sans-serif;
   line-height: 1.2;
   color: #242424;
   margin-top: 0;
@@ -346,9 +349,9 @@ fieldset[disabled] .s-btn {
 
 .s-btn--primary-brd:focus,
 .s-btn--primary-brd:hover {
-  color: #fff;
-  background: #13b1cd;
-  border-color: #13b1cd;
+  color: #13b1cd;
+  background: #fff;
+  border-color: #fff;
 }
 
 .s-btn-icon--white-brd {
@@ -2515,7 +2518,7 @@ fieldset[disabled] .s-btn {
   position: absolute;
   top: 0;
   right: 0;
-  margin-right: 0px;
+  margin-right: 70px;
   margin-top: -15px;
   z-index: 9999;
 }
@@ -2532,6 +2535,15 @@ fieldset[disabled] .s-btn {
   color: #ffffff;
 }
 
+
+.new-menu-bar .new-menu-link a:hover {
+  text-decoration: none;
+  font-weight: bolder;
+  color: #218CC8;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #218CC8;
+}
+
 .new-menu-bar .new-menu-link .dropdown-menu a {
   text-decoration: none;
   font-weight: bolder;
@@ -2543,25 +2555,19 @@ fieldset[disabled] .s-btn {
 }
 
 .dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: -300px;
-  z-index: 1000;
-  display: none;
-  /* float: left; */
-  width: 550px;
-  padding: 5px 0;
-  margin: 20px 0 0;
-  font-size: 14px;
-  text-align: left;
-  list-style: none;
-  background-color: #fff;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, .15);
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    position: absolute;
+    top: 50px;
+    margin-left: -274px;
+    z-index: 9999;
+    width: 600px;
+    padding: 5px 0;
+    /* margin: 20px 0 0; */
+    font-size: 14px;
+    /* text-align: center; */
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
 }
 
 /* ---- reset ---- */

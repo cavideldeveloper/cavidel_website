@@ -17,9 +17,8 @@
                 </div>
                 <div class="s-header__navbar-row-col">
                     <ul class="new-menu-bar">
-                        
+                        {{-- <li class="new-menu-link"><a href="{{ url('blog') }}">Blog</a></li> --}}
                         <li class="new-menu-link"><a href="{{ url('contact') }}" class="g-font-weight--500">CONTACT</a></li>
-                        <li class="new-menu-link"><a href="{{ url('career') }}">CAREER</a></li>
                         <li class="new-menu-link dropdown">
                             <a href="javascript:void(0);" class="g-font-weight--500">
                                 OUR BUSINESS
@@ -28,82 +27,75 @@
                                         <!-- Plan -->
                                         <div class="col-md-12">
                                             <div class="row g-margin-l-5--sm  g-margin-b-10--sm">
-                                                
-                                                <div class="col-sm-4">
-                                                    <h5 class="g-font-size-16--xs g-font-weight--700 g-margin-t-10--sm">
-                                                        PRODUCTS
-                                                    </h5> 
-                                                    <ul class="list-unstyled g-margin-l-0--sm">
-                                                        <li class="g-margin-b-10--sm"><a href="{{ url('officemate') }}">OfficeMate</a></li>
-                                                        <li class="g-margin-b-10--sm"><a href="{{ url('tims') }}">TIMS</a></li>
-                                                        <li class="g-margin-b-10--sm"><a href="{{ url('catss') }}">CATSS</a></li>  
-                                                    </ul>
-                                                </div>
-
-                                                <div class="col-sm-4">
+                                                <div class="col-sm-6">
                                                     <h5 class="g-font-size-16--xs g-font-weight--700 g-margin-t-10--sm">
                                                         SERVICES
                                                     </h5>
                                                     <ul class="list-unstyled g-margin-l-0--sm">
-                                                        <li><a href="{{ url('products') }}"></a></li>
-                                                        <li class="g-margin-b-10--sm">
-                                                            <a href="{{ url('business-process') }}">
-                                                                Business Process
-                                                            </a>
-                                                        </li>
-                                                        <li class="g-margin-b-10--sm">
-                                                            <a href="{{ url('technology') }}">
-                                                                Technology
-                                                            </a>
-                                                        </li>
-                                                        <li class="g-margin-b-10--sm">
-                                                            <a href="{{ url('consulting') }}">Consulting</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-
-                                                <div class="col-sm-4">
-                                                    <h5 class="g-font-size-16--xs g-font-weight--700 g-margin-t-10--sm">
-                                                        
-
-                                                        SOLUTIONS
-                                                    </h5>
-                                                    <ul class="list-unstyled g-margin-l-0--sm">
-                                                        {{-- <li class="g-margin-b-10--sm">
-                                                            <a href="{{ url('services') }}">Business Analysis</a></li> --}}
-                                                        <li class="g-margin-b-10--sm">
-                                                            <a href="{{ url('software-development') }}">Software Development</a></li>
-                                                        {{-- <li class="g-margin-b-10--sm">
+                                                        <li class="g-margin-b-20--sm">
+                                                            <a href="{{ url('services') }}">Business Analysis</a></li>
+                                                        <li class="g-margin-b-20--sm">
+                                                            <a href="{{ url('services') }}">Software Development</a></li>
+                                                        <li class="g-margin-b-20--sm">
                                                             <a href="{{ url('services') }}">Software Customization</a></li>
-                                                        <li class="g-margin-b-10--sm">
+                                                        <li class="g-margin-b-20--sm">
                                                             <a href="{{ url('services') }}">Process Engineering</a></li> 
                                                         
-                                                        <li class="g-margin-b-10--sm">
+                                                        <li class="g-margin-b-20--sm">
                                                             <a href="{{ url('services') }}">Consultancy & Training</a></li>
-                                                        <li class="g-margin-b-10--sm">
-                                                            <a href="{{ url('services') }}">Support Services</a></li>  --}}
+                                                        <li class="g-margin-b-20--sm">
+                                                            <a href="{{ url('services') }}">Support Services</a></li> 
                                                     </ul>
                                                 </div>
-
-                                                
+                                                <div class="col-sm-6">
+                                                    <h5 class="g-font-size-16--xs g-font-weight--700 g-margin-t-10--sm">
+                                                        PRODUCTS
+                                                    </h5> 
+                                                    <ul class="list-unstyled g-margin-l-0--sm">
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('officemate') }}">OfficeMate (ERP)</a></li>
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('tims') }}">TIMS</a></li>
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('catss') }}">CATSS</a></li>  
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="new-menu-link">
-                            <a href="{{ url('about') }}" class="g-font-weight--500">
+                        <li class="new-menu-link dropdown">
+                            <a href="javascript:void(0);" class="g-font-weight--500">
                                 ABOUT US
-                               {{--  <div class="container dropdown-menu">
-                                    <h5 class="g-font-size-16--xs g-font-weight--700 g-margin-t-10--sm">
-                                        ABOUT CAVIDEL
-                                    </h5>
-                                    <ul class="list-unstyled g-margin-l-0--sm">
-                                        <li class="g-margin-b-20--sm"><a href="">Our Company</a></li>
-                                        <li class="g-margin-b-20--sm"><a href="{{ url('team') }}">Our Team</a></li>
-                                    </ul>
-                                </div> --}}
+                                <div class="container dropdown-menu">
+                                    <div class="row">
+                                        <!-- Plan -->
+                                        <div class="col-md-12">
+                                            <div class="row g-margin-l-5--sm  g-margin-b-10--sm">
+                                                <div class="col-sm-6">
+                                                    <h5 class="g-font-size-16--xs g-font-weight--700 g-margin-t-10--sm">
+                                                        ABOUT CAVIDEL
+                                                    </h5>
+                                                    <ul class="list-unstyled g-margin-l-0--sm">
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('about') }}">Our Company</a></li>
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('team') }}">Our Team</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <h5 class="g-font-size-16--xs g-font-weight--700 g-margin-t-10--sm">
+                                                        OUR SOLUTIONS
+                                                    </h5>
+                                                    <ul class="list-unstyled g-margin-l-0--sm">
+                                                        <li><a href="{{ url('products') }}"></a></li>
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('officemate-automation') }}">Office Automation</a></li>
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('web-development') }}">Web Development</a></li>
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('mobile-development') }}">Mobile Development</a></li>
+                                                        <li class="g-margin-b-20--sm"><a href="{{ url('payment-integration') }}">Payment Integration</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </a>
                         </li>
                         <li class="new-menu-link"><a href="{{ url('/') }}" class="g-font-weight--500">HOME</a></li>

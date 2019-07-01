@@ -13,7 +13,9 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <!-- Web Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i|Montserrat:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i|Google+Sans:400,700" rel="stylesheet">
+
+        {{-- <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> --}}
 
         <!-- Vendor Styles -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -362,9 +364,9 @@
             getGeolocation(browserInfo());
 
             $('.new-menu-bar .new-menu-link.dropdown').hover(function() {
-              $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+              $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(100);
             }, function() {
-              $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+              $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(100);
             });
 
             // send cavi chat message

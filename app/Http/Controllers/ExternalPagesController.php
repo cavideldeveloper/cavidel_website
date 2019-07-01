@@ -203,4 +203,44 @@ class ExternalPagesController extends Controller
     public function corporate(){
         return view('pages.corporate');
     }
+
+    /*
+    |-----------------------------------------
+    | SOFTWARE DEVELOPMENT
+    |-----------------------------------------
+    */
+    public function softwareDevelopment(){
+        // body
+        return view('pages.software-development');
+    }
+
+    /*
+    |-----------------------------------------
+    | BUSINESS PROCESS
+    |-----------------------------------------
+    */
+    public function businessProcess(Request $request){
+        // body
+        return view('pages.business-process');
+    }
+
+    /*
+    |-----------------------------------------
+    | TECHNOLOGY
+    |-----------------------------------------
+    */
+    public function technology(Request $request){
+        // body
+        return view('pages.technology');
+    }
+
+    /*
+    |-----------------------------------------
+    | CONSULTING
+    |-----------------------------------------
+    */
+    public function consulting(Request $request){
+        // body
+        return view('pages.consulting');
+    }
 }
