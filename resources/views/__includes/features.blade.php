@@ -1,76 +1,89 @@
-<!-- News -->
-<div class="container-fluid g-padding-y-80--xs g-padding-y-125--sm">
-    <div class="g-text-center--xs g-margin-b-80--xs">
-        <p class="text-uppercase g-font-size-34--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-25--xs">Our Solutions</p>
-    </div>
-
-    <!-- Swiper -->
-    <div class="s-swiper js__swiper-news">
-        <!-- Wrapper -->
-        <div class="swiper-wrapper g-margin-b-60--xs">
-            <article class="g-bg-position--center swiper-slide" style="box-shadow: 0rem 0rem 0.8rem 0rem #717171;background: url('img/400x500/07.jpg');">
-                <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs">
-                    <div class="g-margin-b-25--xs">
-                        <h3 class="g-font-size-16--xs g-color--white g-margin-b-5--xs">Officemate</h3>
-                        <p class="g-color--white"></p>
-
-                    </div>
+<!-- Plan -->
+<div class="g-bg-color--sky-light">
+    <div class="container g-padding-y-20--xs g-padding-y-20--xsm">
+        <div class="row">
+            <div class="col-md-12 g-padding-y-40--xs">
+                <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
+                    <h3 class="g-font-size-38--xs g-font-weight--700 g-text-center--xs g-color--primary g-margin-b-30--xs">Our Solutions</h3>
                 </div>
-            </article>
-            <article class="g-bg-position--center swiper-slide" style="box-shadow: 0rem 0rem 0.8rem 0rem #717171;background: url('img/400x500/08.jpg');">
-                <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs">
-                    <div class="g-margin-b-25--xs">
-                        <h3 class="g-font-size-16--xs g-color--white g-margin-b-5--xs">TIMS</h3>
-                        <p class="g-color--white"></p>
-                    </div>
-                </div>
-            </article>
-            <article class="g-bg-position--center swiper-slide" style="box-shadow: 0rem 0rem 0.8rem 0rem #717171;background: url('img/400x500/09.jpg');">
-                <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs">
-                    <div class="g-margin-b-25--xs">
-                        <h3 class="g-font-size-16--xs g-color--white g-margin-b-5--xs">TradeFi</h3>
-                        <p class="g-color--white"></p>
-                    </div>
-                </div>
-            </article>
-            <article class="g-bg-position--center swiper-slide" style="box-shadow: 0rem 0rem 0.8rem 0rem #717171;background: url('img/400x500/10.jpg');">
-                <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs">
-                    <div class="g-margin-b-25--xs">
-                        <h3 class="g-font-size-16--xs g-color--white g-margin-b-5--xs">CATSS</h3>
-                        <p class="g-color--white"></p>
-                    </div>
-                </div>
-            </article>
-            <article class="g-bg-position--center swiper-slide" style="box-shadow: 0rem 0rem 0.8rem 0rem #717171;background: url('img/400x500/11.jpg');">
-                <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs">
-                    <div class="g-margin-b-25--xs">
-                        <h3 class="g-font-size-16--xs g-color--white g-margin-b-5--xs">Officemate</h3>
-                        <p class="g-color--white"></p>
-                    </div>
-                </div>
-            </article>
-            <article class="g-bg-position--center swiper-slide" style="box-shadow: 0rem 0rem 0.8rem 0rem #717171;background: url('img/400x500/12.jpg');">
-                <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs">
-                    <div class="g-margin-b-25--xs">
-                        <h3 class="g-font-size-16--xs g-color--white g-margin-b-5--xs">TIMS Client</h3>
-                        <p class="g-color--white"></p>
-                    </div>
-                </div>
-            </article>
-            <article class="g-bg-position--center swiper-slide" style="box-shadow: 0rem 0rem 0.8rem 0rem #717171;background: url('img/400x500/13.jpg');">
-                <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs">
-                    <div class="g-margin-b-25--xs">
-                        <h3 class="g-font-size-16--xs g-color--white g-margin-b-5--xs">Officemate for Hospital</h3>
-                        <p class="g-color--white"></p>
-                    </div>
-                </div>
-            </article>
+            </div>
         </div>
-        <!-- End Wrapper -->
-
-        <!-- Pagination -->
-        <div class="s-swiper__pagination-v1 s-swiper__pagination-v1--dark g-text-center--xs js__swiper-pagination"></div>
     </div>
-    <!-- End Swiper -->
 </div>
-<!-- End News -->
+
+<div class="g-bg-color--sky-light">
+    <div class="container">
+        <div class="row">
+            <!-- Plan -->
+            <div class="col-md-4 g-margin-b-0--lg">
+                <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".2s">
+                    <div class="g-text-center--xs g-padding-y-20--xs">
+                        <img src="{{asset('img/products/officemate.png')}}" class="g-margin-b-40--xs" width="auto" height="60">
+                        <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-40--xs g-text-left--xs g-margin-l-90--xs">
+                            <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                Employee onboarding
+                            </li>
+                            <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                Chat & Messaging
+                            </li>
+
+                            <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                Billing & Accounting
+                            </li>
+
+                            <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                Event scheduling
+                            </li>
+
+                            <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                Task management
+                            </li>
+                            <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                Alerts & Notifications
+                            </li>
+                            <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                Office365 integration
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <!-- End Plan -->
+
+            <!-- Plan -->
+            <div class="col-md-8 g-margin-b-0--lg">
+                <div class="container">
+                    <div class="s-swiper js__swiper-testimonials">
+                        <!-- Swiper Wrapper -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="s-plan-v1 g-padding-x-20--xs">
+                                    <div class="g-margin-b-40--xs" style="background: url(img/450x295/01.jpg) no-repeat; height: 400px;">
+                                    </div>
+                                    <div class="center-block g-width-100--xs g-margin-b-30--xs"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="s-plan-v1 g-padding-x-20--xs">
+                                    <div class="g-margin-b-40--xs" style="background: url(img/450x295/02.jpg) no-repeat; height: 400px;">
+                                    </div>
+                                    <div class="center-block g-width-100--xs g-margin-b-30--xs"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="s-plan-v1 g-padding-x-20--xs">
+                                    <div class="g-margin-b-40--xs" style="background: url(img/450x295/03.jpg) no-repeat; height: 400px;">
+                                    </div>
+                                    <div class="center-block g-width-100--xs g-margin-b-30--xs"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Swipper Wrapper -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Plan -->
+        </div>
+    </div>
+</div>

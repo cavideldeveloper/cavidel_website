@@ -29,7 +29,7 @@
                 </div>
                 <div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 s-footer__logo g-padding-y-50--xs g-padding-y-0--md">
                     <h3 class="g-font-size-18--xs g-color--white">{{ env("APP_NAME") }}</h3>
-                    <p class="g-color--white-opacity">We are a leading consultancy company specialising in financial / Accounting management, human resource management, software development, web design, digital advert, graphics etc.</p>
+                    <p class="g-color--white-opacity">Cavidel Limited is a leading technology and consulting company that specializes in developing business solutions across industries.</p>
                 </div>
             </div>
         </div>
