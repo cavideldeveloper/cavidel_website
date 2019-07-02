@@ -27,7 +27,10 @@
 	<div class="container g-padding-y-80--sm g-padding-y-20--md" id="how-we-work">
 	    <div class="row g-hor-centered-row--md g-row-col--5">
 	        <div class="col-md-12 g-padding-y-60--sm g-padding-y-80--md s-plan-v1">
-	            <p class="text-uppercase g-text-center--xs g-font-size-16--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-15--xs g-color--primary">About Cavidel Limited</p>
+	            {{-- <p class="text-uppercase g-text-center--xs g-font-size-16--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-15--xs g-color--primary">About </p> --}}
+                <p class="text-uppercase g-text-center--xs g-font-size-28--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-15--xs g-color--primary">
+                    Cavidel Limited
+                </p>
 	            <p class="g-font-size-18--sm g-padding-x-80--md text-justify g-font-weight--500">
 	            	Cavidel Limited is a process automation company that helps businesses to align/re-align 
 	            	their business units and overall strategies with operational processes and information 
