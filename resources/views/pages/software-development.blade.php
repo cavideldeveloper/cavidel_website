@@ -24,6 +24,8 @@
                                 Mobile Application (Android, iOS and PWAs)</li>
                                 <li class="g-font-size-18--xs g-font-weight--400"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i> Web Applications</li>
                                 <li class="g-font-size-18--xs g-font-weight--400"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i> Payment Gateway and Integration</li>
+                                {{-- <li class="g-font-size-18--xs g-font-weight--400"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i> Application Customization</li>
+                                <li class="g-font-size-18--xs g-font-weight--400"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-circle"></i> Server Setup & DevOps</li> --}}
                             </ul>
                         </div>
                     </div>
@@ -31,7 +33,7 @@
 
                 <!-- Plan -->
                 <div class="col-md-6 g-margin-b-10--xs g-margin-b-20--lg">
-                    <img class="s-plan-v1" src="{{asset('img/process/8.gif')}}" width="100%" height="auto">    
+                    <img class="s-plan-v1" src="{{asset('img/process/9.gif')}}" width="100%" height="auto">    
                 </div>
             </div>
         </div>
