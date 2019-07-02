@@ -51,7 +51,7 @@
 	</div>
 	<!-- End About -->
 
-	 <!-- Plan -->
+	<!-- Plan -->
     <div class="g-bg-color--sky-light">
         <div class="container g-padding-y-80--xs g-padding-y-125--xsm">
             <div class="row g-margin-b-120--lg">
@@ -108,17 +108,28 @@
     </div>
     <!-- End Plan -->
 
-    <!-- Team -->
-    <div class="row g-row-col--0 top-level">
+     <!-- Meet the team -->
+    <div class="g-bg-color--sky-light">
+        <div class="container">
+            <div class="row g-margin-b-10--lg g-text-center--xs">
+                <p class="text-uppercase g-text-center--xs g-font-size-28--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-15--xs g-color--primary">
+                    Our team
+                </p>
+            </div>
 
-    </div>
-    <!-- End Team -->
-    <!-- Team -->
-    <div class="row g-row-col--0 middle-level">
+            <!-- Team -->
+            <div class="row g-margin-b-10--lg top-level">
 
+            </div>
+            <!-- End Team -->
+            <!-- Team -->
+            <div class="row g-margin-b-10--lg middle-level">
+
+            </div>
+            <!-- End Team -->
+        </div>
     </div>
-    <!-- End Team -->
-    
+    <!-- End Plan -->
 
     @include('__includes.footer')
 @endsection
