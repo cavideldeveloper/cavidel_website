@@ -159,7 +159,7 @@
                             <div class="col-md-3 col-xs-6 g-full-width--xs">
                                 <div class="" data-wow-duration=".3" data-wow-delay=".1s">
                                     <!-- Team -->
-                                    <div class="s-team-v1">
+                                    <div class="g-margin-b-20--lg s-team-v1">
                                         <img class="img-responsive g-width-100-percent--xs" src="${val.avatar}" alt="Image">
                                         <div class="g-text-center--xs g-bg-color--white g-padding-x-30--xs g-padding-y-40--xs">
                                             <h2 class="g-font-size-18--xs g-margin-b-5--xs">${val.firstname} ${val.lastname}</h2>
