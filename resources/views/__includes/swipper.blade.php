@@ -7,26 +7,11 @@
             <div class="container g-text-left--xs g-ver-center--xs">
                 <div class="g-margin-b-30--xs">
                     <h1 class="g-font-size-35--xs g-font-weight--700 g-font-size-45--sm g-font-size-55--md g-color--white animated bounceInDown">
-                        Experience Technology in<br> Office Automation
+                        Automate business processes <br />for process efficiency
                     </h1>
                     <p class="g-font-size-12--xs g-font-weight--300 g-font-size-24--sm g-font-size-20--md g-color--white animated bounceInUp">
-                        We provide a customizable, flexible and user-friendly automation software, <br />
-                        our ERP solutions are easily customizable, ready-to-use, feature rich and suitable to all sizes and industries.
+                        We help clients to visualize, understand and improve their business processes. <br />  CAVIDEL Limited, integrates digital process automation into every aspect of a business.
                     </p>
-                </div>
-            </div>
-        </div>
-        <div class="g-fullheight--xs g-bg-position--center swiper-slide" style="background: url('img/1920x1080/09.jpg');">
-            <div class="container g-text-left--xs g-ver-center--xs">
-                <div class="g-margin-b-30--xs">
-                    <div class="g-margin-b-30--xs">
-                        <h2 class="g-font-size-35--xs g-font-weight--700 g-font-size-45--sm g-font-size-55--md g-color--white animated bounceInDown">
-                            Limitless Fintech Solutions<br> with Secure Payment System
-                        </h2>
-                        <p class="g-font-size-12--xs g-font-weight--300 g-font-size-24--sm g-font-size-20--md g-color--white animated bounceInDown">
-                            Our financial technology solutions are limitless to business in Nigeria, <br /> our solutions also involve consultation, business analysis and research to fuel and improve our financial services delivery and empowered our client's to speedily increase business growth.
-                        </p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -35,10 +20,24 @@
                 <div class="g-margin-b-30--xs">
                     <div class="g-margin-b-30--xs">
                         <h2 class="g-font-size-35--xs g-font-weight--700 g-font-size-45--sm g-font-size-55--md g-color--white animated bounceInDown">
-                            Trading & Investment Management<br> Systems.
+                            Limitless Fintech Solutions<br> with Secure Payment System
                         </h2>
                         <p class="g-font-size-12--xs g-font-weight--300 g-font-size-24--sm g-font-size-20--md g-color--white animated bounceInDown">
-                            We provide Trading, Investment and Management solution to businesses in the financial market, <br />our solutions also enhance our client's trading & investment experience <br /> with fast secured and reliable trading interface.
+                            We provide seamless trading, investment and management solutions <br /> to businesses in the financial market.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="g-fullheight--xs g-bg-position--center swiper-slide" style="background: url('img/1920x1080/09.jpg');">
+            <div class="container g-text-left--xs g-ver-center--xs">
+                <div class="g-margin-b-30--xs">
+                    <div class="g-margin-b-30--xs">
+                        <h2 class="g-font-size-35--xs g-font-weight--700 g-font-size-45--sm g-font-size-55--md g-color--white animated bounceInDown">
+                            Experience World Class Technology <br /> and Business Advisory
+                        </h2>
+                        <p class="g-font-size-12--xs g-font-weight--300 g-font-size-24--sm g-font-size-20--md g-color--white animated bounceInDown">
+                            We help companies navigate change and gain business advantage <br /> with our consulting expertise.
                         </p>
                     </div>
                 </div>

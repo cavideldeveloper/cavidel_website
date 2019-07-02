@@ -1,5 +1,5 @@
 <!-- Culture -->
-<div class="g-promo-section">
+<div class="g-promo-section" id="js__scroll-to-section">
     <div class="container g-padding-y-80--xs g-padding-y-125--sm">
         <div class="row">
             <div class="col-md-4 g-margin-t-15--xs g-margin-b-60--xs g-margin-b-0--lg">
