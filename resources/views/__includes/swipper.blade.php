@@ -7,7 +7,7 @@
             <div class="container g-text-left--xs g-ver-center--xs">
                 <div class="g-margin-b-30--xs">
                     <h1 class="g-font-size-35--xs g-font-weight--700 g-font-size-45--sm g-font-size-55--md g-color--white animated bounceInDown">
-                        Automate business processes <br />for process efficiency
+                        Automate business processes <br />for efficiency
                     </h1>
                     <p class="g-font-size-12--xs g-font-weight--300 g-font-size-24--sm g-font-size-20--md g-color--white animated bounceInUp">
                         We help clients to visualize, understand and improve their business processes. <br />  CAVIDEL Limited, integrates digital process automation into every aspect of a business.

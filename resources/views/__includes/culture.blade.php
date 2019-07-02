@@ -15,7 +15,7 @@
                 {{-- <img src="{{asset('img/process/3.gif')}}" width="auto" height="400"> --}}
             </div>
             <div class="col-md-5">
-                <p class="g-font-size-18--xs g-font-weight--400">Cavidel Limited provides technology and Consulting services across financial markets and other business area. We create business solutions that gives clients business advantage, increase process efficiency and provide information security. </p>
+                <p class="g-font-size-18--xs g-font-weight--400">Cavidel Limited provides technology and Consulting services across financial markets and other business area. We create business solutions that gives our clients business advantage, increase process efficiency and provide information security. </p>
                 <p class="g-font-size-18--xs g-font-weight--400">
                     <button class="s-btn s-btn-icon--md s-btn-icon--primary-brd s-btn--primary-brd g-radius--right-50">
                         <a href="{{ url('about') }}">Learn More</a>
