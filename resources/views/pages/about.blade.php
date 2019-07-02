@@ -248,21 +248,22 @@
                             <input type="hidden" id="description_${val.id}" value="${val.description}">
                             <input type="hidden" id="sub_description_${val.id}" value="${val.sub_description}">
 
-                            <div class="col-md-3">
-                                <!-- Speaker -->
-                                <div class="center-block g-box-shadow__dark-lightest-v1 g-width-50-percent--xs g-width-300--lg cavi-card">
-                                    <img style="width: 90%;margin-left: 12px;" src="${val.avatar}" alt="Image">
-                                    <div class="g-position--overlay g-padding-x-20--xs g-padding-y-30--xs g-margin-t-o-60--xs">
-                                        <div class="g-bg-color--primary g-padding-x-10--xs g-padding-y-10--xs g-margin-b-20--xs">
-                                            <h4 class="g-font-size-22--xs g-font-size-26--sm g-color--white g-margin-b-0--xs">${val.firstname} ${val.lastname}</h4>
-                                        </div>
-                                        <p class="g-font-weight--700">${val.position}</p>
-                                        <a href="javascript:void(0);" onclick="showMoreModal(${val.id})" style="text-decoration:none;text-align:justify;">
-                                            <p>${val.sub_description}</p>
+                            <div class="col-md-3 col-xs-6 g-full-width--xs">
+                                <div class="" data-wow-duration=".3" data-wow-delay=".1s">
+                                    <!-- Team -->
+                                    <div class="s-team-v1">
+                                    
+                                        <img class="img-responsive g-width-80-percent--xs" height="300" src="${val.avatar}" alt="Image">
+                                        <div class="g-text-center--xs g-bg-color--white g-padding-x-30--xs g-padding-y-40--xs">
+                                        <a href="javascript:void(0);" onclick="showMoreModal(${val.id})">
+                                            <h2 class="g-font-size-18--xs g-margin-b-5--xs">${val.firstname} ${val.lastname}</h2>
+                                            <span class="g-font-size-15--xs g-color--text"><i> ${val.position}</i></span>
                                         </a>
+                                        </div>
+                                    
                                     </div>
+                                    <!-- End Team -->
                                 </div>
-                                <!-- End Speaker -->
                             </div>
                         `);
                     }
