@@ -32,8 +32,15 @@
                     About Us
                 </p>
 	            <p class="g-font-size-18--sm g-padding-x-80--md text-justify g-font-weight--500">
-	            	Cavidel Limited is a technology and consulting company that helps businesses achieve business advantage using IT to reduce costs, improve productivity and increase efficiency in the delivery of impeccable customer service.  We deliver our solution through detailed process review and automation of business and client integration processes. Our products are specially developed for financial markets, banking, human resources, health, real estate, agricultural systems etc.
-Established in 2013, Cavidel Limited has evolved into a dynamic organisation through its long tradition and experience in working with conglomerates, financial services firms, consulting practices, public institutions, medical institutions etc. We take great pride in our reputation for consistently delivering quality services. 
+	            	Cavidel Limited is a technology and consulting company that helps businesses achieve business advantage using IT to reduce costs, improve productivity and increase efficiency in the delivery of impeccable customer service.
+                </p> 
+
+                <p class="g-font-size-18--sm g-padding-x-80--md text-justify g-font-weight--500">
+                    We deliver our solution through detailed process review and automation of business and client integration processes. Our products are specially developed for financial markets, banking, human resources, health, real estate, agricultural systems etc.
+                </p>
+
+                <p class="g-font-size-18--sm g-padding-x-80--md text-justify g-font-weight--500">
+                    Established in 2013, Cavidel Limited has evolved into a dynamic organisation through its long tradition and experience in working with conglomerates, financial services firms, consulting practices, public institutions, medical institutions etc. We take great pride in our reputation for consistently delivering quality services. 
 
 				</p>
 	        </div>
