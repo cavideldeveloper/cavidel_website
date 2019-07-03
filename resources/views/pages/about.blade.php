@@ -56,9 +56,9 @@
                 <div class="col-md-4 g-padding-y-40--md g-margin-b-10--xs g-margin-b-10--lg s-plan-v1">
 
                     <p class="text-uppercase g-text-center--xs g-font-size-16--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-15--xs g-color--primary">Our Apporoach to Work</p>
-                    <p class="g-font-size-16--sm g-padding-x-30--md text-justify g-font-weight--500">
+                    <p class="g-font-size-16--sm g-padding-x-20--md text-justify g-font-weight--500">
                     	Our approach to work is anchored on assembling our multi-disciplinary team with dept of experience and expertise, driving a customer centric philosophy, developing sound work plans and facilitating reviews that drives the actualisation of clients’ strategic objectives.
-                        <br /><br />
+                        <br /><br /><br />
 					</p>
                 </div>
                 <!-- End Plan -->
@@ -67,8 +67,9 @@
                 <div class="col-md-4 g-padding-y-40--md g-margin-b-10--xs g-margin-b-0--lg s-plan-v1">
 
                     <p class="text-uppercase g-text-center--xs g-font-size-16--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-15--xs g-color--primary">Why Partner with Us</p>
-                    <p class="g-font-size-16--sm g-padding-x-30--md text-justify g-font-weight--500">
+                    <p class="g-font-size-16--sm g-padding-x-20--md text-justify g-font-weight--500">
                         Cavidel Limited’s management is recognised from its work performance with top leading financial organisations in Nigeria and with combined experience of over 38 years in the finance and consulting services. Partner with CAVIDEL Limited to create new business opportunities. Let’s grow business together.
+                        <br /><br /><br />
                     </p>
                 </div>
                 <!-- End Plan -->
@@ -76,7 +77,7 @@
                 <!-- Plan -->
                 <div class="col-md-4 g-padding-y-40--md g-margin-b-10--xs g-margin-b-10--lg s-plan-v1">
                     <p class="text-uppercase g-text-center--xs g-font-size-16--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-15--xs g-color--primary">Our People</p>
-                    <p class="g-font-size-16--sm g-padding-x-30--md text-justify g-font-weight--500">
+                    <p class="g-font-size-16--sm g-padding-x-20--md text-justify g-font-weight--500">
                         Cavidel Limited prides itself with a team that have work experience that cuts across five different Nigerian banks, international professional consulting firms, securities, conglomerate and real estate companies. Behind Cavidel Limited is a team of highly innovative minds who are excellently supportive to teammates, friendly and organized.
                     </p>
                 </div>

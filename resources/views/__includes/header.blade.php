@@ -46,11 +46,11 @@
                                                     </h5>
                                                     <ul class="list-unstyled g-margin-l-0--sm">
                                                         <li><a href="{{ url('products') }}"></a></li>
-                                                        <li class="g-margin-b-10--sm">
+                                                        {{-- <li class="g-margin-b-10--sm">
                                                             <a href="{{ url('business-process') }}">
                                                                 Business Process
                                                             </a>
-                                                        </li>
+                                                        </li> --}}
                                                         <li class="g-margin-b-10--sm">
                                                             <a href="{{ url('technology') }}">
                                                                 Technology
