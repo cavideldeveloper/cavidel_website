@@ -5,6 +5,7 @@
         <div class="container g-padding-y-80--xs">
             <div class="row">
                 <div class="col-sm-2 g-margin-b-20--xs g-margin-b-0--md">
+                    <p class="g-font-weight--500 g-color--primary g-font-size-18--xs">Quick Links</p>
                     <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
                         <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Home</a></li>
                         <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/team') }}">About</a></li>
@@ -13,6 +14,7 @@
                     </ul>
                 </div>
                 <div class="col-sm-2 g-margin-b-20--xs g-margin-b-0--md">
+                    <p class="g-font-weight--500 g-color--primary g-font-size-18--xs">Community</p>
                     <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
                         <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Twitter</a></li>
                         <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Facebook</a></li>
@@ -21,6 +23,7 @@
                     </ul>
                 </div>
                 <div class="col-sm-2 g-margin-b-40--xs g-margin-b-0--md">
+                    <p class="g-font-weight--500 g-color--primary g-font-size-18--xs">Information</p>
                     <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
                         <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Subscribe to Our Newsletter</a></li>
                         <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Privacy Policy</a></li>
