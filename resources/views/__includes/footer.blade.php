@@ -17,7 +17,7 @@
                         <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Twitter</a></li>
                         <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Facebook</a></li>
                         <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Instagram</a></li>
-                        {{-- <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">YouTube</a></li> --}}
+                        <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Linkedin</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-2 g-margin-b-40--xs g-margin-b-0--md">
@@ -29,7 +29,7 @@
                 </div>
                 <div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 s-footer__logo g-padding-y-50--xs g-padding-y-0--md">
                     <h3 class="g-font-size-18--xs g-color--white">{{ env("APP_NAME") }}</h3>
-                    <p class="g-color--white-opacity">Cavidel Limited is a leading technology and consulting company that specializes in developing business solutions across industries.</p>
+                    <p class="g-color--white-opacity"> Cavidel Limited is a leading technology and consulting company that specializes in developing business solutions across industries.</p>
                 </div>
             </div>
         </div>
