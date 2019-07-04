@@ -26,7 +26,7 @@
                             </li>
 
                             <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
-                                Chat & Messaging
+                                Payroll Management
                             </li>
 
                             <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
