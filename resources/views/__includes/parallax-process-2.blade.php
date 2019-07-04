@@ -9,7 +9,6 @@
                 We provide our clients with end-to-end IT support, Our support goes beyond communications as we provide our clients with onsite/remote support and all the necessary tools for effective and efficient communication to all our clients. 
             </p>
         </div>
-        <a href="#more-services" class="text-uppercase g-font-weight--700 s-btn s-btn--md s-btn--white-brd g-radius--50">Learn More</a>
     </div>
 </div>
 <!-- End Parallax -->
