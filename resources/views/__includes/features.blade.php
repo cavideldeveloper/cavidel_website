@@ -92,7 +92,7 @@
     <div class="container g-text-center--xs g-padding-y-80--xs g-padding-y-125--sm">
         <div class="g-margin-b-80--xs">
             <h2 class="g-font-size-40--xs g-font-weight--700 g-font-size-50--sm g-font-size-60--md g-color--white">
-                Trading Investment & Assets Management Software
+                Trading, Investment & Asset Management Software
             </h2>
         </div>
     </div>
