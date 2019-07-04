@@ -193,7 +193,7 @@
                     <div class="g-padding-y-20--xs">
                         <img src="{{asset('img/products/catss.png')}}" class="g-margin-b-20--xs" width="auto" height="60">
                         <p class="g-font-weight--500">
-                            The Cavidel Automated Trading & Simulation software features a self-service functionalities that can enable individuals or groups trade virtual financial market instruments.
+                            Cavidel Automated Trading & Simulation System (CATSS) is a software that enables individuals or groups to trade virtual financial market instruments, while monitoring performance in terms of volumes and profitability.
                         </p>
                         <ul class="list-unstyled g-ul-li-tb-5--xs">
                             <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
