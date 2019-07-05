@@ -177,6 +177,92 @@
     <div class="container g-text-center--xs g-padding-y-80--xs g-padding-y-125--sm">
         <div class="g-margin-b-40--xs">
             <h2 class="g-font-size-40--xs g-font-weight--700 g-font-size-50--sm g-font-size-60--md g-color--white">
+                Contents here...
+            </h2>
+        </div>
+    </div>
+</div>
+<!-- End Counter -->
+
+<div class="g-bg-color--sky-light">
+    <div class="container">
+        <div class="row g-margin-b-20--lg g-margin-t-60--lg">
+            <!-- Plan -->
+            <div class="col-md-4 g-margin-b-0--lg">
+                <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".2s">
+                    <div class="g-padding-y-20--xs">
+                        <h2>TIMSClient</h2>
+                        <p class="g-font-weight--500">
+                            TIMS Clients descriptions...
+                        </p>
+                        <ul class="list-unstyled g-ul-li-tb-5--xs">
+                            <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                Mark-to-market valuation
+                            </li>
+
+                            <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                Trading position tracking
+                            </li>
+
+                            <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                Online real-time trade profitability
+                            </li>
+
+                            <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                Market closing price display
+                            </li>
+
+                            <li class="g-font-weight--500"><i class="g-font-size-13--xs g-color--primary g-margin-r-10--xs ti-check"></i>
+                                Leader board
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End Plan -->
+
+            <!-- Plan -->
+            <div class="col-md-8 g-margin-b-0--lg">
+                <div class="container">
+                    <div class="s-swiper js__swiper-testimonials">
+                        <!-- Swiper Wrapper -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="s-plan-v1 g-padding-x-20--xs">
+                                    <div class="g-margin-b-40--xs" style="background: url(img/1200x578/01.png) no-repeat; height: 400px;">
+                                    </div>
+                                    <div class="center-block g-width-100--xs g-margin-b-30--xs"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="s-plan-v1 g-padding-x-20--xs">
+                                    <div class="g-margin-b-40--xs" style="background: url(img/1200x578/03.png) no-repeat; height: 400px;">
+                                    </div>
+                                    <div class="center-block g-width-100--xs g-margin-b-30--xs"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="s-plan-v1 g-padding-x-20--xs">
+                                    <div class="g-margin-b-40--xs" style="background: url(img/1200x578/05.png) no-repeat; height: 400px;">
+                                    </div>
+                                    <div class="center-block g-width-100--xs g-margin-b-30--xs"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Swipper Wrapper -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Plan -->
+        </div>
+    </div>
+</div>
+
+<!-- Counter -->
+<div class="js__parallax-window" style="background: url(img/1920x1080/28.jpg) 50% 0 no-repeat fixed;">
+    <div class="container g-text-center--xs g-padding-y-80--xs g-padding-y-125--sm">
+        <div class="g-margin-b-40--xs">
+            <h2 class="g-font-size-40--xs g-font-weight--700 g-font-size-50--sm g-font-size-60--md g-color--white">
                 We build trading and simulation software
             </h2>
         </div>
