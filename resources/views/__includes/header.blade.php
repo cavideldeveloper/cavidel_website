@@ -37,6 +37,9 @@
                                                         <li class="g-margin-b-10--sm"><a href="{{ url('officemate') }}">OfficeMate</a></li>
                                                         <li class="g-margin-b-10--sm"><a href="{{ url('tims') }}">TIMS</a></li>
                                                         <li class="g-margin-b-10--sm"><a href="{{ url('catss') }}">CATSS</a></li>  
+
+                                                        <li class="g-margin-b-10--sm"><a href="#">CaLMS</a></li>  
+                                                        <li class="g-margin-b-10--sm"><a href="#">TimsClient</a></li>  
                                                     </ul>
                                                 </div>
 
@@ -73,15 +76,15 @@
                                                             <a href="{{ url('services') }}">Business Analysis</a></li> --}}
                                                         <li class="g-margin-b-10--sm">
                                                             <a href="{{ url('software-development') }}">Software Development</a></li>
-                                                        {{-- <li class="g-margin-b-10--sm">
-                                                            <a href="{{ url('services') }}">Software Customization</a></li>
                                                         <li class="g-margin-b-10--sm">
-                                                            <a href="{{ url('services') }}">Process Engineering</a></li> 
+                                                            <a href="#">FinTech</a></li>
+                                                        <li class="g-margin-b-10--sm">
+                                                            <a href="#">AgroTech</a></li> 
                                                         
                                                         <li class="g-margin-b-10--sm">
-                                                            <a href="{{ url('services') }}">Consultancy & Training</a></li>
+                                                            <a href="#">MediTech</a></li>
                                                         <li class="g-margin-b-10--sm">
-                                                            <a href="{{ url('services') }}">Support Services</a></li>  --}}
+                                                            <a href="#">LearningTech</a></li> 
                                                     </ul>
                                                 </div>
 
@@ -95,15 +98,6 @@
                         <li class="new-menu-link">
                             <a href="{{ url('about') }}" class="g-font-weight--500">
                                 ABOUT US
-                               {{--  <div class="container dropdown-menu">
-                                    <h5 class="g-font-size-16--xs g-font-weight--700 g-margin-t-10--sm">
-                                        ABOUT CAVIDEL
-                                    </h5>
-                                    <ul class="list-unstyled g-margin-l-0--sm">
-                                        <li class="g-margin-b-20--sm"><a href="">Our Company</a></li>
-                                        <li class="g-margin-b-20--sm"><a href="{{ url('team') }}">Our Team</a></li>
-                                    </ul>
-                                </div> --}}
                             </a>
                         </li>
                         <li class="new-menu-link"><a href="{{ url('/') }}" class="g-font-weight--500">HOME</a></li>
@@ -141,14 +135,6 @@
 
                 </ul>
                 <!-- End Menu List -->
-{{-- 
-                <!-- Menu List -->                                
-                <ul class="list-unstyled s-header__nav-menu">
-                    <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider -is-active" href="{{ url('services') }}">Our Services</a></li>
-                    <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="index_app_landing.html">Our Products</a></li>
-                    <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="index_portfolio.html">Portfolio</a></li>
-                </ul>
-                <!-- End Menu List --> --}}
             </div>
         </nav>
         <!-- End Nav -->
