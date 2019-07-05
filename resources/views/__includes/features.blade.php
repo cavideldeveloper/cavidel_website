@@ -173,11 +173,11 @@
 </div>
 
 <!-- Counter -->
-<div class="js__parallax-window" style="background: url(img/1920x1080/28.jpg) 50% 0 no-repeat fixed;">
+<div class="js__parallax-window" style="background: url(img/1920x1149/03.jpg) 50% 0 no-repeat fixed;">
     <div class="container g-text-center--xs g-padding-y-80--xs g-padding-y-125--sm">
         <div class="g-margin-b-40--xs">
             <h2 class="g-font-size-40--xs g-font-weight--700 g-font-size-50--sm g-font-size-60--md g-color--white">
-                Contents here...
+                Client Experience and Satisfication is Our Priority
             </h2>
         </div>
     </div>
