@@ -9,16 +9,16 @@
                     <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
                         <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Home</a></li>
                         <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/team') }}">About</a></li>
-                        <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/faq') }}">FAQ</a></li>
-                        <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/contact') }}">Contact</a></li>
+                        {{-- <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/faq') }}">FAQ</a></li> --}}
+                        <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/contact') }}">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-2 g-margin-b-20--xs g-margin-b-0--md">
                     <p class="g-font-weight--500 g-color--primary g-font-size-18--xs">Community</p>
                     <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
-                        <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Twitter</a></li>
+                        {{-- <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Twitter</a></li> --}}
                         <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Facebook</a></li>
-                        <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Instagram</a></li>
+                        {{-- <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Instagram</a></li> --}}
                         <li><a class="g-font-size-15--xs g-color--white-opacity" href="https://www.linkedin.com/company/cavidel-limited-nigeria" target="_blank">Linkedin</a></li>
                     </ul>
                 </div>
@@ -26,8 +26,8 @@
                     <p class="g-font-weight--500 g-color--primary g-font-size-18--xs">Information</p>
                     <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
                         <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Subscribe to Our Newsletter</a></li>
-                        <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Privacy Policy</a></li>
-                        <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Terms &amp; Conditions</a></li>
+                        {{-- <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Privacy Policy</a></li> --}}
+                        {{-- <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Terms &amp; Conditions</a></li> --}}
                     </ul>
                 </div>
                 <div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 s-footer__logo g-padding-y-50--xs g-padding-y-0--md">

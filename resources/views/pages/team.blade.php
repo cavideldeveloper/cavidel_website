@@ -144,6 +144,7 @@
                 $(".all-developers").html("");
                 $(".ceo-card").html("");
                 $(".top-level").html("");
+                var divRow = 0;
                 $.each(data, function(index, val) {
                     var avatar          = $("#avatar").val(val.avatar);
                     var firstname       = $("#firstname").val(val.firstname);
@@ -171,6 +172,12 @@
                     }
 
                     if(val.position == 'Software Developer' || val.position == "Data Analyst" || val.position == "Research Analyst" || val.position == "Consulting and Research"){
+
+                        divRow++
+                        var breakRow = ``;
+                        if(divRow > 3){
+                            breakRow = `</div><div class="row g-row-col--0 middle-level">`;
+                        }
                         $(".middle-level").append(`
                             <div class="col-md-3 col-xs-6 g-full-width--xs">
                                 <div class="" data-wow-duration=".3" data-wow-delay=".1s">
@@ -185,6 +192,7 @@
                                     <!-- End Team -->
                                 </div>
                             </div>
+                            ${breakRow}
                         `);
                     }
 

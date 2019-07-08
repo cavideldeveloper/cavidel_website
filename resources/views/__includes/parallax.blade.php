@@ -3,7 +3,7 @@
     <div class="container g-text-center--xs g-padding-y-80--xs g-padding-y-125--sm">
         <div class="g-margin-b-80--xs">
             <h2 class="g-font-size-40--xs g-font-weight--700 g-font-size-50--sm g-font-size-60--md g-color--white">
-            	We are a Value Driven IT Company that brings our client ideas to life.
+            	We are a Value Driven IT Company that brings our client's ideas to life.
             </h2>
         </div>
     </div>
