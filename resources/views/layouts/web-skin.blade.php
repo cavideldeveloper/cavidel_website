@@ -363,11 +363,22 @@
  
             // get geolocation
             function getGeolocation(browserInfo) {
-                $.get('http://gd.geobytes.com/GetCityDetails', function(data) {
-                    siteVisitor(browserInfo, data)
-                }).fail(function (err){
+                fetch('http://gd.geobytes.com/GetCityDetails', {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Access-Control-Allow-Origin': '*'
+                    },
+                    mode: 'no-cors'
+                }).then(r => {
+                    return r.json();
+                }).then(results => {
+                    console.log(results)
+                    siteVisitor(browserInfo, results)
+                }).catch(err => {
+                    console.log(JSON.stringify(err));
                     siteVisitor(browserInfo, {geobytesipaddress: "0.0.0.0"})
-                });
+                })
             }
 
             // site visitor
