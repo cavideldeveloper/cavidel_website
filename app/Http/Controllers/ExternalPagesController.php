@@ -243,4 +243,44 @@ class ExternalPagesController extends Controller
         // body
         return view('pages.consulting');
     }
+
+    /*
+    |-----------------------------------------
+    | CONSULTING
+    |-----------------------------------------
+    */
+    public function finTech(Request $request){
+        // body
+        return view('pages.fin-tech');
+    }
+
+    /*
+    |-----------------------------------------
+    | CONSULTING
+    |-----------------------------------------
+    */
+    public function mediTech(Request $request){
+        // body
+        return view('pages.medi-tech');
+    }
+
+    /*
+    |-----------------------------------------
+    | CONSULTING
+    |-----------------------------------------
+    */
+    public function agroTech(Request $request){
+        // body
+        return view('pages.agro-tech');
+    }
+
+    /*
+    |-----------------------------------------
+    | CONSULTING
+    |-----------------------------------------
+    */
+    public function learningTech(Request $request){
+        // body
+        return view('pages.learning-tech');
+    }
 }

@@ -1,9 +1,9 @@
 <?php
 
 /*
-|---------------------------------------------------------------------------------------------------------
+|------------------------------------------------------------------------
 | APPLICATION ENTRY POINT
-|---------------------------------------------------------------------------------------------------------
+|------------------------------------------------------------------------
 |
 */
 Route::get('/',								'ExternalPagesController@index');
@@ -17,6 +17,17 @@ Route::get('/products',						'ExternalPagesController@products');
 Route::get('/tims',							'ExternalPagesController@tims');
 Route::get('/catss',						'ExternalPagesController@catss');
 Route::get('/officemate',					'ExternalPagesController@officemate');
+
+/*
+|------------------------------------------------------------------------
+| TIMS CATEGORIZE SECTION ENTRY POINT
+|------------------------------------------------------------------------
+|
+*/
+Route::get('medi-tech',						'ExternalPagesController@mediTech');
+Route::get('fin-tech',						'ExternalPagesController@finTech');
+Route::get('agro-tech',						'ExternalPagesController@agroTech');
+Route::get('learning-tech',					'ExternalPagesController@learningTech');
 
 Route::get('/officemate-automation',		'ExternalPagesController@officeAutomation');
 Route::get('/web-development',				'ExternalPagesController@webDevelopment');

@@ -72,14 +72,14 @@
                                                         <li class="g-margin-b-10--sm">
                                                             <a href="{{ url('software-development') }}">Software Development</a></li>
                                                         <li class="g-margin-b-10--sm">
-                                                            <a href="#">FinTech</a></li>
+                                                            <a href="{{url('fin-tech')}}">FinTech</a></li>
                                                         <li class="g-margin-b-10--sm">
-                                                            <a href="#">AgroTech</a></li> 
+                                                            <a href="{{url('agro-tech')}}">AgroTech</a></li> 
                                                         
                                                         <li class="g-margin-b-10--sm">
-                                                            <a href="#">MediTech</a></li>
+                                                            <a href="{{url('medi-tech')}}">MediTech</a></li>
                                                         <li class="g-margin-b-10--sm">
-                                                            <a href="#">LearningTech</a></li> 
+                                                            <a href="{{url('learning-tech')}}">LearningTech</a></li> 
                                                     </ul>
                                                 </div>
 
