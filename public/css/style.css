@@ -2212,8 +2212,8 @@ fieldset[disabled] .s-btn {
 /* The button becomes visible */
 
 .s-back-to-top.-is-visible {
-  bottom: 3.125rem;
-  opacity: .8;
+    bottom: 6.125rem;
+    opacity: .8;
 }
 
 .s-back-to-top.-is-visible:hover {
