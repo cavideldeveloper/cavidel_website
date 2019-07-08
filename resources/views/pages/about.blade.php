@@ -136,7 +136,7 @@
                     
                     if(val.position == 'HR'){
                         $(".middle-level").append(`
-                            <div class="col-md-3 col-xs-6 g-full-width--xs">
+                            <div class="col-md-3 col-xs-6 g-full-width--xs" style="margin-top: 1rem;">
                                 <div class="" data-wow-duration=".3" data-wow-delay=".1s">
                                     <!-- Team -->
                                     <div class="g-margin-b-20--lg s-team-v1">
@@ -154,7 +154,7 @@
 
                     if(val.position == 'Software Developer' || val.position == "Data Analyst" || val.position == "Research Analyst" || val.position == "Consulting and Research"){
                         $(".middle-level").append(`
-                            <div class="col-md-3 col-xs-6 g-full-width--xs">
+                            <div class="col-md-3 col-xs-6 g-full-width--xs" style="margin-top: 1rem;">
                                 <div class="" data-wow-duration=".3" data-wow-delay=".1s">
                                     <!-- Team -->
                                     <div class="s-team-v1">
@@ -172,7 +172,7 @@
 
                     if(val.position == 'Software Analyst'){
                         $(".middle-level").append(`
-                            <div class="col-md-3 col-xs-6 g-full-width--xs">
+                            <div class="col-md-3 col-xs-6 g-full-width--xs" style="margin-top: 1rem;">
                                 <div class="" data-wow-duration=".3" data-wow-delay=".1s">
                                     <!-- Team -->
                                     <div class="s-team-v1">
@@ -197,7 +197,7 @@
                             <input type="hidden" id="description_${val.id}" value="${val.description}">
                             <input type="hidden" id="sub_description_${val.id}" value="${val.sub_description}">
 
-                            <div class="col-md-3 col-xs-6 g-full-width--xs">
+                            <div class="col-md-3 col-xs-6 g-full-width--xs" style="margin-top: 1rem;">
                                 <div class="" data-wow-duration=".3" data-wow-delay=".1s">
                                     <!-- Team -->
                                     <div class="s-team-v1">
