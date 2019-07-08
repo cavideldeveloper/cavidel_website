@@ -19,7 +19,7 @@
                         <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Twitter</a></li>
                         <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Facebook</a></li>
                         <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Instagram</a></li>
-                        <li><a class="g-font-size-15--xs g-color--white-opacity" href="{{ url('/') }}">Linkedin</a></li>
+                        <li><a class="g-font-size-15--xs g-color--white-opacity" href="https://www.linkedin.com/company/cavidel-limited-nigeria" target="_blank">Linkedin</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-2 g-margin-b-40--xs g-margin-b-0--md">
