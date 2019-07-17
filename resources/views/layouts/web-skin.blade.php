@@ -573,7 +573,7 @@
                 });
             });
         </script>
-        <script src="//wpcc.io/lib/1.0.2/cookieconsent.min.js"></script><script>window.addEventListener("load", function(){window.wpcc.init({"colors":{"popup":{"background":"#f0edff","text":"#000000","border":"#5e65c2"},"button":{"background":"#5e65c2","text":"#ffffff"}},"position":"bottom","transparency":"25","content":{"href":"test.cavidel.com/cookie-policy"}})});
+        <script src="//wpcc.io/lib/1.0.2/cookieconsent.min.js"></script><script>window.addEventListener("load", function(){window.wpcc.init({"colors":{"popup":{"background":"#f0edff","text":"#000000","border":"#5e65c2"},"button":{"background":"#5e65c2","text":"#ffffff"}},"position":"top","transparency":"25","content":{"href":"test.cavidel.com/cookie-policy"}})});
         </script>
 
         @yield('scripts')
