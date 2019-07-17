@@ -72,6 +72,17 @@
             drift.load('64yvz2athwim');
         </script>
         <!-- End of Async Drift Code -->
+
+        {{-- Google Tracking --}}
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144060456-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-144060456-1');
+        </script>
     </head>
     <!-- End Head -->
 
@@ -573,7 +584,7 @@
                 });
             });
         </script>
-        <script src="//wpcc.io/lib/1.0.2/cookieconsent.min.js"></script><script>window.addEventListener("load", function(){window.wpcc.init({"colors":{"popup":{"background":"#f0edff","text":"#000000","border":"#5e65c2"},"button":{"background":"#5e65c2","text":"#ffffff"}}, "transparency":"25","content":{"href":"test.cavidel.com/cookie-policy"}})});
+        <script src="//wpcc.io/lib/1.0.2/cookieconsent.min.js"></script><script>window.addEventListener("load", function(){window.wpcc.init({"colors":{"popup":{"background":"#f0edff","text":"#000000","border":"#5e65c2"},"button":{"background":"#5e65c2","text":"#ffffff"}}, "transparency":"25","content":{"href":"cavidel.com/cookie-policy"}})});
         </script>
 
         @yield('scripts')
