@@ -3,6 +3,8 @@
 namespace Cavidel;
 
 use Illuminate\Database\Eloquent\Model;
+use Cavidel\Mail\SendContactMail;
+use Mail;
 
 class SiteContact extends Model
 {
@@ -45,6 +47,30 @@ class SiteContact extends Model
     */
     public function clearQueueMails(){
         // body
-        
+        $contact_messsage = SiteContact::where('status', 'active')->get();
+        $total = 0;
+        foreach ($contact_messsage as $key => $value) {
+            # code...
+            $mail_data = [
+                "name"  => $value->name,
+                "email" => $value->email,
+                "body"  => $value->message,
+            ];
+
+            \Mail::to(env('SUPPORT_EMAIL'))->send(new SendContactMail($mail_data));
+
+            $update = SiteContact::find($value->id);
+            $update->status = 'sent';
+            $update->update();
+
+            $total++;
+        }
+
+        $data = [
+            'status'    => 'success',
+            'message'   => $total.' message(s) has been cleared'
+        ];
+
+        return $data;
     }
 }

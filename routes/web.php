@@ -134,4 +134,5 @@ Route::post('/send/application/form',		'ClientJsonResponseController@application
 Route::get('/get/all/team/member',			'ClientJsonResponseController@getTeamMembers')->name('team_member');
 Route::post('/send/order/request',		    'ClientJsonResponseController@placeNewOrder')->name('order_request');
 Route::get('/fetch/all/products',			'ClientJsonResponseController@fetchProducts')->name('fetch_products');
+Route::post('clear/contact/mail/queue',     'ClientJsonResponseController@clearQueue');
 

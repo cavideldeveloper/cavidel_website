@@ -359,6 +359,20 @@
                         // reset form
                         $(".contact-form")[0].reset();
 
+                        fetch(`{{url('clear/contact/mail/queue')}}`, {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify({_token: token})
+                        }).then(r => {
+                            return r.json();
+                        }).then(results => {
+                            console.log(results)
+                        }).catch(err => {
+                            console.log(JSON.stringify(err));
+                        })
+
                     }else{
                         swal(
                             "oops",

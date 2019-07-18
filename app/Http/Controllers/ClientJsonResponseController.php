@@ -158,4 +158,19 @@ class ClientJsonResponseController extends Controller
         // return response.
         return response()->json($data);
     }
+
+
+    /*
+    |-----------------------------------------
+    | CLEAR MAIL QUEUE
+    |-----------------------------------------
+    */
+    public function clearQueue(Request $request){
+        // body
+        $site_contact = new SiteContact();
+        $data         = $site_contact->clearQueueMails();
+
+        // return response.
+        return response()->json($data);
+    }
 }
