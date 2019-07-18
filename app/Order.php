@@ -5,6 +5,7 @@ namespace Cavidel;
 use Illuminate\Database\Eloquent\Model;
 use Cavidel\Mail\NotifyNewOrder;
 use Cavidel\Product;
+use Mail;
 
 class Order extends Model
 {
