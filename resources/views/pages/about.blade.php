@@ -133,44 +133,8 @@
                     var position        = $("#position").val(val.position);
                     var description     = $("#description").val(val.description);
                     var sub_description = $("#sub_description").val(val.sub_description);
-                    
-                    if(val.position == 'HR'){
-                        $(".middle-level").append(`
-                            <div class="col-md-3 col-xs-6 g-full-width--xs" style="margin-top: 1rem;">
-                                <div class="" data-wow-duration=".3" data-wow-delay=".1s">
-                                    <!-- Team -->
-                                    <div class="g-margin-b-20--lg s-team-v1">
-                                        <img class="img-responsive g-width-100-percent--xs" src="${val.avatar}" alt="Image">
-                                        <div class="g-text-center--xs g-bg-color--white g-padding-x-30--xs g-padding-y-40--xs">
-                                            <h2 class="g-font-size-18--xs g-margin-b-5--xs">${val.firstname} ${val.lastname}</h2>
-                                            <span class="g-font-size-15--xs g-color--text"><i> ${val.position}</i></span>
-                                        </div>
-                                    </div>
-                                    <!-- End Team -->
-                                </div>
-                            </div>
-                        `);
-                    }
 
-                    if(val.position == 'Software Developer' || val.position == "Data Analyst" || val.position == "Research Analyst" || val.position == "Consulting and Research"){
-                        $(".middle-level").append(`
-                            <div class="col-md-3 col-xs-6 g-full-width--xs" style="margin-top: 1rem;">
-                                <div class="" data-wow-duration=".3" data-wow-delay=".1s">
-                                    <!-- Team -->
-                                    <div class="s-team-v1">
-                                        <img class="img-responsive g-width-100-percent--xs" src="${val.avatar}" alt="Image">
-                                        <div class="g-text-center--xs g-bg-color--white g-padding-x-30--xs g-padding-y-40--xs">
-                                            <h2 class="g-font-size-18--xs g-margin-b-5--xs">${val.firstname} ${val.lastname}</h2>
-                                            <span class="g-font-size-15--xs g-color--text"><i> ${val.position}</i></span>
-                                        </div>
-                                    </div>
-                                    <!-- End Team -->
-                                </div>
-                            </div>
-                        `);
-                    }
-
-                    if(val.position == 'Software Analyst'){
+                    if(val.position == 'Software Developer' || val.position == 'System Analyst' || val.position == 'Consulting and Research'){
                         $(".middle-level").append(`
                             <div class="col-md-3 col-xs-6 g-full-width--xs" style="margin-top: 1rem;">
                                 <div class="" data-wow-duration=".3" data-wow-delay=".1s">
