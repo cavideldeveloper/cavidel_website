@@ -79,8 +79,7 @@ class Team extends Model
     	// body
     	$member = Team::find($payload->member_id);
     	if($member !== null){
-    		$member->status = 'inactive';
-    		if($member->update()){
+    		if($member->delete()){
     			$data = [
     				'status' 	=> 'success',
     				'message' 	=> 'Members deleted successfully!'
