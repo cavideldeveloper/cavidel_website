@@ -9,7 +9,7 @@
 Route::get('/',								'ExternalPagesController@index');
 Route::get('/about',						'ExternalPagesController@about');
 Route::get('/contact',						'ExternalPagesController@contact');
-Route::get('/team',							'ExternalPagesController@team');
+Route::get('/team',							'ExternalPagesController@about');
 Route::get('/career',						'ExternalPagesController@career');
 Route::get('/services',						'ExternalPagesController@services');
 Route::get('/process',						'ExternalPagesController@process');
