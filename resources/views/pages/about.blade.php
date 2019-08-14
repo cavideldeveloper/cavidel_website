@@ -152,7 +152,7 @@
                         `);
                     }
 
-                    if(val.position == 'Software Engineer'){
+                    if(val.position == 'Software Engineer' || val.position == 'Digital Marketer'){
                         $(".middle-level").append(`
                             <input type="hidden" id="avatar_${val.id}" value="${val.avatar}">
                             <input type="hidden" id="firstname_${val.id}" value="${val.firstname}">
