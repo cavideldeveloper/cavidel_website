@@ -183,6 +183,10 @@ class Team extends Model
         if(count($all_teams) > 0){
             $team_box = [];
             foreach ($all_teams as $tl) {
+                if(!is_numeric($tl->position)){
+                    $tl->position = 0;
+                }
+                
                 $setup = Setup::where("id", $tl->position)->first();
                 $tl->position = $setup->designation ?? 'none';
 
