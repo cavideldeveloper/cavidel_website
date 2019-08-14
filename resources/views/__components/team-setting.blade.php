@@ -54,7 +54,7 @@
               <div class="form-group">
                 <label>Job Role?</label>
                 <select class="form-control" id="job_role">
-                  <option value="Founder/CEO">Founder/CEO</option>
+                  {{-- <option value="Founder/CEO">Founder/CEO</option>
                   <option value="Director">Director</option>
                   <option value="Senior Consultant">Senior Consultant</option>
                   <option value="Business Manager">Business Manager</option>
@@ -67,7 +67,7 @@
                   <option value="Experienced Programmer">Experienced Programmer</option>
                   <option value="Software Developer">Software Developer</option>
                   <option value="Software Engineer">Software Engineer</option>
-                  <option value="Information Security Analyst">Information Security Analyst</option>
+                  <option value="Information Security Analyst">Information Security Analyst</option> --}}
                 </select>
               </div>
             </div>
@@ -144,7 +144,7 @@
               <div class="form-group">
                 <label>Job Role?</label>
                 <select class="form-control" id="edit_job_role">
-                  <option value="Founder/CEO">Founder/CEO</option>
+                  {{-- <option value="Founder/CEO">Founder/CEO</option>
                   <option value="Director">Director</option>
                   <option value="Senior Consultant">Senior Consultant</option>
                   <option value="Senior Programmer">Senior Programmer</option>
@@ -157,7 +157,7 @@
                   <option value="Experienced Programmer">Experienced Programmer</option>
                   <option value="Software Developer">Software Developer</option>
                   <option value="Software Engineer">Software Engineer</option>
-                  <option value="Information Security Analyst">Information Security Analyst</option>
+                  <option value="Information Security Analyst">Information Security Analyst</option> --}}
                 </select>
               </div>
             </div>

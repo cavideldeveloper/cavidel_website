@@ -32,7 +32,7 @@
 @endsection
 
 @section('scripts')
-{{-- scripts here --}}
+  {{-- scripts here --}}
   <script src="//widget.cloudinary.com/global/all.js" type="text/javascript"></script>  
   <script type="text/javascript">  
     document.getElementById("upload_widget_opener").addEventListener("click", function() {
@@ -84,6 +84,7 @@
     // load module
     // loadAllPagesComponent();
     getTeamMembers();
+    loadAllDesignation();
 
     // load all components
     function loadAllPagesComponent() {
@@ -285,6 +286,28 @@
           );
         }
       });
+    }
+
+    // get all job role
+    function loadAllDesignation() {
+      fetch(`{{url('admin/get/designation')}}`).then(r => {
+        return r.json();
+      }).then(results => {
+        // console.log(results)
+        $("#job_role").html('');
+        $("#edit_job_role").html('');
+        $.each(results, function(index, val) {
+          $("#job_role").append(`
+            <option value="${val.id}">${val.designation}</option>
+          `);
+
+          $("#edit_job_role").append(`
+            <option value="${val.id}">${val.designation}</option>
+          `);
+        });
+      }).catch(err => {
+        console.log(JSON.stringify(err));
+      })
     }
   </script>
 @endsection

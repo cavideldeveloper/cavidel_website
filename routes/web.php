@@ -80,6 +80,7 @@ Route::get('/admin/tasks',					'AdminPagesController@tasks');
 Route::get('/admin/builder',				'AdminPagesController@cms');
 Route::get('admin/view/page/{page}',		'AdminPagesController@viewCmsPage');
 Route::get('admin/view/component/{id}',		'AdminPagesController@viewComponent');
+Route::get('admin/view/designation',		'AdminPagesController@viewDesignation');
 
 
 /*
@@ -99,12 +100,13 @@ Route::get('/admin/page/components/{page}',	'AdminJsonResponseController@pageCom
 Route::get('/admin/load/components/{id}',	'AdminJsonResponseController@componentChild');
 Route::get('/admin/get/total/visitor',		'AdminJsonResponseController@getVisitorsCount');
 
-
-
 Route::post('/admin/unlock/subscription',	'AdminJsonResponseController@unlockProject');
 Route::post('/admin/lock/subscription',		'AdminJsonResponseController@lockProject');
 
-
+Route::post('/admin/add/designation',		'AdminJsonResponseController@addNewDesignation');
+Route::get('/admin/get/designation',		'AdminJsonResponseController@getAllDesignation');
+Route::post('/admin/update/designation',	'AdminJsonResponseController@updateDesignation');
+Route::get('/admin/get/one/designation',	'AdminJsonResponseController@getOneDesignation');
 
 /*
 |---------------------------------------------------------------------------------------------------------

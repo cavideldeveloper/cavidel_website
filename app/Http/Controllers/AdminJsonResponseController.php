@@ -7,6 +7,7 @@ use Cavidel\SoftwareIssue;
 use Cavidel\Component;
 use Cavidel\Project;
 use Cavidel\SiteVisitor;
+use Cavidel\Setup;
 
 class AdminJsonResponseController extends Controller
 {
@@ -182,6 +183,62 @@ class AdminJsonResponseController extends Controller
         // body
         $project    = new Project();
         $data       = $project->lockProjectSubscription($request);
+
+        // return response
+        return response()->json($data);
+    }
+
+    /*
+    |---------------------------------------------
+    | ADD DESIGNATION
+    |---------------------------------------------
+    */
+    public function addNewDesignation(Request $request){
+        // body
+        $setup  = new Setup();
+        $data   = $setup->addDesignation($request);
+
+        // return response
+        return response()->json($data);
+    }
+
+    /*
+    |---------------------------------------------
+    | ADD DESIGNATION
+    |---------------------------------------------
+    */
+    public function getAllDesignation(Request $request){
+        // body
+        $setup  = new Setup();
+        $data   = $setup->getDesignation($request);
+
+        // return response
+        return response()->json($data);
+    }
+
+    /*
+    |-----------------------------------------
+    | UPDATE DESIGNATION
+    |-----------------------------------------
+    */
+    public function updateDesignation(Request $request){
+        // body
+        $setup  = new Setup();
+        $data   = $setup->updateOneDesignation($request);
+
+        // return response
+        return response()->json($data);
+    }
+
+    /*
+    |-----------------------------------------
+    | GET ONE DESINGATION
+    |-----------------------------------------
+    */
+    public function getOneDesignation(Request $request){
+        // body
+        $setup  = new Setup();
+        $data   = $setup->getOneDesignation($request);
 
         // return response
         return response()->json($data);

@@ -60,6 +60,15 @@
         </li>
 
         <li>
+          <a class="ripple" href="{{ url('/admin/view/designation') }}">
+            <span class="nav-icon">
+              <img class="hidden" src="{{ asset('admin-assets/img/icons/setting.svg') }}" alt="MenuItem">
+            </span>
+            <span>Setup</span>
+          </a>
+        </li>
+
+        <li>
           <a class="ripple" href="{{ url('/admin/tasks') }}">
             <span class="nav-icon">
               <img class="hidden" src="{{ asset('admin-assets/img/icons/aperture.svg') }}" alt="MenuItem">

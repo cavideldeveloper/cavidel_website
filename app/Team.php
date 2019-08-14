@@ -3,6 +3,7 @@
 namespace Cavidel;
 
 use Illuminate\Database\Eloquent\Model;
+use Cavidel\Setup;
 
 class Team extends Model
 {
@@ -140,7 +141,36 @@ class Team extends Model
     */
     public function getAllTeam(){
     	// body
-        return Team::where('status', 'active')->orderBy('id', 'created_at')->get();
+        $all_teams = Team::orderBy('created_at', 'ASC')->get();
+        if(count($all_teams) > 0){
+            $team_box = [];
+            foreach ($all_teams as $tl) {
+                if(!is_numeric($tl->position)){
+                    $tl->position = 0;
+                }
+                $setup = Setup::where("id", $tl->position)->first();
+                $tl->position = $setup->designation ?? 'none';
+
+                $data = [
+                    'id'            => $tl->id,
+                    'firstname'     => $tl->firstname,
+                    'lastname'      => $tl->lastname,
+                    'position'      => $tl->position,
+                    'email'         => $tl->email,
+                    'sub_description' => str_limit($tl->description, $limit = 100, $end = '...'),
+                    'description'   => str_replace(". He", ".<br /><br /> He", $tl->description),
+                    'avatar'        => $tl->avatar,
+                    'status'        => $tl->status,
+                ];
+
+                array_push($team_box, $data);
+            }
+        }else{
+            $team_box = [];
+        }
+
+        // return
+        return $team_box;
     }
 
     /*
@@ -154,6 +184,9 @@ class Team extends Model
         if(count($all_teams) > 0){
             $team_box = [];
             foreach ($all_teams as $tl) {
+                $setup = Setup::where("id", $tl->position)->first();
+                $tl->position = $setup->designation ?? 'none';
+
                 $data = [
                     'id'            => $tl->id,
                     'firstname'     => $tl->firstname,
@@ -184,6 +217,24 @@ class Team extends Model
     */
     public function getOneMember($payload){
         // body
-        return Team::where("id", $payload->member_id)->first();
+        $team = Team::where("id", $payload->member_id)->first();
+        if($team !== null){
+            $data = [
+                'id'            => $team->id,
+                'firstname'     => $team->firstname,
+                'lastname'      => $team->lastname,
+                'position'      => $team->position,
+                'email'         => $team->email,
+                'sub_description' => str_limit($team->description, $limit = 100, $end = '...'),
+                'description'   => str_replace(". He", ".<br /><br /> He", $team->description),
+                'avatar'        => $team->avatar,
+                'status'        => $team->status,
+            ];
+        }else{
+            $data = [];
+        }
+
+        // return
+        return $data;
     }
 }

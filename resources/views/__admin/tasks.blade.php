@@ -64,7 +64,7 @@
               
             </div>
           </div>
-        </di6
+        </div>
       </div>
     </div>
   </section>

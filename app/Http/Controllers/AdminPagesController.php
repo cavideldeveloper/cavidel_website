@@ -91,4 +91,14 @@ class AdminPagesController extends Controller
     public function tasks(){
     	return view('__admin.tasks');
     }
+
+    /*
+    |-----------------------------------------
+    | SHOW DESIGNATION SETUP
+    |-----------------------------------------
+    */
+    public function viewDesignation(Request $request){
+        // body
+        return view('__admin.designation');
+    }
 }
