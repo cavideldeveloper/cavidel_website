@@ -14,15 +14,14 @@ class SiteContact extends Model
     |---------------------------------------------
     */
     public function contactUs($payload){
-
 		$contact_us 					= new SiteContact();
 		$contact_us->email 				= $payload->email;
 		$contact_us->name 				= $payload->name;
 		$contact_us->phone 				= $payload->phone;
 		$contact_us->body 				= $payload->message;
-		$contact_us->visitor_ip 		= $payload->client_ip;
-		$contact_us->visitor_browser 	= $payload->client_browser;
-		$contact_us->visitor_device 	= $payload->client_device;
+		$contact_us->visitor_ip 		= $payload->ip();
+		$contact_us->visitor_browser 	= $payload->server('HTTP_USER_AGENT');
+		$contact_us->visitor_device 	= $payload->header('User-Agent');
 		$contact_us->status 			= "active";
 		if($contact_us->save()){
 			$data = [
