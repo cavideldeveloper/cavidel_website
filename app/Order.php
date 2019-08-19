@@ -63,4 +63,41 @@ class Order extends Model
 
     	return $data;	
     }
+
+    /*
+    |-----------------------------------------
+    | GET ALL ORDERS
+    |-----------------------------------------
+    */
+    public function getOrders(){
+        // body
+        $orders = Order::orderBy('created_at', 'DESC')->get();
+        $orders_box = [];
+
+        $products       = new Product();
+        $all_products   = collect($products->getAllProducts());
+        $soft_box = [];
+        foreach ($orders as $key => $value) {
+            $order_addon = OrderAddon::where('order_id', $value->id)->get();
+            foreach ($order_addon as $key => $value) {
+                # code...
+                $product_info = $all_products->where("id", $value->product_id)->first();
+                if($product_info !== null){
+                    array_push($soft_box, $product_info);
+                }
+            }
+            $data = [
+                "name"  => $value->name ?? "Test User",
+                "email" => $value->email ?? "test@gmail.com",
+                "body"  => $value->message ?? "I will like a demo of the software!",
+                "software_lists" => $soft_box
+            ];
+
+            // orders array
+            array_push($orders_box, $data);
+        }
+
+        // return data
+        return $orders_box;  
+    }
 }

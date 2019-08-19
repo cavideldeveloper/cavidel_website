@@ -102,6 +102,15 @@ class AdminPagesController extends Controller
     }
 
     /*
+    |---------------------------------------------
+    | MESSAGES TASK
+    |---------------------------------------------
+    */
+    public function messages(){
+        return view('__admin.messages');
+    }
+
+    /*
     |-----------------------------------------
     | SHOW DESIGNATION SETUP
     |-----------------------------------------

@@ -27,7 +27,7 @@
       <li class="dropdown"><a class="dropdown-toggle has-badge ripple" href="" data-toggle="dropdown"><em class="ion-person"></em><sup class="badge bg-danger issues_counts"></sup></a>
         <ul class="dropdown-menu dropdown-menu-right md-dropdown-menu">
           <li><a href="profile.html"><em class="ion-home icon-fw"></em>Profile</a></li>
-          <li><a href="messages.html"><em class="ion-gear-a icon-fw"></em>Messages</a></li>
+          <li><a href="{{url('admin/messages')}}"><em class="ion-gear-a icon-fw"></em>Messages</a></li>
           <li class="divider" role="presentation"></li>
           <li><a href="{{ url('admin/login') }}"><em class="ion-log-out icon-fw"></em>Logout</a></li>
         </ul>

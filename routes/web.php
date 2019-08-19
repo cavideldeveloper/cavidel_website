@@ -82,6 +82,7 @@ Route::get('admin/view/page/{page}',		'AdminPagesController@viewCmsPage');
 Route::get('admin/view/component/{id}',		'AdminPagesController@viewComponent');
 Route::get('admin/view/designation',		'AdminPagesController@viewDesignation');
 Route::get('admin/products',				'AdminPagesController@products');
+Route::get('admin/messages',				'AdminPagesController@messages');
 
 
 /*
@@ -111,6 +112,9 @@ Route::get('/admin/get/one/designation',	'AdminJsonResponseController@getOneDesi
 
 Route::get('admin/load/products', 			'AdminJsonResponseController@products');
 Route::post('add/new/product',				'AdminJsonResponseController@addProduct');
+
+Route::get('get/contact/messages',			'AdminJsonResponseController@getMessages');
+Route::get('get/orders/request',			'AdminJsonResponseController@getOrders');
 
 /*
 |---------------------------------------------------------------------------------------------------------

@@ -72,4 +72,34 @@ class SiteContact extends Model
 
         return $data;
     }
+
+    /*
+    |-----------------------------------------
+    | GET MESSAGES
+    |-----------------------------------------
+    */
+    public function getMessages(){
+        // body
+        $site_contacts = SiteContact::orderBy('created_at', 'DESC')->get();
+        $contact_box = [];
+
+        foreach ($site_contacts as $key => $value) {
+            $data = [
+                'email'             => $value->email,
+                'name'              => $value->name,
+                'phone'             => $value->phone,
+                'body'              => $value->body,
+                'visitor_ip'        => $value->visitor_ip,
+                'visitor_browser'   => $value->visitor_browser,
+                'visitor_device'    => $value->visitor_device,
+                'status'            => $value->status,
+                'created_at'        => $value->created_at->diffForHumans()
+            ];
+
+            array_push($contact_box, $data);
+        }
+
+        // return
+        return $contact_box;
+    }
 }

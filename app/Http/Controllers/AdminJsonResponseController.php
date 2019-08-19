@@ -9,6 +9,8 @@ use Cavidel\Project;
 use Cavidel\SiteVisitor;
 use Cavidel\Setup;
 use Cavidel\Product;
+use Cavidel\SiteContact;
+use Cavidel\Order;
 
 class AdminJsonResponseController extends Controller
 {
@@ -268,6 +270,34 @@ class AdminJsonResponseController extends Controller
         // body
         $product = new Product();
         $data    = $product->addNewProduct($request);
+
+        // return response
+        return response()->json($data);
+    }
+
+    /*
+    |-----------------------------------------
+    | GET MESSAGES
+    |-----------------------------------------
+    */
+    public function getMessages(Request $request){
+        // body
+        $site_contact = new SiteContact();
+        $data    = $site_contact->getMessages($request);
+
+        // return response
+        return response()->json($data);
+    }
+
+    /*
+    |-----------------------------------------
+    | GET ORDERS
+    |-----------------------------------------
+    */
+    public function getOrders(Request $request){
+        // body
+        $orders  = new Order();
+        $data    = $orders->getOrders($request);
 
         // return response
         return response()->json($data);
