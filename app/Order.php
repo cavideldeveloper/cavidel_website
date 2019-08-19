@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Cavidel\Mail\NotifyNewOrder;
 use Cavidel\Product;
 use Cavidel\Contact;
+use Cavidel\OrderAddon;
 use Mail;
 
 class Order extends Model
@@ -19,8 +20,18 @@ class Order extends Model
 
     	$products 		= new Product();
     	$all_products 	= collect($products->getAllProducts());
+
     	// soft box
     	$soft_box = [];
+
+
+    	// new order
+    	$new_order 			= new Order();
+    	$new_order->name 	= $payload->names;
+    	$new_order->email 	= $payload->email;
+    	$new_order->message = $payload->message;
+    	$new_order->status  = false;
+    	$new_order->save();
 
     	// get software types
     	foreach ($payload->software as $key => $value) {
@@ -28,7 +39,11 @@ class Order extends Model
     		$product_info = $all_products->where("id", $value)->first();
     		if($product_info !== null){
     			array_push($soft_box, $product_info);
-    		}	
+    		}
+
+    		// trap data to database
+    		$order_addon = new OrderAddon();
+    		$order_addon->addNewFromLoop($new_order->id, $value);
     	}
 
     	// body

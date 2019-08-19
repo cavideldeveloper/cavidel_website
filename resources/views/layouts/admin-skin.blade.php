@@ -11,6 +11,16 @@
     <!-- Application styles-->
     <link rel="stylesheet" href="{{ asset('admin-assets/css/app.css') }}">
 	  <script src="{{ asset('admin-assets/ga.js') }}"></script>
+
+    <style type="text/css">
+      .each-products {
+        box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.50);
+        padding: 0.5rem;
+        border-radius: 1rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    </style>
   </head>
   <body class="theme-1">
     <input type="hidden" id="token" value="{{ csrf_token() }}" />

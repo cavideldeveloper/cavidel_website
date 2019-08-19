@@ -69,6 +69,15 @@
         </li>
 
         <li>
+          <a class="ripple" href="{{ url('/admin/products') }}">
+            <span class="nav-icon">
+              <img class="hidden" src="{{ asset('admin-assets/img/icons/aperture.svg') }}" alt="MenuItem">
+            </span>
+            <span>Products</span>
+          </a>
+        </li>
+
+        <li>
           <a class="ripple" href="{{ url('/admin/tasks') }}">
             <span class="nav-icon">
               <img class="hidden" src="{{ asset('admin-assets/img/icons/aperture.svg') }}" alt="MenuItem">

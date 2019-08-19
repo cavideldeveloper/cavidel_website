@@ -93,6 +93,15 @@ class AdminPagesController extends Controller
     }
 
     /*
+    |---------------------------------------------
+    | SHOW TASK
+    |---------------------------------------------
+    */
+    public function products(){
+        return view('__admin.products');
+    }
+
+    /*
     |-----------------------------------------
     | SHOW DESIGNATION SETUP
     |-----------------------------------------

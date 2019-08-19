@@ -81,6 +81,7 @@ Route::get('/admin/builder',				'AdminPagesController@cms');
 Route::get('admin/view/page/{page}',		'AdminPagesController@viewCmsPage');
 Route::get('admin/view/component/{id}',		'AdminPagesController@viewComponent');
 Route::get('admin/view/designation',		'AdminPagesController@viewDesignation');
+Route::get('admin/products',				'AdminPagesController@products');
 
 
 /*
@@ -107,6 +108,9 @@ Route::post('/admin/add/designation',		'AdminJsonResponseController@addNewDesign
 Route::get('/admin/get/designation',		'AdminJsonResponseController@getAllDesignation');
 Route::post('/admin/update/designation',	'AdminJsonResponseController@updateDesignation');
 Route::get('/admin/get/one/designation',	'AdminJsonResponseController@getOneDesignation');
+
+Route::get('admin/load/products', 			'AdminJsonResponseController@products');
+Route::post('add/new/product',				'AdminJsonResponseController@addProduct');
 
 /*
 |---------------------------------------------------------------------------------------------------------

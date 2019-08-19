@@ -56,8 +56,8 @@
 							<tbody>
 								@foreach($data['software_lists'] as $item)
 									<tr>
-										<td>{{ $item['name'] }}</td>
-										<td>{{ $item['details'] }}</td>
+										<td>{{ $item['mail_name'] }}</td>
+										<td>{{ $item['mail_details'] }}</td>
 									</tr>
 								@endforeach
 							</tbody>
