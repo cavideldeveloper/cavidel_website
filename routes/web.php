@@ -142,3 +142,7 @@ Route::post('/send/order/request',		    'ClientJsonResponseController@placeNewOr
 Route::get('/fetch/all/products',			'ClientJsonResponseController@fetchProducts')->name('fetch_products');
 Route::post('clear/contact/mail/queue',     'ClientJsonResponseController@clearQueue');
 
+Route::get('migrate',	function(){
+	Artisan::call('migrate');
+	return redirect('/');
+});
