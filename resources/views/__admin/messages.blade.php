@@ -10,7 +10,7 @@
     <div class="content-heading bg-white">
       <div class="row">
         <div class="col-sm-9">
-          <h4 class="m0 text-thin">Messages</h4>
+          <h4 class="m0 text-thin">Notifications</h4>
         </div>
       </div>
     </div>
