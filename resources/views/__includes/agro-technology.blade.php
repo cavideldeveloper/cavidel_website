@@ -127,7 +127,6 @@ Agricultural based trading platform: Facilitates trading of agricultural produce
                             Online payment for purchase/sales of farm produce.
                             Graphical representation of farmers data across all states in Nigeria using map visualisation.
                             </p>
-
                         </p>
                     </div>
                 </div>
