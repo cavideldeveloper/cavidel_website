@@ -49,14 +49,7 @@ class SiteContact extends Model
         $contact_messsage = SiteContact::where('status', 'active')->get();
         $total = 0;
         foreach ($contact_messsage as $key => $value) {
-            # code...
-            $mail_data = [
-                "name"  => $value->name,
-                "email" => $value->email,
-                "body"  => $value->message,
-            ];
-
-            \Mail::to(env('SUPPORT_EMAIL'))->send(new SendContactMail($mail_data));
+            \Mail::to(env('SUPPORT_EMAIL'))->send(new SendContactMail($value));
 
             $update = SiteContact::find($value->id);
             $update->status = 'sent';

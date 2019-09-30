@@ -8,6 +8,7 @@
 {{--  contents --}}
 @section('contents')
 	@include('__includes.header')
+
     <!--========== PROMO BLOCK ==========-->
     <div class="js__parallax-window" style="background: url(img/1920x1080/16.jpg) 50% 0 no-repeat fixed; height: 430px;">
         <div class="g-container--md g-text-center--xs g-padding-y-150--xs">
@@ -20,7 +21,6 @@
             </a>
         </div>
     </div>
-
 
     <!-- Plan -->
     <div class="g-bg-color--sky-light" id="web">
@@ -62,14 +62,14 @@
 
 {{--  scripts --}}
 @section('scripts')
-<!-- General Components and Settings -->
-        <script type="text/javascript" src="js/global.min.js"></script>
-        <script type="text/javascript" src="js/components/header-sticky.min.js"></script>
-        <script type="text/javascript" src="js/components/scrollbar.min.js"></script>
-        <script type="text/javascript" src="js/components/swiper.min.js"></script>
-        <script type="text/javascript" src="js/components/portfolio-4-col-slider.min.js"></script>
-        <script type="text/javascript" src="js/components/wow.min.js"></script>
-        <!--========== END JAVASCRIPTS ==========-->
+    <!-- General Components and Settings -->
+    <script type="text/javascript" src="js/global.min.js"></script>
+    <script type="text/javascript" src="js/components/header-sticky.min.js"></script>
+    <script type="text/javascript" src="js/components/scrollbar.min.js"></script>
+    <script type="text/javascript" src="js/components/swiper.min.js"></script>
+    <script type="text/javascript" src="js/components/portfolio-4-col-slider.min.js"></script>
+    <script type="text/javascript" src="js/components/wow.min.js"></script>
+    <!--========== END JAVASCRIPTS ==========-->
 	<script type="text/javascript">
 		// send contact message
 

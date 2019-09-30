@@ -35,18 +35,19 @@
 				Hello Cavidel,
 			</p>
 			<p> 
-				<b>{{ ucfirst($data['name']) }} just sent a new message.
+				<b>{{ ucfirst($data->name) }} just sent a new message.
 				<br /><br />
 
-				<p>{{ $data['body'] }}</p>
+				<p>{!! $data->body !!}</p>
 
-				<p>Client email: {{ $data['email'] }}</p>
+				<p>Client email: {{ $data->email }}</p>
+				<p>Client Phone: {{ $data->phone }}</p>
 				<hr />
 			</p>
 			<br />
 		</div>
 	</div>
+	<center>© Copyright Cavidel, Inc. All rights reserved.</center>
 </div>
 </body>
 </html>
-© Copyright Cavidel, Inc. All rights reserved.
