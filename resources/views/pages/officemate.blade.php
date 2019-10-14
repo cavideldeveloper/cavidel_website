@@ -62,7 +62,7 @@
                                     </li>
                                 </ul>
 
-                                <button type="submit" onclick="showOrderModal()" class="text-uppercase s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Request a Demo</button>
+                                <button type="submit" onclick="navigateToDemo()" class="text-uppercase s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Request a Demo</button>
                             </div>
                         </div>
                     </div>
@@ -133,7 +133,7 @@
                                     </li>
                                 </ul>
 
-                                <button type="submit" onclick="showOrderModal()" class="text-uppercase s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Request a Demo</button>
+                                <button type="submit" onclick="showOrderModal()" class="text-uppercase s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Order Now</button>
                             </div>
                         </div>
                     </div>
@@ -266,6 +266,10 @@
 	<script type="text/javascript">
         // display products
         fetchProducts();
+
+        function navigateToDemo() {
+            window.location.href = 'https://demo.officemate.ng/login';
+        }
 
         // place new order
         function showOrderModal() {
