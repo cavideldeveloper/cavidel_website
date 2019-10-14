@@ -117,9 +117,25 @@
                 width: 100%;
                 overflow: auto;
             }
+
             .js__trigger {
                 display: none;
             }
+
+            #officemate-demo-div {
+                display: none;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                margin: 20px;
+                z-index: 999;
+                padding: 1rem;
+                background-color: rgba(255,255,255,0.90);
+                border:1px thin rgba(1, 118, 255);
+                border-radius: 10px;
+                box-shadow: 0px 0px 0.5px 0px rgba(0,0,0,0.50);
+            }
+
             #mobile-version-slider {
                 display: none;
             }
@@ -180,6 +196,48 @@
                 #mobile-version-slider {
                     display: block;
                 }
+            }
+
+            #animie-container {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              overflow: hidden;
+              position: relative;
+            }
+
+            .animie-circle {
+              border-radius: 50%;
+              background-color: deepskyblue;
+              width: 45px;
+              height: 45px;
+              position: absolute;
+              opacity: 0;
+            }
+
+            .animie-item {
+              z-index: 100;
+            }
+
+            .animie-circle {
+              border-radius: 50%;
+              background-color: #212f3cc7;
+              width: 60px;
+              height: 60px;
+              position: absolute;
+              opacity: 0;
+              animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+            }
+
+            @keyframes scaleIn {
+              from {
+                transform: scale(.5, .5);
+                opacity: .5;
+              }
+              to {
+                transform: scale(2.5, 2.5);
+                opacity: 0;
+              }
             }
         </style>
         @yield('contents')
@@ -250,6 +308,15 @@
             </div>
           </div>
         </div>
+
+        <div id="officemate-demo-div">
+            <a href="https://demo.officemate.ng" onclick="showDemo()" class="" target="_blank">
+                <img src="{{asset('img/products/officemate.png')}}" width="auto" height="40" /><br />
+                <i class="fa fa-dashboard">Click here for a quick demo</i>
+            </a>
+        </div>
+
+        
 
         <input type="hidden" id="visitor_name" name="">
         <input type="hidden" id="visitor_email" name="">
@@ -600,7 +667,12 @@
         </script>
         <script src="//wpcc.io/lib/1.0.2/cookieconsent.min.js"></script><script>window.addEventListener("load", function(){window.wpcc.init({"colors":{"popup":{"background":"#f0edff","text":"#000000","border":"#5e65c2"},"button":{"background":"#5e65c2","text":"#ffffff"}}, "transparency":"25","content":{"href":"cavidel.com/cookie-policy"}})});
         </script>
-
+        <script type="text/javascript">
+            $(document).ready(function(e){
+                $("#officemate-demo-div").show().fadeIn();
+                // $("#officemate-demo-div").animate();
+            })
+        </script>
         @yield('scripts')
     </body>
     <!-- End Body -->
