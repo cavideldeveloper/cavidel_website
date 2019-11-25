@@ -62,6 +62,9 @@
                     <div class="col-md-2">
                         <img width="140%" height="auto" class="g-padding-y-10--sm" src="{{ asset('img/partners/client18.jpg') }}">
                     </div>
+                    <div class="col-md-2">
+                        <img width="130%" height="auto" class="g-padding-y-10--sm" src="{{ asset('img/partners/ampersan.png') }}">
+                    </div>
                 </div>
 
                 {{-- use slider for mobile version --}}
