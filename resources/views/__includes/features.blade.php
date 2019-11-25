@@ -13,6 +13,18 @@
 
 <div class="g-bg-color--sky-light">
     <div class="container">
+        <div class="row g-margin-b-40--lg">
+            <!-- Plan -->
+            <div class="col-md-12 g-margin-b-0--lg">
+                <video width="100%" height="480" poster="{{url('img/officemate-poster.gif')}}" autoplay>
+                  <source src="{{url('video/officemate.mp4')}}" type="video/mp4">
+                  {{-- <source src="movie.ogg" type="video/ogg"> --}}
+                  Your browser does not support the video tag.
+                </video>
+            </div>
+            <!-- End Plan -->
+        </div>
+
         <div class="row g-margin-b-20--lg">
             <!-- Plan -->
             <div class="col-md-4 g-margin-b-0--lg">
@@ -101,6 +113,18 @@
 
 <div class="g-bg-color--sky-light">
     <div class="container">
+        <div class="row g-margin-b-40--lg g-margin-t-40--lg">
+            <!-- Plan -->
+            <div class="col-md-12 g-margin-b-0--lg">
+                <video width="100%" height="480" poster="{{url('img/officemate-poster.gif')}}" autoplay>
+                  <source src="{{url('video/timsmate.mp4')}}" type="video/mp4">
+                  {{-- <source src="movie.ogg" type="video/ogg"> --}}
+                  Your browser does not support the video tag.
+                </video>
+            </div>
+            <!-- End Plan -->
+        </div>
+
         <div class="row g-margin-b-20--lg g-margin-t-60--lg">
             <!-- Plan -->
             <div class="col-md-4 g-margin-b-0--lg">
