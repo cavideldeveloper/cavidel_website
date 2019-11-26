@@ -100,7 +100,7 @@
 </div>
 
 <!-- Counter -->
-<div class="js__parallax-window" style="background: url(img/1920x1080/28.jpg) 50% 0 no-repeat fixed;">
+<div class="js__parallax-window" style="background: url(img/1920x1080/28.jpg) 70% 0 no-repeat fixed;">
     <div class="container g-text-center--xs g-padding-y-80--xs g-padding-y-125--sm">
         <div class="g-margin-b-80--xs">
             <h2 class="g-font-size-40--xs g-font-weight--700 g-font-size-50--sm g-font-size-60--md g-color--white">
@@ -116,7 +116,7 @@
         <div class="row g-margin-b-40--lg g-margin-t-40--lg">
             <!-- Plan -->
             <div class="col-md-12 g-margin-b-0--lg">
-                <video width="100%" height="480" poster="{{url('img/officemate-poster.gif')}}" controls="" muted="mute" autoplay>
+                <video width="100%" height="680" poster="{{url('img/officemate-poster.gif')}}" controls="" muted="mute" autoplay>
                   <source src="{{url('video/timsmate.mp4')}}" type="video/mp4">
                   {{-- <source src="movie.ogg" type="video/ogg"> --}}
                   Your browser does not support the video tag.
@@ -197,7 +197,7 @@
 </div>
 
 <!-- Counter -->
-<div class="js__parallax-window" style="background: url(img/1920x1149/03.jpg) 50% 0 no-repeat fixed;">
+<div class="js__parallax-window" style="background: url(img/1920x1149/03.jpg) 70% 0 no-repeat fixed;">
     <div class="container g-text-center--xs g-padding-y-80--xs g-padding-y-125--sm">
         <div class="g-margin-b-40--xs">
             <h2 class="g-font-size-40--xs g-font-weight--700 g-font-size-50--sm g-font-size-60--md g-color--white">
