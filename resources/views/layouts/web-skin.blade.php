@@ -312,7 +312,7 @@
         </div>
 
         <div id="officemate-demo-div">
-            <a href="https://demo.officemate.ng" onclick="showDemo()" class="" target="_blank">
+            <a href="https://accounting.officemate.ng" onclick="showDemo()" class="" target="_blank">
                 <img src="{{asset('img/products/officemate.png')}}" width="auto" height="40" /><br />
                 <i class="fa fa-dashboard">Click here for a quick demo</i>
             </a>
