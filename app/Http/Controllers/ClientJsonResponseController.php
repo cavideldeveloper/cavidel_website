@@ -80,8 +80,8 @@ class ClientJsonResponseController extends Controller
         $description    = $request->description;
         $address        = $request->address;
 
-        $letter         = $this->convertBase64ToFile($request->letter_base64, 'uploads');
-        $resume         = $this->convertBase64ToFile($request->resume_base64, 'uploads');
+        $letter         = $this->convertBase64ToFile($request->letter_base64, 'uploads', $firstname, $lastname);
+        $resume         = $this->convertBase64ToFile($request->resume_base64, 'uploads', $firstname, $lastname);
 
         $path_to_letter = public_path('uploads').'/'.$letter;
         $path_to_resume = public_path('uploads').'/'.$resume;
@@ -116,6 +116,9 @@ class ClientJsonResponseController extends Controller
             curl_setopt($ch, CURLOPT_TIMEOUT, 200);
             curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
             $res    = curl_exec($ch);
+
+            // close the connection
+            curl_close($ch);
         } catch (Exception $e) {
             $data   = $e->getMessage();
         }
@@ -193,13 +196,16 @@ class ClientJsonResponseController extends Controller
     | DONWLOAD IMAGE TO JPG
     |-----------------------------------------
     */
-    public function convertBase64ToFile($base64_string, $destination){
+    public function convertBase64ToFile($base64_string, $destination, $firstname, $lastname){
+        $firstname  = strtolower($firstname);
+        $lastname   = strtolower($lastname);
+
         $time   = time().rand(000,999);
         if(!empty($base64_string)){
             $file_path = public_path($destination);
             $file_data = str_replace("data:application/pdf;base64,", "", $base64_string);
             $file_data = str_replace(" ", "+", $file_data); // filtered strings
-            $file_name = $file_path.'/'.$time.'.pdf'; //generating unique file name; 
+            $file_name = $file_path.'/'.$firstname.'-'.$lastname.'-'.$time.'.pdf'; //generating unique file name; 
             $image_data = base64_decode($file_data);
             if(file_put_contents($file_name, $image_data)){
                 $new_image_name = $time.'.pdf';
@@ -208,37 +214,5 @@ class ClientJsonResponseController extends Controller
                 return null;
             }
         }
-    }
-
-    /*
-    |-----------------------------------------
-    | SEND TO CAVIDEL OFFICEMATE PROPPER
-    |-----------------------------------------
-    */
-    public function saveToCavidelOfficemate($payload){
-        // body 
-        $endpoint = "http//localhost:8333/api/register/applicants";
-        $query = array(
-            "Name"          => $payload->firstname." ".$payload->lastname,
-            "PhoneNumber"   => $payload->mobile,
-            "EmailAddress"  => $payload->email,
-            "CVfile"        => $payload->resume_base64
-        );
-        $headers  = array('Content-Type: application/json');
-
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $endpoint);
-        curl_setopt($ch, CURLOPT_POST, 1);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($query)); //Post Fields
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 200);
-        curl_setopt($ch, CURLOPT_TIMEOUT, 200);
-        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-        
-        $res    = curl_exec($ch);
-        $data   = json_decode($res, true);
-
-        // return 
-        return $data;
     }
 }
