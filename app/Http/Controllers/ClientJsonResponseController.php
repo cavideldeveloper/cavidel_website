@@ -79,42 +79,56 @@ class ClientJsonResponseController extends Controller
         $mobile         = $request->mobile;
         $description    = $request->description;
         $address        = $request->address;
-        $letter         = $request->file('letter');
-        $resume         = $request->file('resume');
 
-        $letter_ext    = $letter->getClientOriginalExtension();
-        $resume_ext    = $letter->getClientOriginalExtension();
-        if($letter_ext !== 'pdf' && $resume_ext !== 'pdf'){
-            $msg = 'Invalid file format, all file format must be pdf';
-            return redirect()->back()->with('error', $msg);
-        }else{
-            $new_letter_name = ucwords($firstname).' '.ucwords($lastname).' Letter.'.$letter_ext;
-            $new_resume_name = ucwords($firstname).' '.ucwords($lastname).' Resume.'.$resume_ext;
-            // return $path;
+        $letter         = $this->convertBase64ToFile($request->letter_base64, 'uploads');
+        $resume         = $this->convertBase64ToFile($request->resume_base64, 'uploads');
 
-            //Move Uploaded File
-            $destinationPath = 'uploads';
-            $letter->move($destinationPath, $new_letter_name);
-            $resume->move($destinationPath, $new_resume_name);
+        $path_to_letter = public_path('uploads').'/'.$letter;
+        $path_to_resume = public_path('uploads').'/'.$resume;
 
-            $path_to_letter = public_path('uploads').'/'.$new_letter_name;
-            $path_to_resume = public_path('uploads').'/'.$new_resume_name;
+        $mail_data = [
+            'firstname'   => $firstname,
+            'lastname'    => $lastname,
+            'email'       => $email,
+            'mobile'      => $mobile,
+            'description' => $description,
+            'address'     => $address,
+            'letter'      => $path_to_letter,
+            'resume'      => $path_to_resume,
+        ];
 
-            $mail_data = [
-                'firstname'   => $firstname,
-                'lastname'    => $lastname,
-                'email'       => $email,
-                'mobile'      => $mobile,
-                'description' => $description,
-                'address'     => $address,
-                'letter'      => $path_to_letter,
-                'resume'      => $path_to_resume,
-            ];
+        try {
+            $endpoint = "http://localhost:8333/api/register/applicants";
+            $query = array(
+                "Name"          => $request->firstname." ".$request->lastname,
+                "PhoneNumber"   => $request->mobile,
+                "EmailAddress"  => $request->email,
+                "CVfile"        => $request->resume_base64
+            );
+            $headers  = array('Content-Type: application/json');
 
-            Mail::to('support@cavidel.com')->send(new NewApplicationMail($mail_data));
-            $msg = 'We have received your mail, we will get back to you as soon as possible.';
-            return redirect()->back()->with('success', $msg);
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, $endpoint);
+            curl_setopt($ch, CURLOPT_POST, 1);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($query)); //Post Fields
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 200);
+            curl_setopt($ch, CURLOPT_TIMEOUT, 200);
+            curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+            $res    = curl_exec($ch);
+        } catch (Exception $e) {
+            $data   = $e->getMessage();
         }
+
+        // save cv to officemate 
+        Mail::to('consultant@cavidel.com')->send(new NewApplicationMail($mail_data));
+        $data = [
+            'status'    => 'success',
+            'message'   => 'We have received your mail, we will get back to you as soon as possible.'
+        ];
+
+        // return response.
+        return response()->json($data);
     }
 
     /*
@@ -172,5 +186,59 @@ class ClientJsonResponseController extends Controller
 
         // return response.
         return response()->json($data);
+    }
+
+    /*
+    |-----------------------------------------
+    | DONWLOAD IMAGE TO JPG
+    |-----------------------------------------
+    */
+    public function convertBase64ToFile($base64_string, $destination){
+        $time   = time().rand(000,999);
+        if(!empty($base64_string)){
+            $file_path = public_path($destination);
+            $file_data = str_replace("data:application/pdf;base64,", "", $base64_string);
+            $file_data = str_replace(" ", "+", $file_data); // filtered strings
+            $file_name = $file_path.'/'.$time.'.pdf'; //generating unique file name; 
+            $image_data = base64_decode($file_data);
+            if(file_put_contents($file_name, $image_data)){
+                $new_image_name = $time.'.pdf';
+                return $new_image_name;
+            }else{
+                return null;
+            }
+        }
+    }
+
+    /*
+    |-----------------------------------------
+    | SEND TO CAVIDEL OFFICEMATE PROPPER
+    |-----------------------------------------
+    */
+    public function saveToCavidelOfficemate($payload){
+        // body 
+        $endpoint = "http//localhost:8333/api/register/applicants";
+        $query = array(
+            "Name"          => $payload->firstname." ".$payload->lastname,
+            "PhoneNumber"   => $payload->mobile,
+            "EmailAddress"  => $payload->email,
+            "CVfile"        => $payload->resume_base64
+        );
+        $headers  = array('Content-Type: application/json');
+
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $endpoint);
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($query)); //Post Fields
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 200);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 200);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+        
+        $res    = curl_exec($ch);
+        $data   = json_decode($res, true);
+
+        // return 
+        return $data;
     }
 }
