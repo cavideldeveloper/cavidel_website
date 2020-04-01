@@ -83,8 +83,8 @@ class ClientJsonResponseController extends Controller
         $letter         = $this->convertBase64ToFile($request->letter_base64, 'uploads', $firstname, $lastname);
         $resume         = $this->convertBase64ToFile($request->resume_base64, 'uploads', $firstname, $lastname);
 
-        $path_to_letter = public_path('uploads').'/'.$letter;
-        $path_to_resume = public_path('uploads').'/'.$resume;
+        // $path_to_letter = public_path('uploads').'/'.$letter;
+        // $path_to_resume = public_path('uploads').'/'.$resume;
 
         $mail_data = [
             'firstname'   => $firstname,
@@ -92,13 +92,12 @@ class ClientJsonResponseController extends Controller
             'email'       => $email,
             'mobile'      => $mobile,
             'description' => $description,
-            'address'     => $address,
-            'letter'      => $path_to_letter,
-            'resume'      => $path_to_resume,
+            'address'     => $address
         ];
 
         try {
-            $endpoint = "http://localhost:8333/api/register/applicants";
+            // $endpoint = "http://localhost:8333/api/register/applicants";
+            $endpoint = "https://cavidel.officemate.ng/api/register/applicants";
             $query = array(
                 "Name"          => $request->firstname." ".$request->lastname,
                 "PhoneNumber"   => $request->mobile,
@@ -115,7 +114,7 @@ class ClientJsonResponseController extends Controller
             curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 200);
             curl_setopt($ch, CURLOPT_TIMEOUT, 200);
             curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-            $res    = curl_exec($ch);
+            $res = curl_exec($ch);
 
             // close the connection
             curl_close($ch);
