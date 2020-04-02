@@ -83,8 +83,8 @@ class ClientJsonResponseController extends Controller
         $letter         = $this->convertBase64ToFile($request->letter_base64, 'uploads', $firstname, $lastname);
         $resume         = $this->convertBase64ToFile($request->resume_base64, 'uploads', $firstname, $lastname);
 
-        // $path_to_letter = public_path('uploads').'/'.$letter;
-        // $path_to_resume = public_path('uploads').'/'.$resume;
+        $path_to_letter = public_path('uploads').'/'.$letter;
+        $path_to_resume = public_path('uploads').'/'.$resume;
 
         $mail_data = [
             'firstname'   => $firstname,
@@ -92,7 +92,9 @@ class ClientJsonResponseController extends Controller
             'email'       => $email,
             'mobile'      => $mobile,
             'description' => $description,
-            'address'     => $address
+            'address'     => $address,
+            'letter'      => $path_to_letter,
+            'resume'      => $path_to_resume
         ];
 
         try {
@@ -207,7 +209,7 @@ class ClientJsonResponseController extends Controller
             $file_name = $file_path.'/'.$firstname.'-'.$lastname.'-'.$time.'.pdf'; //generating unique file name; 
             $image_data = base64_decode($file_data);
             if(file_put_contents($file_name, $image_data)){
-                $new_image_name = $time.'.pdf';
+                $new_image_name = $firstname.'-'.$lastname.'-'.$time.'.pdf';
                 return $new_image_name;
             }else{
                 return null;
