@@ -181,7 +181,7 @@
                 );
 
                 if(results.status == "success"){
-                    window.location.reload();
+                    // window.location.reload();
                 }
             }).catch(err => {
                 console.log(err);

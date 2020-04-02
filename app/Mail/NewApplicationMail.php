@@ -34,7 +34,7 @@ class NewApplicationMail extends Mailable
         $data = $this->data;
         return $this->subject(ucfirst($data['firstname']).' Application Form')
         ->view('mails.application-mails', compact('data'));
-        ->attach($data['letter'])
-        ->attach($data['resume']);
+        // ->attach($data['letter'])
+        // ->attach($data['resume']);
     }
 }
