@@ -216,4 +216,45 @@ class ClientJsonResponseController extends Controller
             }
         }
     }
+
+    /*
+    |-----------------------------------------
+    | GET JOB PLACEMENT
+    |-----------------------------------------
+    */
+    public function getJobPlacements(Request $request){
+        // body
+        try {
+            // $endpoint = "http://localhost:8333/api/register/applicants";
+            $endpoint = "https://cavidel.officemate.ng/api/register/applicants";
+            $query = array(
+                "Name"          => $request->firstname." ".$request->lastname,
+                "PhoneNumber"   => $request->mobile,
+                "EmailAddress"  => $request->email,
+                "CVfile"        => $request->resume_base64
+            );
+            $headers  = array('Content-Type: application/json');
+
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, $endpoint);
+            curl_setopt($ch, CURLOPT_POST, 1);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($query)); //Post Fields
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 200);
+            curl_setopt($ch, CURLOPT_TIMEOUT, 200);
+            curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+            $res = curl_exec($ch);
+
+            // return
+            $data = json_decode($res, true);
+
+            // close the connection
+            curl_close($ch);
+        } catch (Exception $e) {
+            $data   = $e->getMessage();
+        }
+
+        // return response.
+        return response()->json($data);
+    }
 }
