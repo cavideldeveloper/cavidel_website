@@ -24,29 +24,25 @@
     <!--========== END PROMO BLOCK ==========-->
 
      <section class="background-11">
-        <div class="g-position--relative g-bg-color--dark-light">
+        <div class="g-position--relative">
             <div class="g-container--md g-padding-y-20--xs">
                 <div class="g-text-center--xs g-margin-t-50--xs g-margin-b-20--xs">
                     <p class="g-font-size-14--xs g-font-weight--700 g-color--white-opacity g-letter-spacing--2 g-margin-b-25--xs g-font-weight--700 animated bounceInDown">We are Hiring</p>
                 </div>
                 
-                <div id="list-all-jobs"></div>
-            </div>
-            <!--/.row-->
-        </div>
-    </section>
-
-
-    <!-- SHOW APPLY MODAL -->
-    <div class="modal fade" id="display-apply-modal" role="dialog">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4>APPLY NOW</h4>
-                </div>
-                <div class="modal-body">
+                    {{-- <div id="list-all-jobs"></div> --}}
                     <form method="post" onsubmit="return submitGuestApplication()" class="contact-form center-block" enctype="multipart/form-data">
                         <input type="hidden" id="JobPlacementRef" name="">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="job_title">Job Title</label>
+                                    <select name="" class="form-control" id="job_title" required="">
+                                        <option value=""> -- select available job placement -- </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -61,7 +57,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -84,7 +79,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row g-margin-b-25--xs ">
+                        <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label>Address</label>
@@ -92,7 +87,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row g-margin-b-25--xs ">
+                        <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="letter">Attach a Cover Letter <span class="small">(Only pdf format)</span></label>
@@ -110,8 +105,74 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="gender">Gender</label>
+                                    {{-- <input list="gender" class="form-control" name="">
+                                    <datalist id="gender"> 
+                                        <option value="BMW" /> 
+                                        <option value="Bentley" /> 
+                                        <option value="Mercedes" /> 
+                                        <option value="Audi" /> 
+                                        <option value="Volkswagen" /> 
+                                    </datalist>  --}}
+                                    <select name="" class="form-control" id="gender">
+                                        <option value=""> -- select gender -- </option>
+                                        <option value="1">Male</option>
+                                        <option value="2">Female</option>
+                                        <option value="3">Others</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="age_range">Age range</label>
+                                    <select name="" class="form-control" id="age_range" required="">
+                                        <option value=""> -- select age range -- </option>
+                                        <option value="25">25</option>
+                                        <option value="26-39">26-39</option>
+                                        <option value="30-35">30-35</option>
+                                        <option value="Above 35">Above 35</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="work_experience">Years of work experience</label>
+                                    <input type="number" min="0" step="1" id="work_experience" placeholder="Eg. 3" name="" class="form-control" required="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="skills">Skills</label>
+                                    <input type="text" id="skills" placeholder="Eg, Java, PHP etc." name="" class="form-control" required="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <div><label for="competency">Competency (betwwen <span id="range_value"></span> - 5)</label>
+                                        
+                                    </div>
+                                    <input type="range" onchange="getRangeValue()" id="competency" name="" min="0" max="5" class="form-control" value="0" required="">
+                                </div>
+                            </div>
+                        </div>
+
                         <br />
-                        <div class="row g-margin-b-25--xs ">
+                        <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <button class="text-uppercase btn btn-primary">
@@ -121,6 +182,21 @@
                             </div>
                         </div>
                     </form>
+            </div>
+            <!--/.row-->
+        </div>
+    </section>
+
+
+    <!-- SHOW APPLY MODAL -->
+    <div class="modal fade" id="display-apply-modal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>APPLY NOW</h4>
+                </div>
+                <div class="modal-body">
+
                 </div>
                 <div class="modal-footer">
                     <div class="pull-right">
@@ -140,7 +216,8 @@
 @section('scripts')
     <script src="https://momentjs.com/downloads/moment.js"></script>
     <script type="text/javascript">
-        getAllJobPlacement();
+        // getAllJobPlacement();
+        getRangeValue();
 
         async function pushLetterToBase64Format(argument) {
             var letter_file = document.querySelector(`input[name=letter]`).files[0];
@@ -312,6 +389,12 @@
             // body...
             $("#JobPlacementRef").val(job_ref);
             $("#display-apply-modal").modal();
+        }
+
+        function getRangeValue() {
+            // body...
+            var range_selected = $("#competency").val();
+            $("#range_value").html(range_selected);
         }
     </script>
 @endsection
