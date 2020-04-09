@@ -225,8 +225,8 @@ class ClientJsonResponseController extends Controller
     public function getJobPlacements(Request $request){
         // body
         try {
-            $endpoint = "http://localhost:8333/api/all/job/placement";
-            // $endpoint = "https://cavidel.officemate.ng/api/all/job/placement";
+            // $endpoint = "http://localhost:8333/api/all/job/placement";
+            $endpoint = "https://cavidel.officemate.ng/api/all/job/placement";
             $headers  = array('Content-Type: application/json');
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, $endpoint);

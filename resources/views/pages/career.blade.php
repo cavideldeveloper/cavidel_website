@@ -46,6 +46,7 @@
                 </div>
                 <div class="modal-body">
                     <form method="post" onsubmit="return submitGuestApplication()" class="contact-form center-block" enctype="multipart/form-data">
+                        <input type="hidden" id="JobPlacementRef" name="">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -180,7 +181,8 @@
             var address         = $("#address").val();
             var letter_base64   = $("#letter_base64").val();
             var resume_base64   = $("#resume_base64").val();
-            var query = {_token, firstname, lastname, email, mobile, description, address, letter_base64,resume_base64};
+            var job_placement_ref = $("#JobPlacementRef").val();
+            var query = {_token, job_placement_ref, firstname, lastname, email, mobile, description, address, letter_base64,resume_base64}
 
             fetch(`{{url('send/application/form')}}`, {
                 method: 'POST',
@@ -308,6 +310,7 @@
 
         function applyForThisJob(job_ref) {
             // body...
+            $("#JobPlacementRef").val(job_ref);
             $("#display-apply-modal").modal();
         }
     </script>
