@@ -110,8 +110,8 @@ class ClientJsonResponseController extends Controller
         ];
 
         try {
-            $endpoint = "http://localhost:8333/api/register/applicants";
-            // $endpoint = "https://cavidel.officemate.ng/api/register/applicants";
+            // $endpoint = "http://localhost:8333/api/register/applicants";
+            $endpoint = "https://cavidel.officemate.ng/api/register/applicants";
             $query = array(
                 "InterviewCategoryID" => $request->job_title,
                 "Name"          => $request->firstname." ".$request->lastname,
@@ -124,6 +124,9 @@ class ClientJsonResponseController extends Controller
                 "Skills"        => $request->skills,
                 "Competency"    => $request->competency,
             );
+
+            // dd($query);
+            return $query;
 
             $headers  = array('Content-Type: application/json');
 
@@ -243,8 +246,8 @@ class ClientJsonResponseController extends Controller
     public function getJobPlacements(Request $request){
         // body
         try {
-            $endpoint = "http://localhost:8333/api/all/job/placement";
-            // $endpoint = "https://cavidel.officemate.ng/api/all/job/placement";
+            // $endpoint = "http://localhost:8333/api/all/job/placement";
+            $endpoint = "https://cavidel.officemate.ng/api/all/job/placement";
             $headers  = array('Content-Type: application/json');
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, $endpoint);
@@ -275,8 +278,8 @@ class ClientJsonResponseController extends Controller
     public function getJobPlacementsTypes(Request $request){
         // body
         try {
-            $endpoint = "http://localhost:8333/api/interview/category";
-            // $endpoint = "https://cavidel.officemate.ng/api/interview/category";
+            // $endpoint = "http://localhost:8333/api/interview/category";
+            $endpoint = "https://cavidel.officemate.ng/api/interview/category";
             $headers  = array('Content-Type: application/json');
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, $endpoint);
