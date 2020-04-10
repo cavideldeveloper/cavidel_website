@@ -43,6 +43,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -163,8 +164,8 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <div><label for="competency">Competency (betwwen <span id="range_value"></span> - 5)</label>
-                                        
+                                    <div>
+                                        <label for="competency">Competency (betwwen <span id="range_value"></span> - 5)</label>
                                     </div>
                                     <input type="range" onchange="getRangeValue()" id="competency" name="" min="0" max="5" class="form-control" value="0" required="">
                                 </div>
@@ -218,6 +219,7 @@
     <script type="text/javascript">
         // getAllJobPlacement();
         getRangeValue();
+        getInterviewCategory();
 
         async function pushLetterToBase64Format(argument) {
             var letter_file = document.querySelector(`input[name=letter]`).files[0];
@@ -248,7 +250,6 @@
         }
 
         function submitGuestApplication() {
-            
             var _token          = $("#token").val();
             var firstname       = $("#firstname").val();
             var lastname        = $("#lastname").val();
@@ -256,10 +257,17 @@
             var mobile          = $("#mobile").val();
             var description     = $("#description").val();
             var address         = $("#address").val();
+            var gender          = $("#gender").val();
+            var age_range       = $("#age_range").val();
+            var work_experience = $("#work_experience").val();
+            var skills          = $("#skills").val();
+            var competency      = $("#competency").val();
             var letter_base64   = $("#letter_base64").val();
             var resume_base64   = $("#resume_base64").val();
-            var job_placement_ref = $("#JobPlacementRef").val();
-            var query = {_token, job_placement_ref, firstname, lastname, email, mobile, description, address, letter_base64,resume_base64}
+            var job_placement_ref = $("#job_title").val();
+            var job_title       = $("#job_title").val();
+
+            var query = {_token, job_title, gender, age_range, work_experience, skills, competency, job_placement_ref, firstname, lastname, email, mobile, description, address, letter_base64, resume_base64}
 
             fetch(`{{url('send/application/form')}}`, {
                 method: 'POST',
@@ -301,7 +309,6 @@
         }
 
         function getAllJobPlacement() {
-            
             fetch(`{{url('get/all/job/placement')}}`, {
                 method: 'GET',
                 headers: {
@@ -395,6 +402,42 @@
             // body...
             var range_selected = $("#competency").val();
             $("#range_value").html(range_selected);
+        }
+
+        function getInterviewCategory() {
+            fetch(`{{url('get/all/job/type')}}`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            }).then(r => {
+                if (r.status >= 200 && r.status <= 299) {
+                    // assume success
+                      return r.json();
+            
+                } else if(r.status == 419){
+                    swal(
+                        r.statusText,
+                        'error'
+                    );
+                } else {
+                      console.log(r);
+                     throw Error(r.statusText);
+                }
+            }).then(results => {
+                console.log(results);
+                $("#job_title").html("");
+                $("#job_title").append(`
+                    <option value=""> -- select available job placement -- </option>
+                `);
+                $.each(results, function(index, val) {
+                    $("#job_title").append(`
+                        <option value="${val.InterviewCategoryRef}">${val.InterviewCategory}</option>
+                    `);
+                });
+            }).catch(err => {
+                console.log(err);
+            })
         }
     </script>
 @endsection

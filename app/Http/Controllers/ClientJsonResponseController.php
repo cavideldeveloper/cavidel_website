@@ -79,6 +79,12 @@ class ClientJsonResponseController extends Controller
         $mobile         = $request->mobile;
         $description    = $request->description;
         $address        = $request->address;
+        $gender         = $request->gender;
+        $age_range      = $request->age_range;
+        $work_experience = $request->work_experience;
+        $skills         = $request->skills;
+        $competency     = $request->competency;
+        $job_title      = $request->job_title;
 
         $letter         = $this->convertBase64ToFile($request->letter_base64, 'uploads', $firstname, $lastname);
         $resume         = $this->convertBase64ToFile($request->resume_base64, 'uploads', $firstname, $lastname);
@@ -94,18 +100,31 @@ class ClientJsonResponseController extends Controller
             'description' => $description,
             'address'     => $address,
             'letter'      => $path_to_letter,
-            'resume'      => $path_to_resume
+            'resume'      => $path_to_resume,
+            'gender'        => $gender,
+            'age_range'     => $age_range,
+            'work_experience' => $work_experience,
+            'skills'        => $skills,
+            'competency'    => $competency,
+            'job_title'     => $job_title
         ];
 
         try {
             $endpoint = "http://localhost:8333/api/register/applicants";
             // $endpoint = "https://cavidel.officemate.ng/api/register/applicants";
             $query = array(
+                "InterviewCategoryID" => $request->job_title,
                 "Name"          => $request->firstname." ".$request->lastname,
                 "PhoneNumber"   => $request->mobile,
                 "EmailAddress"  => $request->email,
-                "CVfile"        => $request->resume_base64
+                "CVfile"        => $request->resume_base64,
+                "Gender"        => $request->gender,
+                "AgeRange"      => $request->age_range,
+                "WorkExperience"=> $request->work_experience,
+                "Skills"        => $request->skills,
+                "Competency"    => $request->competency,
             );
+
             $headers  = array('Content-Type: application/json');
 
             $ch = curl_init();
@@ -177,7 +196,6 @@ class ClientJsonResponseController extends Controller
         return response()->json($data);
     }
 
-
     /*
     |-----------------------------------------
     | CLEAR MAIL QUEUE
@@ -227,6 +245,38 @@ class ClientJsonResponseController extends Controller
         try {
             $endpoint = "http://localhost:8333/api/all/job/placement";
             // $endpoint = "https://cavidel.officemate.ng/api/all/job/placement";
+            $headers  = array('Content-Type: application/json');
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, $endpoint);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 200);
+            curl_setopt($ch, CURLOPT_TIMEOUT, 200);
+            curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+            $res = curl_exec($ch);
+
+            // return
+            $data = json_decode($res, true);
+
+            // close the connection
+            curl_close($ch);
+        } catch (Exception $e) {
+            $data   = $e->getMessage();
+        }
+
+        // return response.
+        return response()->json($data);
+    }
+
+    /*
+    |-----------------------------------------
+    | GET JOB PLACEMENT
+    |-----------------------------------------
+    */
+    public function getJobPlacementsTypes(Request $request){
+        // body
+        try {
+            $endpoint = "http://localhost:8333/api/interview/category";
+            // $endpoint = "https://cavidel.officemate.ng/api/interview/category";
             $headers  = array('Content-Type: application/json');
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, $endpoint);

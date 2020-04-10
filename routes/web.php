@@ -146,8 +146,9 @@ Route::post('/send/order/request',		    'ClientJsonResponseController@placeNewOr
 Route::get('/fetch/all/products',			'ClientJsonResponseController@fetchProducts')->name('fetch_products');
 Route::post('clear/contact/mail/queue',     'ClientJsonResponseController@clearQueue'); 
 Route::get('/get/all/job/placement',		'ClientJsonResponseController@getJobPlacements');
+Route::get('/get/all/job/type',				'ClientJsonResponseController@getJobPlacementsTypes');
 
-Route::get('migrate',	function(){
+Route::get('migrate', function(){
 	Artisan::call('migrate');
 	return redirect('/');
 });
