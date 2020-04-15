@@ -111,9 +111,9 @@ class ClientJsonResponseController extends Controller
 
         try {
             if(env("APP_ENV") == "local"){
-                $endpoint = "$env("API_LOCAL_URL")/register/applicants";
+                $endpoint = env("API_LOCAL_URL")."/register/applicants";
             }else{
-                $endpoint = "$env("API_LIVE_URL")/register/applicants";
+                $endpoint = env("API_LIVE_URL")."/register/applicants";
             }
             // 
             $endpoint = "https://cavidel.officemate.ng/api/register/applicants";
@@ -253,9 +253,46 @@ class ClientJsonResponseController extends Controller
         try {
 
             if(env("APP_ENV") == "local"){
-                $endpoint = "$env("API_LOCAL_URL")/all/job/placement";
+                $endpoint = env("API_LOCAL_URL")."/all/job/placement";
             }else{
-                $endpoint = "$env("API_LIVE_URL")/all/job/placement";
+                $endpoint = env("API_LIVE_URL")."/all/job/placement";
+            }
+
+            $headers  = array('Content-Type: application/json');
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, $endpoint);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 200);
+            curl_setopt($ch, CURLOPT_TIMEOUT, 200);
+            curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+            $res = curl_exec($ch);
+
+            // return
+            $data = json_decode($res, true);
+
+            // close the connection
+            curl_close($ch);
+        } catch (Exception $e) {
+            $data   = $e->getMessage();
+        }
+
+        // return response.
+        return response()->json($data);
+    }
+
+    /*
+    |-----------------------------------------
+    | GET JOB PLACEMENT
+    |-----------------------------------------
+    */
+    public function getJobPlacementByRef(Request $request, $id){
+        // body
+        try {
+
+            if(env("APP_ENV") == "local"){
+                $endpoint = env("API_LOCAL_URL")."/one/job/placement/".$id;
+            }else{
+                $endpoint = env("API_LIVE_URL")."/one/job/placement/".$id;
             }
 
             $headers  = array('Content-Type: application/json');
@@ -289,11 +326,11 @@ class ClientJsonResponseController extends Controller
         // body
         try {
             if(env("APP_ENV") == "local"){
-                $endpoint = "$env("API_LOCAL_URL")/all/interview/category";
+                $endpoint = env("API_LOCAL_URL")."/interview/category";
             }else{
-                $endpoint = "$env("API_LIVE_URL")/all/interview/category";
+                $endpoint = env("API_LIVE_URL")."/interview/category";
             }
-            
+
             $headers  = array('Content-Type: application/json');
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, $endpoint);

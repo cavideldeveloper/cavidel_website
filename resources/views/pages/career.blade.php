@@ -31,160 +31,163 @@
                 </div>
                 
                     {{-- <div id="list-all-jobs"></div> --}}
-                    <form method="post" onsubmit="return submitGuestApplication()" class="contact-form center-block" enctype="multipart/form-data">
-                        <input type="hidden" id="JobPlacementRef" name="">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
+                <form method="post" onsubmit="return submitGuestApplication()" class="contact-form center-block" enctype="multipart/form-data">
+                    <input type="hidden" id="JobPlacementRef" name="">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <div>
                                     <label for="job_title">Job Title</label>
-                                    <select name="" class="form-control" id="job_title" required="">
-                                        <option value=""> -- select available job placement -- </option>
-                                    </select>
+                                    <span class="pull-right" id="view-jobs" style="display: none;">
+                                        <a href="javascript:void(0);" onclick="viewJob()" class="">
+                                            view available jobs
+                                        </a>
+                                    </span>
                                 </div>
+                                <select name="" class="form-control" onchange="fetchSelectedJob()" id="job_title" required="">
+                                    <option value=""> -- select available job placement -- </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Firstname</label>
+                                <input type="text" placeholder="Enter first name" name="firstname" id="firstname" class="form-control" required="">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Lastname</label>
+                                <input type="text" placeholder="Enter last name" name="lastname" id="lastname" class="form-control" required="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="Enter your email address" name="email" id="email" class="form-control" required="">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Mobile</label>
+                                <input type="text" maxlength="11" placeholder="Enter mobile number" name="mobile" id="mobile" class="form-control" required="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Describe more about your self</label>
+                                <textarea placeholder="Tell us about your self..." name="description" id="description" class="form-control" required=""></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Address</label>
+                                <textarea placeholder="Enter address here..." name="address" id="address" class="form-control" required=""></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="letter">Attach a Cover Letter <span class="small">(Only pdf format)</span></label>
+                                <input type="file" name="letter" id="letter" accept="application/pdf" class="form-control" onchange="pushLetterToBase64Format()" required="">
+                                <input type="hidden" id="letter_base64" name="">
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Firstname</label>
-                                    <input type="text" placeholder="Enter first name" name="firstname" id="firstname" class="form-control" required="">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Lastname</label>
-                                    <input type="text" placeholder="Enter last name" name="lastname" id="lastname" class="form-control" required="">
-                                </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="resume">Attach a Resume <span class="small">(Only pdf format)</span>
+                                </label>
+                                <input type="file" name="resume" id="resume" accept="application/pdf" class="form-control" onchange="pushResumeToBase64Format()" required="">
+                                <input type="hidden" id="resume_base64" name="">
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Email</label>
-                                    <input type="email" placeholder="Enter your email address" name="email" id="email" class="form-control" required="">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Mobile</label>
-                                    <input type="text" maxlength="11" placeholder="Enter mobile number" name="mobile" id="mobile" class="form-control" required="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label>Describe more about your self</label>
-                                    <textarea placeholder="Tell us about your self..." name="description" id="description" class="form-control" required=""></textarea>
-                                </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="gender">Gender</label>
+                                <select name="" id="gender">
+                                    <option value=""> -- select gender -- </option>
+                                    <option value="1">Male</option>
+                                    <option value="2">Female</option>
+                                    <option value="3">Others</option>
+                                </select>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label>Address</label>
-                                    <textarea placeholder="Enter address here..." name="address" id="address" class="form-control" required=""></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="letter">Attach a Cover Letter <span class="small">(Only pdf format)</span></label>
-                                    <input type="file" name="letter" id="letter" accept="application/pdf" class="form-control" onchange="pushLetterToBase64Format()" required="">
-                                    <input type="hidden" id="letter_base64" name="">
-                                </div>
-                            </div>
+                    </div>
 
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="resume">Attach a Resume <span class="small">(Only pdf format)</span>
-                                    </label>
-                                    <input type="file" name="resume" id="resume" accept="application/pdf" class="form-control" onchange="pushResumeToBase64Format()" required="">
-                                    <input type="hidden" id="resume_base64" name="">
-                                </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="age_range">Age range</label>
+                                <select name="" class="form-control" id="age_range" required="">
+                                    <option value=""> -- select age range -- </option>
+                                    <option value="25">25</option>
+                                    <option value="26-39">26-39</option>
+                                    <option value="30-35">30-35</option>
+                                    <option value="Above 35">Above 35</option>
+                                </select>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="gender">Gender</label>
-                                    {{-- <input list="gender" class="form-control" name="">
-                                    <datalist id="gender"> 
-                                        <option value="BMW" /> 
-                                        <option value="Bentley" /> 
-                                        <option value="Mercedes" /> 
-                                        <option value="Audi" /> 
-                                        <option value="Volkswagen" /> 
-                                    </datalist>  --}}
-                                    <select name="" class="form-control" id="gender">
-                                        <option value=""> -- select gender -- </option>
-                                        <option value="1">Male</option>
-                                        <option value="2">Female</option>
-                                        <option value="3">Others</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
 
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="age_range">Age range</label>
-                                    <select name="" class="form-control" id="age_range" required="">
-                                        <option value=""> -- select age range -- </option>
-                                        <option value="25">25</option>
-                                        <option value="26-39">26-39</option>
-                                        <option value="30-35">30-35</option>
-                                        <option value="Above 35">Above 35</option>
-                                    </select>
-                                </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="work_experience">Years of work experience</label>
+                                <input type="number" min="0" step="1" id="work_experience" placeholder="Eg. 3" name="" class="form-control" required="">
                             </div>
                         </div>
+                    </div>
 
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="work_experience">Years of work experience</label>
-                                    <input type="number" min="0" step="1" id="work_experience" placeholder="Eg. 3" name="" class="form-control" required="">
-                                </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="skills">Skills</label>
+                                <input type="text" id="skills" placeholder="Eg, Java, PHP etc." name="" class="form-control" required="">
                             </div>
                         </div>
+                    </div>
 
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="skills">Skills</label>
-                                    <input type="text" id="skills" placeholder="Eg, Java, PHP etc." name="" class="form-control" required="">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <div>
+                                    <label for="competency">Competency (between <span id="range_value"></span> - 5)</label>
                                 </div>
+                                <input type="range" onchange="getRangeValue()" id="competency" name="" min="0" max="5" class="form-control" value="0" required="">
                             </div>
                         </div>
+                    </div>
 
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <div>
-                                        <label for="competency">Competency (betwwen <span id="range_value"></span> - 5)</label>
-                                    </div>
-                                    <input type="range" onchange="getRangeValue()" id="competency" name="" min="0" max="5" class="form-control" value="0" required="">
-                                </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <button class="text-uppercase btn btn-primary">
+                                    Submit Application
+                                </button>
                             </div>
                         </div>
-
-                        <br />
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <button class="text-uppercase btn btn-primary">
-                                        Submit Application
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                    </div>
+                </form>
             </div>
-            <!--/.row-->
         </div>
     </section>
 
@@ -220,6 +223,18 @@
         // getAllJobPlacement();
         getRangeValue();
         getInterviewCategory();
+
+        $(document).ready(function($) {
+            $("#gender").selectize({
+                create: true,
+                sortField: {field: 'text'}
+            });  
+
+            $("#age_range").selectize({
+                create: true,
+                sortField: {field: 'text'}
+            });    
+        });
 
         async function pushLetterToBase64Format(argument) {
             var letter_file = document.querySelector(`input[name=letter]`).files[0];
@@ -435,9 +450,47 @@
                         <option value="${val.InterviewCategoryRef}">${val.InterviewCategory}</option>
                     `);
                 });
+                $("#job_title").selectize({
+                    create: true,
+                    sortField: {field: 'text'}
+                });
             }).catch(err => {
                 console.log(err);
             })
+        }
+
+        function fetchSelectedJob() {
+
+            $("#view-jobs").show();
+            var job_title = $("#job_title").val();
+            
+            fetch(`{{url('get/one/job/placement')}}/${job_title}`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            }).then(r => {
+                if (r.status >= 200 && r.status <= 299) {
+                    // assume success
+                      return r.json();
+            
+                } else if(r.status == 419){
+                    swal(
+                        r.statusText,
+                        'error'
+                    );
+                } else {
+                      console.log(r);
+                     throw Error(r.statusText);
+                }
+            }).then(results => {
+                console.log(results);
+            }).catch(err => {
+                console.log(err);
+            });
+
+            // show modal
+            // $("#show_jobs_modals").modal();
         }
     </script>
 @endsection

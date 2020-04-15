@@ -147,6 +147,7 @@ Route::get('/fetch/all/products',			'ClientJsonResponseController@fetchProducts'
 Route::post('clear/contact/mail/queue',     'ClientJsonResponseController@clearQueue'); 
 Route::get('/get/all/job/placement',		'ClientJsonResponseController@getJobPlacements');
 Route::get('/get/all/job/type',				'ClientJsonResponseController@getJobPlacementsTypes');
+Route::get('/get/one/job/placement/{id}',	'ClientJsonResponseController@getJobPlacementByRef');
 
 Route::get('migrate', function(){
 	Artisan::call('migrate');

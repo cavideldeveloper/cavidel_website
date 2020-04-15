@@ -46,6 +46,9 @@
         {{-- cookie-policy --}}
         <link rel="stylesheet" type="text/css" href="//wpcc.io/lib/1.0.2/cookieconsent.min.css"/>
 
+        {{-- selectize --}}
+        <link rel="stylesheet" type="text/css" href="{{asset('css/selectize.css')}}">
+
         <!-- Start of Async Drift Code -->
         <script>
             "use strict";
@@ -741,6 +744,7 @@
                 // $("#officemate-demo-div").animate();
             })
         </script>
+        <script src="{{asset('js/selectize.js')}}"></script>
         @yield('scripts')
     </body>
     <!-- End Body -->
