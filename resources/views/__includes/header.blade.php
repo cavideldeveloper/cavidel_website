@@ -20,6 +20,7 @@
                         
                         <li class="new-menu-link"><a href="{{ url('contact') }}" class="g-font-weight--500">CONTACT</a></li>
                         <li class="new-menu-link"><a href="{{ url('career') }}">CAREER</a></li>
+                        <li class="new-menu-link"><a href="{{ url('blog') }}">BLOG</a></li>
                         <li class="new-menu-link dropdown">
                             <a href="javascript:void(0);" class="g-font-weight--500">
                                 OUR BUSINESS

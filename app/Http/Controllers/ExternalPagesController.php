@@ -161,6 +161,14 @@ class ExternalPagesController extends Controller
 
     /*
     |---------------------------------------------
+    | SHOW BLOG POST
+    |---------------------------------------------
+    */
+    public function blogPost() {
+        return view('pages.blog-post');
+    }
+    /*
+    |---------------------------------------------
     | SHOW CONTACT US
     |---------------------------------------------
     */

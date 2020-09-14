@@ -2,7 +2,7 @@
 
 {{--  title --}}
 @section('title')
-	{{ env("APP_NAME") }} | Contact Us
+	{{ env("APP_NAME") }} | Blog
 @endsection
 
 {{--  contents --}}
@@ -12,11 +12,163 @@
     <!--========== PROMO BLOCK ==========-->
     <div class="js__parallax-window" style="background: url(img/1920x1080/02.jpg) 5% 0 no-repeat fixed; height: 100px;">
         <div class="g-container--md g-text-center--xs g-padding-y-150--xs">
-            
+            {{-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aliquid ullam debitis excepturi, non cupiditate eum porro doloribus adipisci perspiciatis. Ab odio quisquam veniam similique, aliquam et esse libero quos. --}}
         </div>
     </div>
     
-	@include('__includes.news')
+    <div class="container blog-container">
+        <div class="row">
+            <div>
+                <p class="sidebar-caption">Trending Posts</p>
+                <div class="col-md-6">
+                    <div>
+                        <div class="col-xs-8">
+                            <p class="sidebar-title">10 Ways To Check For Cash Leak In Your Business</p>
+                            <p><span class="post-author">Damilola Olaribigbe</span> - <span class="post-category">Accounting</span></p>
+                        </div>
+                        <div class="col-xs-4">
+                            <p><img src="https://via.placeholder.com/720x400.png" alt="" class="img-fluid img-thumbnail"></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col-xs-8">
+                            <p class="sidebar-title">10 Ways To Check For Cash Leak In Your Business</p>
+                            <p><span class="post-author">Damilola Olaribigbe</span> - <span class="post-category">Accounting</span></p>
+                        </div>
+                        <div class="col-xs-4">
+                            <p><img src="https://via.placeholder.com/720x400.png" alt="" class="img-fluid img-thumbnail"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <div class="col-xs-8">
+                            <p class="sidebar-title">10 Ways To Check For Cash Leak In Your Business</p>
+                            <p><span class="post-author">Damilola Olaribigbe</span> - <span class="post-category">Accounting</span></p>
+                        </div>
+                        <div class="col-xs-4">
+                            <p><img src="https://via.placeholder.com/720x400.png" alt="" class="img-fluid img-thumbnail"></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col-xs-8">
+                            <p class="sidebar-title">10 Ways To Check For Cash Leak In Your Business</p>
+                            <p><span class="post-author">Damilola Olaribigbe</span> - <span class="post-category">Accounting</span></p>
+                        </div>
+                        <div class="col-xs-4">
+                            <p><img src="https://via.placeholder.com/720x400.png" alt="" class="img-fluid img-thumbnail"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row post-holder">
+            <div class="col-md-8">
+                <div class="row category-container">
+                    <div class="col-sm-3"><a href=""><span class="categories-list">All Categories</span></a></div>
+                    <div class="col-sm-2"><a href=""><span class="categories-list">Technology</span></a></div>
+                    <div class="col-sm-2"><a href=""><span class="categories-list">Accounting</span></a></div>
+                    <div class="col-sm-2"><a href=""><span class="categories-list">Business</span></a></div>
+                    <div class="col-sm-3"><a href=""><span class="categories-list">Product News</span></a></div>
+                </div>
+                <div class="post-container">
+                    <div class="featured-image">
+                        <p><img src="https://via.placeholder.com/720x400.png" alt="" class="img-fluid rounded"></p>
+                    </div>
+                    <div>
+                        <p><span class="post-category">Accounting</span></p>
+                        <p class="post-title">10 Ways To Check For Cash Leak In Your Business</p>
+                        <p><span class="post-author">Damilola Olaribigbe</span> - <span class="post-date">June 6, 2020</span></p>
+                        <p class="post-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam id iste consectetur aut commodi, vitae rem in laboriosam maiores error atque a facere voluptate tempora recusandae saepe repellendus nisi debitis? <a href="">Read More</a></p>
+                    </div>  
+                </div>
+                <div class="post-container">
+                    <div class="featured-image">
+                        <p><img src="https://via.placeholder.com/720x400.png" alt="" class="img-fluid rounded"></p>
+                    </div>
+                    <div class="post-info">
+                        <p><span class="post-category">Accounting</span></p>
+                        <p class="post-title">10 Ways To Check For Cash Leak In Your Business</p>
+                        <p><span class="post-author">Damilola Olaribigbe</span> - <span class="post-date">June 6, 2020</span></p>
+                        <p class="post-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam id iste consectetur aut commodi, vitae rem in laboriosam maiores error atque a facere voluptate tempora recusandae saepe repellendus nisi debitis? <a href="">Read More</a></p>
+                    </div>  
+                </div>
+                <div class="post-container">
+                    <div class="featured-image">
+                        <p><img src="https://via.placeholder.com/720x400.png" alt="" class="img-fluid rounded"></p>
+                    </div>
+                    <div>
+                        <p><span class="post-category">Accounting</span></p>
+                        <p class="post-title">10 Ways To Check For Cash Leak In Your Business</p>
+                        <p><span class="post-author">Damilola Olaribigbe</span> - <span class="post-date">June 6, 2020</span></p>
+                        <p class="post-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam id iste consectetur aut commodi, vitae rem in laboriosam maiores error atque a facere voluptate tempora recusandae saepe repellendus nisi debitis? <a href="">Read More</a></p>
+                    </div>  
+                </div>
+
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#">1</a>
+                    <a class="active" href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">&raquo;</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div>
+                    <p class="sidebar-caption">Recommended Posts</p>
+                    <div class="recommended-posts">
+                        <div class="featured-image">
+                            <p><img src="https://via.placeholder.com/720x400.png" alt="" class="img-fluid rounded"></p>
+                        </div>
+                        <div>
+                            <span class="post-category">Accounting</span>
+                            <p class="sidebar-title">10 Ways To Check For Cash Leak In Your Business</p>
+                            <p><span class="post-author">Damilola Olaribigbe</span> - <span class="post-date">June 6, 2020</span></p>
+                        </div>
+                    </div>
+                    <div class="recommended-posts">
+                        <div class="featured-image">
+                            <p><img src="https://via.placeholder.com/720x400.png" alt="" class="img-fluid rounded"></p>
+                        </div>
+                        <div>
+                            <span class="post-category">Accounting</span>
+                            <p class="sidebar-title">10 Ways To Check For Cash Leak In Your Business</p>
+                            <p><span class="post-author">Damilola Olaribigbe</span> - <span class="post-date">June 6, 2020</span></p>
+                        </div>
+                    </div>
+                    <div class="recommended-posts">
+                        <div class="featured-image">
+                            <p><img src="https://via.placeholder.com/720x400.png" alt="" class="img-fluid rounded"></p>
+                        </div>
+                        <div>
+                            <span class="post-category">Accounting</span>
+                            <p class="sidebar-title">10 Ways To Check For Cash Leak In Your Business</p>
+                            <p><span class="post-author">Damilola Olaribigbe</span> - <span class="post-date">June 6, 2020</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="newsletter-section">
+                    <p class="sidebar-caption">Email Newsletter</p>
+                    <p>Sign up to receive email updates and to hear what's going on.</p>
+                    <div>
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Enter Name" id="fullname" style="height:50px;">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Enter Email" id="email" style="height:50px;">
+                            </div>
+                            <button type="submit" class="btn btn-dark" style="height:50px;width:100%;">Subscribe to newsletter</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	{{-- @include('__includes.news') --}}
 
     @include('__includes.footer')
 @endsection

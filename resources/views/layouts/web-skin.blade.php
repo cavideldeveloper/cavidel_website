@@ -26,6 +26,9 @@
         <link href="vendor/swiper/swiper.min.css" rel="stylesheet" type="text/css"/>
         <link href="vendor/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css"/>
 
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
         <!-- Theme Styles -->
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <link href="css/global/global.css" rel="stylesheet" type="text/css"/>
@@ -363,6 +366,17 @@
         <script src="{{asset('js/particles.min.js')}}"></script>
         <script src="{{asset('js/select2.min.js')}}"></script>
         <script src="{{asset('js/xmas.js')}}"></script>
+
+        <!-- JS CDN -->
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
         <script type="text/javascript">
             // var snowEffectInterval = jQuery.fn.snow({
             //   // min size of element (default: 20)
