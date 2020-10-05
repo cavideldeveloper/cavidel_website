@@ -202,7 +202,7 @@
         //load all posts
         function fetchAllPosts() {
             // console.log("listening");{{ url('127.0.0.1:80/api/blog/posts') }}
-            fetch(`http://127.0.0.1:80/api/blog/posts`, {mode: 'no-cors'}, {
+            fetch(`{{ url('/get/all/posts') }}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',

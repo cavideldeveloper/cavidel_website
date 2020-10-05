@@ -4,6 +4,7 @@ namespace Cavidel\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Cavidel\Team;
+use Cavidel\Post;
 
 class ExternalPagesController extends Controller
 {
@@ -290,5 +291,23 @@ class ExternalPagesController extends Controller
     public function learningTech(Request $request){
         // body
         return view('pages.learning-tech');
+    }
+
+    /*
+    |-----------------------------------------
+    | SHOW ALL POSTS
+    |-----------------------------------------
+    */
+    public function getAllPosts(Request $request){
+    	// body
+    	$posts 	= new Post();
+    	$data 			= $posts->getAllPosts($request);
+
+        // to collection
+        // $all_subscribers    = $all_users['data'] ?? [];
+
+        // return view('officemate_admin.index', compact('all_subscribers'));
+        //return response
+        return response()->json($data, 200);
     }
 }
