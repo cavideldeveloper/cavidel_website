@@ -37,6 +37,7 @@ Route::get('/payment-integration',			'ExternalPagesController@paymentIntegration
 Route::get('/solutions',					'ExternalPagesController@solutions');
 Route::get('/blog',							'ExternalPagesController@blog');
 Route::get('/{id}',               'ExternalPagesController@blogPost');
+Route::get('/get/all/posts',       'ExternalPagesController@getAllPosts');
 Route::get('/faq',							'ExternalPagesController@faq');
 Route::get('/portfolio',					'ExternalPagesController@portfolio');
 
