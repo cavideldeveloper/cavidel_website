@@ -38,6 +38,9 @@ Route::get('/solutions',					'ExternalPagesController@solutions');
 Route::get('/blog',							'ExternalPagesController@blog');
 Route::get('/{id}',               'ExternalPagesController@blogPost');
 Route::get('/get/all/posts',       'ExternalPagesController@getAllPosts');
+Route::get('/get/all/posts/by/views',       'ExternalPagesController@getAllPostsByViews');
+Route::get('/get/all/category/posts/{category_id}',       'ExternalPagesController@getAllCategoryPosts');
+
 Route::get('/faq',							'ExternalPagesController@faq');
 Route::get('/portfolio',					'ExternalPagesController@portfolio');
 
@@ -146,7 +149,7 @@ Route::post('/send/application/form',		'ClientJsonResponseController@application
 Route::get('/get/all/team/member',			'ClientJsonResponseController@getTeamMembers')->name('team_member');
 Route::post('/send/order/request',		    'ClientJsonResponseController@placeNewOrder')->name('order_request');
 Route::get('/fetch/all/products',			'ClientJsonResponseController@fetchProducts')->name('fetch_products');
-Route::post('clear/contact/mail/queue',     'ClientJsonResponseController@clearQueue'); 
+Route::post('clear/contact/mail/queue',     'ClientJsonResponseController@clearQueue');
 Route::get('/get/all/job/placement',		'ClientJsonResponseController@getJobPlacements');
 Route::get('/get/all/job/type',				'ClientJsonResponseController@getJobPlacementsTypes');
 Route::get('/get/one/job/placement/{id}',	'ClientJsonResponseController@getJobPlacementByRef');

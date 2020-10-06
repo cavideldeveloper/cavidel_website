@@ -179,7 +179,7 @@ class ExternalPagesController extends Controller
 
     /*
     |---------------------------------------------
-    | CAREER 
+    | CAREER
     |---------------------------------------------
     */
     public function career(){
@@ -302,6 +302,43 @@ class ExternalPagesController extends Controller
     	// body
     	$posts 	= new Post();
     	$data 			= $posts->getAllPosts($request);
+
+        // to collection
+        // $all_subscribers    = $all_users['data'] ?? [];
+
+        // return view('officemate_admin.index', compact('all_subscribers'));
+        //return response
+        return response()->json($data, 200);
+    }
+
+    /*
+    |-----------------------------------------
+    | SHOW ALL POSTS BY VIEWS
+    |-----------------------------------------
+    */
+    public function getAllPostsByViews(Request $request){
+    	// body
+    	$posts 	= new Post();
+    	$data 			= $posts->getAllPostsByViews($request);
+
+        // to collection
+        // $all_subscribers    = $all_users['data'] ?? [];
+
+        // return view('officemate_admin.index', compact('all_subscribers'));
+        //return response
+        return response()->json($data, 200);
+    }
+
+    /*
+    |-----------------------------------------
+    | SHOW ALL POSTS
+    |-----------------------------------------
+    */
+    public function getAllCategoryPosts(Request $request, $category_id){
+        // body
+        $request->id = $category_id;
+    	$posts 	= new Post();
+    	$data 			= $posts->getAllCategoryPosts($request);
 
         // to collection
         // $all_subscribers    = $all_users['data'] ?? [];

@@ -41,7 +41,7 @@
         <link rel="apple-touch-icon" href="img/favicon.png">
 
         <!-- Slick slider-->
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> 
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
         {{-- Material Icon Fonts  --}}
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
@@ -60,7 +60,7 @@
               var t = window.driftt = window.drift = window.driftt || [];
               if (!t.init) {
                 if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-                t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+                t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
                 t.factory = function(e) {
                   return function() {
                     var n = Array.prototype.slice.call(arguments);
@@ -247,6 +247,13 @@
                 opacity: 0;
               }
             }
+
+            .blog-btn-container {
+                padding: 10px;
+                width: auto;
+                display:flex;
+                justify-content: center;
+            }
         </style>
         @yield('contents')
 
@@ -324,7 +331,7 @@
             </a>
         </div>
 
-        
+
 
         <input type="hidden" id="visitor_name" name="">
         <input type="hidden" id="visitor_email" name="">
@@ -376,54 +383,54 @@
 
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        
+
         <script type="text/javascript">
             // var snowEffectInterval = jQuery.fn.snow({
             //   // min size of element (default: 20)
             //   minSize: 2,
-              
+
             //   // max size of element (default: 50)
             //   maxSize: 10,
-              
+
             //   // flake fall time multiplier (default: 20)
-            //   fallTimeMultiplier: 5, 
-              
+            //   fallTimeMultiplier: 5,
+
             //   // flake fall time difference (default: 10000)
-            //   fallTimeDifference: 10000, 
-              
+            //   fallTimeDifference: 10000,
+
             //   // interval (miliseconds) between new element spawns (default: 500)
-            //   spawnInterval: 100, 
-              
+            //   spawnInterval: 100,
+
             //   // jQuery element to apply snow effect on (should work on any block element) (default: body)
             //   target: jQuery("body"),
-              
+
             //   //elements to use in generating snow effect
             //   elements  : [
 
             //     // Element #1
-            //     { 
+            //     {
             //       // html element to be spawned for this element
             //       html: '<i class="fa fa-snowflake-o" aria-hidden="true"></i>',
             //       // hex color for this element - works only for font based icons
             //       color: '#ffffff'
             //     },
-                
+
             //     // Element #2
-            //     { 
+            //     {
             //       // html element to be spawned for this element
             //       html: '<i class="fa fa-bell-o" aria-hidden="true"></i>',
             //       // hex color for this element - works only for font based icons
             //       color: '#ed9b40'
             //     },
-                
+
             //     // Element #3
-            //     { 
+            //     {
             //       // html element to be spawned for this element
             //       html: '<i class="fa fa-snowflake-o" aria-hidden="true"></i>',
             //       // hex color for this element - works only for font based icons
             //       color: '#ffffff'
             //     },
-                
+
             //     // Element #4
             //     {
             //       // html element to be spawned for this element
@@ -431,9 +438,9 @@
             //       // hex color for this element - works only for font based icons
             //       color: '#cc2037'
             //     },
-                
+
             //     // Element #5
-            //     { 
+            //     {
             //       // html element to be spawned for this element
             //       html: '<i class="fa fa-snowflake-o" aria-hidden="true"></i>',
             //       // hex color for this element - works only for font based icons
@@ -442,7 +449,7 @@
             //   ]
             // });
         </script>
-        
+
         <!--========== END JAVASCRIPTS ==========-->
         <script type="text/javascript">
             // subscribe client
@@ -537,7 +544,7 @@
                 // return
                 return false;
             }
- 
+
             // get geolocation
             function getGeolocation(browserInfo) {
                 fetch('http://gd.geobytes.com/GetCityDetails', {
@@ -739,7 +746,7 @@
 
                     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
                 }
-                
+
                 // If element is scrolled into view, fade it in
                 $(window).scroll(function() {
                     $('.animated').each(function() {

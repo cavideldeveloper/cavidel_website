@@ -16,16 +16,16 @@ class Post extends Model
     public function __construct(){
         // body
         if(env('APP_ENV') == "local"){
-            $this->endpoint = "http://127.0.0.1:8332/api";
+            $this->endpoint = "http://127.0.0.1:8334/api";
             // $this->endpoint = "https://accounting.officemate.ng/api";
         }elseif(env('APP_ENV') == "production"){
             $this->endpoint = "https://cavidel.officemate.ng/api";
-        } 
+        }
     }
 
     /*
     |-----------------------------------------
-    | OFFICEMATE ADMIN
+    | Get all posts
     |-----------------------------------------
     */
     public function getAllPosts($payload){
@@ -36,14 +36,73 @@ class Post extends Model
             );
 
             $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL, $this->endpoint."/blog/posts");
+            curl_setopt($ch, CURLOPT_URL, "http://127.0.0.1:8334/api/blog/posts");
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 200);
             curl_setopt($ch, CURLOPT_TIMEOUT, 200);
             curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
             $res = curl_exec($ch);
 
-            $data = collect(json_decode($res, true));   
+            $data = collect(json_decode($res, true));
+            // dd($data);
+        } catch (Exception $e) {
+            $data = collect([]);
+        }
+
+        return $data;
+    }
+
+    /*
+    |-----------------------------------------
+    | Get posts by category
+    |-----------------------------------------
+    */
+    public function getAllCategoryPosts($payload){
+    	// body
+        try {
+            $headers = array(
+                "x-access-token: yc3ROYW1lIjoiQnJldHQiLCJsYXN0TmFtZSI6Ikxhd3NvbiIsInBob25lTnVtYmVyIjoiNTIxMzM4MTQwOCIsInVybCI6InRlam",
+            );
+            $category_id = $payload->id;
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, "http://127.0.0.1:8334/api/blog/posts/category/$category_id");
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 200);
+            curl_setopt($ch, CURLOPT_TIMEOUT, 200);
+            curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+            $res = curl_exec($ch);
+
+            $data = collect(json_decode($res, true));
+            // dd($data);
+        } catch (Exception $e) {
+            $data = collect([]);
+        }
+
+        return $data;
+    }
+
+    /*
+    |-----------------------------------------
+    | Get posts by views count
+    |-----------------------------------------
+    */
+    public function getAllPostsByViews($payload){
+    	// body
+        try {
+            $headers = array(
+                "x-access-token: yc3ROYW1lIjoiQnJldHQiLCJsYXN0TmFtZSI6Ikxhd3NvbiIsInBob25lTnVtYmVyIjoiNTIxMzM4MTQwOCIsInVybCI6InRlam",
+            );
+            // $category_id = $payload->id;
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, "http://127.0.0.1:8334/api/blog/post/by/views");
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 200);
+            curl_setopt($ch, CURLOPT_TIMEOUT, 200);
+            curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+            $res = curl_exec($ch);
+
+            $data = collect(json_decode($res, true));
+            // dd($data);
         } catch (Exception $e) {
             $data = collect([]);
         }
