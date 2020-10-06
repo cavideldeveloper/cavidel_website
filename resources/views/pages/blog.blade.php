@@ -299,7 +299,7 @@
                         </div>
                         <div>
                             <p><span class="post-category">${val.category}</span></p>
-                            <p class="post-title">${val.title}</p>
+                            <a href=""><p class="post-title">${val.title}</p></a>
                             <p><span class="post-author">${val.author}</span> - <span class="post-date">${moment(val.created_at).format('LL')}</span></p>
                             <p class="post-body">${truncateString(val.postBody, 500)}<a href="">Read More</a></p>
                         </div>
@@ -399,7 +399,7 @@
                             </div>
                             <div>
                                 <span class="post-category">${val.category}</span>
-                                <p class="sidebar-title">${val.title}</p>
+                                <a href=""><p class="sidebar-title">${val.title}</p></a>
                                 <p><span class="post-author">${val.author}</span> - <span class="post-date">${moment(val.created_at).format('LL')}</span></p>
                             </div>
                         </div>
