@@ -18,27 +18,27 @@
         {{-- <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> --}}
 
         <!-- Vendor Styles -->
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <link href="css/animate.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/themify/themify.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/scrollbar/scrollbar.min.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/swiper/swiper.min.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('css/animate.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('vendor/themify/themify.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('vendor/scrollbar/scrollbar.min.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('vendor/magnific-popup/magnific-popup.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('vendor/swiper/swiper.min.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('vendor/cubeportfolio/css/cubeportfolio.min.css') }}" rel="stylesheet" type="text/css"/>
 
         <!-- Bootstrap CDN -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
         <!-- Theme Styles -->
-        <link href="css/style.css" rel="stylesheet" type="text/css"/>
-        <link href="css/global/global.css" rel="stylesheet" type="text/css"/>
-        <link href="css/select2.min.css" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('css/global/global.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('css/select2.min.css') }}" rel="stylesheet" type="text/css"/>
 
         <link rel="stylesheet" type="text/css" href="{{asset('css/font-awesome.css')}}">
 
         <!-- Favicon -->
-        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-        <link rel="apple-touch-icon" href="img/favicon.png">
+        <link rel="shortcut icon" href="{{ asset('img/favicon.png') }}" type="image/x-icon">
+        <link rel="apple-touch-icon" href="{{ asset('img/favicon.png') }}">
 
         <!-- Slick slider-->
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -341,32 +341,32 @@
         <!--========== JAVASCRIPTS (Load javascripts at bottom, this will reduce page load time) ==========-->
         <!-- Vendor -->
         <script src="{{ asset('js/app.js') }}"></script>
-        <script src="vendor/jquery.min.js"></script>
-        <script src="vendor/jquery.migrate.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-        <script src="vendor/jquery.smooth-scroll.min.js"></script>
-        <script src="vendor/jquery.back-to-top.min.js"></script>
-        <script src="vendor/scrollbar/jquery.scrollbar.min.js"></script>
-        <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-        <script src="vendor/swiper/swiper.jquery.min.js"></script>
-        <script src="vendor/waypoint.min.js"></script>
-        <script src="vendor/counterup.min.js"></script>
-        <script src="vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
-        <script src="vendor/jquery.parallax.min.js"></script>
+        <script src="{{ asset('vendor/jquery.min.js') }}"></script>
+        <script src="{{ asset('vendor/jquery.migrate.min.js') }}"></script>
+        <script src="{{ asset('vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('vendor/jquery.smooth-scroll.min.js') }}"></script>
+        <script src="{{ asset('vendor/jquery.back-to-top.min.js') }}"></script>
+        <script src="{{ asset('vendor/scrollbar/jquery.scrollbar.min.js') }}"></script>
+        <script src="{{ asset('vendor/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
+        <script src="{{ asset('vendor/swiper/swiper.jquery.min.js') }}"></script>
+        <script src="{{ asset('vendor/waypoint.min.js') }}"></script>
+        <script src="{{ asset('vendor/counterup.min.js') }}"></script>
+        <script src="{{ asset('vendor/cubeportfolio/js/jquery.cubeportfolio.min.js') }}"></script>
+        <script src="{{ asset('vendor/jquery.parallax.min.js') }}"></script>
         {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkrja0K9YTRtwpiI61uMaWxyNuE9By8qQ"></script> --}}
-        <script type="text/javascript" src="vendor/jquery.wow.min.js"></script>
+        <script type="text/javascript" src="{{ asset('vendor/jquery.wow.min.js') }}"></script>
 
         <!-- General Components and Settings -->
-        <script src="js/global.min.js"></script>
-        <script src="js/components/header-sticky.min.js"></script>
-        <script src="js/components/scrollbar.min.js"></script>
-        <script src="js/components/magnific-popup.min.js"></script>
-        <script src="js/components/swiper.min.js"></script>
-        <script src="js/components/counter.min.js"></script>
-        <script src="js/components/portfolio-3-col.min.js"></script>
-        <script src="js/components/parallax.min.js"></script>
+        <script src="{{ asset('js/global.min.js') }}"></script>
+        <script src="{{ asset('js/components/header-sticky.min.js') }}"></script>
+        <script src="{{ asset('js/components/scrollbar.min.js') }}"></script>
+        <script src="{{ asset('js/components/magnific-popup.min.js') }}"></script>
+        <script src="{{ asset('js/components/swiper.min.js') }}"></script>
+        <script src="{{ asset('js/components/counter.min.js') }}"></script>
+        <script src="{{ asset('js/components/portfolio-3-col.min.js') }}"></script>
+        <script src="{{ asset('js/components/parallax.min.js') }}"></script>
         {{-- <script type="text/javascript" src="js/components/google-map.min.js"></script> --}}
-        <script src="js/components/wow.min.js"></script>
+        <script src="{{ asset('js/components/wow.min.js') }}"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.11/dist/sweetalert2.all.min.js"></script>
         <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="{{asset('js/preloader.js')}}"></script>

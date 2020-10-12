@@ -10,12 +10,12 @@
 	@include('__includes.header')
 
     <!--========== PROMO BLOCK ==========-->
-    <div class="js__parallax-window" style="background: url(img/1920x1080/02.jpg) 5% 0 no-repeat fixed; height: 100px;">
+    <div class="js__parallax-window" style="background: url({{ asset('img/1920x1080/02.jpg') }}) 5% 0 no-repeat fixed; height: 100px;">
         <div class="g-container--md g-text-center--xs g-padding-y-150--xs">
             {{-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aliquid ullam debitis excepturi, non cupiditate eum porro doloribus adipisci perspiciatis. Ab odio quisquam veniam similique, aliquam et esse libero quos. --}}
         </div>
     </div>
-    
+
     <div class="container blog-container">
         <div class="row post-holder">
             <div class="col-md-7">
@@ -28,7 +28,7 @@
                         <p class="post-title">10 Ways To Check For Cash Leak In Your Business</p>
                         {{-- <p> - </p> --}}
                         <p class="post-body text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam id iste consectetur aut commodi, vitae rem in laboriosam maiores error atque a facere voluptate tempora recusandae saepe repellendus nisi debitis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque fugit repellendus voluptas, qui ducimus numquam repudiandae velit error iste laborum quibusdam commodi excepturi blanditiis deleniti quae repellat quia eos fugiat! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio non tenetur vitae, eaque, error vero qui nulla itaque doloribus ducimus temporibus inventore odit cum. Obcaecati fuga et soluta rem sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi doloremque, ipsa id fugit fugiat sint? Cumque accusantium laborum esse, commodi sunt iure, consequatur ducimus dolores eum cum, quas harum nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum soluta, dolores eveniet cumque iure quidem. Dolorem veritatis pariatur maiores fugiat repellat perferendis, quasi quae corrupti ad dolorum assumenda magnam praesentium!</p>
-                    </div> 
+                    </div>
                 </div>
                 <div class="comment-container">
                     <p class="sidebar-caption">Leave a comment</p>
@@ -67,7 +67,7 @@
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
             <div class="col-md-5">
                 <div>

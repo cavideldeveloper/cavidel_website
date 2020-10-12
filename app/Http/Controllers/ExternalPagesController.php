@@ -165,8 +165,8 @@ class ExternalPagesController extends Controller
     | SHOW BLOG POST
     |---------------------------------------------
     */
-    public function blogPost() {
-        return view('pages.blog-post');
+    public function blogPost(Request $request, $id) {
+        return view('pages.blog-post',compact('id'));
     }
     /*
     |---------------------------------------------
