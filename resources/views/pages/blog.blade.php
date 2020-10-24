@@ -299,9 +299,9 @@
                         </div>
                         <div>
                             <p><span class="post-category">${val.category}</span></p>
-                            <a href="/blog/${val.id}"><p class="post-title">${val.title}</p></a>
+                            <a href="/blog/${val.id}/post"><p class="post-title">${val.title}</p></a>
                             <p><span class="post-author">${val.author}</span> - <span class="post-date">${moment(val.created_at).format('LL')}</span></p>
-                            <p class="post-body">${truncateString(val.postBody, 500)}<a href="/blog/${val.id}">Read More</a></p>
+                            <p class="post-body">${truncateString(val.postBody, 500)}<a href="/blog/${val.id}/post">Read More</a></p>
                         </div>
                     </div>
                 `);

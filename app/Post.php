@@ -109,4 +109,63 @@ class Post extends Model
 
         return $data;
     }
+
+    /*
+    |-----------------------------------------
+    | Get one post
+    |-----------------------------------------
+    */
+    public function getOnePost($payload){
+    	// body
+        try {
+            $headers = array(
+                "x-access-token: yc3ROYW1lIjoiQnJldHQiLCJsYXN0TmFtZSI6Ikxhd3NvbiIsInBob25lTnVtYmVyIjoiNTIxMzM4MTQwOCIsInVybCI6InRlam",
+            );
+            $post_id = $payload->id;
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, "http://127.0.0.1:8334/api/blog/post/$post_id");
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 200);
+            curl_setopt($ch, CURLOPT_TIMEOUT, 200);
+            curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+            $res = curl_exec($ch);
+
+            $data = collect(json_decode($res, true));
+            // dd($data);
+        } catch (Exception $e) {
+            $data = collect([]);
+        }
+
+        return $data;
+    }
+
+
+    /*
+    |-----------------------------------------
+    | Update views of one post
+    |-----------------------------------------
+    */
+    public function updateViews($payload){
+    	// body
+        try {
+            $headers = array(
+                "x-access-token: yc3ROYW1lIjoiQnJldHQiLCJsYXN0TmFtZSI6Ikxhd3NvbiIsInBob25lTnVtYmVyIjoiNTIxMzM4MTQwOCIsInVybCI6InRlam",
+            );
+            $post_id = $payload->id;
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, "http://127.0.0.1:8334/api/update/post/views/$post_id");
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 200);
+            curl_setopt($ch, CURLOPT_TIMEOUT, 200);
+            curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+            $res = curl_exec($ch);
+
+            $data = collect(json_decode($res, true));
+            // dd($data);
+        } catch (Exception $e) {
+            $data = collect([]);
+        }
+
+        return $data;
+    }
 }

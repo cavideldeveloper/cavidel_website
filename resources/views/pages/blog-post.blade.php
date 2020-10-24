@@ -19,15 +19,26 @@
     <div class="container blog-container">
         <div class="row post-holder">
             <div class="col-md-7">
+                {{-- {{ dd($post_id) }} --}}
+                <input type="hidden" id="post" value="{{ $post_id }}"/>
                 <div class="post-container">
-                    <div class="featured-image"  style="text-align: center;">
-                        <p><img src="https://via.placeholder.com/720x400.png" alt="" class="img-fluid rounded"></p>
+                    {{-- <div class="featured-image"  style="text-align: center;">
+                        <p id="featured_image"><img src="https://via.placeholder.com/720x400.png" alt="" class="img-fluid rounded"></p>
                     </div>
                     <div>
-                        <p style="text-align: left;"><span class="post-category">Accounting</span> / <span class="post-author">Damilola Olaribigbe</span> / <span class="post-date">June 6, 2020</span></p>
-                        <p class="post-title">10 Ways To Check For Cash Leak In Your Business</p>
-                        {{-- <p> - </p> --}}
-                        <p class="post-body text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam id iste consectetur aut commodi, vitae rem in laboriosam maiores error atque a facere voluptate tempora recusandae saepe repellendus nisi debitis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque fugit repellendus voluptas, qui ducimus numquam repudiandae velit error iste laborum quibusdam commodi excepturi blanditiis deleniti quae repellat quia eos fugiat! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio non tenetur vitae, eaque, error vero qui nulla itaque doloribus ducimus temporibus inventore odit cum. Obcaecati fuga et soluta rem sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi doloremque, ipsa id fugit fugiat sint? Cumque accusantium laborum esse, commodi sunt iure, consequatur ducimus dolores eum cum, quas harum nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum soluta, dolores eveniet cumque iure quidem. Dolorem veritatis pariatur maiores fugiat repellat perferendis, quasi quae corrupti ad dolorum assumenda magnam praesentium!</p>
+                        <p style="text-align: left;"><span class="post-category" id="post_category">Accounting</span> / <span class="post-author" id="post_auth0r">Damilola Olaribigbe</span> / <span class="post-date">June 6, 2020</span></p>
+                        <p class="post-title" id="post_title">10 Ways To Check For Cash Leak In Your Business</p>
+                        <p class="post-body text-justify" id="post_body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam id iste consectetur aut commodi, vitae rem in laboriosam maiores error atque a facere voluptate tempora recusandae saepe repellendus nisi debitis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque fugit repellendus voluptas, qui ducimus numquam repudiandae velit error iste laborum quibusdam commodi excepturi blanditiis deleniti quae repellat quia eos fugiat! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio non tenetur vitae, eaque, error vero qui nulla itaque doloribus ducimus temporibus inventore odit cum. Obcaecati fuga et soluta rem sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi doloremque, ipsa id fugit fugiat sint? Cumque accusantium laborum esse, commodi sunt iure, consequatur ducimus dolores eum cum, quas harum nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum soluta, dolores eveniet cumque iure quidem. Dolorem veritatis pariatur maiores fugiat repellat perferendis, quasi quae corrupti ad dolorum assumenda magnam praesentium!</p>
+                    </div> --}}
+                    <div class="featured-image"  style="text-align: center;">
+                        <p id="featured_image"><img src="https://via.placeholder.com/720x400.png" alt="" class="img-fluid rounded"></p>
+                    </div>
+                    <div>
+                        <p style="text-align: left;">
+                            <span class="post-category" id="post_category"></span> / <span class="post-author" id="post_author"></span> / <span class="post-date" id="post_date"></span>
+                        </p>
+                        <p class="post-title" id="post_title"></p>
+                        <p class="post-body text-justify" id="post_body"></p>
                     </div>
                 </div>
                 <div class="comment-container">
@@ -73,7 +84,10 @@
                 <div>
                     <p class="sidebar-caption">Recommended Posts</p>
                     <div class="recommended-posts">
-                        <div>
+                        <div id="load-all-posts-by-views">
+
+                        </div>
+                        {{-- <div>
                             <div class="col-xs-4">
                                 <p><img src="https://via.placeholder.com/720x400.png" alt="" class="img-fluid img-thumbnail"></p>
                             </div>
@@ -108,7 +122,7 @@
                                 <span class="sidebar-title-2">10 Ways To Check For Cash Leak In Your Business</span>
                                 <p><span class="post-author">Damilola Olaribigbe</span> - <span class="post-category">Accounting</span></p>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
                 <div class="newsletter-section">
@@ -136,15 +150,66 @@
 
 {{--  scripts --}}
 @section('scripts')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"></script>
 	<script type="text/javascript">
 		// load modules
         // loadGlobalNews();
-        fetchPost(id);
+        fetchPost();
+        updateViews();
+        fetchAllPostsByViews();
 
 
         //load post
-        function fetchPost(id) {
-            console.log(id);
+        function fetchPost() {
+            var post_id  = $("#post").val();
+            console.log(post_id);
+            fetch(`{{ url('/fetch/post') }}/${post_id}`).then(r => r.json()).then(result => {
+                // $("#edit_postId").val(result.id);
+                $("#post_category").html(result.category.category);
+                // $("#editFeaturedImage").val(result.featuredImage);
+                $("#post_author").html(result.author);
+                $("#post_date").html(moment(result.created_at).format('LL'));
+                $("#post_title").html(result.title);
+                $("#post_body").html(result.postBody);
+                // $("#myEditModal").modal();
+                // $("#editPost_category").trigger('change');
+                // document.getElementById("sendNoteButton").disabled = true;
+                // $("#spinner").hide();
+                }).catch(err => {
+                console.log(err);
+           });
+        }
+
+        //update views
+        function updateViews() {
+            var post_id = $('#post').val();
+            // console.log("views for "+post_id)
+            var _token = '{{ csrf_token() }}';
+
+            // console.log(_token);
+
+            var query = {post_id, _token}
+            fetch(`{{ url('/update/post/views') }}/${post_id}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(query)
+            }).then(r => {
+                return r.json();
+            }).then(results => {
+                console.log(results);
+                // swal({
+                //     title: "Good Job!",
+                //     text: "Goals approved and sent to HR successfully!",
+                //     icon: "success",
+                //     button: "OK!",
+                // });
+            }).catch(err => {
+                console.log(err);
+            });
+            // $('#fetch_goal').modal('hide');
+            return false;
         }
         // load global news
         // function loadGlobalNews() {
@@ -175,5 +240,35 @@
         //         });
         //     });
         // }
+
+        //load posts by views
+        function fetchAllPostsByViews() {
+            fetch(`{{ url('/get/all/posts/by/views') }}`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            }).then(r => {
+                return r.json();
+            }).then(results => {
+                console.log(results);
+                $("#load-all-posts-by-views").html("");
+                $.each(results, function(index, val) {
+                    $("#load-all-posts-by-views").append(`
+                        <div>
+                            <div class="col-xs-4">
+                                <p><img src="http://127.0.0.1:8334/${val.featuredImage}" alt="" class="img-fluid img-thumbnail"></p>
+                            </div>
+                            <div class="col-xs-6">
+                                <a href="/blog/${val.id}"><span class="sidebar-title-2">${val.title}</span></a>
+                                <p><span class="post-author">${val.author}</span> - <span class="post-category">${val.category}</span></p>
+                            </div>
+                        </div>
+                    `);
+                });
+            }).catch(err => {
+                console.log(err);
+            });
+        }
 	</script>
 @endsection

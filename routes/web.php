@@ -35,11 +35,20 @@ Route::get('/mobile-development',			'ExternalPagesController@mobileDevelopment')
 Route::get('/payment-integration',			'ExternalPagesController@paymentIntegration');
 
 Route::get('/solutions',					'ExternalPagesController@solutions');
+
+/*
+|---------------------------------------------------------------------------------------------------------
+| BLOG
+|---------------------------------------------------------------------------------------------------------
+|
+*/
 Route::get('/blog',							'ExternalPagesController@blog');
-Route::get('/blog/{id}',               'ExternalPagesController@blogPost');
+Route::get('/blog/{id}/post',               'ExternalPagesController@blogPost');
 Route::get('/get/all/posts',       'ExternalPagesController@getAllPosts');
 Route::get('/get/all/posts/by/views',       'ExternalPagesController@getAllPostsByViews');
 Route::get('/get/all/category/posts/{category_id}',       'ExternalPagesController@getAllCategoryPosts');
+Route::get('/fetch/post/{post_id}',  'ExternalPagesController@getOnePost');
+Route::put('/update/post/views/{post_id}', 'ExternalPagesController@updateViews');
 
 Route::get('/faq',							'ExternalPagesController@faq');
 Route::get('/portfolio',					'ExternalPagesController@portfolio');

@@ -166,7 +166,10 @@ class ExternalPagesController extends Controller
     |---------------------------------------------
     */
     public function blogPost(Request $request, $id) {
-        return view('pages.blog-post',compact('id'));
+        // dd($id);
+        $post_id = $id;
+        // dd($post);
+        return view('pages.blog-post')->with('post_id', $post_id);
     }
     /*
     |---------------------------------------------
@@ -331,7 +334,7 @@ class ExternalPagesController extends Controller
 
     /*
     |-----------------------------------------
-    | SHOW ALL POSTS
+    | SHOW ALL POSTS BY CATEGORY
     |-----------------------------------------
     */
     public function getAllCategoryPosts(Request $request, $category_id){
@@ -347,4 +350,40 @@ class ExternalPagesController extends Controller
         //return response
         return response()->json($data, 200);
     }
+
+     /*
+    |-----------------------------------------
+    | SHOW ONE POST
+    |-----------------------------------------
+    */
+    public function getOnePost(Request $request, $post_id){
+        // body
+        $request->id = $post_id;
+    	$post 	= new Post();
+    	$data 			= $post->getOnePost($request);
+
+        // to collection
+        // $all_subscribers    = $all_users['data'] ?? [];
+
+        // return view('officemate_admin.index', compact('all_subscribers'));
+        //return response
+        return response()->json($data, 200);
+    }
+
+     /*
+    |-----------------------------------------
+    | UDATE VIEWS OF ONE POST
+    |-----------------------------------------
+    */
+    public function updateViews(Request $request, $post_id){
+        // body
+        $request->id = $post_id;
+    	$post 	= new Post();
+    	$data 			= $post->updateViews($request);
+
+        //return response
+        return response()->json($data, 200);
+    }
+
+
 }
