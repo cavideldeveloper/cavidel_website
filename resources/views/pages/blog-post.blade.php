@@ -19,7 +19,6 @@
     <div class="container blog-container">
         <div class="row post-holder">
             <div class="col-md-7">
-                {{-- {{ dd($post_id) }} --}}
                 <input type="hidden" id="post" value="{{ $post_id }}"/>
                 <div class="post-container">
                     {{-- <div class="featured-image"  style="text-align: center;">
@@ -31,7 +30,9 @@
                         <p class="post-body text-justify" id="post_body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam id iste consectetur aut commodi, vitae rem in laboriosam maiores error atque a facere voluptate tempora recusandae saepe repellendus nisi debitis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque fugit repellendus voluptas, qui ducimus numquam repudiandae velit error iste laborum quibusdam commodi excepturi blanditiis deleniti quae repellat quia eos fugiat! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio non tenetur vitae, eaque, error vero qui nulla itaque doloribus ducimus temporibus inventore odit cum. Obcaecati fuga et soluta rem sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi doloremque, ipsa id fugit fugiat sint? Cumque accusantium laborum esse, commodi sunt iure, consequatur ducimus dolores eum cum, quas harum nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum soluta, dolores eveniet cumque iure quidem. Dolorem veritatis pariatur maiores fugiat repellat perferendis, quasi quae corrupti ad dolorum assumenda magnam praesentium!</p>
                     </div> --}}
                     <div class="featured-image"  style="text-align: center;">
-                        <p id="featured_image"><img src="https://via.placeholder.com/720x400.png" alt="" class="img-fluid rounded"></p>
+                        <p id="featured_image">
+
+                        </p>
                     </div>
                     <div>
                         <p style="text-align: left;">
@@ -45,24 +46,27 @@
                     <p class="sidebar-caption">Leave a comment</p>
                     <p style="color: red; font-style: italic; font-size: 12px;">**All fields are required.</p>
                     <div>
-                        <form action="">
+                        <form method="POST" onsubmit="return postComments()" >
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Enter Name" id="fullname" style="height:50px;">
+                                <input type="text" class="form-control" placeholder="Enter Name" id="fullname" style="height:50px;" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Enter Email" id="email" style="height:50px;">
+                                <input type="email" class="form-control" placeholder="Enter Email" id="email" style="height:50px;" required>
                                 <span style="color: red; font-style: italic; font-size: 12px;">*Your email will not be published.</span>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" rows="5" id="comment"  placeholder="Enter Comment"></textarea>
+                                <textarea class="form-control" rows="5" id="comment"  placeholder="Enter Comment" required></textarea>
                               </div>
                             <button type="submit" class="btn btn-dark" style="height:50px;width:100%;">Send Comment</button>
                         </form>
                     </div>
                     <div class="all-comments-container">
                         <p class="sidebar-caption">All Comments</p>
-                        <div class="row">
-                            <div class="col-xs-3">
+                        <div class="row" id="load-post-comments">
+                            {{-- <div>
+
+                            </div> --}}
+                            {{-- <div class="col-xs-3">
                                 <img src="{{asset('img/user-avatar.svg')}}" alt="" width="auto" height="100">
                             </div>
                             <div class="col-xs-9">
@@ -75,7 +79,7 @@
                             <div class="col-xs-9">
                                 <p style="font-weight: bold;">Bernard Liberty</p>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati vitae veniam, perferendis iste sunt a id nesciunt aut dolore unde architecto quod commodi, quibusdam maxime. Praesentium impedit facilis eius exercitationem.</p>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -153,10 +157,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"></script>
 	<script type="text/javascript">
 		// load modules
-        // loadGlobalNews();
         fetchPost();
         updateViews();
         fetchAllPostsByViews();
+        fetchAllPostComments();
 
 
         //load post
@@ -166,7 +170,7 @@
             fetch(`{{ url('/fetch/post') }}/${post_id}`).then(r => r.json()).then(result => {
                 // $("#edit_postId").val(result.id);
                 $("#post_category").html(result.category.category);
-                // $("#editFeaturedImage").val(result.featuredImage);
+                $("#featured_image").append(`<img src="http://127.0.0.1:8334/${result.featuredImage}" alt="" class="img-fluid rounded" style="width:720px;height:400px;">`);
                 $("#post_author").html(result.author);
                 $("#post_date").html(moment(result.created_at).format('LL'));
                 $("#post_title").html(result.title);
@@ -190,7 +194,7 @@
 
             var query = {post_id, _token}
             fetch(`{{ url('/update/post/views') }}/${post_id}`, {
-                method: 'PUT',
+                method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
@@ -211,35 +215,6 @@
             // $('#fetch_goal').modal('hide');
             return false;
         }
-        // load global news
-        // function loadGlobalNews() {
-        //     $.get('{{ url('load/global/news') }}', function(data) {
-        //         $(".display-news").html("");
-        //         var sn = 0;
-        //         $.each(data, function(index, val) {
-        //             sn++;
-        //             $(".display-news").append(`
-        //                 <div class="col-sm-12 g-margin-b-30--xs g-margin-b-10--md">
-        //                     <!-- News -->
-        //                     <article>
-        //                         <img width="90%" height="260" style="box-shadow:0px 0px 4px 0px #CCC;border-radius:4px;" src="${val.urlToImage}" alt="Image">
-        //                         <div class="g-bg-color--white g-box-shadow__dark-lightest-v2">
-        //                             <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2">${val.title}</p>
-        //                             <h3 class="g-font-size-22--xs g-letter-spacing--1"><h3>
-        //                             <p>${val.description}</p>
-        //                         </div>
-        //                     </article>
-        //                     <!-- End News -->
-        //                 </div>
-        //             `);
-
-        //             if(sn > 4){
-        //                 // void loop
-        //                 return false;
-        //             }
-        //         });
-        //     });
-        // }
 
         //load posts by views
         function fetchAllPostsByViews() {
@@ -260,7 +235,7 @@
                                 <p><img src="http://127.0.0.1:8334/${val.featuredImage}" alt="" class="img-fluid img-thumbnail"></p>
                             </div>
                             <div class="col-xs-6">
-                                <a href="/blog/${val.id}"><span class="sidebar-title-2">${val.title}</span></a>
+                                <a href="/blog/${val.id}/post"><span class="sidebar-title-2">${val.title}</span></a>
                                 <p><span class="post-author">${val.author}</span> - <span class="post-category">${val.category}</span></p>
                             </div>
                         </div>
@@ -269,6 +244,61 @@
             }).catch(err => {
                 console.log(err);
             });
+        }
+
+        //load comments by post
+        function fetchAllPostComments() {
+            var post_id  = $("#post").val();
+            fetch(`{{ url('/get/post/comments') }}/${post_id}`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            }).then(r => {
+                return r.json();
+            }).then(results => {
+                console.log(results);
+                $("#load-post-comments").html("");
+                $.each(results, function(index, val) {
+                    $("#load-post-comments").append(`
+                        <div class="col-xs-3">
+                            <img src="{{asset('img/user-avatar.svg')}}" alt="" width="auto" height="100">
+                        </div>
+                        <div class="col-xs-9">
+                            <p style="font-weight: bold;">${val.fullName}</p>
+                            <p>${val.comment}</p>
+                        </div>
+                    `);
+                });
+            }).catch(err => {
+                console.log(err);
+            })
+        }
+
+        //post comments /save/comment
+        function postComments() {
+            var postId       = $('#post').val();
+            var fullName       = $('#fullname').val();
+            var emailAddress       = $('#email').val();
+            var comment       = $('#comment').val();
+
+            $.ajax({
+                url: "/save/comment",
+                type: "POST",
+                data:{
+                    "_token": "{{ csrf_token() }}",
+                    postId:postId,
+                    fullName:fullName,
+                    emailAddress:emailAddress,
+                    comment:comment,
+                },
+                success:function(response){
+                    console.log(response);
+                },
+            });
+            fetchAllPostComments();
+            // return stop the form from loading
+            return false;
         }
 	</script>
 @endsection

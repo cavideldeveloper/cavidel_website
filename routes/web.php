@@ -48,7 +48,9 @@ Route::get('/get/all/posts',       'ExternalPagesController@getAllPosts');
 Route::get('/get/all/posts/by/views',       'ExternalPagesController@getAllPostsByViews');
 Route::get('/get/all/category/posts/{category_id}',       'ExternalPagesController@getAllCategoryPosts');
 Route::get('/fetch/post/{post_id}',  'ExternalPagesController@getOnePost');
-Route::put('/update/post/views/{post_id}', 'ExternalPagesController@updateViews');
+Route::post('/update/post/views/{post_id}', 'ExternalPagesController@updateViews');
+Route::post('/save/comment', 'ExternalPagesController@postComment');
+Route::get('/get/post/comments/{post_id}', 'ExternalPagesController@getAllPostComments');
 
 Route::get('/faq',							'ExternalPagesController@faq');
 Route::get('/portfolio',					'ExternalPagesController@portfolio');

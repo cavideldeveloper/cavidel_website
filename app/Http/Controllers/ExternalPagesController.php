@@ -386,4 +386,40 @@ class ExternalPagesController extends Controller
     }
 
 
+    /*
+    |-----------------------------------------
+    | SHOW ALL COMMENTS BY POST
+    |-----------------------------------------
+    */
+    public function getAllPostComments(Request $request, $post_id){
+        // body
+        $request->id = $post_id;
+    	$posts 	= new Post();
+    	$data 			= $posts->getAllPostComments($request);
+
+        // to collection
+        // $all_subscribers    = $all_users['data'] ?? [];
+
+        // return view('officemate_admin.index', compact('all_subscribers'));
+        //return response
+        return response()->json($data, 200);
+    }
+
+
+    /*
+    |-----------------------------------------
+    | POST COMMENTS
+    |-----------------------------------------
+    */
+    public function postComment(Request $request) {
+
+        $comment    = new Post();
+        $data       = $comment->postComment($request);
+
+        // return response
+        return response()->json($data, 200);
+    }
+
+
+
 }

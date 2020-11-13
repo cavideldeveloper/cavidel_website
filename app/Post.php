@@ -154,6 +154,68 @@ class Post extends Model
             $post_id = $payload->id;
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, "http://127.0.0.1:8334/api/update/post/views/$post_id");
+            curl_setopt($ch, CURLOPT_POST, true);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 200);
+            curl_setopt($ch, CURLOPT_TIMEOUT, 200);
+            curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+            $res = curl_exec($ch);
+
+            $data = collect(json_decode($res, true));
+            // dd($data);
+        } catch (Exception $e) {
+            $data = collect([]);
+        }
+
+        return $data;
+    }
+
+
+    /*
+    |-----------------------------------------
+    | Update views of one post
+    |-----------------------------------------
+    */
+    public function postComment($payload){
+    	// body
+        try {
+            $headers = array(
+                "x-access-token: yc3ROYW1lIjoiQnJldHQiLCJsYXN0TmFtZSI6Ikxhd3NvbiIsInBob25lTnVtYmVyIjoiNTIxMzM4MTQwOCIsInVybCI6InRlam",
+            );
+            // $post_id = $payload->id;
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, "http://127.0.0.1:8334/api/save/comment");
+            curl_setopt($ch, CURLOPT_POST, true);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 200);
+            curl_setopt($ch, CURLOPT_TIMEOUT, 200);
+            curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+            $res = curl_exec($ch);
+
+            $data = collect(json_decode($res, true));
+            // dd($data);
+        } catch (Exception $e) {
+            $data = collect([]);
+        }
+
+        return $data;
+    }
+
+
+    /*
+    |-----------------------------------------
+    | Get comments by post
+    |-----------------------------------------
+    */
+    public function getAllPostComments($payload){
+    	// body
+        try {
+            $headers = array(
+                "x-access-token: yc3ROYW1lIjoiQnJldHQiLCJsYXN0TmFtZSI6Ikxhd3NvbiIsInBob25lTnVtYmVyIjoiNTIxMzM4MTQwOCIsInVybCI6InRlam",
+            );
+            $post_id = $payload->id;
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, "http://127.0.0.1:8334/api/fetch/post/$post_id/comments");
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 200);
             curl_setopt($ch, CURLOPT_TIMEOUT, 200);

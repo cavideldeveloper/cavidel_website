@@ -8,7 +8,7 @@
 {{--  contents --}}
 @section('contents')
 	@include('__includes.header')
-    
+
 	<!--========== PAGE CONTENT ==========-->
     <!-- Feedback Form -->
     <div class="g-position--relative g-bg-color--dark-light">
@@ -29,7 +29,7 @@
                     <div class="g-text-center--xs">
                         <i class="g-display-block--xs g-font-size-40--xs g-color--white-opacity g-margin-b-30--xs ti-map-alt"></i>
                         <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Address</h4>
-                        <p class="g-color--white-opacity">Block B12, Flat 402, 1004 Housing Estate, Victoria Island, Lagos.</p>
+                        <p class="g-color--white-opacity"> 7B Basheer Shittu Street, Magodo, GRA Phase II, Shangisha, Lagos.</p>
                     </div>
                 </div>
                 <div class="col-xs-4 g-full-width--xs">

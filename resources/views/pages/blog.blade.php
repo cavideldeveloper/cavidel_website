@@ -399,7 +399,7 @@
                             </div>
                             <div>
                                 <span class="post-category">${val.category}</span>
-                                <a href="/blog/${val.id}"><p class="sidebar-title">${val.title}</p></a>
+                                <a href="/blog/${val.id}/post"><p class="sidebar-title">${val.title}</p></a>
                                 <p><span class="post-author">${val.author}</span> - <span class="post-date">${moment(val.created_at).format('LL')}</span></p>
                             </div>
                         </div>
