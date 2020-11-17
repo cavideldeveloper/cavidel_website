@@ -18,27 +18,30 @@
         {{-- <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> --}}
 
         <!-- Vendor Styles -->
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <link href="css/animate.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/themify/themify.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/scrollbar/scrollbar.min.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/swiper/swiper.min.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('css/animate.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('vendor/themify/themify.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('vendor/scrollbar/scrollbar.min.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('vendor/magnific-popup/magnific-popup.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('vendor/swiper/swiper.min.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('vendor/cubeportfolio/css/cubeportfolio.min.css') }}" rel="stylesheet" type="text/css"/>
+
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
         <!-- Theme Styles -->
-        <link href="css/style.css" rel="stylesheet" type="text/css"/>
-        <link href="css/global/global.css" rel="stylesheet" type="text/css"/>
-        <link href="css/select2.min.css" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('css/global/global.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('css/select2.min.css') }}" rel="stylesheet" type="text/css"/>
 
         <link rel="stylesheet" type="text/css" href="{{asset('css/font-awesome.css')}}">
 
         <!-- Favicon -->
-        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-        <link rel="apple-touch-icon" href="img/favicon.png">
+        <link rel="shortcut icon" href="{{ asset('img/favicon.png') }}" type="image/x-icon">
+        <link rel="apple-touch-icon" href="{{ asset('img/favicon.png') }}">
 
         <!-- Slick slider-->
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> 
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
         {{-- Material Icon Fonts  --}}
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
@@ -57,7 +60,7 @@
               var t = window.driftt = window.drift = window.driftt || [];
               if (!t.init) {
                 if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-                t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+                t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
                 t.factory = function(e) {
                   return function() {
                     var n = Array.prototype.slice.call(arguments);
@@ -244,6 +247,13 @@
                 opacity: 0;
               }
             }
+
+            .blog-btn-container {
+                padding: 10px;
+                width: auto;
+                display:flex;
+                justify-content: center;
+            }
         </style>
         @yield('contents')
 
@@ -321,7 +331,7 @@
             </a>
         </div>
 
-        
+
 
         <input type="hidden" id="visitor_name" name="">
         <input type="hidden" id="visitor_email" name="">
@@ -331,85 +341,96 @@
         <!--========== JAVASCRIPTS (Load javascripts at bottom, this will reduce page load time) ==========-->
         <!-- Vendor -->
         <script src="{{ asset('js/app.js') }}"></script>
-        <script src="vendor/jquery.min.js"></script>
-        <script src="vendor/jquery.migrate.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-        <script src="vendor/jquery.smooth-scroll.min.js"></script>
-        <script src="vendor/jquery.back-to-top.min.js"></script>
-        <script src="vendor/scrollbar/jquery.scrollbar.min.js"></script>
-        <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-        <script src="vendor/swiper/swiper.jquery.min.js"></script>
-        <script src="vendor/waypoint.min.js"></script>
-        <script src="vendor/counterup.min.js"></script>
-        <script src="vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
-        <script src="vendor/jquery.parallax.min.js"></script>
+        <script src="{{ asset('vendor/jquery.min.js') }}"></script>
+        <script src="{{ asset('vendor/jquery.migrate.min.js') }}"></script>
+        <script src="{{ asset('vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('vendor/jquery.smooth-scroll.min.js') }}"></script>
+        <script src="{{ asset('vendor/jquery.back-to-top.min.js') }}"></script>
+        <script src="{{ asset('vendor/scrollbar/jquery.scrollbar.min.js') }}"></script>
+        <script src="{{ asset('vendor/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
+        <script src="{{ asset('vendor/swiper/swiper.jquery.min.js') }}"></script>
+        <script src="{{ asset('vendor/waypoint.min.js') }}"></script>
+        <script src="{{ asset('vendor/counterup.min.js') }}"></script>
+        <script src="{{ asset('vendor/cubeportfolio/js/jquery.cubeportfolio.min.js') }}"></script>
+        <script src="{{ asset('vendor/jquery.parallax.min.js') }}"></script>
         {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkrja0K9YTRtwpiI61uMaWxyNuE9By8qQ"></script> --}}
-        <script type="text/javascript" src="vendor/jquery.wow.min.js"></script>
+        <script type="text/javascript" src="{{ asset('vendor/jquery.wow.min.js') }}"></script>
 
         <!-- General Components and Settings -->
-        <script src="js/global.min.js"></script>
-        <script src="js/components/header-sticky.min.js"></script>
-        <script src="js/components/scrollbar.min.js"></script>
-        <script src="js/components/magnific-popup.min.js"></script>
-        <script src="js/components/swiper.min.js"></script>
-        <script src="js/components/counter.min.js"></script>
-        <script src="js/components/portfolio-3-col.min.js"></script>
-        <script src="js/components/parallax.min.js"></script>
+        <script src="{{ asset('js/global.min.js') }}"></script>
+        <script src="{{ asset('js/components/header-sticky.min.js') }}"></script>
+        <script src="{{ asset('js/components/scrollbar.min.js') }}"></script>
+        <script src="{{ asset('js/components/magnific-popup.min.js') }}"></script>
+        <script src="{{ asset('js/components/swiper.min.js') }}"></script>
+        <script src="{{ asset('js/components/counter.min.js') }}"></script>
+        <script src="{{ asset('js/components/portfolio-3-col.min.js') }}"></script>
+        <script src="{{ asset('js/components/parallax.min.js') }}"></script>
         {{-- <script type="text/javascript" src="js/components/google-map.min.js"></script> --}}
-        <script src="js/components/wow.min.js"></script>
+        <script src="{{ asset('js/components/wow.min.js') }}"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.11/dist/sweetalert2.all.min.js"></script>
         <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="{{asset('js/preloader.js')}}"></script>
         <script src="{{asset('js/particles.min.js')}}"></script>
         <script src="{{asset('js/select2.min.js')}}"></script>
         <script src="{{asset('js/xmas.js')}}"></script>
+
+        <!-- JS CDN -->
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
         <script type="text/javascript">
             // var snowEffectInterval = jQuery.fn.snow({
             //   // min size of element (default: 20)
             //   minSize: 2,
-              
+
             //   // max size of element (default: 50)
             //   maxSize: 10,
-              
+
             //   // flake fall time multiplier (default: 20)
-            //   fallTimeMultiplier: 5, 
-              
+            //   fallTimeMultiplier: 5,
+
             //   // flake fall time difference (default: 10000)
-            //   fallTimeDifference: 10000, 
-              
+            //   fallTimeDifference: 10000,
+
             //   // interval (miliseconds) between new element spawns (default: 500)
-            //   spawnInterval: 100, 
-              
+            //   spawnInterval: 100,
+
             //   // jQuery element to apply snow effect on (should work on any block element) (default: body)
             //   target: jQuery("body"),
-              
+
             //   //elements to use in generating snow effect
             //   elements  : [
 
             //     // Element #1
-            //     { 
+            //     {
             //       // html element to be spawned for this element
             //       html: '<i class="fa fa-snowflake-o" aria-hidden="true"></i>',
             //       // hex color for this element - works only for font based icons
             //       color: '#ffffff'
             //     },
-                
+
             //     // Element #2
-            //     { 
+            //     {
             //       // html element to be spawned for this element
             //       html: '<i class="fa fa-bell-o" aria-hidden="true"></i>',
             //       // hex color for this element - works only for font based icons
             //       color: '#ed9b40'
             //     },
-                
+
             //     // Element #3
-            //     { 
+            //     {
             //       // html element to be spawned for this element
             //       html: '<i class="fa fa-snowflake-o" aria-hidden="true"></i>',
             //       // hex color for this element - works only for font based icons
             //       color: '#ffffff'
             //     },
-                
+
             //     // Element #4
             //     {
             //       // html element to be spawned for this element
@@ -417,9 +438,9 @@
             //       // hex color for this element - works only for font based icons
             //       color: '#cc2037'
             //     },
-                
+
             //     // Element #5
-            //     { 
+            //     {
             //       // html element to be spawned for this element
             //       html: '<i class="fa fa-snowflake-o" aria-hidden="true"></i>',
             //       // hex color for this element - works only for font based icons
@@ -428,7 +449,7 @@
             //   ]
             // });
         </script>
-        
+
         <!--========== END JAVASCRIPTS ==========-->
         <script type="text/javascript">
             // subscribe client
@@ -523,7 +544,7 @@
                 // return
                 return false;
             }
- 
+
             // get geolocation
             function getGeolocation(browserInfo) {
                 fetch('http://gd.geobytes.com/GetCityDetails', {
@@ -725,7 +746,7 @@
 
                     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
                 }
-                
+
                 // If element is scrolled into view, fade it in
                 $(window).scroll(function() {
                     $('.animated').each(function() {

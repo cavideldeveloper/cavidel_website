@@ -2688,3 +2688,131 @@ body.preloader-site {
   padding: 0.5rem;
   border-radius: 1rem;
 }
+
+
+/*========================
+      BLOG STYLES
+========================*/
+.blog-container {
+  padding: 20px;
+}
+
+.post-holder {
+	padding-top: 50px;
+}
+
+
+.post-category {
+	background: #4A90E2;
+	color: #FFFFFF;
+	padding: 2px;
+	border-radius: 3px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 14px;
+}
+
+.post-title {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 28px;
+}
+
+.post-author {
+	font-style: italic;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.post-date {
+	font-style: italic;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.post-body {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.post-container {
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+.sidebar-caption {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 23px;
+}
+
+
+.sidebar-title {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.sidebar-title-2 {
+	font-style: normal;
+	font-weight: bold;
+	/* font-size: 20px; */
+	line-height: 28px;
+}
+
+.newsletter-section {
+	margin-top: 80px;
+}
+
+
+/* Pagination links */
+.pagination {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.pagination a {
+	color: black;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+	transition: background-color .3s;
+}
+
+/* Style the active/current link */
+.pagination a.active {
+background-color: dodgerblue;
+color: white;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.all-comments-container {
+  margin-top: 80px;
+}
+
+.category-container {
+  margin-bottom: 30px;
+}
+
+.categories-list {
+  font-weight: 500;
+  color: #000000;
+  font-size: 14px;
+}
+
+.categories-list:hover {
+  /* font-weight: bold; */
+  /* color: #2883F5; */
+  border-bottom: 3px solid #2883F5;
+}

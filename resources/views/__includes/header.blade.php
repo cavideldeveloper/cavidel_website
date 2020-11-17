@@ -9,17 +9,18 @@
                     <!-- Logo -->
                     <div class="s-header__logo">
                         <a href="{{ url('/') }}" class="s-header__logo-link">
-                            <img class="s-header__logo-img s-header__logo-img-default" style="position: absolute;left: 0;top: -3rem;" width="120" height="auto" src="img/cavidel-logo-white.png" alt="{{env("APP_NAME") }} Logo">
-                            <img class="s-header__logo-img s-header__logo-img-shrink" width="100" height="auto" src="img/cavidel-logo.png" alt="{{env("APP_NAME") }} Logo">
+                            <img class="s-header__logo-img s-header__logo-img-default" style="position: absolute;left: 0;top: -3rem;" width="120" height="auto" src="{{ asset('img/cavidel-logo-white.png') }}" alt="{{env("APP_NAME") }} Logo">
+                            <img class="s-header__logo-img s-header__logo-img-shrink" width="100" height="auto" src="{{ asset('img/cavidel-logo.png') }}" alt="{{env("APP_NAME") }} Logo">
                         </a>
                     </div>
                     <!-- End Logo -->
                 </div>
                 <div class="s-header__navbar-row-col">
                     <ul class="new-menu-bar">
-                        
+
                         <li class="new-menu-link"><a href="{{ url('contact') }}" class="g-font-weight--500">CONTACT</a></li>
                         <li class="new-menu-link"><a href="{{ url('career') }}">CAREER</a></li>
+                        <li class="new-menu-link"><a href="{{ url('blog') }}">BLOG</a></li>
                         <li class="new-menu-link dropdown">
                             <a href="javascript:void(0);" class="g-font-weight--500">
                                 OUR BUSINESS
@@ -28,18 +29,18 @@
                                         <!-- Plan -->
                                         <div class="col-md-12">
                                             <div class="row g-margin-l-5--sm  g-margin-b-10--sm">
-                                                
+
                                                 <div class="col-sm-4">
                                                     <h5 class="g-font-size-16--xs g-font-weight--700 g-margin-t-10--sm">
                                                         PRODUCTS
-                                                    </h5> 
+                                                    </h5>
                                                     <ul class="list-unstyled g-margin-l-0--sm">
                                                         <li class="g-margin-b-10--sm"><a href="{{ url('officemate') }}">OfficeMate</a></li>
                                                         <li class="g-margin-b-10--sm"><a href="{{ url('tims') }}">TIMS</a></li>
-                                                        <li class="g-margin-b-10--sm"><a href="{{ url('catss') }}">CATSS</a></li>  
+                                                        <li class="g-margin-b-10--sm"><a href="{{ url('catss') }}">CATSS</a></li>
 
-                                                        <li class="g-margin-b-10--sm"><a href="#">CaLMS</a></li>  
-                                                        <li class="g-margin-b-10--sm"><a href="#">TIMSclient</a></li>  
+                                                        <li class="g-margin-b-10--sm"><a href="#">CaLMS</a></li>
+                                                        <li class="g-margin-b-10--sm"><a href="#">TIMSclient</a></li>
                                                     </ul>
                                                 </div>
 
@@ -62,7 +63,7 @@
 
                                                 <div class="col-sm-4">
                                                     <h5 class="g-font-size-16--xs g-font-weight--700 g-margin-t-10--sm">
-                                                        
+
 
                                                         SOLUTIONS
                                                     </h5>
@@ -74,16 +75,16 @@
                                                         <li class="g-margin-b-10--sm">
                                                             <a href="{{url('fin-tech')}}">FinTech</a></li>
                                                         <li class="g-margin-b-10--sm">
-                                                            <a href="{{url('agro-tech')}}">AgroTech</a></li> 
-                                                        
+                                                            <a href="{{url('agro-tech')}}">AgroTech</a></li>
+
                                                         <li class="g-margin-b-10--sm">
                                                             <a href="{{url('medi-tech')}}">MediTech</a></li>
                                                         <li class="g-margin-b-10--sm">
-                                                            <a href="{{url('learning-tech')}}">LearningTech</a></li> 
+                                                            <a href="{{url('learning-tech')}}">LearningTech</a></li>
                                                     </ul>
                                                 </div>
 
-                                                
+
                                             </div>
                                         </div>
                                     </div>
@@ -118,7 +119,7 @@
         <!-- Nav -->
         <nav class="s-header__nav js__scrollbar">
             <div class="container-fluid" id="mobile-menu">
-                <!-- Menu List -->                                
+                <!-- Menu List -->
                 <ul class="list-unstyled s-header__nav-menu">
                     <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('/') }}">Home</a></li>
                     <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="{{ url('team') }}">Our Team</a></li>
@@ -133,7 +134,7 @@
             </div>
         </nav>
         <!-- End Nav -->
-        
+
         <!-- Action -->
         <ul class="list-inline s-header__action s-header__action--lb">
             <li class="s-header__action-item"><a class="s-header__action-link -is-active" href="#">En</a></li>

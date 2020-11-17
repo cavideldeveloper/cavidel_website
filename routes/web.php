@@ -35,7 +35,23 @@ Route::get('/mobile-development',			'ExternalPagesController@mobileDevelopment')
 Route::get('/payment-integration',			'ExternalPagesController@paymentIntegration');
 
 Route::get('/solutions',					'ExternalPagesController@solutions');
+
+/*
+|---------------------------------------------------------------------------------------------------------
+| BLOG
+|---------------------------------------------------------------------------------------------------------
+|
+*/
 Route::get('/blog',							'ExternalPagesController@blog');
+Route::get('/blog/{id}/post',               'ExternalPagesController@blogPost');
+Route::get('/get/all/posts',       'ExternalPagesController@getAllPosts');
+Route::get('/get/all/posts/by/views',       'ExternalPagesController@getAllPostsByViews');
+Route::get('/get/all/category/posts/{category_id}',       'ExternalPagesController@getAllCategoryPosts');
+Route::get('/fetch/post/{post_id}',  'ExternalPagesController@getOnePost');
+Route::post('/update/post/views/{post_id}', 'ExternalPagesController@updateViews');
+Route::post('/save/comment', 'ExternalPagesController@postComment');
+Route::get('/get/post/comments/{post_id}', 'ExternalPagesController@getAllPostComments');
+
 Route::get('/faq',							'ExternalPagesController@faq');
 Route::get('/portfolio',					'ExternalPagesController@portfolio');
 
@@ -144,7 +160,7 @@ Route::post('/send/application/form',		'ClientJsonResponseController@application
 Route::get('/get/all/team/member',			'ClientJsonResponseController@getTeamMembers')->name('team_member');
 Route::post('/send/order/request',		    'ClientJsonResponseController@placeNewOrder')->name('order_request');
 Route::get('/fetch/all/products',			'ClientJsonResponseController@fetchProducts')->name('fetch_products');
-Route::post('clear/contact/mail/queue',     'ClientJsonResponseController@clearQueue'); 
+Route::post('clear/contact/mail/queue',     'ClientJsonResponseController@clearQueue');
 Route::get('/get/all/job/placement',		'ClientJsonResponseController@getJobPlacements');
 Route::get('/get/all/job/type',				'ClientJsonResponseController@getJobPlacementsTypes');
 Route::get('/get/one/job/placement/{id}',	'ClientJsonResponseController@getJobPlacementByRef');

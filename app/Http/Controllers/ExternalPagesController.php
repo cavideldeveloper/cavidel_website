@@ -4,6 +4,8 @@ namespace Cavidel\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Cavidel\Team;
+use Cavidel\Post;
+use illuminate\Support\Facades\Http;
 
 class ExternalPagesController extends Controller
 {
@@ -161,6 +163,17 @@ class ExternalPagesController extends Controller
 
     /*
     |---------------------------------------------
+    | SHOW BLOG POST
+    |---------------------------------------------
+    */
+    public function blogPost(Request $request, $id) {
+        // dd($id);
+        $post_id = $id;
+        // dd($post);
+        return view('pages.blog-post')->with('post_id', $post_id);
+    }
+    /*
+    |---------------------------------------------
     | SHOW CONTACT US
     |---------------------------------------------
     */
@@ -170,7 +183,7 @@ class ExternalPagesController extends Controller
 
     /*
     |---------------------------------------------
-    | CAREER 
+    | CAREER
     |---------------------------------------------
     */
     public function career(){
@@ -283,4 +296,140 @@ class ExternalPagesController extends Controller
         // body
         return view('pages.learning-tech');
     }
+
+    /*
+    |-----------------------------------------
+    | SHOW ALL POSTS
+    |-----------------------------------------
+    */
+    public function getAllPosts(Request $request){
+    	// body
+    	$posts 	= new Post();
+    	$data 			= $posts->getAllPosts($request);
+
+        // to collection
+        // $all_subscribers    = $all_users['data'] ?? [];
+
+        // return view('officemate_admin.index', compact('all_subscribers'));
+        //return response
+        return response()->json($data, 200);
+    }
+
+    /*
+    |-----------------------------------------
+    | SHOW ALL POSTS BY VIEWS
+    |-----------------------------------------
+    */
+    public function getAllPostsByViews(Request $request){
+    	// body
+    	$posts 	= new Post();
+    	$data 			= $posts->getAllPostsByViews($request);
+
+        // to collection
+        // $all_subscribers    = $all_users['data'] ?? [];
+
+        // return view('officemate_admin.index', compact('all_subscribers'));
+        //return response
+        return response()->json($data, 200);
+    }
+
+    /*
+    |-----------------------------------------
+    | SHOW ALL POSTS BY CATEGORY
+    |-----------------------------------------
+    */
+    public function getAllCategoryPosts(Request $request, $category_id){
+        // body
+        $request->id = $category_id;
+    	$posts 	= new Post();
+    	$data 			= $posts->getAllCategoryPosts($request);
+
+        // to collection
+        // $all_subscribers    = $all_users['data'] ?? [];
+
+        // return view('officemate_admin.index', compact('all_subscribers'));
+        //return response
+        return response()->json($data, 200);
+    }
+
+     /*
+    |-----------------------------------------
+    | SHOW ONE POST
+    |-----------------------------------------
+    */
+    public function getOnePost(Request $request, $post_id){
+        // body
+        $request->id = $post_id;
+    	$post 	= new Post();
+    	$data 			= $post->getOnePost($request);
+
+        // to collection
+        // $all_subscribers    = $all_users['data'] ?? [];
+
+        // return view('officemate_admin.index', compact('all_subscribers'));
+        //return response
+        return response()->json($data, 200);
+    }
+
+     /*
+    |-----------------------------------------
+    | UDATE VIEWS OF ONE POST
+    |-----------------------------------------
+    */
+    public function updateViews(Request $request, $post_id){
+        // body
+        $request->id = $post_id;
+    	$post 	= new Post();
+    	$data 			= $post->updateViews($request);
+
+        //return response
+        return response()->json($data, 200);
+    }
+
+
+    /*
+    |-----------------------------------------
+    | SHOW ALL COMMENTS BY POST
+    |-----------------------------------------
+    */
+    public function getAllPostComments(Request $request, $post_id){
+        // body
+        $request->id = $post_id;
+    	$posts 	= new Post();
+    	$data 			= $posts->getAllPostComments($request);
+
+        // to collection
+        // $all_subscribers    = $all_users['data'] ?? [];
+
+        // return view('officemate_admin.index', compact('all_subscribers'));
+        //return response
+        return response()->json($data, 200);
+    }
+
+
+    /*
+    |-----------------------------------------
+    | POST COMMENTS
+    |-----------------------------------------
+    */
+    public function postComment(Request $request) {
+
+        $comment    = new Post();
+        $data       = $comment->postComment($request);
+
+        // return response
+        return response()->json($data, 200);
+
+        // $data = Http::post('http://127.0.0.1:8334/api/save/comment', [
+        //     'fullName' => $request->fullName,
+        //     'emailAddress' => $request->emailAddress,
+        //     'comment' => $request->comment,
+        //     'postId' => $request->postId,
+        // ]);
+
+        // return response()->json($data, 200);
+    }
+
+
+
 }
