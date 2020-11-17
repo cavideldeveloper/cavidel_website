@@ -58,6 +58,7 @@
                                 <textarea class="form-control" rows="5" id="comment"  placeholder="Enter Comment" required></textarea>
                               </div>
                             <button type="submit" class="btn btn-dark" style="height:50px;width:100%;">Send Comment</button>
+                            <p><span id="result"></span></p>
                         </form>
                     </div>
                     <div class="all-comments-container">
@@ -170,7 +171,7 @@
             fetch(`{{ url('/fetch/post') }}/${post_id}`).then(r => r.json()).then(result => {
                 // $("#edit_postId").val(result.id);
                 $("#post_category").html(result.category.category);
-                $("#featured_image").append(`<img src="http://127.0.0.1:8334/${result.featuredImage}" alt="" class="img-fluid rounded" style="width:720px;height:400px;">`);
+                $("#featured_image").append(`<img src="https://cavidel.officemate.ng/${result.featuredImage}" alt="" class="img-fluid rounded" style="width:720px;height:400px;">`);
                 $("#post_author").html(result.author);
                 $("#post_date").html(moment(result.created_at).format('LL'));
                 $("#post_title").html(result.title);
@@ -230,11 +231,11 @@
                 $("#load-all-posts-by-views").html("");
                 $.each(results, function(index, val) {
                     $("#load-all-posts-by-views").append(`
-                        <div>
+                        <div class="row">
                             <div class="col-xs-4">
-                                <p><img src="http://127.0.0.1:8334/${val.featuredImage}" alt="" class="img-fluid img-thumbnail"></p>
+                                <p><img src="https://cavidel.officemate.ng/${val.featuredImage}" alt="" class="img-fluid img-thumbnail"></p>
                             </div>
-                            <div class="col-xs-6">
+                            <div class="col-xs-8">
                                 <a href="/blog/${val.id}/post"><span class="sidebar-title-2">${val.title}</span></a>
                                 <p><span class="post-author">${val.author}</span> - <span class="post-category">${val.category}</span></p>
                             </div>
@@ -257,19 +258,24 @@
             }).then(r => {
                 return r.json();
             }).then(results => {
-                console.log(results);
-                $("#load-post-comments").html("");
-                $.each(results, function(index, val) {
-                    $("#load-post-comments").append(`
-                        <div class="col-xs-3">
-                            <img src="{{asset('img/user-avatar.svg')}}" alt="" width="auto" height="100">
-                        </div>
-                        <div class="col-xs-9">
-                            <p style="font-weight: bold;">${val.fullName}</p>
-                            <p>${val.comment}</p>
-                        </div>
-                    `);
-                });
+                console.log(results.length);
+                if (results.length == 0) {
+                    $("#load-post-comments").html("");
+                    $("#load-post-comments").html("<h6> No comments yet. Be the first to send a comment.</h6>");
+                } else {
+                    $("#load-post-comments").html("");
+                    $.each(results, function(index, val) {
+                        $("#load-post-comments").append(`
+                            <div class="col-xs-3">
+                                <img src="{{asset('img/user-avatar.svg')}}" alt="" width="auto" height="100">
+                            </div>
+                            <div class="col-xs-9">
+                                <p style="font-weight: bold;">${val.fullName}</p>
+                                <p>${val.comment}</p>
+                            </div>
+                        `);
+                    });
+                }
             }).catch(err => {
                 console.log(err);
             })
@@ -294,6 +300,7 @@
                 },
                 success:function(response){
                     console.log(response);
+                    $('#result').html('<div class="alert alert-success"><p>Comment sent successfully!</p></div>');
                 },
             });
             fetchAllPostComments();

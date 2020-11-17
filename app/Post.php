@@ -36,7 +36,7 @@ class Post extends Model
             );
 
             $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL, "http://127.0.0.1:8334/api/blog/posts");
+            curl_setopt($ch, CURLOPT_URL, "https://cavidel.officemate.ng/api/blog/posts");
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 200);
             curl_setopt($ch, CURLOPT_TIMEOUT, 200);
@@ -65,7 +65,7 @@ class Post extends Model
             );
             $category_id = $payload->id;
             $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL, "http://127.0.0.1:8334/api/blog/posts/category/$category_id");
+            curl_setopt($ch, CURLOPT_URL, "https://cavidel.officemate.ng/api/blog/posts/category/$category_id");
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 200);
             curl_setopt($ch, CURLOPT_TIMEOUT, 200);
@@ -94,7 +94,7 @@ class Post extends Model
             );
             // $category_id = $payload->id;
             $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL, "http://127.0.0.1:8334/api/blog/post/by/views");
+            curl_setopt($ch, CURLOPT_URL, "https://cavidel.officemate.ng/api/blog/post/by/views");
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 200);
             curl_setopt($ch, CURLOPT_TIMEOUT, 200);
@@ -123,7 +123,7 @@ class Post extends Model
             );
             $post_id = $payload->id;
             $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL, "http://127.0.0.1:8334/api/blog/post/$post_id");
+            curl_setopt($ch, CURLOPT_URL, "https://cavidel.officemate.ng/api/blog/post/$post_id");
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 200);
             curl_setopt($ch, CURLOPT_TIMEOUT, 200);
@@ -153,7 +153,7 @@ class Post extends Model
             );
             $post_id = $payload->id;
             $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL, "http://127.0.0.1:8334/api/update/post/views/$post_id");
+            curl_setopt($ch, CURLOPT_URL, "https://cavidel.officemate.ng/api/update/post/views/$post_id");
             curl_setopt($ch, CURLOPT_POST, true);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 200);
@@ -182,10 +182,17 @@ class Post extends Model
             $headers = array(
                 "x-access-token: yc3ROYW1lIjoiQnJldHQiLCJsYXN0TmFtZSI6Ikxhd3NvbiIsInBob25lTnVtYmVyIjoiNTIxMzM4MTQwOCIsInVybCI6InRlam",
             );
+
+            $postRequest = array(
+                'fullName' => $payload->fullName,
+                'emailAddress' => $payload->emailAddress,
+                'comment' => $payload->comment,
+                'postId' => $payload->postId,
+            );
             // $post_id = $payload->id;
             $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL, "http://127.0.0.1:8334/api/save/comment");
-            curl_setopt($ch, CURLOPT_POST, true);
+            curl_setopt($ch, CURLOPT_URL, "https://cavidel.officemate.ng/api/save/comment");
+            curl_setopt($ch, CURLOPT_POSTFIELDS, $postRequest);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 200);
             curl_setopt($ch, CURLOPT_TIMEOUT, 200);
@@ -215,7 +222,7 @@ class Post extends Model
             );
             $post_id = $payload->id;
             $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL, "http://127.0.0.1:8334/api/fetch/post/$post_id/comments");
+            curl_setopt($ch, CURLOPT_URL, "https://cavidel.officemate.ng/api/fetch/post/$post_id/comments");
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 200);
             curl_setopt($ch, CURLOPT_TIMEOUT, 200);

@@ -295,7 +295,7 @@
                 $("#load-all-posts").append(`
                     <div class="post-container">
                         <div class="featured-image">
-                            <p><img src="http://127.0.0.1:8334/${val.featuredImage}" alt="" class="img-fluid rounded" style="width:720px; height:400px;"></p>
+                            <p><img src="https://cavidel.officemate.ng/${val.featuredImage}" alt="" class="img-fluid rounded" style="width:720px; height:400px;"></p>
                         </div>
                         <div>
                             <p><span class="post-category">${val.category}</span></p>
@@ -395,7 +395,7 @@
                     $("#load-all-posts-by-views").append(`
                         <div class="recommended-posts">
                             <div class="featured-image">
-                                <p><img src="http://127.0.0.1:8334/${val.featuredImage}" alt="" class="img-fluid rounded" style="width:720px; height:auto;"></p>
+                                <p><img src="https://cavidel.officemate.ng/${val.featuredImage}" alt="" class="img-fluid rounded" style="width:720px; height:auto;"></p>
                             </div>
                             <div>
                                 <span class="post-category">${val.category}</span>

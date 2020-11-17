@@ -5,6 +5,7 @@ namespace Cavidel\Http\Controllers;
 use Illuminate\Http\Request;
 use Cavidel\Team;
 use Cavidel\Post;
+use illuminate\Support\Facades\Http;
 
 class ExternalPagesController extends Controller
 {
@@ -418,6 +419,15 @@ class ExternalPagesController extends Controller
 
         // return response
         return response()->json($data, 200);
+
+        // $data = Http::post('http://127.0.0.1:8334/api/save/comment', [
+        //     'fullName' => $request->fullName,
+        //     'emailAddress' => $request->emailAddress,
+        //     'comment' => $request->comment,
+        //     'postId' => $request->postId,
+        // ]);
+
+        // return response()->json($data, 200);
     }
 
 
