@@ -185,7 +185,7 @@
                         </div>
                     </div> --}}
                 </div>
-                <div class="newsletter-section">
+                {{-- <div class="newsletter-section">
                     <p class="sidebar-caption">Email Newsletter</p>
                     <p>Sign up to receive email updates and to hear what's going on.</p>
                     <div>
@@ -199,7 +199,7 @@
                             <button type="submit" class="btn btn-dark" style="height:50px;width:100%;">Subscribe to newsletter</button>
                         </form>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>
@@ -301,7 +301,7 @@
                             <p><span class="post-category">${val.category}</span></p>
                             <a href="/blog/${val.id}/post"><p class="post-title">${val.title}</p></a>
                             <p><span class="post-author">${val.author}</span> - <span class="post-date">${moment(val.created_at).format('LL')}</span></p>
-                            <p class="post-body">${truncateString(val.postBody, 500)}<a href="/blog/${val.id}/post">Read More</a></p>
+                            <p class="post-body">${truncateString(val.postBody, 350)}<a href="/blog/${val.id}/post"><small style="color:#0176ff;">Read more</small></a></p>
                         </div>
                     </div>
                 `);
