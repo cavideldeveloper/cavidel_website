@@ -430,6 +430,50 @@ class ExternalPagesController extends Controller
         // return response()->json($data, 200);
     }
 
+     /*
+    |-----------------------------------------
+    | MAKE REQUEST
+    |-----------------------------------------
+    */
+    public function makeRequest(Request $request) {
+        // body
+        // return response()->json($request->all());
+        try {
+            $headers = array(
+                'content-type: application/json',
+                "x-access-token: yc3ROYW1lIjoiQnJldHQiLCJsYXN0TmFtZSI6Ikxhd3NvbiIsInBob25lTnVtYmVyIjoiNTIxMzM4MTQwOCIsInVybCI6InRlam",
+            );
+
+            $makeRequest = array(
+                'fullname' => $request->fullname,
+                'email' => $request->email,
+                'phone' => $request->phone,
+                'businessname' => $request->businessname,
+                'businessnature' => $request->businessnature,
+                'staffnum' => $request->staffnum,
+                'clientnum' => $request->clientnum,
+                'feature' => $request->feature,
+            );
+            // $post_id = $payload->id;
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, "http://127.0.0.1:8334/api/make/request");
+            curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($makeRequest));
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 200);
+            curl_setopt($ch, CURLOPT_TIMEOUT, 200);
+            curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+            $res = curl_exec($ch);
+
+            $data = collect(json_decode($res, true));
+            // dd($data);
+        } catch (Exception $e) {
+            $data = collect([]);
+        }
+
+        return $data;
+
+    }
+
 
 
 }
