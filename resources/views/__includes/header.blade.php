@@ -13,11 +13,11 @@
                             <img class="s-header__logo-img s-header__logo-img-shrink" width="100" height="auto" src="{{ asset('img/cavidel-logo.png') }}" alt="{{env("APP_NAME") }} Logo">
                         </a>
                     </div>
-                    <!-- End Logo -->
+                    <!-- End Logo  onclick="requestModal()"-->
                 </div>
                 <div class="s-header__navbar-row-col">
                     <ul class="new-menu-bar">
-
+                        <li class="new-menu-link"><a href="javascript:void(0);" data-toggle="modal" data-target="#requestModal">REQUEST</a></li>
                         <li class="new-menu-link"><a href="{{ url('contact') }}" class="g-font-weight--500">CONTACT</a></li>
                         <li class="new-menu-link"><a href="{{ url('career') }}">CAREER</a></li>
                         <li class="new-menu-link"><a href="{{ url('blog') }}">BLOG</a></li>
