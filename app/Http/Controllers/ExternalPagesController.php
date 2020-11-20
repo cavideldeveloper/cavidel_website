@@ -456,7 +456,7 @@ class ExternalPagesController extends Controller
             );
             // $post_id = $payload->id;
             $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL, "http://127.0.0.1:8334/api/make/request");
+            curl_setopt($ch, CURLOPT_URL, "https://cavidel.officemate.ng/api/make/request");
             curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($makeRequest));
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 200);
