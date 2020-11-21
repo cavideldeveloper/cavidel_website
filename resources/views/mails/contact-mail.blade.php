@@ -11,7 +11,7 @@
 		    font-family: 'Amiko';font-size: 12px;
 		}
 
-		table, td, th {    
+		table, td, th {
 		    border: 1px solid #ddd;
 		    text-align: left;
 		}
@@ -34,13 +34,13 @@
 			<p>
 				Hello Cavidel,
 			</p>
-			<p> 
+			<p>
 				<b>{{ ucfirst($data->name) }} just sent a new message.
 				<br /><br />
 
 				<p>{!! $data->body !!}</p>
 
-				<p>Client email: {{ $data->email }}</p>
+				<p>Client email: <a href="mailto:{{ $data->email }}"> {{ $data->email }} </a></p>
 				<p>Client Phone: {{ $data->phone }}</p>
 				<hr />
 			</p>

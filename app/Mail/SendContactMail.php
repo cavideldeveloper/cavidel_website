@@ -17,10 +17,12 @@ class SendContactMail extends Mailable
      * @return void
      */
     protected $data;
+    // protected $mail_subject;
     public function __construct($data)
     {
         // bind
         $this->data = $data;
+        // $this->mail_subject = $mail_subject;
     }
 
     /**
@@ -31,6 +33,7 @@ class SendContactMail extends Mailable
     public function build()
     {
         $data = $this->data;
-        return $this->view('mails.contact-mail', compact('data'));
+        // $mail_subject = $this->mail_subject;
+        return $this->view('mails.contact-mail', compact('data'))->subject($this->data->mail_subject);
     }
 }

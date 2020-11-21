@@ -423,7 +423,7 @@
                     </div>
                     <div class="modal-footer">
                                 <span id="result"></span>
-                                <button type="submit" name="save" id="save" class="btn btn-success">Submit</button>
+                                <button type="submit" name="save" id="save" class="btn btn-info">Submit</button>
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             </form>
                     </div>
@@ -509,7 +509,7 @@
                     }
                     else
                     {
-                        html += '<td><button type="button" name="add" id="add" class="btn btn-link"><i class="fa fa-plus-square-o text-success" style="font-size:20px;"></i></button></td></tr>';
+                        html += '<td><button type="button" name="add" id="add" class="btn btn-link"><i class="fa fa-plus-square-o text-info" style="font-size:20px;"></i></button></td></tr>';
                         $("#expected-features").html(html);
                     }
                 }
@@ -673,6 +673,8 @@
 
             // contact site
             function contactSupport() {
+                document.getElementById("submit_contact_form").disabled = true;
+
                 var token   = $("#token").val();
                 var name    = $("#c-name").val();
                 var email   = $("#c-email").val();
@@ -697,6 +699,8 @@
                             data.message,
                             data.status
                         );
+                        // $('#submit_contact_form').attr('disabled', false);
+                        document.getElementById("submit_contact_form").disabled = false;
 
                         // reset form
                         $(".contact-form")[0].reset();
