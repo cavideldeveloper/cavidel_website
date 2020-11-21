@@ -42,21 +42,21 @@
             </div>
             <form class="contact-form center-block g-width-500--sm g-width-550--md" onsubmit="return contactSupport()">
                 <div class="g-margin-b-30--xs">
-                    <input type="text" class="form-control s-form-v3__input" id="c-name" placeholder="* Name" required="">
+                    <input type="text" class="form-control s-form-v3__input" id="c-name" placeholder="* Name" required="" style="background-color:#222324;">
                 </div>
                 <div class="row g-row-col-5 g-margin-b-50--xs">
                     <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
-                        <input type="email" class="form-control s-form-v3__input" id="c-email" placeholder="* Email" required="">
+                        <input type="email" class="form-control s-form-v3__input" id="c-email" placeholder="* Email" required="" style="background-color:#222324;">
                     </div>
                     <div class="col-sm-6">
-                        <input type="text" class="form-control s-form-v3__input" id="c-phone" placeholder="* Phone" required="">
+                        <input type="text" class="form-control s-form-v3__input" id="c-phone" placeholder="* Phone" required="" style="background-color:#222324;">
                     </div>
                 </div>
                 <div class="g-margin-b-80--xs">
-                    <textarea class="form-control s-form-v3__input" id="c-message" rows="5" placeholder="* Your message" required=""></textarea>
+                    <textarea class="form-control s-form-v3__input" id="c-message" rows="5" placeholder="* Your message" required="" style="background-color:#222324;"></textarea>
                 </div>
                 <div class="g-text-center--xs">
-                    <button type="submit" class="text-uppercase s-btn s-btn--md s-btn--white-bg g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Submit</button>
+                    <button type="submit" class="text-uppercase s-btn s-btn--md s-btn--white-bg g-radius--50 g-padding-x-70--xs g-margin-b-20--xs" id="submit_contact_form">Submit</button>
                 </div>
             </form>
         </div>

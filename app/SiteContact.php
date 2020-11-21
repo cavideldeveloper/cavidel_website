@@ -22,8 +22,12 @@ class SiteContact extends Model
 		$contact_us->visitor_ip 		= $payload->ip();
 		$contact_us->visitor_browser 	= $payload->server('HTTP_USER_AGENT');
 		$contact_us->visitor_device 	= $payload->header('User-Agent');
-		$contact_us->status 			= "active";
-		if($contact_us->save()){
+        $contact_us->status 			= "active";
+        $contact_us->save();
+        $contact_us->mail_subject = "New Contact Message From Cavidel Website.";
+        $recipient = 'consultant@cavidel.com';
+        $send_contact_mail = Mail::to($recipient)->send(new SendContactMail($contact_us));
+		if($send_contact_mail = true){
 			$data = [
     			'status' 	=> 'success',
     			'message' 	=> 'Thanks for contacting Cavidel, we will get back to you shortly.',
@@ -31,11 +35,11 @@ class SiteContact extends Model
 		}else{
 			$data = [
     			'status' 	=> 'error',
-    			'message' 	=> 'could not save subscription at the moment!',
+    			'message' 	=> 'An error occured. Try again.',
     		];
 		}
 
-    	// return 
+    	// return
     	return $data;
     }
 
