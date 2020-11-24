@@ -336,66 +336,66 @@
             <div class="modal-dialog modal-xl">
 
               <!-- Modal content-->
-                <div class="modal-content">
+                <div class="modal-content" style="background-color: #222324; color: #ffffff; border: solid;">
                     {{-- <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         {{-- <h4 class="modal-title text-left">Modal Header</h4> -
                     </div> --}}
                     <div class="modal-body">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 style="padding-bottom: 20px;">Make a request</h4>
+                        <button type="button" class="close" data-dismiss="modal" style="color:  #ffffff">&times;</button>
+                        <h4 style="padding-bottom: 20px; color: #ffffff">Make a request</h4>
                         <div class="row" style="padding-left: 30px; padding-right: 30px;">
                             <form method="post" id="dynamic_form">
                                 @csrf
-                                <h6>Personal Information</h6>
+                                <h6 style="color: #ffffff">Personal Information</h6>
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label for="fullname">Full Name:</label>
+                                            <label for="fullname" style="color:  #ffffff">Full Name:</label>
                                             <input type="text" class="form-control" name="fullname" id="fullname" style="height:40px;" required>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label for="email">Email Address:</label>
+                                            <label for="email" style="color:  #ffffff">Email Address:</label>
                                             <input type="email" class="form-control" name="email" id="email" style="height:40px;" required>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label for="phone">Phone Number:</label>
+                                            <label for="phone" style="color:  #ffffff">Phone Number:</label>
                                             <input type="tel" class="form-control" name="phone" id="phone" style="height:40px;" required>
                                         </div>
                                     </div>
                                 </div>
-                                <h6>Business Information</h6>
+                                <h6 style="color:  #ffffff">Business Information</h6>
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label for="businessname">Business Name:</label>
+                                            <label for="businessname" style="color:  #ffffff">Business Name:</label>
                                             <input type="text" class="form-control" name="businessname" id="businessname" style="height:40px;" required>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label for="businessnature">Nature of Business:</label>
+                                            <label for="businessnature" style="color:  #ffffff">Nature of Business:</label>
                                             <input type="text" class="form-control" name="businessnature" id="businessnature" style="height:40px;" required>
                                         </div>
                                     </div>
                                     <div class="col-md-2">
                                         <div class="form-group">
-                                            <label for="staffnum">No. of Staff:</label>
+                                            <label for="staffnum" style="color:  #ffffff">No. of Staff:</label>
                                             <input type="number" class="form-control" name="staffnum" id="staffnum" style="height:40px;" required>
                                         </div>
                                     </div>
                                     <div class="col-md-2">
                                         <div class="form-group">
-                                            <label for="clientnum">No. of Customers:</label>
+                                            <label for="clientnum" style="color:  #ffffff">No. of Customers:</label>
                                             <input type="number" class="form-control" name="clientnum" id="clientnum" style="height:40px;" required>
                                         </div>
                                     </div>
                                 </div>
-                                <h6>Expected Features: (Kindly click on the 'plus' sign to add more feature requests)</h6>
+                                <h6 style="color:  #ffffff">Expected Features: (Kindly click on the 'plus' sign to add more feature requests)</h6>
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <table class="table">
@@ -421,10 +421,10 @@
                                 </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer" style="border-top: 1px solid #222324;">
                                 <span id="result"></span>
                                 <button type="submit" name="save" id="save" class="btn btn-info">Submit</button>
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             </form>
                     </div>
                 </div>
@@ -501,15 +501,15 @@
                 function dynamic_field(number)
                 {
                     html = '<tr>';
-                    html += '<td><textarea class="form-control" rows="3" name="feature[]" placeholder="- enter feature -"></textarea></td>';
+                    html += '<td style="border-top: 1px solid #222324;"><textarea class="form-control" rows="3" name="feature[]" placeholder="- enter feature -"></textarea></td>';
                     if(number > 1)
                     {
-                        html += '<td><button type="button" name="remove" id="" class="btn btn-link remove"><i class="fa fa-times-circle-o text-danger" style="font-size:20px;"></i></button></td></tr>';
+                        html += '<td style="border-top: 1px solid #222324;"><button type="button" name="remove" id="" class="btn btn-link remove"><i class="fa fa-times-circle-o text-danger" style="font-size:20px;"></i></button></td></tr>';
                         $("#expected-features").append(html);
                     }
                     else
                     {
-                        html += '<td><button type="button" name="add" id="add" class="btn btn-link"><i class="fa fa-plus-square-o text-info" style="font-size:20px;"></i></button></td></tr>';
+                        html += '<td style="border-top: 1px solid #222324;"><button type="button" name="add" id="add" class="btn btn-link"><i class="fa fa-plus-square-o text-info" style="font-size:20px;"></i></button></td></tr>';
                         $("#expected-features").html(html);
                     }
                 }
