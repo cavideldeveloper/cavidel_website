@@ -33,14 +33,14 @@
                 </p>
 	            <p class="g-font-size-18--sm g-padding-x-80--md text-justify g-font-weight--500">
 	            	Cavidel Limited is a technology and consulting company that helps businesses achieve business advantage using IT to reduce costs, improve productivity and increase efficiency in the delivery of impeccable customer service.
-                </p> 
+                </p>
 
                 <p class="g-font-size-18--sm g-padding-x-80--md text-justify g-font-weight--500">
                     We deliver our solution through detailed process review and automation of business and client integration processes. Our products are specially developed for financial markets, banking, human resources, health, real estate, agricultural systems etc.
                 </p>
 
                 <p class="g-font-size-18--sm g-padding-x-80--md text-justify g-font-weight--500">
-                    Established in 2013, Cavidel Limited has evolved into a dynamic organisation through its long tradition and experience in working with conglomerates, financial services firms, consulting practices, public institutions, medical institutions etc. We take great pride in our reputation for consistently delivering quality services. 
+                    Established in 2013, Cavidel Limited has evolved into a dynamic organisation through its long tradition and experience in working with conglomerates, financial services firms, consulting practices, public institutions, medical institutions etc. We take great pride in our reputation for consistently delivering quality services.
 
 				</p>
 	        </div>
@@ -111,6 +111,28 @@
     </div>
     <!-- End Plan -->
 
+    {{--Team Show more modal --}}
+
+    <div class="modal fade show" id="show-more-modal" role="dialog" style="padding-right: 17px; display: block;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-review">
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     @include('__includes.footer')
 @endsection
 
@@ -165,7 +187,7 @@
                                 <div class="" data-wow-duration=".3" data-wow-delay=".1s">
                                     <!-- Team -->
                                     <div class="s-team-v1">
-                                    
+
                                         <img class="img-responsive g-width-80-percent--xs" src="${val.avatar}" alt="Image">
                                         <div class="g-text-center--xs g-bg-color--white g-padding-x-30--xs g-padding-y-40--xs">
                                         <a href="javascript:void(0);" onclick="showMoreModal(${val.id})">
@@ -173,7 +195,7 @@
                                             <span class="g-font-size-15--xs g-color--text"><i> ${val.position}</i></span>
                                         </a>
                                         </div>
-                                    
+
                                     </div>
                                     <!-- End Team -->
                                 </div>
@@ -196,7 +218,7 @@
                                 <div class="" data-wow-duration=".3" data-wow-delay=".1s">
                                     <!-- Team -->
                                     <div class="s-team-v1">
-                                    
+
                                         <img class="img-responsive g-width-80-percent--xs" height="300" src="${val.avatar}" alt="Image">
                                         <div class="g-text-center--xs g-bg-color--white g-padding-x-30--xs g-padding-y-40--xs">
                                         <a href="javascript:void(0);" onclick="showMoreModal(${val.id})">
@@ -204,7 +226,7 @@
                                             <span class="g-font-size-15--xs g-color--text"><i> ${val.position}</i></span>
                                         </a>
                                         </div>
-                                    
+
                                     </div>
                                     <!-- End Team -->
                                 </div>
@@ -212,7 +234,7 @@
                         `);
                     }
                 });
-            }); 
+            });
         }
 
         // show more modal
@@ -236,7 +258,7 @@
                     </div>
                 </div>
             `);
-           $("#show-more-modal").modal(); 
-        }   
+           $("#show-more-modal").modal();
+        }
     </script>
 @endsection
