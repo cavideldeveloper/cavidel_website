@@ -27,20 +27,20 @@
 	<div class="container g-padding-y-80--sm g-padding-y-20--md" id="how-we-work">
 	    <div class="row g-hor-centered-row--md g-row-col--5">
 	        <div class="col-md-12 g-padding-y-60--sm g-padding-y-80--md s-plan-v1">
-	            {{-- <p class="text-uppercase g-text-center--xs g-font-size-16--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-15--xs g-color--primary">About </p> --}}
+
                 <p class="text-uppercase g-text-center--xs g-font-size-28--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-15--xs g-color--primary">
                     About Us
                 </p>
 	            <p class="g-font-size-18--sm g-padding-x-80--md text-justify g-font-weight--500">
 	            	Cavidel Limited is a technology and consulting company that helps businesses achieve business advantage using IT to reduce costs, improve productivity and increase efficiency in the delivery of impeccable customer service.
-                </p> 
+                </p>
 
                 <p class="g-font-size-18--sm g-padding-x-80--md text-justify g-font-weight--500">
                     We deliver our solution through detailed process review and automation of business and client integration processes. Our products are specially developed for financial markets, banking, human resources, health, real estate, agricultural systems etc.
                 </p>
 
                 <p class="g-font-size-18--sm g-padding-x-80--md text-justify g-font-weight--500">
-                    Established in 2013, Cavidel Limited has evolved into a dynamic organisation through its long tradition and experience in working with conglomerates, financial services firms, consulting practices, public institutions, medical institutions etc. We take great pride in our reputation for consistently delivering quality services. 
+                    Established in 2013, Cavidel Limited has evolved into a dynamic organisation through its long tradition and experience in working with conglomerates, financial services firms, consulting practices, public institutions, medical institutions etc. We take great pride in our reputation for consistently delivering quality services.
 
 				</p>
 	        </div>
@@ -165,7 +165,7 @@
                                 <div class="" data-wow-duration=".3" data-wow-delay=".1s">
                                     <!-- Team -->
                                     <div class="s-team-v1">
-                                    
+
                                         <img class="img-responsive g-width-80-percent--xs" src="${val.avatar}" alt="Image">
                                         <div class="g-text-center--xs g-bg-color--white g-padding-x-30--xs g-padding-y-40--xs">
                                         <a href="javascript:void(0);" onclick="showMoreModal(${val.id})">
@@ -173,7 +173,7 @@
                                             <span class="g-font-size-15--xs g-color--text"><i> ${val.position}</i></span>
                                         </a>
                                         </div>
-                                    
+
                                     </div>
                                     <!-- End Team -->
                                 </div>
@@ -196,7 +196,7 @@
                                 <div class="" data-wow-duration=".3" data-wow-delay=".1s">
                                     <!-- Team -->
                                     <div class="s-team-v1">
-                                    
+
                                         <img class="img-responsive g-width-80-percent--xs" height="300" src="${val.avatar}" alt="Image">
                                         <div class="g-text-center--xs g-bg-color--white g-padding-x-30--xs g-padding-y-40--xs">
                                         <a href="javascript:void(0);" onclick="showMoreModal(${val.id})">
@@ -204,7 +204,7 @@
                                             <span class="g-font-size-15--xs g-color--text"><i> ${val.position}</i></span>
                                         </a>
                                         </div>
-                                    
+
                                     </div>
                                     <!-- End Team -->
                                 </div>
@@ -212,7 +212,7 @@
                         `);
                     }
                 });
-            }); 
+            });
         }
 
         // show more modal
@@ -236,7 +236,7 @@
                     </div>
                 </div>
             `);
-           $("#show-more-modal").modal(); 
-        }   
+           $("#show-more-modal").modal();
+        }
     </script>
 @endsection

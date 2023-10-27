@@ -179,3 +179,21 @@ Route::get('migrate', function(){
 */
 
 Route::post('/make/request','ExternalPagesController@makeRequest' );
+
+/*
+|---------------------------------------------------------------------------------------------------------
+| SCREENING QUSETIONAIRE
+|---------------------------------------------------------------------------------------------------------
+|
+*/
+
+Route::controller(ScreeningQuestionaireController::class)->group(function () {
+    Route::get('screening_questionaire', 'index')->name('screening_questionaire'); // working
+    Route::get('show_screening_questionaire/{id}', 'show')->name('show_screening_questionaire'); // working
+    Route::get('create_screening_questionaire', 'create')->name('create_screening_questionaire'); // working
+    Route::post('store_screening_questionaire', 'store')->name('store_screening_questionaire');
+    Route::patch('update_screening_questionaire/{id}', 'update')->name('update_screening_questionaire');// working
+    Route::get('edit_screening_questionaire/{id}', 'edit')->name('edit_screening_questionaire'); // working
+    Route::delete('delete_reening_questionaire/{id}', 'destroy')->name('delete_screening_questionaire');
+    Route::get('thank_you', 'get_thanks')->name('thank_you');
+});

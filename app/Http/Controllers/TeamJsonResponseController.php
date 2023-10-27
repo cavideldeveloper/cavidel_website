@@ -92,3 +92,5 @@ class TeamJsonResponseController extends Controller
         return response()->json($data);
     }
 }
+
+

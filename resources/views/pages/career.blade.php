@@ -29,7 +29,7 @@
                 <div class="g-text-center--xs g-margin-t-50--xs g-margin-b-20--xs">
                     <p class="g-font-size-14--xs g-font-weight--700 g-color--white-opacity g-letter-spacing--2 g-margin-b-25--xs g-font-weight--700 animated bounceInDown">We are Hiring</p>
                 </div>
-                
+
                     {{-- <div id="list-all-jobs"></div> --}}
                 <form method="post" onsubmit="return submitGuestApplication()" class="contact-form center-block" enctype="multipart/form-data">
                     <input type="hidden" id="JobPlacementRef" name="">
@@ -80,7 +80,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
@@ -89,7 +89,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
@@ -98,7 +98,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
@@ -117,7 +117,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
@@ -228,12 +228,12 @@
             $("#gender").selectize({
                 create: true,
                 sortField: {field: 'text'}
-            });  
+            });
 
             $("#age_range").selectize({
                 create: true,
                 sortField: {field: 'text'}
-            });    
+            });
         });
 
         async function pushLetterToBase64Format(argument) {
@@ -294,7 +294,7 @@
                 if (r.status >= 200 && r.status <= 299) {
                     // assume success
                       return r.json();
-            
+
                 } else if(r.status == 419){
                     swal(
                         r.statusText,
@@ -319,7 +319,7 @@
                 console.log(err);
             })
 
-            // void 
+            // void
             return false;
         }
 
@@ -333,7 +333,7 @@
                 if (r.status >= 200 && r.status <= 299) {
                     // assume success
                       return r.json();
-            
+
                 } else if(r.status == 419){
                     swal(
                         r.statusText,
@@ -352,7 +352,7 @@
                     $("#list-all-jobs").append(`
                         <div class="custom-card">
                             <div class="">
-                                <b><i class="fa fa-user"></i> Apply for this Job:</b> 
+                                <b><i class="fa fa-user"></i> Apply for this Job:</b>
                                 <span class="pull-right">
                                     <a href="javascript:void(0);" onclick="applyForThisJob(${val.JobPlacementRef})" class="btn btn-primary btn-sm">
                                         <i class="fa fa-paperclip"></i> Apply
@@ -363,7 +363,7 @@
                             <div>
                                 <h5>Job Description</h5>
                                 <p>${val.JobDescription}</p>
-                        
+
                                 <a href="javascript:void(0);" class="text-primary" data-toggle="collapse" data-target="#read-more-${sn}"> more details
                                 </a><br />
                                 <div id="read-more-${sn}" class="collapse">
@@ -395,7 +395,7 @@
                             </div>
                             <div>
                                 <hr />
-                                <b><i class="fa fa-clock-o"></i> Time created:</b>  ${moment(val.created_at).format('LT')} <br /> 
+                                <b><i class="fa fa-clock-o"></i> Time created:</b>  ${moment(val.created_at).format('LT')} <br />
                                 <b><i class="fa fa-calendar-o"></i> Date created:</b> ${moment(val.created_at).format('LL')}
                             </div>
                         </div>
@@ -429,7 +429,7 @@
                 if (r.status >= 200 && r.status <= 299) {
                     // assume success
                       return r.json();
-            
+
                 } else if(r.status == 419){
                     swal(
                         r.statusText,
@@ -463,7 +463,7 @@
 
             $("#view-jobs").show();
             var job_title = $("#job_title").val();
-            
+
             fetch(`{{url('get/one/job/placement')}}/${job_title}`, {
                 method: 'GET',
                 headers: {
@@ -473,7 +473,7 @@
                 if (r.status >= 200 && r.status <= 299) {
                     // assume success
                       return r.json();
-            
+
                 } else if(r.status == 419){
                     swal(
                         r.statusText,
